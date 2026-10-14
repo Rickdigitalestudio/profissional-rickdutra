@@ -1,15 +1,15 @@
-# CTA do dia — 2026-10-13
+# CTA do dia — 2026-10-14
 
-**Credibilidade imediata**
+**Apareça no Google**
 
-## Site feio espanta cliente. Site profissional atrai.
+## Se o Google não te acha, o cliente acha o concorrente.
 
-Sites institucionais que passam confiança e geram contato no automático.
+Sites otimizados com SEO e performance desde a primeira linha de código.
 
-**Botão:** Melhorar meu site agora
+**Botão:** Quero ser encontrado
 
 Poste no Status/Stories/TikTok:
 
-> Site feio espanta cliente. Site profissional atrai.
-> Sites institucionais que passam confiança e geram contato no automático.
+> Se o Google não te acha, o cliente acha o concorrente.
+> Sites otimizados com SEO e performance desde a primeira linha de código.
 > Chame no WhatsApp: https://wa.me/5511989426415
