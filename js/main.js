@@ -144,7 +144,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    /* ---------- Fundo 3D: quadrados flutuantes como estrelas (todo o site) ---------- */
+    /* ---------- Fundo 3D: partículas champagne (Three.js) ---------- */
     try {
         const canvas = document.getElementById('bg3d');
         if (canvas && window.THREE && !reduceMotion) {
@@ -160,35 +160,24 @@ document.addEventListener('DOMContentLoaded', () => {
             };
             resize(); window.addEventListener('resize', resize);
 
-            // Quadrados-estrelas: 2 camadas (champagne + branco) com InstancedMesh
-            const dummy = new THREE.Object3D();
-            const layers = [];
-            const mkLayer = (count, color, size, opacity) => {
-                const geoL = new THREE.PlaneGeometry(size, size);
-                const matL = new THREE.MeshBasicMaterial({ color, transparent: true, opacity, side: THREE.DoubleSide, depthWrite: false });
-                const mesh = new THREE.InstancedMesh(geoL, matL, count);
-                const seeds = [];
-                for (let i = 0; i < count; i++) {
-                    seeds.push({
-                        x: (Math.random() - .5) * 20,
-                        y: (Math.random() - .5) * 13,
-                        z: (Math.random() - .5) * 8,
-                        rot: Math.random() * Math.PI * 2,
-                        rotSpd: (Math.random() - .5) * .6,
-                        floatSpd: .08 + Math.random() * .25,
-                        tw: Math.random() * Math.PI * 2,
-                        twSpd: .6 + Math.random() * 1.6,
-                        base: .6 + Math.random() * .4
-                    });
-                }
-                mesh.userData.seeds = seeds;
-                scene.add(mesh);
-                layers.push(mesh);
-                return mesh;
-            };
-            const total = isMobile ? 70 : 150;
-            mkLayer(Math.round(total * .7), 0xd8c3a5, .085, .8);   // champagne
-            mkLayer(Math.round(total * .3), 0xffffff, .06, .55);   // brancas menores
+            // Partículas
+            const N = isMobile ? 350 : 900;
+            const pos = new Float32Array(N * 3);
+            for (let i = 0; i < N; i++) {
+                pos[i * 3] = (Math.random() - .5) * 22;
+                pos[i * 3 + 1] = (Math.random() - .5) * 14;
+                pos[i * 3 + 2] = (Math.random() - .5) * 10;
+            }
+            const geo = new THREE.BufferGeometry();
+            geo.setAttribute('position', new THREE.BufferAttribute(pos, 3));
+            const mat = new THREE.PointsMaterial({ color: 0xd8c3a5, size: .035, transparent: true, opacity: .55, sizeAttenuation: true });
+            const points = new THREE.Points(geo, mat);
+            scene.add(points);
+
+            // Grade sutil / névoa: segundo layer dourado fraco
+            const mat2 = new THREE.PointsMaterial({ color: 0xffffff, size: .02, transparent: true, opacity: .25 });
+            const points2 = new THREE.Points(geo.clone(), mat2);
+            points2.position.x = 2; scene.add(points2);
 
             let tx = 0, ty = 0;
             if (finePointer) window.addEventListener('mousemove', (e) => {
@@ -197,64 +186,21 @@ document.addEventListener('DOMContentLoaded', () => {
             });
 
             const clock = new THREE.Clock();
+            let visible = true;
+            new IntersectionObserver(([e]) => { visible = e.isIntersecting; }).observe(document.querySelector('.hero'));
             (function animate() {
                 requestAnimationFrame(animate);
                 const t = clock.getElapsedTime();
-                // Mantém as estrelas visíveis no site todo (fade suave, nunca some)
+                // Pausa render fora da dobra pra economizar bateria — mas mantém fundo visível
                 const y = window.scrollY;
-                const fade = Math.max(.55, 1 - y / (window.innerHeight * 4));
+                const fade = Math.max(.25, 1 - y / (window.innerHeight * 2.2));
                 canvas.style.opacity = fade.toFixed(2);
-                const H = 6.5; // metade da altura visível: recicla ao sair do topo
-                layers.forEach((mesh, li) => {
-                    const seeds = mesh.userData.seeds;
-                    for (let i = 0; i < seeds.length; i++) {
-                        const s = seeds[i];
-                        s.rot += s.rotSpd * .01;
-                        let yy = (((s.y + H + t * s.floatSpd) % (H * 2) + H * 2) % (H * 2)) - H;
-                        const twinkle = s.base * (.55 + .45 * Math.sin(t * s.twSpd + s.tw));
-                        dummy.position.set(s.x + tx * (li + 1) * .5, yy + ty * (li + 1) * .3, s.z);
-                        dummy.rotation.set(0, 0, s.rot);
-                        dummy.scale.setScalar(Math.max(.05, twinkle));
-                        dummy.updateMatrix();
-                        mesh.setMatrixAt(i, dummy.matrix);
-                    }
-                    mesh.instanceMatrix.needsUpdate = true;
-                });
-                scene.rotation.y = tx * .12;
-                scene.rotation.x = ty * .08;
+                points.rotation.y = t * .03 + tx * .4;
+                points.rotation.x = ty * .25;
+                points.position.y = Math.sin(t * .3) * .15;
+                points2.rotation.y = -t * .015 + tx * .2;
                 renderer.render(scene, camera);
             })();
-        } else if (canvas && !reduceMotion) {
-            // Fallback 2D (sem Three.js): quadrados flutuando no canvas 2D
-            const ctx = canvas.getContext('2d');
-            if (!ctx) { canvas.style.display = 'none'; }
-            else {
-                const SN = window.innerWidth < 720 ? 50 : 110;
-                const stars = Array.from({ length: SN }, () => ({
-                    x: Math.random(), y: Math.random(),
-                    s: 1 + Math.random() * 3, r: Math.random() * Math.PI,
-                    rs: (Math.random() - .5) * .02, vy: .0004 + Math.random() * .0012,
-                    tw: Math.random() * Math.PI * 2, ts: .01 + Math.random() * .03,
-                    c: Math.random() < .7 ? '216,195,165' : '255,255,255'
-                }));
-                const fit = () => { canvas.width = window.innerWidth; canvas.height = window.innerHeight; };
-                fit(); window.addEventListener('resize', fit);
-                (function tick2d() {
-                    requestAnimationFrame(tick2d);
-                    ctx.clearRect(0, 0, canvas.width, canvas.height);
-                    stars.forEach(p => {
-                        p.y -= p.vy; p.r += p.rs; p.tw += p.ts;
-                        if (p.y < -.02) { p.y = 1.02; p.x = Math.random(); }
-                        const a = .35 + .45 * Math.abs(Math.sin(p.tw));
-                        ctx.save();
-                        ctx.translate(p.x * canvas.width, p.y * canvas.height);
-                        ctx.rotate(p.r);
-                        ctx.fillStyle = `rgba(${p.c},${a.toFixed(2)})`;
-                        ctx.fillRect(-p.s / 2, -p.s / 2, p.s, p.s);
-                        ctx.restore();
-                    });
-                })();
-            }
         } else if (canvas) { canvas.style.display = 'none'; }
     } catch (_) { const c = document.getElementById('bg3d'); if (c) c.style.display = 'none'; }
 
