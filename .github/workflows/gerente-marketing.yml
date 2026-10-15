@@ -1,0 +1,76 @@
+name: Gerente de Marketing (automatico)
+
+# Toda segunda-feira 09:00 BRT (12:00 UTC): verifica se o site esta no ar
+# e abre a tarefa de marketing da semana como issue. 100% gratis.
+# Rodar manualmente: Actions > Gerente de Marketing > Run workflow.
+on:
+  schedule:
+    - cron: '0 12 * * 1'
+  workflow_dispatch:
+
+permissions:
+  issues: write
+  contents: read
+
+jobs:
+  gerente:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Verificar site no ar (health check)
+        id: health
+        continue-on-error: true
+        run: |
+          for u in \
+            "https://rickdigitalestudio.github.io/profissional-rickdutra/" \
+            "https://rickdigitalestudio.github.io/profissional-rickdutra/servicos-adicionais.html" \
+            "https://rickdigitalestudio.github.io/profissional-rickdutra/orcamento.html" \
+            "https://rickdigitalestudio.github.io/profissional-rickdutra/sobre.html" \
+            "https://rickdigitalestudio.github.io/profissional-rickdutra/sitemap.xml"; do
+            code=$(curl -s -o /dev/null -w "%{http_code}" --max-time 20 "$u") || code="000"
+            echo "$code $u"
+            [ "$code" = "200" ] || exit 1
+          done
+
+      - name: Abrir tarefa da semana
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          HEALTH: ${{ steps.health.outcome }}
+        run: |
+          START=2026-10-19  # segunda-feira de inicio do ciclo (ajuste se quiser)
+          DAYS=$(( ($(date +%s) - $(date -d "$START" +%s)) / 86400 ))
+          [ "$DAYS" -lt 0 ] && DAYS=0
+          WEEK=$(( DAYS / 7 % 12 + 1 ))
+          case $WEEK in
+            1) TASK="Ative a captacao: confirme o e-mail do FormSubmit (caixa de entrada) e crie o Perfil da Empresa no Google com link do site."; GOAL="Formulario entregando no e-mail + perfil criado";;
+            2) TASK="Google: cadastre o Search Console, envie o sitemap.xml e troque G-SEU-ID pelo ID real do GA4 (ver marketing/PLANO-90-DIAS.md)."; GOAL="Site indexado + visitas sendo medidas";;
+            3) TASK="Peca avaliacao no Google aos ultimos 3 clientes usando o script de marketing/GERENTE-DE-MARKETING.md."; GOAL="5 avaliacoes no perfil";;
+            4) TASK="Publique o conteudo 1: 'Quanto custa criar um site em 2026?' (peca o texto ao agente com palavra-chave + FAQ)."; GOAL="1 pagina ranqueando no Google";;
+            5) TASK="Crie a pagina do servico LOGO profissional (palavra-chave: criacao de logo profissional) + FAQ."; GOAL="+1 servico coberto";;
+            6) TASK="Crie as paginas LINKEDIN e ACADEMICO (palavras-chave do plano) + FAQ em cada uma."; GOAL="6 palavras-chave cobertas";;
+            7) TASK="Abra o Search Console: ajuste os 3 titulos com menos cliques e melhore as meta descriptions."; GOAL="CTR maior";;
+            8) TASK="Consiga +3 avaliacoes no Google e RESPONDA todas as avaliacoes existentes."; GOAL="Autoridade local";;
+            9) TASK="Publique o antes/depois do projeto 1 (prints + texto de resultado)."; GOAL="Prova de resultado 1";;
+            10) TASK="Publique o antes/depois do projeto 2 (prints + texto de resultado)."; GOAL="Prova de resultado 2";;
+            11) TASK="Auditoria: PageSpeed, links quebrados, teste de WhatsApp e do formulario de ponta a ponta."; GOAL="Site 100% redondo";;
+            12) TASK="Relatorio do trimestre (visitas, contatos, fechamentos) e recomece o ciclo dobrando o que funcionou."; GOAL="Plano dos proximos 90 dias";;
+          esac
+          if [ "$HEALTH" = "success" ]; then STATUS="✅ Site no ar (home, serviços, orçamento, sobre, sitemap OK).";
+          else STATUS="🚨 ATENÇÃO: health check FALHOU — verifique se o site está no ar antes da tarefa."; fi
+          TITLE="📈 Marketing semana $WEEK/12 — $GOAL"
+          EXISTS=$(gh issue list --state open --search "Marketing semana $WEEK/12" --json title --jq 'length')
+          if [ "$EXISTS" = "0" ]; then
+            gh issue create --title "$TITLE" --body "### Status automático
+          $STATUS
+
+          ### Tarefa da semana
+          $TASK
+
+          ### Checklist
+          - [ ] Executar a tarefa
+          - [ ] Registrar resultado (visitas/contatos/fechamentos) aqui nos comentários
+          - [ ] Pedir avaliação no Google a cada entrega (script em marketing/GERENTE-DE-MARKETING.md)
+
+          _Gerente de Marketing automático · ciclo 12 semanas · ver marketing/PLANO-90-DIAS.md_"
+          else
+            echo "Issue da semana $WEEK já aberta — nada a fazer."
+          fi
