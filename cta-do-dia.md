@@ -1,15 +1,15 @@
-# CTA do dia — 2026-10-14
+# CTA do dia — 2026-10-15
 
-**Apareça no Google**
+**Mobile em primeiro lugar**
 
-## Se o Google não te acha, o cliente acha o concorrente.
+## 80% dos seus clientes estão no celular. Seu site está pronto?
 
-Sites otimizados com SEO e performance desde a primeira linha de código.
+Layouts 100% responsivos: perfeitos no celular, tablet e computador.
 
-**Botão:** Quero ser encontrado
+**Botão:** Quero um site mobile perfeito
 
 Poste no Status/Stories/TikTok:
 
-> Se o Google não te acha, o cliente acha o concorrente.
-> Sites otimizados com SEO e performance desde a primeira linha de código.
+> 80% dos seus clientes estão no celular. Seu site está pronto?
+> Layouts 100% responsivos: perfeitos no celular, tablet e computador.
 > Chame no WhatsApp: https://wa.me/5511989426415
