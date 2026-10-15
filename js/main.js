@@ -250,4 +250,40 @@ document.addEventListener('DOMContentLoaded', () => {
         if (btn) btn.style.display = 'none';
         if (ok) ok.hidden = false;
     });
+
+    /* ---------- CARROSSEL DESTAQUES: 4 visiveis ---------- */
+    const track = document.getElementById('carTrack');
+    if (track) {
+        const cards = () => Array.from(track.children);
+        let idx = 0, timer = null;
+        const dotsBox = document.getElementById('carDots');
+        const perView = () => window.innerWidth < 1020 ? (window.innerWidth < 720 ? 1 : 2) : 4;
+        const maxIdx = () => Math.max(0, cards().length - perView());
+        const renderDots = () => {
+            if (!dotsBox) return; dotsBox.innerHTML = '';
+            for (let i = 0; i <= maxIdx(); i++) {
+                const b = document.createElement('button');
+                if (i === idx) b.classList.add('on');
+                b.setAttribute('aria-label', 'Ir para ' + (i + 1));
+                b.addEventListener('click', () => { idx = i; update(); restart(); });
+                dotsBox.appendChild(b);
+            }
+        };
+        const update = () => {
+            const pv = perView(); idx = Math.min(Math.max(0, idx), maxIdx());
+            const card = cards()[0]; if (!card) return;
+            const w = card.getBoundingClientRect().width + 18;
+            track.style.transform = `translateX(${-idx * w}px)`;
+            renderDots();
+        };
+        const next = () => { idx = idx >= maxIdx() ? 0 : idx + 1; update(); };
+        const prev = () => { idx = idx <= 0 ? maxIdx() : idx - 1; update(); };
+        const restart = () => { if (timer) clearInterval(timer); if (!reduceMotion) timer = setInterval(next, 3500); };
+        document.getElementById('carNext')?.addEventListener('click', () => { next(); restart(); });
+        document.getElementById('carPrev')?.addEventListener('click', () => { prev(); restart(); });
+        track.parentElement.addEventListener('pointerenter', () => timer && clearInterval(timer));
+        track.parentElement.addEventListener('pointerleave', restart);
+        window.addEventListener('resize', update);
+        update(); restart();
+    }
 });
