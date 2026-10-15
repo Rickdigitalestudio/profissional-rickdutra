@@ -257,8 +257,8 @@ document.addEventListener('DOMContentLoaded', () => {
         const cards = () => Array.from(track.children);
         let idx = 0, timer = null;
         const dotsBox = document.getElementById('carDots');
-        const perView = () => window.innerWidth < 1020 ? (window.innerWidth < 720 ? 1 : 2) : 4;
-        const maxIdx = () => Math.max(0, cards().length - perView());
+        const perView = () => 1;
+        const maxIdx = () => Math.max(0, cards().length - 1);
         const renderDots = () => {
             if (!dotsBox) return; dotsBox.innerHTML = '';
             for (let i = 0; i <= maxIdx(); i++) {
@@ -270,10 +270,8 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         };
         const update = () => {
-            const pv = perView(); idx = Math.min(Math.max(0, idx), maxIdx());
-            const card = cards()[0]; if (!card) return;
-            const w = card.getBoundingClientRect().width + 18;
-            track.style.transform = `translateX(${-idx * w}px)`;
+            idx = Math.min(Math.max(0, idx), maxIdx());
+            track.style.transform = `translateX(${-idx * 100}%)`;
             renderDots();
         };
         const next = () => { idx = idx >= maxIdx() ? 0 : idx + 1; update(); };
