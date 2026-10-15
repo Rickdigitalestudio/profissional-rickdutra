@@ -241,7 +241,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (now) now.href = 'https://wa.me/5511989426415?text=' + encodeURIComponent(msg);
         if (btn) { btn.disabled = true; btn.style.opacity = '.6'; }
         try {
-            const res = await fetch('https://formsubmit.co/ajax/henriqueluizd91@gmail.com', {
+            const res = await fetch('https://formsubmit.co/ajax/estudiorickdigital@gmail.com', {
                 method: 'POST', headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
                 body: JSON.stringify({ nome: nome || '-', whatsapp: zap, origem: pageTag, detalhe: extra || '-', _subject: `Novo lead do site (${pageTag}): ${nome || zap}`, _honey: leadForm._honey.value })
             });

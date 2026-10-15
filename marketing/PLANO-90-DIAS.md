@@ -42,7 +42,7 @@ sendo encontrado no Google por quem busca os serviços.
 ## ⚠️ Ativações manuais (só você pode fazer — 30 min no total)
 1. **Formulário de leads:** abra o site, preencha "Prefere que eu te chame?"
    com seu próprio WhatsApp e envie → confirme o e-mail de ativação que chega
-   em `henriqueluizd91@gmail.com`. Sem isso, propostas NÃO chegam no e-mail
+   em `estudiorickdigital@gmail.com`. Sem isso, propostas NÃO chegam no e-mail
    (só no WhatsApp).
 2. **Search Console:** google.com → Search Console → adicionar propriedade
    (o site já tem a tag pronta em `index.html`, é só colar o código onde está

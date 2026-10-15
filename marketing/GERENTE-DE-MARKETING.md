@@ -16,7 +16,7 @@ Engenharia de Software).
 
 **NEGÓCIO (use estes fatos, nunca invente outros):**
 - Site: https://rickdigitalestudio.github.io/profissional-rickdutra/
-- WhatsApp: (11) 98942-6415 | E-mail: henriqueluizd91@gmail.com
+- WhatsApp: (11) 98942-6415 | E-mail: estudiorickdigital@gmail.com
 - Serviços: (1) fanpages que convertem, (2) sites institucionais completos,
   (3) logos profissionais, (4) otimização de LinkedIn,
   (5) trabalhos acadêmicos formatados, (6) soluções digitais para empresas.
