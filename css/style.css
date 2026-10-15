@@ -289,6 +289,9 @@ main h1:not(.title-3d){background:linear-gradient(180deg,#fff 30%,#d8c3a5 85%);-
 .car-dots{display:flex;gap:8px;justify-content:center;margin-top:14px}
 .car-dots button{width:26px;height:6px;border-radius:4px;border:0;background:rgba(255,255,255,.2);cursor:pointer}
 .car-dots button.on{background:#d8c3a5}
+/* fix carrossel: cards sempre visiveis (fora do reveal) */
+#carTrack .work-card{opacity:1!important;transform:none}
+#carTrack .work-card.animate,#carTrack .work-card.in{opacity:1!important;transform:none}
 @media(prefers-reduced-motion:reduce){
   .marquee-track{animation:none}
   .tilt,.magnetic,.card3d{transform:none!important}
