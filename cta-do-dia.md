@@ -1,15 +1,15 @@
-# CTA do dia — 2026-10-15
+# CTA do dia — 2026-10-16
 
-**Mobile em primeiro lugar**
+**Orçamento em 30 segundos**
 
-## 80% dos seus clientes estão no celular. Seu site está pronto?
+## Sem reunião chata, sem enrolação: monte seu orçamento sozinho.
 
-Layouts 100% responsivos: perfeitos no celular, tablet e computador.
+Página de orçamento interativa com preço fechado, prazo e escopo claro.
 
-**Botão:** Quero um site mobile perfeito
+**Botão:** Montar meu orçamento
 
 Poste no Status/Stories/TikTok:
 
-> 80% dos seus clientes estão no celular. Seu site está pronto?
-> Layouts 100% responsivos: perfeitos no celular, tablet e computador.
+> Sem reunião chata, sem enrolação: monte seu orçamento sozinho.
+> Página de orçamento interativa com preço fechado, prazo e escopo claro.
 > Chame no WhatsApp: https://wa.me/5511989426415
