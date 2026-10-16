@@ -31,7 +31,7 @@
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-SEU-ID"></script>
     <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-SEU-ID');</script>
 
-    <link rel="stylesheet" href="css/style.css?v=car2">
+    <link rel="stylesheet" href="css/style.css?v=car3">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -249,24 +249,90 @@
 
         <!-- TODOS OS PROJETOS -->
         <section id="todos" class="all reveal">
-            <span class="eyebrow">Portfólio completo</span>
-            <h2>Todos os projetos</h2>
-            <div class="all-grid">
-                <a href="konstruct/index.html" target="_blank"><img src="img/konstruct.jpg" alt="Konstruct Store"><span>Konstruct Store ⭐ NOVO <em>Loja 3D · 18 produtos</em></span></a>
-                <a href="techverse/index.html" target="_blank"><img src="img/techverse.jpg" alt="TechVerse"><span>TechVerse ⭐ DESTAQUE <em>Loja 3D · 18 produtos</em></span></a>
-                <a href="https://rickdigitalestudio.github.io/viverdefreelancer/" target="_blank"><img src="img/viverdefreelancer.jpg" alt="Viver de Freelancer"><span>Viver de Freelancer <em>Gamma → GitHub 3D</em></span></a>
-                <a href="https://rickdigitalestudio.github.io/festadascriacas2.0guileiros/" target="_blank"><img src="img/festa-gui-leiros.png" alt="Festa das Crianças 2.0"><span>Festa das Crianças 2.0 <em>HTML · CSS 3D · JS</em></span></a>
-                <a href="https://rickdigitalestudio.github.io/vila-ema-living/" target="_blank"><img src="img/vila-ema-living.jpg" alt="New Vila Ema"><span>New Vila Ema <em>React · Imóveis</em></span></a>
-                <a href="https://rickdigitalestudio.github.io/CrescerBem/" target="_blank"><img src="img/CrescerBem.png" alt="CrescerBem"><span>CrescerBem <em>HTML · CSS · JS</em></span></a>
-                <a href="https://rickdigitalestudio.github.io/pousada-do-adao/" target="_blank"><img src="img/pousada-do-adao.png" alt="Pousada do Adão"><span>Pousada do Adão <em>Site · Reservas</em></span></a>
-                <a href="https://rickdigitalestudio.github.io/nepofit-performance/" target="_blank"><img src="img/nepofit-performance.png" alt="Nepofit"><span>Nepofit Performance <em>Landing · Academia</em></span></a>
-                <a href="https://rickdigitalestudio.github.io/Landing-Page-Arquitetura/" target="_blank"><img src="img/residencial-tradicao.jpg" alt="Residencial Tradição"><span>Residencial Tradição <em>HTML · CSS · JS</em></span></a>
-                <a href="https://rickdigitalestudio.github.io/Desafio-2-Dnc-consumo-de-API/" target="_blank"><img src="img/DncWeather.png" alt="consumo-de-API"><span>consumo-de-API <em>HTML · CSS · JS</em></span></a>
-                <a href="https://assembleia-de-deus-santo-bl17zlt.gamma.site/" target="_blank"><img src="img/1_Assembleia-de-Deus-Ministerio-de-Santos.png" alt="Assembleia de Deus"><span>Assembleia de Deus <em>Gamma</em></span></a>
-                <a href="https://gamma.app/docs/vyqycnxa6ht379t" target="_blank"><img src="img/1_Construindo-um-Portfolio-Profissional-com-React.png" alt="Portfólio React"><span>Portfólio React <em>Gamma</em></span></a>
-                <a href="https://cha-de-casa-nova-xf6taja.gamma.site/chadecasanovalauaneeduardo" target="_blank"><img src="img/Cha-de-Casa-Nova-Lauane-and-Eduardo-Estao-Prontos.png" alt="Chá de Casa Nova"><span>Chá de Casa Nova <em>Gamma</em></span></a>
-                <a href="https://rickdigitalestudio.github.io/Aluno-na-escola-DNC-main/" target="_blank"><img src="img/linkbio-henrique.png" alt="portfolio-master"><span>portfolio-master <em>HTML · CSS · JS</em></span></a>
+            <div class="todos-top">
+                <div><span class="eyebrow">Portfólio completo</span>
+                <h2>Todos os projetos</h2></div>
+                <span class="todos-count">● <b id="todosCount">14 projetos no ar</b></span>
             </div>
+            <div class="todos-filter" role="tablist" aria-label="Filtrar projetos">
+                <button class="active" data-filter="all">Todos <b>14</b></button>
+                <button data-filter="loja">Lojas <b>2</b></button>
+                <button data-filter="site">Sites <b>7</b></button>
+                <button data-filter="landing">Landing pages <b>5</b></button>
+            </div>
+            <div class="all-grid" id="todosGrid">
+                <article class="proj-card" data-cat="loja">
+                    <span class="proj-badge novo">⭐ Novo</span><span class="proj-cat">Loja</span>
+                    <a class="proj-img" href="konstruct/index.html" target="_blank" rel="noopener" aria-label="Visitar Konstruct Store"><img src="img/konstruct.jpg" alt="Konstruct Store" loading="lazy"><span class="proj-open">Visitar site <i class="fa-solid fa-arrow-up-right"></i></span></a>
+                    <div class="proj-info"><h3>Konstruct Store</h3><small>Loja 3D · 18 produtos</small><a class="proj-cta" href="https://wa.me/5511989426415?text=Ol%C3%A1%21%20Vi%20o%20projeto%20Konstruct%20Store%20no%20seu%20portf%C3%B3lio%20e%20quero%20um%20parecido." target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i> Quero um assim</a></div>
+                </article>
+                <article class="proj-card" data-cat="loja">
+                    <span class="proj-badge">⭐ Destaque</span><span class="proj-cat">Loja</span>
+                    <a class="proj-img" href="techverse/index.html" target="_blank" rel="noopener" aria-label="Visitar TechVerse"><img src="img/techverse.jpg" alt="TechVerse" loading="lazy"><span class="proj-open">Visitar site <i class="fa-solid fa-arrow-up-right"></i></span></a>
+                    <div class="proj-info"><h3>TechVerse</h3><small>Loja 3D · 18 produtos</small><a class="proj-cta" href="https://wa.me/5511989426415?text=Ol%C3%A1%21%20Vi%20o%20projeto%20TechVerse%20no%20seu%20portf%C3%B3lio%20e%20quero%20um%20parecido." target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i> Quero um assim</a></div>
+                </article>
+                <article class="proj-card" data-cat="site">
+                    <span class="proj-cat">Site</span>
+                    <a class="proj-img" href="https://rickdigitalestudio.github.io/viverdefreelancer/" target="_blank" rel="noopener" aria-label="Visitar Viver de Freelancer"><img src="img/viverdefreelancer.jpg" alt="Viver de Freelancer" loading="lazy"><span class="proj-open">Visitar site <i class="fa-solid fa-arrow-up-right"></i></span></a>
+                    <div class="proj-info"><h3>Viver de Freelancer</h3><small>Gamma → GitHub 3D</small><a class="proj-cta" href="https://wa.me/5511989426415?text=Ol%C3%A1%21%20Vi%20o%20projeto%20Viver%20de%20Freelancer%20no%20seu%20portf%C3%B3lio%20e%20quero%20um%20parecido." target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i> Quero um assim</a></div>
+                </article>
+                <article class="proj-card" data-cat="landing">
+                    <span class="proj-cat">Landing page</span>
+                    <a class="proj-img" href="https://rickdigitalestudio.github.io/festadascriacas2.0guileiros/" target="_blank" rel="noopener" aria-label="Visitar Festa das Crianças 2.0"><img src="img/festa-gui-leiros.png" alt="Festa das Crianças 2.0" loading="lazy"><span class="proj-open">Visitar site <i class="fa-solid fa-arrow-up-right"></i></span></a>
+                    <div class="proj-info"><h3>Festa das Crianças 2.0</h3><small>HTML · CSS 3D · JS</small><a class="proj-cta" href="https://wa.me/5511989426415?text=Ol%C3%A1%21%20Vi%20o%20projeto%20Festa%20das%20Crian%C3%A7as%202.0%20no%20seu%20portf%C3%B3lio%20e%20quero%20um%20parecido." target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i> Quero um assim</a></div>
+                </article>
+                <article class="proj-card" data-cat="landing">
+                    <span class="proj-cat">Landing page</span>
+                    <a class="proj-img" href="https://rickdigitalestudio.github.io/vila-ema-living/" target="_blank" rel="noopener" aria-label="Visitar New Vila Ema"><img src="img/vila-ema-living.jpg" alt="New Vila Ema" loading="lazy"><span class="proj-open">Visitar site <i class="fa-solid fa-arrow-up-right"></i></span></a>
+                    <div class="proj-info"><h3>New Vila Ema</h3><small>React · Imóveis</small><a class="proj-cta" href="https://wa.me/5511989426415?text=Ol%C3%A1%21%20Vi%20o%20projeto%20New%20Vila%20Ema%20no%20seu%20portf%C3%B3lio%20e%20quero%20um%20parecido." target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i> Quero um assim</a></div>
+                </article>
+                <article class="proj-card" data-cat="site">
+                    <span class="proj-cat">Site</span>
+                    <a class="proj-img" href="https://rickdigitalestudio.github.io/CrescerBem/" target="_blank" rel="noopener" aria-label="Visitar CrescerBem"><img src="img/CrescerBem.png" alt="CrescerBem" loading="lazy"><span class="proj-open">Visitar site <i class="fa-solid fa-arrow-up-right"></i></span></a>
+                    <div class="proj-info"><h3>CrescerBem</h3><small>HTML · CSS · JS</small><a class="proj-cta" href="https://wa.me/5511989426415?text=Ol%C3%A1%21%20Vi%20o%20projeto%20CrescerBem%20no%20seu%20portf%C3%B3lio%20e%20quero%20um%20parecido." target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i> Quero um assim</a></div>
+                </article>
+                <article class="proj-card" data-cat="site">
+                    <span class="proj-cat">Site</span>
+                    <a class="proj-img" href="https://rickdigitalestudio.github.io/pousada-do-adao/" target="_blank" rel="noopener" aria-label="Visitar Pousada do Adão"><img src="img/pousada-do-adao.png" alt="Pousada do Adão" loading="lazy"><span class="proj-open">Visitar site <i class="fa-solid fa-arrow-up-right"></i></span></a>
+                    <div class="proj-info"><h3>Pousada do Adão</h3><small>Site · Reservas</small><a class="proj-cta" href="https://wa.me/5511989426415?text=Ol%C3%A1%21%20Vi%20o%20projeto%20Pousada%20do%20Ad%C3%A3o%20no%20seu%20portf%C3%B3lio%20e%20quero%20um%20parecido." target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i> Quero um assim</a></div>
+                </article>
+                <article class="proj-card" data-cat="landing">
+                    <span class="proj-cat">Landing page</span>
+                    <a class="proj-img" href="https://rickdigitalestudio.github.io/nepofit-performance/" target="_blank" rel="noopener" aria-label="Visitar Nepofit Performance"><img src="img/nepofit-performance.png" alt="Nepofit" loading="lazy"><span class="proj-open">Visitar site <i class="fa-solid fa-arrow-up-right"></i></span></a>
+                    <div class="proj-info"><h3>Nepofit Performance</h3><small>Landing · Academia</small><a class="proj-cta" href="https://wa.me/5511989426415?text=Ol%C3%A1%21%20Vi%20o%20projeto%20Nepofit%20Performance%20no%20seu%20portf%C3%B3lio%20e%20quero%20um%20parecido." target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i> Quero um assim</a></div>
+                </article>
+                <article class="proj-card" data-cat="landing">
+                    <span class="proj-cat">Landing page</span>
+                    <a class="proj-img" href="https://rickdigitalestudio.github.io/Landing-Page-Arquitetura/" target="_blank" rel="noopener" aria-label="Visitar Residencial Tradição"><img src="img/residencial-tradicao.jpg" alt="Residencial Tradição" loading="lazy"><span class="proj-open">Visitar site <i class="fa-solid fa-arrow-up-right"></i></span></a>
+                    <div class="proj-info"><h3>Residencial Tradição</h3><small>HTML · CSS · JS</small><a class="proj-cta" href="https://wa.me/5511989426415?text=Ol%C3%A1%21%20Vi%20o%20projeto%20Residencial%20Tradi%C3%A7%C3%A3o%20no%20seu%20portf%C3%B3lio%20e%20quero%20um%20parecido." target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i> Quero um assim</a></div>
+                </article>
+                <article class="proj-card" data-cat="site">
+                    <span class="proj-cat">Site</span>
+                    <a class="proj-img" href="https://rickdigitalestudio.github.io/Desafio-2-Dnc-consumo-de-API/" target="_blank" rel="noopener" aria-label="Visitar consumo-de-API"><img src="img/DncWeather.png" alt="consumo-de-API" loading="lazy"><span class="proj-open">Visitar site <i class="fa-solid fa-arrow-up-right"></i></span></a>
+                    <div class="proj-info"><h3>consumo-de-API</h3><small>HTML · CSS · JS</small><a class="proj-cta" href="https://wa.me/5511989426415?text=Ol%C3%A1%21%20Vi%20o%20projeto%20consumo-de-API%20no%20seu%20portf%C3%B3lio%20e%20quero%20um%20parecido." target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i> Quero um assim</a></div>
+                </article>
+                <article class="proj-card" data-cat="site">
+                    <span class="proj-cat">Site</span>
+                    <a class="proj-img" href="https://assembleia-de-deus-santo-bl17zlt.gamma.site/" target="_blank" rel="noopener" aria-label="Visitar Assembleia de Deus"><img src="img/1_Assembleia-de-Deus-Ministerio-de-Santos.png" alt="Assembleia de Deus" loading="lazy"><span class="proj-open">Visitar site <i class="fa-solid fa-arrow-up-right"></i></span></a>
+                    <div class="proj-info"><h3>Assembleia de Deus</h3><small>Gamma</small><a class="proj-cta" href="https://wa.me/5511989426415?text=Ol%C3%A1%21%20Vi%20o%20projeto%20Assembleia%20de%20Deus%20no%20seu%20portf%C3%B3lio%20e%20quero%20um%20parecido." target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i> Quero um assim</a></div>
+                </article>
+                <article class="proj-card" data-cat="site">
+                    <span class="proj-cat">Site</span>
+                    <a class="proj-img" href="https://gamma.app/docs/vyqycnxa6ht379t" target="_blank" rel="noopener" aria-label="Visitar Portfólio React"><img src="img/1_Construindo-um-Portfolio-Profissional-com-React.png" alt="Portfólio React" loading="lazy"><span class="proj-open">Visitar site <i class="fa-solid fa-arrow-up-right"></i></span></a>
+                    <div class="proj-info"><h3>Portfólio React</h3><small>Gamma</small><a class="proj-cta" href="https://wa.me/5511989426415?text=Ol%C3%A1%21%20Vi%20o%20projeto%20Portf%C3%B3lio%20React%20no%20seu%20portf%C3%B3lio%20e%20quero%20um%20parecido." target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i> Quero um assim</a></div>
+                </article>
+                <article class="proj-card" data-cat="landing">
+                    <span class="proj-cat">Landing page</span>
+                    <a class="proj-img" href="https://cha-de-casa-nova-xf6taja.gamma.site/chadecasanovalauaneeduardo" target="_blank" rel="noopener" aria-label="Visitar Chá de Casa Nova"><img src="img/Cha-de-Casa-Nova-Lauane-and-Eduardo-Estao-Prontos.png" alt="Chá de Casa Nova" loading="lazy"><span class="proj-open">Visitar site <i class="fa-solid fa-arrow-up-right"></i></span></a>
+                    <div class="proj-info"><h3>Chá de Casa Nova</h3><small>Gamma</small><a class="proj-cta" href="https://wa.me/5511989426415?text=Ol%C3%A1%21%20Vi%20o%20projeto%20Ch%C3%A1%20de%20Casa%20Nova%20no%20seu%20portf%C3%B3lio%20e%20quero%20um%20parecido." target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i> Quero um assim</a></div>
+                </article>
+                <article class="proj-card" data-cat="site">
+                    <span class="proj-cat">Site</span>
+                    <a class="proj-img" href="https://rickdigitalestudio.github.io/Aluno-na-escola-DNC-main/" target="_blank" rel="noopener" aria-label="Visitar portfolio-master"><img src="img/linkbio-henrique.png" alt="portfolio-master" loading="lazy"><span class="proj-open">Visitar site <i class="fa-solid fa-arrow-up-right"></i></span></a>
+                    <div class="proj-info"><h3>portfolio-master</h3><small>HTML · CSS · JS</small><a class="proj-cta" href="https://wa.me/5511989426415?text=Ol%C3%A1%21%20Vi%20o%20projeto%20portfolio-master%20no%20seu%20portf%C3%B3lio%20e%20quero%20um%20parecido." target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i> Quero um assim</a></div>
+                </article>
+            </div>
+            <p class="todos-note">Gostou de algum estilo? Clique em <b>“Quero um assim”</b> no card e receba um orçamento parecido no WhatsApp.</p>
             <!-- Bloco de anuncio AdSense (descomente apos aprovacao e troque os IDs pelo seus)
             <ins class="adsbygoogle" style="display:block;margin-top:18px" data-ad-client="ca-pub-SEU-ID" data-ad-slot="SEU-SLOT" data-ad-format="auto" data-full-width-responsive="true"></ins>
             <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
@@ -317,7 +383,30 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
         <a href="https://wa.me/5511989426415?text=Ol%C3%A1!%20Vi%20seu%20portf%C3%B3lio%20e%20quero%20um%20or%C3%A7amento." target="_blank" class="wa-float" aria-label="Falar no WhatsApp"><i class="fab fa-whatsapp"></i></a>
-    <script src="js/main.js?v=car2"></script>
+    <script src="js/main.js?v=car3"></script>
+    <script>
+    (function(){
+      var grid = document.getElementById('todosGrid');
+      if(!grid) return;
+      var cards = Array.from(grid.querySelectorAll('.proj-card'));
+      var btns = Array.from(document.querySelectorAll('.todos-filter button'));
+      var label = document.getElementById('todosCount');
+      function recount(){
+        var n = cards.filter(function(c){ return !c.classList.contains('hide'); }).length;
+        if(label) label.textContent = n + (n === 1 ? ' projeto no ar' : ' projetos no ar');
+      }
+      btns.forEach(function(b){
+        b.addEventListener('click', function(){
+          btns.forEach(function(x){ x.classList.remove('active'); });
+          b.classList.add('active');
+          var f = b.dataset.filter;
+          cards.forEach(function(c){ c.classList.toggle('hide', f !== 'all' && c.dataset.cat !== f); });
+          recount();
+        });
+      });
+      recount();
+    })();
+    </script>
     <script>
     if ('serviceWorker' in navigator) {
       window.addEventListener('load', () => {

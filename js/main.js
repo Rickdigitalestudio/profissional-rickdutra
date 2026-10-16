@@ -90,7 +90,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     /* ---------- Cards 3D interativos (todos) ---------- */
     if (!reduceMotion) {
-        document.querySelectorAll('.tilt, .work-card, .all-grid a, .cap, .bio-card, .card, .tec-card, .pj-row, .proj, .steps > div, .tools a span').forEach(card => {
+        document.querySelectorAll('.tilt, .work-card, .proj-card, .cap, .bio-card, .card, .tec-card, .pj-row, .proj, .steps > div, .tools a span').forEach(card => {
             const max = parseFloat(card.dataset.tilt || '9');
             let raf = null, tx = 0, ty = 0, cx = 0, cy = 0, active = false;
             card.classList.add('card3d');
