@@ -247,6 +247,13 @@ document.addEventListener('DOMContentLoaded', () => {
             });
             if (!res.ok) throw new Error('falha no envio');
         } catch (_) { /* fallback: lead segue pelo WhatsApp abaixo */ }
+        /* ---------- CRM: espelha no Firebase p/ cair no funil sozinho ---------- */
+        try {
+            fetch('https://rick-digital-default-rtdb.firebaseio.com/site-leads.json', {
+                method: 'POST', headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ nome: nome || 'Visitante', zap, origem: 'Site Portfólio (' + pageTag + ')', detalhe: extra || '-', data: new Date().toISOString() })
+            }).catch(() => {});
+        } catch (_) {}
         if (btn) btn.style.display = 'none';
         if (ok) ok.hidden = false;
     });
