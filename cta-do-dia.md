@@ -1,15 +1,15 @@
-# CTA do dia — 2026-10-17
+# CTA do dia — 2026-10-18
 
-**Lançamento e eventos**
+**Negócio local**
 
-## Festa, curso ou promoção? Landing 3D que vende o evento sozinha.
+## Quem busca "perto de mim" precisa te achar — e se encantar.
 
-Páginas de evento imersivas com confirmação e compartilhamento em 1 clique.
+Sites locais com Maps, WhatsApp e avaliações integrados para gerar visitas.
 
-**Botão:** Quero uma landing de evento
+**Botão:** Atrair clientes da região
 
 Poste no Status/Stories/TikTok:
 
-> Festa, curso ou promoção? Landing 3D que vende o evento sozinha.
-> Páginas de evento imersivas com confirmação e compartilhamento em 1 clique.
+> Quem busca "perto de mim" precisa te achar — e se encantar.
+> Sites locais com Maps, WhatsApp e avaliações integrados para gerar visitas.
 > Chame no WhatsApp: https://wa.me/5511989426415
