@@ -55,7 +55,7 @@ CTAS = [
     dict(tag='Do layout ao ar', h='Uma pessoa só do design à entrega: sem ruído, sem atraso.',
          p='Processo em 5 etapas — descoberta, escopo, design, código e entrega publicada.',
          b='Começar meu projeto', wa='Quero começar meu projeto de site.'),
-    dict(tag='Prova real', h='Não acredite em promessa: veja 12 projetos publicados e funcionando.',
+    dict(tag='Prova real', h='Não acredite em promessa: veja 15 projetos publicados e funcionando.',
          p='Cada projeto do portfólio está no ar, clicável e com o código no GitHub.',
          b='Ver os projetos', wa='Vi seu portfólio e quero um projeto.'),
     dict(tag='Vaga de freelance aberta', h='Agenda aberta para novos projetos este mês. Garanta a sua.',
