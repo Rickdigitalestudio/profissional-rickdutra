@@ -1,5 +1,5 @@
 /* Estúdio Rick Digital — Service Worker (funciona em qualquer domínio) */
-const CACHE = 'rick-digital-v8-3d';
+const CACHE = 'rick-digital-v10-backbtn';
 const CORE = [
   './',
   './index.html',
@@ -18,7 +18,11 @@ const CORE = [
   './tecnologia-vscode.html',
   './tecnologia-vercel.html',
   './css/style.css',
+  './css/viewer.css',
   './js/main.js',
+  './js/site-viewer.js',
+  './techverse/index.html',
+  './konstruct/index.html',
   './manifest.webmanifest',
   './img/icon-192.png',
   './img/icon-512.png',

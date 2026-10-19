@@ -166,4 +166,11 @@ setInterval(()=>{const n=new Date();n.setHours(24,0,0,0);let d=Math.max(0,n-new 
 window.addEventListener("scroll",()=>{$("topBtn").style.display=window.scrollY>600?"block":"none"},{passive:true});
 render();
 </script>
+<a class="ks-back" href="../index.html" title="Voltar ao portfólio do Estúdio Rick Digital">&#8592; Voltar ao portfólio</a>
+<style>
+.ks-back{position:fixed;left:14px;bottom:14px;z-index:9999;display:inline-flex;align-items:center;gap:8px;padding:11px 16px;border-radius:4px;background:#222;color:#f5b301;font-family:Oswald,Segoe UI,Roboto,Arial,sans-serif;font-size:14px;font-weight:600;letter-spacing:.5px;text-decoration:none;box-shadow:0 10px 26px rgba(0,0,0,.3);transition:.2s}
+.ks-back:hover{background:#f5b301;color:#222;transform:translateY(-2px)}
+.ks-back:focus-visible{outline:2px solid #f5b301;outline-offset:2px}
+@media(max-width:480px){.ks-back{font-size:13px;padding:9px 13px;left:10px;bottom:10px}}
+</style>
 </body></html>

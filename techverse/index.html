@@ -125,4 +125,11 @@ const hr=$('hr');hr.addEventListener('mousemove',e=>{const r=hr.getBoundingClien
 const io=new IntersectionObserver(es=>es.forEach(x=>x.isIntersecting&&x.target.classList.add('v')),{threshold:.1});document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
 renderCats();renderProd();renderIdeas();renderCart();
 </script>
+<a class="tv-back" href="../index.html" title="Voltar ao portfólio do Estúdio Rick Digital">&#8592; Voltar ao portfólio</a>
+<style>
+.tv-back{position:fixed;left:14px;bottom:14px;z-index:9999;display:inline-flex;align-items:center;gap:8px;padding:11px 16px;border-radius:24px;background:#111;color:#fff;font-family:inherit;font-size:13px;font-weight:700;text-decoration:none;box-shadow:0 10px 26px rgba(0,0,0,.35);transition:.2s}
+.tv-back:hover{background:#d61f2c;color:#fff;transform:translateY(-2px)}
+.tv-back:focus-visible{outline:2px solid #d61f2c;outline-offset:2px}
+@media(max-width:480px){.tv-back{font-size:12px;padding:9px 13px;left:10px;bottom:10px}}
+</style>
 </body></html>
