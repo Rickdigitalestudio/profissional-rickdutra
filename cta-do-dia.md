@@ -1,15 +1,15 @@
-# CTA do dia — 2026-10-18
+# CTA do dia — 2026-10-19
 
-**Negócio local**
+**Portfólio que fecha negócio**
 
-## Quem busca "perto de mim" precisa te achar — e se encantar.
+## Mostre seu trabalho como ele merece — em 3D interativo.
 
-Sites locais com Maps, WhatsApp e avaliações integrados para gerar visitas.
+Portfólios e vitrines que impressionam recrutadores e clientes na primeira tela.
 
-**Botão:** Atrair clientes da região
+**Botão:** Quero um portfólio assim
 
 Poste no Status/Stories/TikTok:
 
-> Quem busca "perto de mim" precisa te achar — e se encantar.
-> Sites locais com Maps, WhatsApp e avaliações integrados para gerar visitas.
+> Mostre seu trabalho como ele merece — em 3D interativo.
+> Portfólios e vitrines que impressionam recrutadores e clientes na primeira tela.
 > Chame no WhatsApp: https://wa.me/5511989426415
