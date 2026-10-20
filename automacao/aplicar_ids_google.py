@@ -69,19 +69,19 @@ def aplica(args) -> int:
             if marcador not in t:
                 continue
             t = t.replace(marcador, valor)
-        if chave == "adsense" and args.adsense:
-            # descomenta o script do AdSense
-            t = re.sub(
-                r"<!--\s*(<script async src=\"https://pagead2\.googlesyndication\.com/pagead/js/adsbygoogle\.js[^\n]*?)\s*-->",
-                r"\1",
-                t,
-            )
+            if chave == "adsense":
+                # descomenta o script do AdSense
+                t = re.sub(
+                    r"<!--\s*(<script async src=\"https://pagead2\.googlesyndication\.com/pagead/js/adsbygoogle\.js[^\n]*?)\s*-->",
+                    r"\1",
+                    t,
+                )
         if t != orig:
             p.write_text(t, encoding="utf-8")
             print(f"atualizado: {p.name}")
-            mudancas += 1
-    if mudancas:
-        print(f"\n{mudancas} pagina(s) atualizada(s). Revise e faca o commit.")
+            mudanças += 1
+    if mudanças:
+        print(f"\n{mudanças} pagina(s) atualizada(s). Revise e faca o commit.")
     else:
         print("Nada a fazer (ou nenhum ID fornecido).")
     return 0

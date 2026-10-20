@@ -19,7 +19,7 @@
 | Imagem social profissional | `img/og-estudio-rick-digital.png` |
 | Lighthouse | SEO 100 · Acessibilidade 100 · Best Practices 100 |
 | Tags de verificação do Search Console e Bing | prontas para preencher em todas as páginas |
-| GA4 | script pronto em todas as páginas (falta trocar `G-SEU-ID`) |
+| GA4 | **ATIVADO** — ID `G-H6CS8VRB52` em todas as 24 páginas |
 
 ## Os 7 passos (na ordem)
 

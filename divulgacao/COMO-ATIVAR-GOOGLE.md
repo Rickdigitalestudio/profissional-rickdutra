@@ -142,7 +142,7 @@ colar a estrutura que já está pronta → publicar.
 - [ ] Search Console: propriedade verificada
 - [ ] Search Console: `sitemap.xml` enviado
 - [ ] Search Console: indexação solicitada nas 6 páginas de serviço
-- [ ] GA4: ID `G-XXXXXXXXXX` aplicado no código
+- [x] GA4: ID `G-H6CS8VRB52` aplicado no código — **ATIVADO**
 - [ ] Google Business Profile criado e verificado
 - [ ] Bing Webmaster importado do Search Console
 - [ ] Domínio `rickdigital.com.br` comprado e apontado
