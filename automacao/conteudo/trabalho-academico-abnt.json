@@ -1,0 +1,220 @@
+{
+  "slug": "trabalho-academico-abnt",
+  "kw": "formatação de trabalho acadêmico ABNT",
+  "kw_titulo": "Formatação de Trabalho Acadêmico ABNT",
+  "title": "Formatação de Trabalho Acadêmico ABNT | Rick Digital",
+  "og_title": "Formatação de Trabalho Acadêmico ABNT | Estúdio Rick Digital",
+  "desc": "Formatação de trabalho acadêmico ABNT: capa, folhagem, sumário, referências, margens e espacamento nas normas NBR 14724. Peca o orçamento.",
+  "og_desc": "Trabalho acadêmico formatado nas normas ABNT, com capa, sumário, referências e checklist final conferido.",
+  "eyebrow": "Serviço 06 - Trabalhos acadêmicos",
+  "h1": "Formatação de trabalho acadêmico nas normas ABNT",
+  "lead": "Ajustar espacamento, margens, capa, sumário e referências na norma e chato, e o que mais reprova. Eu entrego o trabalho formatado, com checklist conferido item por item e fontes com licença de uso correta.",
+  "wa_msg": "Ola! Vi a página de formatação de trabalho acadêmico ABNT e quero um orçamento.",
+  "tags": [
+    "NBR 14724",
+    "Capa e folha de rosto",
+    "Sumário automático",
+    "Referencias",
+    "Checklist conferido"
+  ],
+  "prova": [
+    [
+      "NBR 14724",
+      "norma principal aplicada"
+    ],
+    [
+      "24h",
+      "para responder seu orçamento"
+    ],
+    [
+      "Checklist",
+      "item por item conferido"
+    ],
+    [
+      "0",
+      "detalhe esquecido"
+    ]
+  ],
+  "h2_entregaveis": "O que eu faço no seu trabalho",
+  "entregaveis": [
+    [
+      "fa-file-lines",
+      "Capa e folha de rosto",
+      "Elementos de identificação na ordem correta, com as dimensões exigidas pela instituição."
+    ],
+    [
+      "fa-book-open",
+      "Sumário e lista de figuras",
+      "Gerados automaticamente, com os números de página corretos após a formatação."
+    ],
+    [
+      "fa-arrows-up-down",
+      "Espacamento e margens",
+      "1,5 entrelinhas no texto, simples nas notas, margens de 3 cm na esquerda e 2 cm nas demais."
+    ],
+    [
+      "fa-indent",
+      "Recuos e parágrafo",
+      "Recuo de 1,25 cm no primeiro parágrafo de cada seção, conforme a norma."
+    ],
+    [
+      "fa-align-left",
+      "Alinhamento e fonte",
+      "Arial ou Times New Roman tamanho 12 no texto, justificado, com títulos hierárquicos."
+    ],
+    [
+      "fa-book",
+      "Títulos e seções",
+      "Padronização dos níveis de título conforme a estrutura exigida pela sua instituição."
+    ],
+    [
+      "fa-quote-right",
+      "Citações longas e notas",
+      "Blocos de citação com recuo, tamanho reduzido e referência da fonte."
+    ],
+    [
+      "fa-images",
+      "Figuras, tabelas e legendas",
+      "Posicionamento, legenda acima e fonte abaixo, com numeração sequencial."
+    ],
+    [
+      "fa-link",
+      "Referências e bibliografia",
+      "Norma da ABNT, com ordem alfabetica, destaque de volume, italic e acesso online."
+    ],
+    [
+      "fa-folder-open",
+      "Apêndices e anexos",
+      "Separacao, titulação e ordenacao conforme o manual da faculdade."
+    ],
+    [
+      "fa-gauge-high",
+      "Sumário automático",
+      "Campos atualizáveis, para você ajustar o texto sem quebrar a numeração."
+    ],
+    [
+      "fa-list-check",
+      "Checklist final",
+      "Conferência item por item contra a NBR 14724 antes de entregar."
+    ]
+  ],
+  "h2_processo": "Como o trabalho e formatado",
+  "processo": [
+    [
+      "01",
+      "Envio",
+      "Você me manda o arquivo em DOCX e me diz a instituição e o tipo de trabalho."
+    ],
+    [
+      "02",
+      "Ajuste de estilo",
+      "Configuro estilos, margens, espacamento, fontes e recuos no documento inteiro."
+    ],
+    [
+      "03",
+      "Estrutura",
+      "Padronizo capa, folha de rosto, sumário, listas, capítulos e referências."
+    ],
+    [
+      "04",
+      "Referencias",
+      "Padronizo a lista conforme a ABNT, com ordenacao alfabetica e detalhes de acesso."
+    ],
+    [
+      "05",
+      "Entrega",
+      "Você recebe o DOCX formatado e o PDF pronto para enviar."
+    ],
+    [
+      "06",
+      "Ajustes",
+      "Se a sua instituição tiver um manual próprio com regras diferentes, eu ajusto de acordo com ele."
+    ]
+  ],
+  "h2_precos": "Quanto custa a formatação de trabalho ABNT",
+  "precos": [
+    [
+      "Ajustes pontuais",
+      "R$ 120",
+      "Seu documento já está pronto e precisa só de acentos: margens, espacamento, fontes e sumário.",
+      [
+        "Até 30 páginas",
+        "Espacamento e margens",
+        "Sumário automático",
+        "Entrega em 1 dia"
+      ],
+      false
+    ],
+    [
+      "Formatação completa",
+      "R$ 280",
+      "Todo o trabalho formatado na norma, da capa até as referências, com checklist conferido.",
+      [
+        "Até 60 páginas",
+        "Capa e folha de rosto",
+        "Referências ABNT",
+        "Entrega em 2 dias"
+      ],
+      true
+    ],
+    [
+      "Monografia completa",
+      "R$ 480",
+      "Trabalho de TCC ou dissertação completo, com apêndices, anexos e revisão de coerência visual.",
+      [
+        "Até 150 páginas",
+        "Estrutura completa",
+        "Apêndices e anexos",
+        "Entrega em 3 dias"
+      ],
+      false
+    ]
+  ],
+  "h2_faq": "Dúvidas frequentes sobre formatação ABNT",
+  "faq": [
+    [
+      "Qual a norma que você aplica?",
+      "A NBR 14724, que define a estrutura e a apresentação de trabalhos acadêmicos, junto com a NBR 10520 para referências e a NBR 6024 para numeração progressiva das seções."
+    ],
+    [
+      "A instituição pode ter um manual diferente?",
+      "Pode, e muitas tem. Às normas ABNT são a base, mas cada faculdade costuma exigir ajustes próprios, como fonte específica, cor da capa ou modelo de sumário. Você me envia o manual e eu sigo ele."
+    ],
+    [
+      "Você entrega em DOCX e PDF?",
+      "Sim. O DOCX vem com estilos configurados, para você ajustar o texto sem quebrar a formatação, e o PDF pronto para imprimir ou enviar."
+    ],
+    [
+      "O sumário atualiza sozinho?",
+      "Sim. Uso campos automáticos. Depois de alterar o texto, você só clica com o botão direito no sumário e escolhe atualizar índice. A numeração das páginas se ajusta sozinha."
+    ],
+    [
+      "Você formata tabelas e imagens?",
+      "Sim. Figuras recebem legenda acima e fonte abaixo; tabelas recebem título acima e fonte abaixo, com a numeração sequencial correta."
+    ],
+    [
+      "E possível formatar um trabalho em grupo?",
+      "Sim, e recomendo. Cada integrante deixa seu nome na capa e nas partes que assumiu. O documento final fica com a formatação unificada, sem marcas de edição diferentes entre os arquivos."
+    ],
+    [
+      "Quantos dias antes do prazo?",
+      "Trabalho pequeno fica pronto em 1 dia, completo em 2 dias e monografia em 3 dias. Se o prazo do professor for apertado, me avise logo na conversa que eu encaixo na agenda."
+    ]
+  ],
+  "cta_h2": "Vamos deixar seu trabalho pronto para entregar",
+  "cta_p": "Me manda o arquivo e me diga a instituição. Em até 24 horas você recebe o valor e o prazo de entrega.",
+  "relacionados": [
+    [
+      "Criação de sites profissionais",
+      "criacao-de-sites-profissionais.html"
+    ],
+    [
+      "Otimização de perfil no LinkedIn",
+      "otimizacao-de-perfil-linkedin.html"
+    ],
+    [
+      "Criação de logo profissional",
+      "criacao-de-logo-profissional.html"
+    ]
+  ]
+}

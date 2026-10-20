@@ -1,21 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://rickdigitalestudio.github.io/profissional-rickdutra/techverse/</loc><lastmod>2026-10-16</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://rickdigitalestudio.github.io/profissional-rickdutra/konstruct/</loc><lastmod>2026-10-16</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://rickdigitalestudio.github.io/profissional-rickdutra/</loc><lastmod>2026-10-16</lastmod><changefreq>weekly</changefreq><priority>1.0</priority></url>
-  <url><loc>https://rickdigitalestudio.github.io/profissional-rickdutra/tecnologias.html</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://rickdigitalestudio.github.io/profissional-rickdutra/tecnologia-html.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://rickdigitalestudio.github.io/profissional-rickdutra/tecnologia-css.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://rickdigitalestudio.github.io/profissional-rickdutra/tecnologia-javascript.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://rickdigitalestudio.github.io/profissional-rickdutra/tecnologia-react.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://rickdigitalestudio.github.io/profissional-rickdutra/tecnologia-git.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://rickdigitalestudio.github.io/profissional-rickdutra/tecnologia-github.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://rickdigitalestudio.github.io/profissional-rickdutra/tecnologia-vscode.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://rickdigitalestudio.github.io/profissional-rickdutra/tecnologia-vercel.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://rickdigitalestudio.github.io/profissional-rickdutra/projetos.html</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://rickdigitalestudio.github.io/profissional-rickdutra/</loc><changefreq>weekly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://rickdigitalestudio.github.io/profissional-rickdutra/criacao-de-sites-profissionais.html</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://rickdigitalestudio.github.io/profissional-rickdutra/fanpage-que-vende.html</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://rickdigitalestudio.github.io/profissional-rickdutra/criacao-de-logo-profissional.html</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://rickdigitalestudio.github.io/profissional-rickdutra/site-para-pequenas-empresas.html</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://rickdigitalestudio.github.io/profissional-rickdutra/otimizacao-de-perfil-linkedin.html</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://rickdigitalestudio.github.io/profissional-rickdutra/trabalho-academico-abnt.html</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://rickdigitalestudio.github.io/profissional-rickdutra/midia.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://rickdigitalestudio.github.io/profissional-rickdutra/orcamento.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://rickdigitalestudio.github.io/profissional-rickdutra/projetos.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://rickdigitalestudio.github.io/profissional-rickdutra/servicos-adicionais.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://rickdigitalestudio.github.io/profissional-rickdutra/sobre.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://rickdigitalestudio.github.io/profissional-rickdutra/servicos-adicionais.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://rickdigitalestudio.github.io/profissional-rickdutra/orcamento.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://rickdigitalestudio.github.io/profissional-rickdutra/midia.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://rickdigitalestudio.github.io/profissional-rickdutra/termos.html</loc><changefreq>yearly</changefreq><priority>0.3</priority></url>
+  <url><loc>https://rickdigitalestudio.github.io/profissional-rickdutra/tecnologia-css.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://rickdigitalestudio.github.io/profissional-rickdutra/tecnologia-git.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://rickdigitalestudio.github.io/profissional-rickdutra/tecnologia-github.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://rickdigitalestudio.github.io/profissional-rickdutra/tecnologia-html.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://rickdigitalestudio.github.io/profissional-rickdutra/tecnologia-javascript.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://rickdigitalestudio.github.io/profissional-rickdutra/tecnologia-react.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://rickdigitalestudio.github.io/profissional-rickdutra/tecnologia-vercel.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://rickdigitalestudio.github.io/profissional-rickdutra/tecnologia-vscode.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://rickdigitalestudio.github.io/profissional-rickdutra/tecnologias.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://rickdigitalestudio.github.io/profissional-rickdutra/techverse/</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://rickdigitalestudio.github.io/profissional-rickdutra/konstruct/</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
 </urlset>

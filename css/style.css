@@ -400,3 +400,52 @@ main h1:not(.title-3d){background:linear-gradient(180deg,#fff 30%,#d8c3a5 85%);-
   .hero, .stats, .work, .about-strip, .caps, .process, .all { padding-left: 18px; padding-right: 18px; }
   .cta { margin-left: 18px; margin-right: 18px; padding: 32px 24px; }
 }
+
+/* ============ INDICE DE PAGINAS DE SERVICO (links internos / SEO) ============ */
+.svc-index {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin-top: 28px;
+}
+.svc-index-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 18px 20px;
+  transition: transform .3s, border-color .3s, background .3s;
+}
+.svc-index-item:hover {
+  transform: translateY(-3px);
+  border-color: rgba(216, 195, 165, .45);
+  background: var(--surface-2);
+}
+.svc-index-item > i {
+  font-size: 1.15rem;
+  color: var(--champagne);
+  margin-top: 3px;
+  flex: 0 0 auto;
+}
+.svc-index-item span { display: block; }
+.svc-index-item b {
+  display: block;
+  font-family: var(--display);
+  font-weight: 500;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: .02em;
+  color: #fff;
+  line-height: 1.25;
+}
+.svc-index-item em {
+  display: block;
+  font-style: normal;
+  font-size: .78rem;
+  color: var(--muted);
+  margin-top: 5px;
+}
+@media (max-width: 900px) { .svc-index { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 600px) { .svc-index { grid-template-columns: 1fr; } }

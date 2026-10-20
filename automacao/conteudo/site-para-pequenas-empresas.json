@@ -1,0 +1,220 @@
+{
+  "slug": "site-para-pequenas-empresas",
+  "kw": "site para pequenas empresas",
+  "kw_titulo": "Site para Pequenas Empresas",
+  "title": "Site para Pequenas Empresas | Estúdio Rick Digital",
+  "og_title": "Site para Pequenas Empresas | Estúdio Rick Digital",
+  "desc": "Site para pequenas empresas com ótimas ferramentas de contato, SEO local e Google Maps. A partir de R$ 997. Atendo Rio Grande da Serra e região.",
+  "og_desc": "Site pensado para a realidade da pequena empresa: orçamento rápido pelo WhatsApp, SEO local e cliente encontrado no Google Maps.",
+  "eyebrow": "Serviço 04 - Negócio local",
+  "h1": "Site para pequenas empresas que traz cliente novo",
+  "lead": "Pequena empresa não precisa de site com 50 páginas. Precisa de um site rápido, bonito no celular, que faca o cliente pedir orçamento em 1 clique e apareca quando alguém pesquisa por serviço na sua cidade.",
+  "wa_msg": "Ola! Vi a página de site para pequenas empresas e quero um orçamento.",
+  "tags": [
+    "SEO local",
+    "Google Maps",
+    "WhatsApp integrado",
+    "Orçamento em 1 clique",
+    "A partir de R$ 997"
+  ],
+  "prova": [
+    [
+      "R$ 997",
+      "a partir de, site completo"
+    ],
+    [
+      "10 dias",
+      "prazo de entrega"
+    ],
+    [
+      "1 clique",
+      "para pedir o orçamento"
+    ],
+    [
+      "24h",
+      "para responder seu orçamento"
+    ]
+  ],
+  "h2_entregaveis": "O que o site da sua empresa entrega",
+  "entregaveis": [
+    [
+      "fa-location-dot",
+      "SEO local",
+      "Seu negócio aparece quando alguém pesquisa por serviço na sua cidade, com endereço, mapa e telefone."
+    ],
+    [
+      "fa-comment-dots",
+      "Pedido de orçamento em 1 clique",
+      "Formulário curto e botão de WhatsApp fixo. Menos atrito significa mais pedido."
+    ],
+    [
+      "fa-gauge-high",
+      "Carregamento rápido",
+      "Otimizado para 4G e conexão de bairro, onde o cliente abandona se demorar."
+    ],
+    [
+      "fa-images",
+      "Galeria do serviço",
+      "Fotos reais do seu trabalho. Para pequeno negócio, foto boa vende mais que texto bonito."
+    ],
+    [
+      "fa-calendar-check",
+      "Informações de horário e local",
+      "Endereço, mapa, horário de funcionamento e rotas: tudo o que o cliente pergunta antes de ligar."
+    ],
+    [
+      "fa-star",
+      "Avaliações do Google",
+      "Eu oriento o pedido de avaliação e a resposta a cada avaliação, que e o que mais pesa na decisão local."
+    ],
+    [
+      "fa-mobile-screen",
+      "Feito para o celular",
+      "A maioria das buscas locais acontece no celular, dentro do Maps, com pressa."
+    ],
+    [
+      "fa-sitemap",
+      "Sitemap enviado ao Google",
+      "O Google descobre seu site e começa a indexar em poucos dias."
+    ],
+    [
+      "fa-chart-line",
+      "Google Analytics 4",
+      "Você ve de onde vem o visitante, qual página converte e quanto vale cada canal."
+    ],
+    [
+      "fa-pen",
+      "Textos que vendem",
+      "Copy local: fala a linguagem do seu cliente, não a do manual de marketing."
+    ],
+    [
+      "fa-people-group",
+      "Área de equipe",
+      "Espaço para apresentar os profissionais da empresa e aumentar a confiança de quem está escolhendo."
+    ],
+    [
+      "fa-arrows-rotate",
+      "Manutenção opcional",
+      "Plano a partir de R$ 297 por mês com atualizações, backup e suporte por WhatsApp."
+    ]
+  ],
+  "h2_processo": "Como o site da sua empresa fica pronto",
+  "processo": [
+    [
+      "01",
+      "Visita e briefing",
+      "Alinhamos objetivo, serviços, região atendida e o que você já tem pronto."
+    ],
+    [
+      "02",
+      "Coleta de material",
+      "Fotos, logo, textos, preços e informações de contato. Se não tiver, eu produzo a primeira versão."
+    ],
+    [
+      "03",
+      "Estrutura e copy",
+      "Defino as páginas e escrevo os textos focados em Converter visita em orçamento."
+    ],
+    [
+      "04",
+      "Design",
+      "Layout professional, com a identidade da marca, aprovado por você antes de codificar."
+    ],
+    [
+      "05",
+      "Desenvolvimento e SEO",
+      "Codificação responsiva, otimização de velocidade e aplicação de SEO local."
+    ],
+    [
+      "06",
+      "Publicação e divulgação",
+      "Site no ar, ficha no Google Maps criada e MATERIAL de divulgação pronto para você usar."
+    ]
+  ],
+  "h2_precos": "Quanto custa o site da sua empresa",
+  "precos": [
+    [
+      "Landing Page de serviço",
+      "R$ 697",
+      "Uma página focada em um serviço e num pedido de orçamento. Perfeito para começar.",
+      [
+        "1 página",
+        "Formulário e WhatsApp",
+        "SEO local básico",
+        "Entrega em 5 dias"
+      ],
+      false
+    ],
+    [
+      "Site completo da empresa",
+      "R$ 997",
+      "Várias páginas para apresentar a empresa, os serviços e o portfólio.",
+      [
+        "Até 6 páginas",
+        "Galeria do serviço",
+        "SEO local completo",
+        "Entrega em 10 dias"
+      ],
+      true
+    ],
+    [
+      "Site + Ficha no Google Maps",
+      "R$ 1347",
+      "O site completo e a ficha do negócio no Maps, configurada e otimizada para aparecer na busca local.",
+      [
+        "Tudo do site completo",
+        "Ficha no Google Maps",
+        "Fotos e avaliações",
+        "Entrega em 12 dias"
+      ],
+      false
+    ]
+  ],
+  "h2_faq": "Dúvidas frequentes sobre site para pequenas empresas",
+  "faq": [
+    [
+      "Por que minha empresa precisa de um site se já tenho Instagram e Facebook?",
+      "Redes sociais ajudam a mostrar o dia a dia, mas não aparecerem quando o cliente pesquisa um serviço. Quem tem site e ficha no Google Maps aparece justamente na hora da busca, que e quando a pessoa já está pronta para contratar. São canais diferentes com papéis diferentes."
+    ],
+    [
+      "O que e SEO local?",
+      "E a otimização para aparecer no Google quando a busca inclui o nome da sua cidade, como criar site em Rio Grande da Serra. Na prática significa: site rápido, dados da empresa em todo lugar, perfil no Google Maps com avaliações e páginas que citam os serviços que você oferece."
+    ],
+    [
+      "Quantas páginas meu site precisa ter?",
+      "Para a maioria das pequenas empresas, de 4 a 6 páginas resolve: inicio, serviços, sobre, portfólio e contato. Mais páginas só ajudam se você tem conteúdo novo para publicar com frequencia."
+    ],
+    [
+      "Você consegue criar as fotos?",
+      "Se você não tem fotos profissional, eu indico o que fotografar e em que ângulo, ou uso imagens de banco com licença livre até você ter material próprio. O ideal e usar fotos reais do seu serviço, porque cliente confia mais."
+    ],
+    [
+      "Você também faz a ficha no Google Maps?",
+      "Sim. A ficha do negócio no Google Maps e gratuita para você. Eu monto o perfil completo, com categorias corretas, fotos, descrição otimizada e horários, para você ter mais chance de aparecer no mapa."
+    ],
+    [
+      "E possível pagar em parcelas?",
+      "Sim. O pagamento pode ser dividido em até 2 parcelas, com 50% no inicio e 50% na entrega. O valor e sempre informado antes de começar, sem mudanca no meio do caminho."
+    ],
+    [
+      "E possível atualizar o site sozinho depois?",
+      "Sim. Você recebe um painel simples para alterar WhatsApp, e-mail, textos, fotos e links das redes sociais. Nada de chamar programador para trocar o número do telefone."
+    ]
+  ],
+  "cta_h2": "Vamos colocar sua empresa no Google",
+  "cta_p": "Me conta o nome do negócio, a cidade e os serviços que você oferece. Em até 24 horas você recebe o valor, o prazo e o escopo por escrito.",
+  "relacionados": [
+    [
+      "Criação de sites profissionais",
+      "criacao-de-sites-profissionais.html"
+    ],
+    [
+      "Fanpage que vende",
+      "fanpage-que-vende.html"
+    ],
+    [
+      "Criação de logo profissional",
+      "criacao-de-logo-profissional.html"
+    ]
+  ]
+}
