@@ -1,15 +1,15 @@
-# CTA do dia — 2026-10-19
+# CTA do dia — 2026-10-20
 
-**Portfólio que fecha negócio**
+**Manutenção e reforma**
 
-## Mostre seu trabalho como ele merece — em 3D interativo.
+## Site antigo derruba suas vendas todo dia. Modernize.
 
-Portfólios e vitrines que impressionam recrutadores e clientes na primeira tela.
+Atualizo sites ultrapassados e cuido da manutenção para você focar em vender.
 
-**Botão:** Quero um portfólio assim
+**Botão:** Modernizar meu site
 
 Poste no Status/Stories/TikTok:
 
-> Mostre seu trabalho como ele merece — em 3D interativo.
-> Portfólios e vitrines que impressionam recrutadores e clientes na primeira tela.
+> Site antigo derruba suas vendas todo dia. Modernize.
+> Atualizo sites ultrapassados e cuido da manutenção para você focar em vender.
 > Chame no WhatsApp: https://wa.me/5511989426415
