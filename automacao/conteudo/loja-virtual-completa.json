@@ -1,0 +1,235 @@
+{
+  "slug": "loja-virtual-completa",
+  "kw": "criar loja virtual",
+  "kw_titulo": "Loja Virtual Completa",
+  "title": "Criar Loja Virtual Completa | A Partir de R$ 2.497 | Rick Digital",
+  "og_title": "Criar Loja Virtual Completa | Estúdio Rick Digital",
+  "desc": "Criar loja virtual completa com catálogo, carrinho, pagamento online, cupom, frete e integração com o WhatsApp. A partir de R$ 2.497. Entrega em até 20 dias.",
+  "og_desc": "Loja virtual que vende 24h por dia: catálogo, pagamento, frete e painel de pedidos no WhatsApp.",
+  "eyebrow": "Serviço 08 - E-commerce",
+  "h1": "Criar loja virtual que vende enquanto você dorme",
+  "lead": "Loja virtual é o serviço com o maiorticket que eu entrego, e o que mais devolve dinheiro. Eu monto a sua com catálogo, pagamento, frete e integração com o WhatsApp para o cliente falar com uma pessoa de verdade antes de comprar.",
+  "wa_msg": "Ola! Vi a página de loja virtual completa e quero um orçamento.",
+  "tags": [
+    "Catálogo e categorias",
+    "Pagamento online",
+    "Cupom e frete",
+    "Painel de pedidos",
+    "A partir de R$ 2.497"
+  ],
+  "prova": [
+    [
+      "R$ 2.497",
+      "a partir de, loja completa"
+    ],
+    [
+      "20 dias",
+      "prazo de entrega"
+    ],
+    [
+      "24h",
+      "venda aberta todo dia"
+    ],
+    [
+      "24h",
+      "para responder seu orçamento"
+    ]
+  ],
+  "h2_entregaveis": "O que a sua loja virtual vai ter",
+  "entregaveis": [
+    [
+      "fa-box",
+      "Catálogo com categorias",
+      "Produtos organizados por categoria, com busca e filtro por preço e tamanho."
+    ],
+    [
+      "fa-cart-shopping",
+      "Carrinho e checkout",
+      "Fluxo de compra em 3 passos, testado no celular, sem cadastro obrigatório."
+    ],
+    [
+      "fa-credit-card",
+      "Pagamento online",
+      "Pix, cartão de crédito e boleto, com confirmação automática de pedido."
+    ],
+    [
+      "fa-truck-fast",
+      "Cálculo de frete",
+      "Frete por CEP e opções de envio configuradas conforme sua operação."
+    ],
+    [
+      "fa-ticket",
+      "Cupom e promoção",
+      "Cupom de desconto, frete grátis e promoção automática por período."
+    ],
+    [
+      "fa-whatsapp",
+      "Pedido no WhatsApp",
+      "O cliente fecha o pedido direto no WhatsApp, sem passar por formulário."
+    ],
+    [
+      "fa-mobile-screen",
+      "Mobile-first",
+      "A maioria das compras de loja virtual é pelo celular. A loja é desenhada por isso."
+    ],
+    [
+      "fa-bolt",
+      "Carregamento rápido",
+      "Imagens otimizadas e código enxuto: a loja abre rápido em 4G e não perde a venda."
+    ],
+    [
+      "fa-list-check",
+      "Painel de pedidos",
+      "Você acompanha cada pedido, muda o status (pago, enviado, entregue) e vê o histórico."
+    ],
+    [
+      "fa-chart-line",
+      "Google Analytics 4",
+      "De onde vem a venda, qual produto converte e quanto vale cada canal."
+    ],
+    [
+      "fa-star",
+      "Avaliações de produto",
+      "Campo de avaliação com média por produto, para aumentar a confiança no checkout."
+    ],
+    [
+      "fa-gear",
+      "Painel de cadastro de produtos",
+      "Você adiciona produto, preço, foto e estoque sozinho, sem programador."
+    ],
+    [
+      "fa-arrows-rotate",
+      "Backup e manutenção",
+      "Backup automático e plano de manutenção mensal opcional a partir de R$ 297."
+    ],
+    [
+      "fa-mobile-screen-button",
+      "Formulário de contato",
+      "Canal de atendimento para dúvidas de frete, prazo e pagamento."
+    ]
+  ],
+  "h2_processo": "Como a loja virtual é construída",
+  "processo": [
+    [
+      "01",
+      "Produtos e precificação",
+      "Você me passa a lista de produtos, preços e margem. Isso define a estrutura do catálogo."
+    ],
+    [
+      "02",
+      "Estrutura e catálogo",
+      "Defino categorias, páginas de produto, carrinho e checkout, desenhando o caminho de compra mais curto."
+    ],
+    [
+      "03",
+      "Design e conteúdo",
+      "Fotos tratadas, descrições que vendem, blocos de urgência e prova social nas páginas de produto."
+    ],
+    [
+      "04",
+      "Pagamento e frete",
+      "Integro as plataformas de pagamento e configuro as opções de envio e frete por CEP."
+    ],
+    [
+      "05",
+      "Testes",
+      "Testo o fluxo inteiro: da página de produto até a confirmação do pedido, no celular e no computador."
+    ],
+    [
+      "06",
+      "Publicação e treinamento",
+      "Loja no ar com HTTPS, indexação pedida no Google e treinamento em vídeo de como cadastrar produto."
+    ]
+  ],
+  "h2_precos": "Quanto custa criar uma loja virtual",
+  "precos": [
+    [
+      "Loja Virtual Essencial",
+      "R$ 2.497",
+      "Catálogo, carrinho e pagamento online para começar a vender pela internet.",
+      [
+        "Até 50 produtos",
+        "Carrinho e checkout",
+        "Pix e cartão",
+        "Entrega em 15 dias"
+      ],
+      false
+    ],
+    [
+      "Loja Virtual Completa",
+      "R$ 3.997",
+      "A loja pronta para o negócio: frete, cupom, WhatsApp, avaliações e painel de pedidos.",
+      [
+        "Até 300 produtos",
+        "Frete por CEP e cupom",
+        "Pedido no WhatsApp",
+        "Avaliações e painel",
+        "Entrega em 20 dias"
+      ],
+      true
+    ],
+    [
+      "Loja + Migração",
+      "R$ 5.497",
+      "Além de tudo: migro seus produtos e clientes do lugar atual, com configuração de redirecionamentos para o Google.",
+      [
+        "Tudo da Completa",
+        "Migração de produtos",
+        "Redirecionamentos de URL",
+        "Entrega em 30 dias"
+      ],
+      false
+    ]
+  ],
+  "h2_faq": "Dúvidas frequentes sobre loja virtual",
+  "faq": [
+    [
+      "Em quanto tempo minha loja fica pronta?",
+      "A Essencial sai em 15 dias úteis e a Completa em 20. O prazo depende da quantidade de produtos e de quantas fotos e descrições você precisa enviar."
+    ],
+    [
+      "Preciso ter as fotos dos produtos?",
+      "Se você tiver, melhor: foto real converte muito mais que foto de banco. Se não tiver, eu indico o que fotografar (enquadramento, fundo, luz) e acompanho um lote de exemplo. Fotos ruins são o erro mais comum que trava a conversão de loja."
+    ],
+    [
+      "Quais formas de pagamento você configura?",
+      "Pix, cartão de crédito e boleto, através das principais plataformas de pagamento. Você recebe o pagamento direto na sua conta, sem intermediário nosso. Se preferir outra plataforma, também suporto."
+    ],
+    [
+      "Preciso cadastrar os produtos sozinho?",
+      "Sim. Você recebe acesso ao painel, onde cadastra produto, foto, preço, peso, variações e estoque. Aí entrego um vídeo curto ensinando o passo a passo."
+    ],
+    [
+      "Consigo vender pelo WhatsApp também?",
+      "Sim, e recomendo. Muita gente prefere fechar pelo WhatsApp antes de entrar no checkout. A loja vem integrada: o cliente pede pelo WhatsApp e você monta o pedido pelo painel."
+    ],
+    [
+      "Dá para fazer campanha de Natal com a loja?",
+      "Sim. A estrutura de cupom, promoção e contagem regressiva já fica pronta. Para a data, recomendo publicar a loja com pelo menos 3 semanas de antecedência, porque a primeira edição costuma revelar ajustes."
+    ],
+    [
+      "A loja fica rápida no celular?",
+      "Sim. Uso imagens em WebP com tamanho automático, código enxuto e sem plugin desnecessário. Carregamento alvo de menos de 3 segundos em 4G, que é onde a maioria das vendas se perde."
+    ],
+    [
+      "E se eu quiser vender em marketplace também?",
+      "Posso deixar a estrutura da loja pronta para você integrar com os maiores marketplaces. Cada canal tem sua regra de comissão e de catálogo, então essa parte costuma ser feita em paralelo com a loja."
+    ]
+  ],
+  "cta_h2": "Vamos montar sua loja virtual",
+  "cta_p": "Me conta o que você vende e quantos produtos tem. Em até 24 horas você recebe o valor, o prazo e o escopo por escrito, direto no WhatsApp.",
+  "relacionados": [
+    [
+      "Criação de sites profissionais",
+      "criacao-de-sites-profissionais.html"
+    ],
+    [
+      "Landing page que converte",
+      "landing-page-que-converte.html"
+    ],
+    [
+      "Site para pequenas empresas",
+      "site-para-pequenas-empresas.html"
+    ]
+  ]
+}
