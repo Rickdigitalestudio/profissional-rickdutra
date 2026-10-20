@@ -37,7 +37,6 @@ Um portfólio profissional moderno e interativo, desenvolvido com HTML, CSS e Ja
 - 📞 **Contato**: Cards interativos com links para redes sociais
 
 ### 3. Projetos em Destaque
-- 🏛️ Assembleia de Deus Ministério de Santos
 - 💼 Portfólio Profissional com React
 - 🏠 Chá de Casa Nova: Lauane & Eduardo
 
