@@ -1,34 +1,75 @@
-# 📈 Estúdio Rick Digital no Google — 100% grátis (30 min, 1 vez só)
+# 📈 Estúdio Rick Digital no Google — 100% grátis
 
-Tudo pronto no código (logo, sitemap, robots, dados estruturados). Falta dizer ao Google/Bing que você existe:
+> **Atualizado em outubro de 2026.** O código já está 100% pronto. O que falta
+> é **você fazer login na sua conta do Google** — são ~30 minutos, uma vez só.
+>
+> Guia completo e passo a passo: **`divulgacao/COMO-ATIVAR-GOOGLE.md`**
 
-## 1 · Google Search Console (aparecer no Google)
-1. Acesse **search.google.com/search-console** → Adicionar propriedade → URL `https://rickdigitalestudio.github.io/profissional-rickdutra/`
-2. Verificação por **tag HTML**: copie o código → cole no lugar de `COLE_SEU_CODIGO_SEARCH_CONSOLE_AQUI` no `index.html` → commit + push
-3. Em **Sitemaps**, envie `https://rickdigitalestudio.github.io/profissional-rickdutra/sitemap.xml`
-4. Em 3–7 dias sua marca aparece pesquisando **"Estúdio Rick Digital"**
+## O que já está feito no código (não precisa mexer em nada)
 
-## 2 · Bing Webmaster (Bing + Yahoo + DuckDuckGo de graça)
-1. **bing.com/webmasters** → importar do Search Console (1 clique!) → pronto nos 3 buscadores
-2. Cole o código no lugar de `COLE_SEU_CODIGO_BING_AQUI`
+| Item | Onde |
+|---|---|
+| 6 páginas por palavra-chave (alvo de busca) | `criacao-de-sites-profissionais.html` e mais 5 |
+| Title + description otimizados por página | todas as 22 páginas |
+| Open Graph + Twitter Card com imagem 1200×630 | todas as páginas |
+| Dados estruturados (Service, FAQPage, BreadcrumbList) | 6 páginas de serviço |
+| `sitemap.xml` com 23 URLs | gerado por `automacao/gerar_sitemap.py` |
+| `robots.txt` apontando para o sitemap | `robots.txt` |
+| Links internos entre home, hub de serviços e páginas | `index.html`, `servicos-adicionais.html` |
+| Imagem social profissional | `img/og-estudio-rick-digital.png` |
+| Lighthouse | SEO 100 · Acessibilidade 100 · Best Practices 100 |
+| Tags de verificação do Search Console e Bing | prontas para preencher em todas as páginas |
+| GA4 | script pronto em todas as páginas (falta trocar `G-SEU-ID`) |
 
-## 3 · GA4 — métricas de visita (grátis)
-1. **analytics.google.com** → Criar propriedade → copie o `G-XXXXXXXX`
-2. Troque `G-SEU-ID` (2 lugares no `index.html`) → push. Visitas, origem e cliques no WhatsApp aparecem em 24h.
+## Os 7 passos (na ordem)
 
-## 4 · Perfil da Empresa no Google (leads locais grátis)
-1. **google.com/business** → criar perfil "Estúdio Rick Digital" → categoria Web designer → link do portfólio + WhatsApp 11 98942-6415
-2. Quem buscar "criar site" na região te acha no Maps — combine com a prospecção do CRM!
+| # | Passo | Custo | Link |
+|---|---|---|---|
+| 1 | **Google Search Console** — peça a indexação | R$ 0 | `divulgacao/COMO-ATIVAR-GOOGLE.md` passo 1 |
+| 2 | **Google Analytics 4** — medir o que funciona | R$ 0 | idem, passo 2 |
+| 3 | **Perfil da Empresa no Google (Maps)** — leads locais | R$ 0 | `divulgacao/GOOGLE-BUSINESS-PROFILE.md` |
+| 4 | **Bing Webmaster** — Bing + Yahoo + DuckDuckGo | R$ 0 | idem, passo 4 |
+| 5 | **Domínio `rickdigital.com.br`** — credibilidade | ~R$ 40/ano | `divulgacao/DOMINIO.md` |
+| 6 | **Google AdSense** — render com o tráfego | R$ 0 | idem, passo 5 |
+| 7 | **Google Ads** — anúncio pago | R$ 5+/dia | `divulgacao/GOOGLE-ADS-ESTRUTURA.md` |
 
-## 5 · Google AdSense — ganhar dinheiro com anúncios (grátis, com aprovação)
-1. **google.com/adsense** → cadastre `https://rickdigitalestudio.github.io/profissional-rickdutra/` → coloque o site no ar
-2. Quando aprovar, me mande o `ca-pub-XXXXXXXXXXXXXXXX`: eu descomento o script (já está no `<head>` das 15 páginas) e ativo os blocos
-3. Regra honesta: AdSense aprova sites com conteúdo próprio e tráfego. Para acelerar: publique 1 página nova por semana (ex: estudo de caso de cada projeto) e divulgue no TikTok/LinkedIn
+> ⚠️ O passo 7 **não é de graça**. O Google Ads cobra por clique e não existe
+> versão gratuita. A estrutura completa está pronta — só falta colocar o cartão.
+> E só ative **depois** dos passos 1 a 6, senão você paga clique para uma
+> página que ainda não converte.
 
-## 6 · Google Ads — divulgar pagando (opcional)
-1. Ads NÃO é grátis: você define R$/dia (ex: R$10/dia) e paga só por clique
-2. Comece pelo grátis acima (Search Console + Perfil da Empresa + TikTok). Anúncio pago só vale depois que o site já converte visita em WhatsApp
+## Para as redes sociais (também grátis)
+
+| Canal | Ganho | Kit pronto |
+|---|---|---|
+| WhatsApp Business | onde o cliente fecha | `divulgacao/BIAS-E-CONTEUDO-REDE-SOCIAIS.md` seção 6 |
+| TikTok | maior alcance orgânico | seção 2 + `divulgacao/CALENDARIO-30-DIAS.md` |
+| Instagram | vitrine do trabalho | seção 1 |
+| Facebook | público que o Maps puxa | seção 3 |
+| LinkedIn | B2B, quem contrata | seção 4 |
+| YouTube | prova de resultado | seção 5 |
+
+O Status do WhatsApp já está automatizado no projeto `whatsapp-atendente`
+(14 slots semanais). O calendário de 30 dias tem os textos prontos de cada um.
 
 ## Manutenção (0 custo)
-- Cada projeto novo: adicione a URL no `sitemap.xml` + peça indexação no Search Console (Inspecionar URL → Solicitar indexação)
-- Poste 1x/semana no TikTok/Status com o link do portfólio — tráfego social acelera a indexação
+
+- **Semana 1 de cada mês:** poste 1 página nova (estudo de caso de um projeto)
+  e peça a indexação no Search Console
+- **A cada entrega:** peça avaliação no Google (roteiro em
+  `GOOGLE-BUSINESS-PROFILE.md` seção 7)
+- **Toda semana:** poste 1 conteúdo do calendário (TikTok + Instagram + Facebook)
+- **Todo dia:** responda os comentários — o algoritmo paga quem conversa
+- **Todo mês:** revise as 3 páginas com menos cliques no Search Console e troque
+  o title/description
+
+## Como editar o conteúdo das páginas de serviço
+
+```bash
+python automacao/acentuar_servicos.py        # normaliza acentuação
+python automacao/gerar_paginas_servico.py     # regera os .html
+python automacao/gerar_sitemap.py             # atualiza o sitemap
+git add -A && git commit -m "conteudo" && git push
+```
+
+Os textos ficam em `automacao/conteudo/*.json` — você edita o JSON, não o HTML.

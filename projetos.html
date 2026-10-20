@@ -8,6 +8,13 @@
     <meta name="robots" content="index, follow">
     <meta name="theme-color" content="#0B0B10">
     <link rel="canonical" href="https://rickdigitalestudio.github.io/profissional-rickdutra/projetos.html">
+    <meta name="google-site-verification" content="COLE_SEU_CODIGO_SEARCH_CONSOLE_AQUI">
+    <meta name="msvalidate.01" content="COLE_SEU_CODIGO_BING_AQUI">
+
+    <!-- GA4 (gratis): troque G-SEU-ID pelo ID real (guia em divulgacao/COMO-ATIVAR-GOOGLE.md) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-SEU-ID"></script>
+    <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-SEU-ID');</script>
+
 <meta property="og:type" content="website">
 <meta property="og:locale" content="pt_BR">
 <meta property="og:site_name" content="Estúdio Rick Digital">
@@ -123,10 +130,10 @@
             <p>Cada projeto abaixo está no ar de verdade: clique, navegue e sinta a experiência. Filtre por tipo e encontre o que combina com o seu negócio.</p>
         </section>
 
-        <div class="filters" role="tablist" aria-label="Filtrar projetos">
-            <button class="active" data-filter="all">Todos</button>
-            <button data-filter="landing">Landing pages</button>
-            <button data-filter="site">Sites & plataformas</button>
+        <div class="filters" role="group" aria-label="Filtrar projetos">
+            <button class="active" data-filter="all" aria-pressed="true">Todos</button>
+            <button data-filter="landing" aria-pressed="false">Landing pages</button>
+            <button data-filter="site" aria-pressed="false">Sites & plataformas</button>
         </div>
 
         <section class="pj-list">
@@ -305,8 +312,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
         <a href="https://wa.me/5511989426415?text=Ol%C3%A1!%20Vi%20seu%20portf%C3%B3lio%20e%20quero%20um%20or%C3%A7amento." target="_blank" class="wa-float" aria-label="Falar no WhatsApp"><i class="fab fa-whatsapp"></i></a>
-    <script src="js/main.js?v=4d0"></script>
-    <script src="js/site-viewer.js?v=1" defer></script>
+    <script src="js/main.js?v=4d1"></script>
+    <script src="js/site-viewer.js?v=2" defer></script>
     <script>
         document.querySelectorAll('.filters button').forEach(function (btn) {
             btn.addEventListener('click', function () {

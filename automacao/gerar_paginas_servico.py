@@ -37,6 +37,8 @@ TEMPLATE = Template("""<!DOCTYPE html>
     <meta name="robots" content="index, follow, max-image-preview:large">
     <meta name="theme-color" content="#0B0B10">
     <meta name="author" content="Henrique Luiz Dutra">
+    <meta name="google-site-verification" content="COLE_SEU_CODIGO_SEARCH_CONSOLE_AQUI">
+    <meta name="msvalidate.01" content="COLE_SEU_CODIGO_BING_AQUI">
     <link rel="canonical" href="$canonical">
     <meta property="og:type" content="website">
     <meta property="og:locale" content="pt_BR">
@@ -56,6 +58,9 @@ TEMPLATE = Template("""<!DOCTYPE html>
     <script type="application/ld+json">$jsonld_service</script>
     <script type="application/ld+json">$jsonld_faq</script>
     <script type="application/ld+json">$jsonld_breadcrumb</script>
+    <!-- GA4 (gratis): troque G-SEU-ID pelo ID real (guia em divulgacao/COMO-ATIVAR-GOOGLE.md) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-SEU-ID"></script>
+    <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-SEU-ID');</script>
     <link rel="stylesheet" href="css/style.css?v=4d1">
     <link rel="stylesheet" href="css/servico.css?v=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">

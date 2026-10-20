@@ -275,11 +275,11 @@
                 <h2>Todos os projetos</h2></div>
                 <span class="todos-count">● <b id="todosCount">14 projetos no ar</b></span>
             </div>
-            <div class="todos-filter" role="tablist" aria-label="Filtrar projetos">
-                <button class="active" data-filter="all">Todos <b>14</b></button>
-                <button data-filter="loja">Lojas <b>2</b></button>
-                <button data-filter="site">Sites <b>7</b></button>
-                <button data-filter="landing">Landing pages <b>5</b></button>
+            <div class="todos-filter" role="group" aria-label="Filtrar projetos">
+                <button class="active" data-filter="all" aria-pressed="true">Todos <b>14</b></button>
+                <button data-filter="loja" aria-pressed="false">Lojas <b>2</b></button>
+                <button data-filter="site" aria-pressed="false">Sites <b>7</b></button>
+                <button data-filter="landing" aria-pressed="false">Landing pages <b>5</b></button>
             </div>
             <div class="all-grid" id="todosGrid">
                 <article class="proj-card" data-cat="landing">
@@ -379,7 +379,7 @@
                     <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
                     <button type="submit" class="btn-light" style="border:none;cursor:pointer;justify-content:center">Me chame no WhatsApp <i class="fab fa-whatsapp"></i></button>
                     <small>Resposta em até 24h. Sem spam.</small>
-                    <p class="lead-ok" hidden>Recebido! Vou te chamar em até 24h — ou <a id="lead-wa-now" target="_blank">fale comigo agora</a>.</p>
+                    <p class="lead-ok" hidden>Recebido! Vou te chamar em até 24h — ou <a id="lead-wa-now" href="https://wa.me/5511989426415" target="_blank" rel="noopener">fale comigo agora</a>.</p>
                 </form>
             </div>
             <div class="cta-contacts">
@@ -404,8 +404,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
         <a href="https://wa.me/5511989426415?text=Ol%C3%A1!%20Vi%20seu%20portf%C3%B3lio%20e%20quero%20um%20or%C3%A7amento." target="_blank" class="wa-float" aria-label="Falar no WhatsApp"><i class="fab fa-whatsapp"></i></a>
-    <script src="js/main.js?v=4d0"></script>
-    <script src="js/site-viewer.js?v=1" defer></script>
+    <script src="js/main.js?v=4d1"></script>
+    <script src="js/site-viewer.js?v=2" defer></script>
     <script>
     (function(){
       var grid = document.getElementById('todosGrid');
@@ -419,8 +419,8 @@
       }
       btns.forEach(function(b){
         b.addEventListener('click', function(){
-          btns.forEach(function(x){ x.classList.remove('active'); });
-          b.classList.add('active');
+          btns.forEach(function(x){ x.classList.remove('active'); x.setAttribute('aria-pressed','false'); });
+          b.classList.add('active'); b.setAttribute('aria-pressed','true');
           var f = b.dataset.filter;
           cards.forEach(function(c){ c.classList.toggle('hide', f !== 'all' && c.dataset.cat !== f); });
           recount();

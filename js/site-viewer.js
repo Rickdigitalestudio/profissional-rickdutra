@@ -102,14 +102,14 @@
                 '<button type="button" class="sv-btn sv-back"><i class="fa-solid fa-arrow-left" aria-hidden="true"></i> <span>Voltar ao portfólio</span></button>' +
                 '<button type="button" class="sv-btn sv-home" title="Primeira página do portfólio"><i class="fa-solid fa-house" aria-hidden="true"></i> <span>Início</span></button>' +
                 '<div class="sv-title"><span class="sv-dot"></span><b class="sv-name"></b><em class="sv-url"></em></div>' +
-                '<a class="sv-btn sv-newtab" target="_blank" rel="noopener" title="Abrir o site em outra aba"><i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i> <span>Nova aba</span></a>' +
+                '<a class="sv-btn sv-newtab" href="#" target="_blank" rel="noopener" title="Abrir o site em outra aba"><i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i> <span>Nova aba</span></a>' +
                 '<button type="button" class="sv-btn sv-close" aria-label="Fechar visualizador"><i class="fa-solid fa-xmark" aria-hidden="true"></i></button>' +
             "</div>" +
             '<div class="sv-stage">' +
                 '<iframe class="sv-frame" title="Projeto aberto dentro do portfólio"></iframe>' +
                 '<div class="sv-loading"><span class="sv-spin"></span><p>carregando o site…</p></div>' +
                 '<div class="sv-warn" hidden>Este site não abriu aqui dentro. ' +
-                    '<a class="sv-warn-link" target="_blank" rel="noopener">Abrir em nova aba ↗</a></div>' +
+                    '<a class="sv-warn-link" href="#" target="_blank" rel="noopener">Abrir em nova aba ↗</a></div>' +
             "</div>";
 
         document.body.appendChild(overlay);
