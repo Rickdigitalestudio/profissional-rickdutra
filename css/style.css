@@ -665,25 +665,37 @@ main h1:not(.title-3d){background:linear-gradient(180deg,#fff 30%,#d8c3a5 85%);-
 .selo-avaliacao .txt { font-size: .7rem; letter-spacing: .14em; text-transform: uppercase; color: var(--muted); display: block; }
 .selo-avaliacao .selo-info { display: block; }
 .selo-avaliacao .txt.fonte { font-size: .62rem; opacity: .75; margin-top: 3px; }
+.selo-linha { display: inline-block; font-size: .66rem; letter-spacing: .1em; text-transform: uppercase; color: var(--champagne); margin-right: 9px; }
 
-/* ---- tira de clientes ---- */
+/* ---- tira de clientes (cartões com dono + empresa) ---- */
 .clientes { max-width: var(--max); margin: 0 auto; padding: 34px 28px 0; }
-.clientes-inner {
-  background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius);
-  padding: 26px 28px; display: grid; gap: 18px;
+.clientes-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; }
+.cliente-card {
+  display: flex; align-items: flex-start; gap: 13px;
+  background: var(--surface); border: 1px solid var(--line); border-radius: 14px;
+  padding: 16px 18px; transition: border-color .25s, transform .25s, background .25s;
 }
-.clientes-top { display: flex; justify-content: space-between; align-items: center; gap: 14px; flex-wrap: wrap; }
-.clientes-top span { font-size: .68rem; letter-spacing: .2em; text-transform: uppercase; color: var(--muted); }
-.clientes-top b { color: var(--champagne); font-weight: 600; }
-.clientes-lista { display: flex; flex-wrap: wrap; gap: 10px; }
-.cliente-chip {
-  display: inline-flex; align-items: baseline; gap: 8px;
-  background: var(--surface-2); border: 1px solid var(--line); border-radius: 999px;
-  padding: 9px 16px; transition: border-color .25s, transform .25s, background .25s;
+.cliente-card:hover { border-color: rgba(216,195,165,.5); transform: translateY(-3px); background: var(--surface-2); }
+.cliente-avatar {
+  width: 40px; height: 40px; flex: 0 0 40px; border-radius: 50%;
+  background: linear-gradient(135deg, #2a2a36, #17171f); border: 1px solid rgba(216,195,165,.35);
+  display: grid; place-items: center; font-family: var(--display); font-size: .86rem; color: var(--champagne);
 }
-.cliente-chip:hover { border-color: rgba(216,195,165,.5); transform: translateY(-2px); background: rgba(216,195,165,.06); }
-.cliente-chip b { font-family: var(--display); font-weight: 500; font-size: .9rem; color: #fff; letter-spacing: .02em; }
-.cliente-chip em { font-style: normal; font-size: .66rem; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); }
+.cliente-info { display: block; min-width: 0; }
+.cliente-dono {
+  display: block; font-family: var(--display); font-weight: 500; font-size: 1rem;
+  color: #fff; letter-spacing: .02em; line-height: 1.2;
+}
+.cliente-tag {
+  font-family: var(--body); font-size: .55rem; font-weight: 700; letter-spacing: .1em;
+  text-transform: uppercase; color: #141414; background: var(--champagne);
+  border-radius: 999px; padding: 2px 7px; margin-left: 6px; vertical-align: middle;
+}
+.cliente-empresa { display: block; font-size: .8rem; color: var(--champagne); margin-top: 3px; }
+.cliente-servico { display: block; font-style: normal; font-size: .74rem; color: var(--text); margin-top: 7px; line-height: 1.45; }
+.cliente-segmento { display: block; font-size: .66rem; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); margin-top: 4px; }
+.clientes-aviso { margin-top: 14px; font-size: .76rem; color: var(--muted); }
+.clientes-aviso b { color: var(--champagne); }
 
 /* ---- depoimentos ---- */
 .depoimentos { max-width: var(--max); margin: 0 auto; padding: 70px 28px 10px; }
@@ -724,6 +736,14 @@ main h1:not(.title-3d){background:linear-gradient(180deg,#fff 30%,#d8c3a5 85%);-
 }
 .dep-aviso { margin-top: 18px; font-size: .8rem; color: var(--muted); }
 .dep-aviso b { color: var(--champagne); }
+.dep-fonte {
+  display: inline-flex; align-items: center; gap: 7px; margin-top: 12px;
+  font-size: .68rem; font-weight: 600; letter-spacing: .08em; text-transform: uppercase;
+  color: var(--champagne); border-top: 1px solid var(--line); padding-top: 12px; width: 100%;
+  transition: gap .25s, color .25s;
+}
+.dep-fonte:hover { gap: 11px; color: #fff; }
+.dep-fonte i { font-size: .66rem; }
 
 /* ---- resultados com número ---- */
 .resultados { max-width: var(--max); margin: 0 auto; padding: 70px 28px 10px; }
@@ -805,11 +825,13 @@ main h1:not(.title-3d){background:linear-gradient(180deg,#fff 30%,#d8c3a5 85%);-
   .conf-grid { grid-template-columns: repeat(2, 1fr); }
   .fund-grid { grid-template-columns: 1fr; }
   .fund-foto img { max-width: 320px; }
+  .clientes-grid { grid-template-columns: repeat(2, 1fr); }
 }
 @media (max-width: 620px) {
   .dep-grid { grid-template-columns: 1fr; }
   .res-grid { grid-template-columns: 1fr 1fr; }
   .conf-grid { grid-template-columns: 1fr; }
+  .clientes-grid { grid-template-columns: 1fr; }
   .clientes, .depoimentos, .resultados, .confianca, .faq-home, .fundador { padding-left: 18px; padding-right: 18px; }
 }
 

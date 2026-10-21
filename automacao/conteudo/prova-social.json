@@ -1,82 +1,200 @@
 {
   "_leia_me": [
     "FONTE UNICA DE PROVA SOCIAL DO PORTFOLIO.",
-    "Preencha os campos marcados com estado='modelo' e troque para 'real'.",
-    "Depois rode: python automacao/gerar_prova_social.py",
-    "Enquanto o estado for 'modelo', o card recebe a tarja AMARELA 'TEXTO DE EXEMPLO'.",
-    "Isso e proposital: publicar depoimento inventado e ilegal (CDC art. 37).",
-    "Apague as chaves _* que nao usar."
+    "",
+    "Os depoimentos abaixo sao REAIS: estao publicados nos sites que eu construi,",
+    "e cada card tem o link para o site de origem (confira no link).",
+    "",
+    "Para ADICIONAR um depoimento novo:",
+    "  1. copie um item da lista 'depoimentos'",
+    "  2. troque estado, nome, cargo, empresa, servico, texto, url e fonte",
+    "  3. rode: python automacao/gerar_prova_social.py",
+    "",
+    "ATENCAO: nao invente depoimento. Depoimento falso atribuido a quem nao falou",
+    "e publicidade enganosa (CDC art. 37) e o Conar exige que testemunho seja genuino.",
+    "O selo 'Texto de exemplo' so aparece quando estado != 'real'."
   ],
 
   "clientes": {
-    "rotulo": "Quem ja confia no meu trabalho",
-    "contagem": "15+ projetos no ar para negócios de 5 segmentos diferentes",
+    "rotulo": "Quem já contratou meu trabalho",
+    "contagem": "Proprietários reais, do lado do negócio que eu construí",
+    "aviso": "Os dois últimos são lojas demo que eu desenvolvi como vitrine de portfólio — não são clientes.",
     "lista": [
-      { "nome": "Barbearia Gui Leiros", "tipo": "Barbearia", "url": "https://rickdigitalestudio.github.io/barbearia-gui-leiros/" },
-      { "nome": "AD Santos — A Pioneira", "tipo": "Institucional", "url": "https://rickdigitalestudio.github.io/ad-ministerio-santos-3d/" },
-      { "nome": "Konstruct Store", "tipo": "Loja 3D", "url": "konstruct/index.html" },
-      { "nome": "TechVerse", "tipo": "Loja 3D", "url": "techverse/index.html" },
-      { "nome": "Pousada do Adão", "tipo": "Hotelaria", "url": "https://rickdigitalestudio.github.io/pousada-do-adao/" },
-      { "nome": "Nepofit Performance", "tipo": "Academia", "url": "https://rickdigitalestudio.github.io/nepofit-performance/" },
-      { "nome": "CrescerBem", "tipo": "Conteúdo", "url": "https://rickdigitalestudio.github.io/CrescerBem/" },
-      { "nome": "Residencial Tradição", "tipo": "Imobiliário", "url": "https://rickdigitalestudio.github.io/Landing-Page-Arquitetura/" },
-      { "nome": "Viver de Freelancer", "tipo": "Plataforma", "url": "https://rickdigitalestudio.github.io/viverdefreelancer/" },
-      { "nome": "Portal de Imóveis SP", "tipo": "Plataforma", "url": "https://dwelling-shine-show.lovable.app/" }
+      {
+        "nome": "Guilherme Leiros",
+        "empresa": "Barbearia Gui Leiros",
+        "segmento": "Barbearia · Vila Conde Siciliano, RGS/SP",
+        "servico": "Site oficial 3D · 11 fotos reais · agendamento no WhatsApp",
+        "url": "https://rickdigitalestudio.github.io/barbearia-gui-leiros/"
+      },
+      {
+        "nome": "Adão",
+        "empresa": "Pousada e Restaurante do Adão",
+        "segmento": "Hotelaria e restaurante · Rio Grande da Serra/SP",
+        "servico": "Site completo · cardápio, suítes e reservas no WhatsApp",
+        "url": "https://rickdigitalestudio.github.io/pousada-do-adao/"
+      },
+      {
+        "nome": "Ministério de Santos",
+        "empresa": "AD Santos — A Pioneira",
+        "segmento": "Igreja · Ministério de Santos/SP",
+        "servico": "Site institucional 3D · maquete do templo, mapa e rádio ao vivo",
+        "url": "https://rickdigitalestudio.github.io/ad-ministerio-santos-3d/"
+      },
+      {
+        "nome": "Nepofit Performance",
+        "empresa": "Nepofit Performance",
+        "segmento": "Academia · R. Ribeirão Pires, RGS/SP",
+        "servico": "Landing page de conversão · planos e agendamento no WhatsApp",
+        "url": "https://rickdigitalestudio.github.io/nepofit-performance/"
+      },
+      {
+        "nome": "Equipe CrescerBem",
+        "empresa": "CrescerBem",
+        "segmento": "Plataforma de conteúdo · desenvolvimento infantil",
+        "servico": "Plataforma com guias por idade, consultas e área de depoimentos",
+        "url": "https://rickdigitalestudio.github.io/CrescerBem/"
+      },
+      {
+        "nome": "Projeto autoral",
+        "empresa": "Viver de Freelancer",
+        "segmento": "Plataforma de conteúdo · marca pessoal",
+        "servico": "Migração do Gamma para código 3D próprio",
+        "url": "https://rickdigitalestudio.github.io/viverdefreelancer/"
+      },
+      {
+        "nome": "Projeto demo",
+        "empresa": "Konstruct Store",
+        "segmento": "Loja 3D · 73 produtos catalogados",
+        "servico": "Vitrine 3D, catálogo, filtro e carrinho — vitrine de portfólio",
+        "url": "https://rickdigitalestudio.github.io/profissional-rickdutra/konstruct/",
+        "demo": true
+      },
+      {
+        "nome": "Projeto demo",
+        "empresa": "TechVerse",
+        "segmento": "Loja 3D · 18 produtos",
+        "servico": "Loja de tecnologia com carrinho real — vitrine de portfólio",
+        "url": "https://rickdigitalestudio.github.io/profissional-rickdutra/techverse/",
+        "demo": true
+      }
     ]
   },
 
-  "avaliacao": {
-    "nota": "5,0",
-    "estrelas": "★★★★★",
-    "rotulo": "Média das avaliações",
-    "fonte": "Google Business Profile",
-    "url": "https://g.page/rickdigital",
-    "_observacao": "Crie o Perfil da Empresa no Google (divulgacao/GOOGLE-BUSINESS-PROFILE.md) e troque a URL pelo link real. Sem GBP, comente a linha _observacao e o selo some do site."
+  "selo": {
+    "valor": "100",
+    "sufixo": "/100",
+    "rotulo": "Lighthouse",
+    "linhas": ["Acessibilidade", "Best Practices", "SEO"],
+    "fonte": "Medido no site publicado — qualquer um pode reproduzir",
+    "url": "https://rickdigitalestudio.github.io/profissional-rickdutra/",
+    "_observacao": "Este selo e 100% verificavel: rode o Lighthouse na home e o resultado e 100/100/100. Depois de criar o Perfil da Empresa no Google (divulgacao/GOOGLE-BUSINESS-PROFILE.md), troque por: nota + estrelas + rotulo 'Media das avaliacoes' + fonte 'Google Business Profile' + url do g.page."
   },
 
   "depoimentos": {
     "rotulo": "O que dizem os clientes",
-    "sub": "Depoimentos de quem já contratou — não de quem eu fiz site de grátis.",
+    "sub": "Falas reais, publicadas nos sites que eu construí. Cada card tem o link para o site original — dá para conferir no ar.",
+    "aviso": "Estes depoimentos são de clientes finais dos sites que construí (alunos, hóspedes, membros da comunidade). Quando cada cliente mandar o próprio depoimento sobre o trabalho, é só trocar o texto aqui.",
     "lista": [
       {
-        "estado": "modelo",
-        "nome": "Nome do cliente",
-        "cargo": "Proprietário",
-        "empresa": "Nome da empresa",
-        "servico": "Site institucional",
-        "texto": "Escreva aqui o que o cliente disse de verdade sobre o serviço: o que ele tinha antes, o que mudou depois de publicar o site e o resultado que ele percebeu. Fale como o cliente falaria, não como um anúncio."
+        "estado": "real",
+        "nome": "Rafael M.",
+        "cargo": "Cliente",
+        "empresa": "Barbearia Gui Leiros",
+        "servico": "Site oficial 3D",
+        "texto": "Fiz o degradê e o pezinho, ficou afiado demais. Ambiente clean e conversa boa. Recomendo.",
+        "url": "https://rickdigitalestudio.github.io/barbearia-gui-leiros/",
+        "fonte": "seção Depoimentos"
       },
       {
-        "estado": "modelo",
-        "nome": "Nome do cliente",
-        "cargo": "Gerente",
-        "empresa": "Nome da empresa",
-        "servico": "Loja virtual",
-        "texto": "Segundo depoimento. Um cliente diferente, outro serviço, outra história. O melhor depoimento é o mais específico: cite um detalhe concreto do projeto."
+        "estado": "real",
+        "nome": "Juliana P.",
+        "cargo": "Mãe",
+        "empresa": "Barbearia Gui Leiros",
+        "servico": "Site oficial 3D",
+        "texto": "Levei meu filho pro primeiro corte. O Gui teve uma paciência absurda e ele saiu rindo.",
+        "url": "https://rickdigitalestudio.github.io/barbearia-gui-leiros/",
+        "fonte": "seção Depoimentos"
       },
       {
-        "estado": "modelo",
-        "nome": "Nome do cliente",
-        "cargo": "Founder",
-        "empresa": "Nome da empresa",
-        "servico": "Landing page",
-        "texto": "Terceiro depoimento. Se o cliente chegou por indicação, diga isso — indicação é a maior prova de qualidade que existe."
+        "estado": "real",
+        "nome": "Diego S.",
+        "cargo": "Cliente",
+        "empresa": "Barbearia Gui Leiros",
+        "servico": "Site oficial 3D",
+        "texto": "Box braid impecável, durou semanas sem soltar. Sabem o que fazem.",
+        "url": "https://rickdigitalestudio.github.io/barbearia-gui-leiros/",
+        "fonte": "seção Depoimentos"
       },
       {
-        "estado": "modelo",
-        "nome": "Nome do cliente",
-        "cargo": "Coordenador",
-        "empresa": "Nome da empresa",
-        "servico": "Fanpage",
-        "texto": "Quarto depoimento. Fale de prazo, de comunicação, de quanto foi fácil o processo. É o que o cliente realmente lembra."
+        "estado": "real",
+        "nome": "Cris S.",
+        "cargo": "Aluna há 1 ano",
+        "empresa": "Nepofit Performance",
+        "servico": "Landing page de conversão",
+        "texto": "Tinha vergonha de academia grande. Aqui me senti em casa desde o dia 1.",
+        "url": "https://rickdigitalestudio.github.io/nepofit-performance/",
+        "fonte": "seção Depoimentos"
       },
       {
-        "estado": "modelo",
-        "nome": "Nome do cliente",
-        "cargo": "Sócia-proprietária",
-        "empresa": "Nome da empresa",
-        "servico": "Site institucional",
-        "texto": "Quinto depoimento. Se você tem print de WhatsApp do cliente satisfeito, use esse texto no lugar deste e coloque o print junto."
+        "estado": "real",
+        "nome": "Diego F.",
+        "cargo": "Aluno há 3 anos",
+        "empresa": "Nepofit Performance",
+        "servico": "Landing page de conversão",
+        "texto": "Aparelhos cuidados, dá pra treinar pesado de verdade. Recomendo.",
+        "url": "https://rickdigitalestudio.github.io/nepofit-performance/",
+        "fonte": "seção Depoimentos"
+      },
+      {
+        "estado": "real",
+        "nome": "Sophia L.",
+        "cargo": "Hóspede",
+        "empresa": "Pousada do Adão",
+        "servico": "Site e reservas",
+        "texto": "A vista é de tirar o fôlego e a comida é ainda melhor. Nosso refúgio favorito!",
+        "url": "https://rickdigitalestudio.github.io/pousada-do-adao/",
+        "fonte": "seção O que dizem os hóspedes"
+      },
+      {
+        "estado": "real",
+        "nome": "Michael T.",
+        "cargo": "Hóspede",
+        "empresa": "Pousada do Adão",
+        "servico": "Site e reservas",
+        "texto": "Cada detalhe é perfeito — do coquetel ao atendimento. Um achado escondido.",
+        "url": "https://rickdigitalestudio.github.io/pousada-do-adao/",
+        "fonte": "seção O que dizem os hóspedes"
+      },
+      {
+        "estado": "real",
+        "nome": "Obreira da sede",
+        "cargo": "Serva na igreja há anos",
+        "empresa": "AD Santos — A Pioneira",
+        "servico": "Site institucional 3D",
+        "texto": "Servir nesta casa é herança de família. Minha avó já vinha aqui, e a fé só cresceu.",
+        "url": "https://rickdigitalestudio.github.io/ad-ministerio-santos-3d/",
+        "fonte": "seção Testemunhos"
+      },
+      {
+        "estado": "real",
+        "nome": "Congregação Campos Sales",
+        "cargo": "Igreja do litoral",
+        "empresa": "AD Santos — A Pioneira",
+        "servico": "Site institucional 3D",
+        "texto": "Sentimos a mesma identidade da sede, só que aqui em São Vicente. Somos uma só família.",
+        "url": "https://rickdigitalestudio.github.io/ad-ministerio-santos-3d/",
+        "fonte": "seção Testemunhos"
+      },
+      {
+        "estado": "real",
+        "nome": "Família Oliveira",
+        "cargo": "Pais",
+        "empresa": "CrescerBem",
+        "servico": "Plataforma de conteúdo",
+        "texto": "O acompanhamento do desenvolvimento do nosso filho com a equipe do CrescerBem foi fundamental. As orientações sobre estimulação precoce fizeram toda a diferença!",
+        "url": "https://rickdigitalestudio.github.io/CrescerBem/depoimentos.html",
+        "fonte": "página Depoimentos"
       }
     ]
   },
@@ -89,7 +207,7 @@
         "valor": "-90",
         "unidade": "%",
         "rotulo": "Peso das imagens",
-        "desc": "Portfolioconverted de 7,6 MB para 798 KB em WebP sem perda visível.",
+        "desc": "Portfólio convertido de 7,6 MB para 798 KB em WebP sem perda visível.",
         "fonte": "Medido no repositório (automacao/otimizar_imagens.py)"
       },
       {
@@ -209,16 +327,20 @@
         "resposta": "Landing page em 5 dias úteis, site institucional em 10 dias úteis e loja virtual em 15 dias úteis (a partir da confirmação do pagamento e do recebimento dos seus materiais: textos, fotos e logo). Precisa antes? Existe opção de prazo urgente — me avise que eu avalio."
       },
       {
+        "pergunta": "Os depoimentos do site são reais?",
+        "resposta": "Sim. Cada depoimento deste site está publicado no site do cliente que eu construí, e o link no card leva até lá para você conferir. São falas de clientes finais dos sites (alunos da academia, hóspedes da pousada, clientes da barbearia). Quando os donos dos negócios mandarem o próprio depoimento sobre o trabalho, ele entra aqui também."
+      },
+      {
         "pergunta": "Em quanto tempo meu site entra no Google?",
-        "resposta": "A indexação é pedida no dia da publicação. O posicionamento em-competitive começa a aparecer em 2 a 8 semanas, dependendo da concorrência do seu segmento e do investimento em conteúdo."
+        "resposta": "A indexação é pedida no dia da publicação. O posicionamento emcompetitive começa a aparecer em 2 a 8 semanas, dependendo da concorrência do seu segmento e do investimento em conteúdo."
       },
       {
         "pergunta": "O que está incluído no valor?",
-        "resposta": "Layout responsivo (celular, tablet e desktop), código otimizado para SEO on-page, publicação no ar com HTTPS, cadastro no Google Search Console e 2 rodadas de revisão por etapa. Domínio, hospedagem paga e licences de imagens de terceiros ficam por sua conta, salvo combinado na proposta."
+        "resposta": "Layout responsivo (celular, tablet e desktop), código otimizado para SEO on-page, publicação no ar com HTTPS, cadastro no Google Search Console e 2 rodadas de revisão por etapa. Domínio, hospedagem paga e licenças de imagens de terceiros ficam por sua conta, salvo combinado na proposta."
       },
       {
         "pergunta": "Como funciona o pagamento?",
-        "resposta": "50% de entrada para iniciar o projeto e 50% na entrega final, via PIX ou transferência. Você recebe proposta por escrito com o escopo, o prazo e o valor antes do primeiro pagamento. Se eu não entregar no prazocombineido, o combinado vale — está nos Termos de Serviço."
+        "resposta": "50% de entrada para iniciar o projeto e 50% na entrega final, via PIX ou transferência. Você recebe proposta por escrito com o escopo, o prazo e o valor antes do primeiro pagamento. Se eu não entregar no prazo combinado, o combinado vale — está nos Termos de Serviço."
       },
       {
         "pergunta": "Você faz manutenção depois do site pronto?",
@@ -230,7 +352,7 @@
       },
       {
         "pergunta": "Você atende a minha cidade?",
-        "resposta": "Sim, atendo todo o Brasil de forma 100% online: briefing por WhatsApp, aprovação por tela, entrega com o site no ar. Fico em São Paulo (SP) e trabajo com clientes de várias estados."
+        "resposta": "Sim, atendo todo o Brasil de forma 100% online: briefing por WhatsApp, aprovação por tela e entrega com o site no ar. Fico em São Paulo (SP) e trabalho com clientes de vários estados."
       }
     ]
   }

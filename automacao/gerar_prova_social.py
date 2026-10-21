@@ -32,37 +32,49 @@ def e(t) -> str:
 
 def bloco_clientes(d: dict) -> str:
     c = d["clientes"]
-    chips = "\n".join(
-        f'            <a class="cliente-chip" href="{e(x["url"])}" target="_blank" rel="noopener">'
-        f'<b>{e(x["nome"])}</b><em>{e(x["tipo"])}</em></a>'
-        for x in c["lista"])
-    return f"""<div class="clientes-inner">
-        <div class="clientes-top">
-            <span>{e(c["rotulo"])}</span>
-            <b>{e(c["contagem"])}</b>
-        </div>
-        <div class="clientes-lista">
-{chips}
-        </div>
-    </div>"""
+    cards = []
+    for x in c["lista"]:
+        inicial = "".join(w[0] for w in x["nome"].split()[:2]).upper()
+        demo = ' <span class="cliente-tag">demo</span>' if x.get("demo") else ""
+        cards.append(f"""        <a class="cliente-card" href="{e(x["url"])}" target="_blank" rel="noopener">
+            <span class="cliente-avatar">{e(inicial)}</span>
+            <span class="cliente-info">
+                <b class="cliente-dono">{e(x["nome"])}{demo}</b>
+                <span class="cliente-empresa">{e(x["empresa"])}</span>
+                <em class="cliente-servico">{e(x["servico"])}</em>
+                <small class="cliente-segmento">{e(x["segmento"])}</small>
+            </span>
+        </a>""")
+    aviso = f'<p class="clientes-aviso"><b>Nota:</b> {e(c["aviso"])}</p>' if c.get("aviso") else ""
+    return f"""<div class="clientes-grid">
+{chr(10).join(cards)}
+    </div>{aviso}"""
 
 
 def bloco_avaliacao(d: dict) -> str:
-    a = d.get("avaliacao") or {}
+    """Selo de credibilidade. Padrao: score do Lighthouse (verificavel por
+    qualquer um). Se existir 'avaliacao' no JSON, usa a nota do Google."""
+    a = d.get("selo") or d.get("avaliacao") or {}
     if not a:
         return ""
     url = a.get("url") or ""
     # UM link so: <a> dentro de <a> e HTML invalido e quebra o contraste.
     atributos = f'href="{e(url)}" target="_blank" rel="noopener"' if url else 'role="group"'
-    rotulo = e(a["fonte"]) if url else e(a["fonte"])
-    return (f'<a class="selo-avaliacao" {atributos}>'
-            f'<span class="nota">{e(a["nota"])}<small>/5</small></span>'
-            f'<span class="selo-info">'
-            f'<span class="stars">{e(a["estrelas"])}</span>'
-            f'<span class="txt">{e(a["rotulo"])}</span>'
-            f'<span class="txt fonte">{rotulo}</span>'
-            f'</span>'
-            f'</a>')
+    if "valor" in a:
+        linhas = "".join(f'<span class="selo-linha">{e(x)}</span>' for x in a.get("linhas", []))
+        corpo = (f'<span class="nota">{e(a["valor"])}<small>{e(a.get("sufixo", ""))}</small></span>'
+                 f'<span class="selo-info">'
+                 f'<span class="txt">{e(a["rotulo"])}</span>{linhas}'
+                 f'<span class="txt fonte">{e(a["fonte"])}</span>'
+                 f'</span>')
+    else:
+        corpo = (f'<span class="nota">{e(a["nota"])}<small>/5</small></span>'
+                 f'<span class="selo-info">'
+                 f'<span class="stars">{e(a["estrelas"])}</span>'
+                 f'<span class="txt">{e(a["rotulo"])}</span>'
+                 f'<span class="txt fonte">{e(a["fonte"])}</span>'
+                 f'</span>')
+    return f'<a class="selo-avaliacao" {atributos}>{corpo}</a>'
 
 
 def bloco_depoimentos(d: dict) -> str:
@@ -72,20 +84,24 @@ def bloco_depoimentos(d: dict) -> str:
         modelo = x.get("estado") != "real"
         inicial = "".join(w[0] for w in x["nome"].split()[:2]).upper()
         badge = '<span class="dep-modelo">Texto de exemplo</span>' if modelo else ""
-        foto = (f'<img src="{e(x["foto"])}" alt="{e(x["nome"])}" width="42" height="42" loading="lazy" decoding="async">'
-                if x.get("foto") else e(inicial))
+        fonte = ""
+        if x.get("url"):
+            fonte = (f'<a class="dep-fonte" href="{e(x["url"])}" target="_blank" rel="noopener">'
+                     f'<i class="fa-solid fa-arrow-up-right-from-square"></i> ver no site · {e(x.get("fonte", "fonte"))}</a>')
         cards.append(f"""        <article class="dep-card">
             {badge}
             <span class="dep-servico">{e(x["servico"])}</span>
             <p class="dep-quote">{e(x["texto"])}</p>
             <div class="dep-who">
-                <span class="dep-avatar">{foto}</span>
+                <span class="dep-avatar">{e(inicial)}</span>
                 <span><b>{e(x["nome"])}</b><small>{e(x["cargo"])} · {e(x["empresa"])}</small></span>
             </div>
+            {fonte}
         </article>""")
+    aviso = f'<p class="dep-aviso"><b>Sobre estes depoimentos:</b> {e(dp["aviso"])}</p>' if dp.get("aviso") else ""
     return f"""<div class="dep-grid">
 {chr(10).join(cards)}
-    </div>"""
+    </div>{aviso}"""
 
 
 def bloco_resultados(d: dict) -> str:
