@@ -1,0 +1,1393 @@
+[
+ {
+  "q": "dewalt rotary hammer drill",
+  "ids": [
+   1
+  ]
+ },
+ {
+  "q": "makita cordless drill",
+  "ids": [
+   2
+  ]
+ },
+ {
+  "q": "milwaukee impact driver tool",
+  "ids": [
+   3
+  ]
+ },
+ {
+  "q": "cordless drill screwdriver power tool",
+  "ids": [
+   4,
+   7
+  ]
+ },
+ {
+  "q": "demolition hammer jackhammer",
+  "ids": [
+   5
+  ]
+ },
+ {
+  "q": "impact driver tool",
+  "ids": [
+   6
+  ]
+ },
+ {
+  "q": "bench drill pillar drill",
+  "ids": [
+   8
+  ]
+ },
+ {
+  "q": "dewalt circular saw",
+  "ids": [
+   9,
+   15
+  ]
+ },
+ {
+  "q": "bosch jigsaw power tool",
+  "ids": [
+   10
+  ]
+ },
+ {
+  "q": "milwaukee reciprocating saw",
+  "ids": [
+   11
+  ]
+ },
+ {
+  "q": "table saw workshop woodworking",
+  "ids": [
+   12
+  ]
+ },
+ {
+  "q": "bandsaw band saw machine",
+  "ids": [
+   13
+  ]
+ },
+ {
+  "q": "tile cutter ceramic tool",
+  "ids": [
+   14
+  ]
+ },
+ {
+  "q": "angle grinder tool",
+  "ids": [
+   16,
+   17,
+   19
+  ]
+ },
+ {
+  "q": "power planer electric woodworking",
+  "ids": [
+   18
+  ]
+ },
+ {
+  "q": "orbital sander tool",
+  "ids": [
+   20
+  ]
+ },
+ {
+  "q": "belt sander power tool",
+  "ids": [
+   21
+  ]
+ },
+ {
+  "q": "drum sander machine",
+  "ids": [
+   22
+  ]
+ },
+ {
+  "q": "delta sander tool",
+  "ids": [
+   23
+  ]
+ },
+ {
+  "q": "wrench spanner set tools",
+  "ids": [
+   24
+  ]
+ },
+ {
+  "q": "socket set ratchet tools",
+  "ids": [
+   25
+  ]
+ },
+ {
+  "q": "hex key allen key set",
+  "ids": [
+   26
+  ]
+ },
+ {
+  "q": "pliers pliers hand tool",
+  "ids": [
+   27
+  ]
+ },
+ {
+  "q": "claw hammer tool",
+  "ids": [
+   28
+  ]
+ },
+ {
+  "q": "measuring tape tape measure",
+  "ids": [
+   29,
+   43
+  ]
+ },
+ {
+  "q": "toolbox tools kit case",
+  "ids": [
+   30,
+   31,
+   32,
+   34,
+   35
+  ]
+ },
+ {
+  "q": "multimeter electrical tester",
+  "ids": [
+   33,
+   45
+  ]
+ },
+ {
+  "q": "tool cabinet cart drawers",
+  "ids": [
+   36
+  ]
+ },
+ {
+  "q": "warehouse storage rack shelves",
+  "ids": [
+   37
+  ]
+ },
+ {
+  "q": "folding workbench table",
+  "ids": [
+   38
+  ]
+ },
+ {
+  "q": "toolbox box tools",
+  "ids": [
+   39
+  ]
+ },
+ {
+  "q": "pegboard tool wall organizer",
+  "ids": [
+   40
+  ]
+ },
+ {
+  "q": "laser distance measurer tool",
+  "ids": [
+   41
+  ]
+ },
+ {
+  "q": "dewalt laser level",
+  "ids": [
+   42
+  ]
+ },
+ {
+  "q": "spirit level bubble tool",
+  "ids": [
+   44
+  ]
+ },
+ {
+  "q": "welding machine inverter welder",
+  "ids": [
+   46,
+   47
+  ]
+ },
+ {
+  "q": "spot welder machine",
+  "ids": [
+   48
+  ]
+ },
+ {
+  "q": "welding helmet mask",
+  "ids": [
+   49
+  ]
+ },
+ {
+  "q": "air compressor machine tool",
+  "ids": [
+   50,
+   52
+  ]
+ },
+ {
+  "q": "nail gun nailer tool",
+  "ids": [
+   51
+  ]
+ },
+ {
+  "q": "paint spray gun sprayer",
+  "ids": [
+   53,
+   54,
+   58
+  ]
+ },
+ {
+  "q": "heat gun tool hot air",
+  "ids": [
+   55
+  ]
+ },
+ {
+  "q": "paint roller brush painting",
+  "ids": [
+   56
+  ]
+ },
+ {
+  "q": "sandpaper abrasive sheets",
+  "ids": [
+   57
+  ]
+ },
+ {
+  "q": "construction hard hat helmet",
+  "ids": [
+   59
+  ]
+ },
+ {
+  "q": "safety goggles protective glasses",
+  "ids": [
+   60
+  ]
+ },
+ {
+  "q": "work gloves hands",
+  "ids": [
+   61
+  ]
+ },
+ {
+  "q": "tool belt pouch carpenter",
+  "ids": [
+   62
+  ]
+ },
+ {
+  "q": "ear plugs hearing protection",
+  "ids": [
+   63
+  ]
+ },
+ {
+  "q": "electric hand planer tool",
+  "ids": [
+   64
+  ]
+ },
+ {
+  "q": "wood lathe machine tools",
+  "ids": [
+   65
+  ]
+ },
+ {
+  "q": "disc sander machine",
+  "ids": [
+   66
+  ]
+ },
+ {
+  "q": "spokeshave tool",
+  "ids": [
+   67
+  ]
+ },
+ {
+  "q": "brush cutter trimmer garden tool",
+  "ids": [
+   68
+  ]
+ },
+ {
+  "q": "electric chainsaw chain saw",
+  "ids": [
+   69
+  ]
+ },
+ {
+  "q": "garden hoe spade shovel",
+  "ids": [
+   70
+  ]
+ },
+ {
+  "q": "portable generator power",
+  "ids": [
+   71
+  ]
+ },
+ {
+  "q": "voltage stabilizer transformer",
+  "ids": [
+   72
+  ]
+ },
+ {
+  "q": "fire extinguisher red",
+  "ids": [
+   73
+  ]
+ },
+ {
+  "q": "milwaukee m18 impact driver",
+  "ids": [
+   3
+  ]
+ },
+ {
+  "q": "impact wrench schlagschrauber tool",
+  "ids": [
+   3
+  ]
+ },
+ {
+  "q": "akku bohrschrauber werkzeug",
+  "ids": [
+   4,
+   7
+  ]
+ },
+ {
+  "q": "abbruchhammer pneumatischer hammer",
+  "ids": [
+   5
+  ]
+ },
+ {
+  "q": "radial drill machine metalworking",
+  "ids": [
+   8
+  ]
+ },
+ {
+  "q": "jigsaw holzsaege werkzeug",
+  "ids": [
+   10
+  ]
+ },
+ {
+  "q": "fliesenschneider fliesenschneidmaschine",
+  "ids": [
+   14
+  ]
+ },
+ {
+  "q": "bandschleifgeraet werkzeug",
+  "ids": [
+   21
+  ]
+ },
+ {
+  "q": "walzenschleifgeraet",
+  "ids": [
+   22
+  ]
+ },
+ {
+  "q": "schleifgeraet delta orbital",
+  "ids": [
+   23
+  ]
+ },
+ {
+  "q": "combination pliers zange werkzeug",
+  "ids": [
+   27
+  ]
+ },
+ {
+  "q": "werkzeugkoffer set werkzeug",
+  "ids": [
+   30,
+   31,
+   32,
+   34,
+   35
+  ]
+ },
+ {
+  "q": "werkzeugwagen rolwagen werkstatt",
+  "ids": [
+   36
+  ]
+ },
+ {
+  "q": "werkzeugleiste halter werkzeug",
+  "ids": [
+   40
+  ]
+ },
+ {
+  "q": "laser level 360 grad werkzeug",
+  "ids": [
+   42
+  ]
+ },
+ {
+  "q": "schweissgeraet inverser schweisser",
+  "ids": [
+   46,
+   47
+  ]
+ },
+ {
+  "q": "kompressor werkzeug druckluft",
+  "ids": [
+   50,
+   52
+  ]
+ },
+ {
+  "q": "nagelgeraet nagelpistole",
+  "ids": [
+   51
+  ]
+ },
+ {
+  "q": "werkzeuggurtel tasche holster",
+  "ids": [
+   62
+  ]
+ },
+ {
+  "q": "elektrische hobelmaschine werkzeug",
+  "ids": [
+   64
+  ]
+ },
+ {
+  "q": "scheibenschleifgeraet werkzeug",
+  "ids": [
+   66
+  ]
+ },
+ {
+  "q": "spokeshave foto werkzeug",
+  "ids": [
+   67
+  ]
+ },
+ {
+  "q": "sense rasenmaehler benzin gartengerat",
+  "ids": [
+   68
+  ]
+ },
+ {
+  "q": "stromerzeuger generator maschine",
+  "ids": [
+   71
+  ]
+ },
+ {
+  "q": "luchthandschuh arbeitshandschuh",
+  "ids": [
+   61
+  ]
+ },
+ {
+  "q": "gehoerschutz ohropax",
+  "ids": [
+   63
+  ]
+ },
+ {
+  "q": "schutzbrille arbeitsbrille",
+  "ids": [
+   60
+  ]
+ },
+ {
+  "q": "schutzhelm bauhelm gelb",
+  "ids": [
+   59
+  ]
+ },
+ {
+  "q": "malerrolle farbrolle werkzeug",
+  "ids": [
+   56
+  ]
+ },
+ {
+  "q": "schleifpapier bogen",
+  "ids": [
+   57
+  ]
+ },
+ {
+  "q": "feuerloescher",
+  "ids": [
+   73
+  ]
+ },
+ {
+  "q": "paint roller frame painting wall",
+  "ids": [
+   56
+  ]
+ },
+ {
+  "q": "hot air gun heat gun tool",
+  "ids": [
+   55
+  ]
+ },
+ {
+  "q": "farbrolle lackrolle",
+  "ids": [
+   56
+  ]
+ },
+ {
+  "q": "pistola de pintura spray",
+  "ids": [
+   53,
+   54,
+   58
+  ]
+ },
+ {
+  "q": "stahlregal regal werkstatt",
+  "ids": [
+   37
+  ]
+ },
+ {
+  "q": "werkzeugschrank werkzeugwagen",
+  "ids": [
+   36
+  ]
+ },
+ {
+  "q": "schlauch klemme",
+  "ids": [
+   14
+  ]
+ },
+ {
+  "q": "motorsaege elektrische",
+  "ids": [
+   69
+  ]
+ },
+ {
+  "q": "metallbearbeitung drehbank",
+  "ids": [
+   65
+  ]
+ },
+ {
+  "q": "spannhebel",
+  "ids": [
+   24
+  ]
+ },
+ {
+  "q": "stecknuesse satz",
+  "ids": [
+   25
+  ]
+ },
+ {
+  "q": "innensechskantschluessel satz",
+  "ids": [
+   26
+  ]
+ },
+ {
+  "q": "schraubenzieher werkzeug",
+  "ids": [
+   4,
+   7
+  ]
+ },
+ {
+  "q": "luftkompressor werkstatt",
+  "ids": [
+   50
+  ]
+ },
+ {
+  "q": "elektrischer schweisser",
+  "ids": [
+   46
+  ]
+ },
+ {
+  "q": "W:dewalt rotary hammer",
+  "ids": [
+   1
+  ]
+ },
+ {
+  "q": "W:bosch rotary hammer",
+  "ids": [
+   1
+  ]
+ },
+ {
+  "q": "W:makita cordless drill",
+  "ids": [
+   2
+  ]
+ },
+ {
+  "q": "W:dewalt cordless drill",
+  "ids": [
+   4,
+   7
+  ]
+ },
+ {
+  "q": "W:impact driver",
+  "ids": [
+   3,
+   6
+  ]
+ },
+ {
+  "q": "W:demolition hammer",
+  "ids": [
+   5
+  ]
+ },
+ {
+  "q": "W:bench drill",
+  "ids": [
+   8
+  ]
+ },
+ {
+  "q": "W:circular saw",
+  "ids": [
+   9,
+   15
+  ]
+ },
+ {
+  "q": "W:jigsaw",
+  "ids": [
+   10
+  ]
+ },
+ {
+  "q": "W:reciprocating saw",
+  "ids": [
+   11
+  ]
+ },
+ {
+  "q": "W:table saw",
+  "ids": [
+   12
+  ]
+ },
+ {
+  "q": "W:band saw",
+  "ids": [
+   13
+  ]
+ },
+ {
+  "q": "W:tile cutter",
+  "ids": [
+   14
+  ]
+ },
+ {
+  "q": "W:angle grinder",
+  "ids": [
+   16,
+   17,
+   19
+  ]
+ },
+ {
+  "q": "W:planer woodworking",
+  "ids": [
+   18,
+   64
+  ]
+ },
+ {
+  "q": "W:orbital sander",
+  "ids": [
+   20
+  ]
+ },
+ {
+  "q": "W:belt sander",
+  "ids": [
+   21
+  ]
+ },
+ {
+  "q": "W:drum sander",
+  "ids": [
+   22
+  ]
+ },
+ {
+  "q": "W:delta sander",
+  "ids": [
+   23
+  ]
+ },
+ {
+  "q": "W:spanner wrench set",
+  "ids": [
+   24
+  ]
+ },
+ {
+  "q": "W:socket set",
+  "ids": [
+   25
+  ]
+ },
+ {
+  "q": "W:hex key set",
+  "ids": [
+   26
+  ]
+ },
+ {
+  "q": "W:pliers",
+  "ids": [
+   27
+  ]
+ },
+ {
+  "q": "W:claw hammer",
+  "ids": [
+   28
+  ]
+ },
+ {
+  "q": "W:measuring tape",
+  "ids": [
+   29,
+   43
+  ]
+ },
+ {
+  "q": "W:toolbox",
+  "ids": [
+   30,
+   31,
+   32,
+   34,
+   35,
+   39
+  ]
+ },
+ {
+  "q": "W:multimeter",
+  "ids": [
+   33,
+   45
+  ]
+ },
+ {
+  "q": "W:tool cabinet cart",
+  "ids": [
+   36
+  ]
+ },
+ {
+  "q": "W:storage rack shelves",
+  "ids": [
+   37
+  ]
+ },
+ {
+  "q": "W:workbench",
+  "ids": [
+   38
+  ]
+ },
+ {
+  "q": "W:pegboard tool wall",
+  "ids": [
+   40
+  ]
+ },
+ {
+  "q": "W:laser distance meter",
+  "ids": [
+   41
+  ]
+ },
+ {
+  "q": "W:laser level",
+  "ids": [
+   42
+  ]
+ },
+ {
+  "q": "W:spirit level",
+  "ids": [
+   44
+  ]
+ },
+ {
+  "q": "W:welding machine",
+  "ids": [
+   46,
+   47
+  ]
+ },
+ {
+  "q": "W:mig welder",
+  "ids": [
+   47
+  ]
+ },
+ {
+  "q": "W:spot welder",
+  "ids": [
+   48
+  ]
+ },
+ {
+  "q": "W:welding helmet",
+  "ids": [
+   49
+  ]
+ },
+ {
+  "q": "W:air compressor",
+  "ids": [
+   50,
+   52
+  ]
+ },
+ {
+  "q": "W:nail gun",
+  "ids": [
+   51
+  ]
+ },
+ {
+  "q": "W:paint sprayer",
+  "ids": [
+   53,
+   54,
+   58
+  ]
+ },
+ {
+  "q": "W:spray gun",
+  "ids": [
+   53
+  ]
+ },
+ {
+  "q": "W:heat gun",
+  "ids": [
+   55
+  ]
+ },
+ {
+  "q": "W:paint roller",
+  "ids": [
+   56
+  ]
+ },
+ {
+  "q": "W:sandpaper",
+  "ids": [
+   57
+  ]
+ },
+ {
+  "q": "W:hard hat",
+  "ids": [
+   59
+  ]
+ },
+ {
+  "q": "W:safety goggles",
+  "ids": [
+   60
+  ]
+ },
+ {
+  "q": "W:work gloves",
+  "ids": [
+   61
+  ]
+ },
+ {
+  "q": "W:tool belt",
+  "ids": [
+   62
+  ]
+ },
+ {
+  "q": "W:ear plugs",
+  "ids": [
+   63
+  ]
+ },
+ {
+  "q": "W:wood lathe",
+  "ids": [
+   65
+  ]
+ },
+ {
+  "q": "W:disc sander",
+  "ids": [
+   66
+  ]
+ },
+ {
+  "q": "W:spokeshave",
+  "ids": [
+   67
+  ]
+ },
+ {
+  "q": "W:brushcutter trimmer",
+  "ids": [
+   68
+  ]
+ },
+ {
+  "q": "W:chainsaw",
+  "ids": [
+   69
+  ]
+ },
+ {
+  "q": "W:garden hoe spade",
+  "ids": [
+   70
+  ]
+ },
+ {
+  "q": "W:portable generator",
+  "ids": [
+   71
+  ]
+ },
+ {
+  "q": "W:voltage stabilizer",
+  "ids": [
+   72
+  ]
+ },
+ {
+  "q": "W:fire extinguisher",
+  "ids": [
+   73
+  ]
+ },
+ {
+  "q": "W:tile saw machine",
+  "ids": [
+   14
+  ]
+ },
+ {
+  "q": "F:mira tile cutter",
+  "ids": [
+   14
+  ]
+ },
+ {
+  "q": "W:wide belt sander machine",
+  "ids": [
+   22
+  ]
+ },
+ {
+  "q": "W:toolbox set of tools",
+  "ids": [
+   34,
+   35
+  ]
+ },
+ {
+  "q": "W:tool chest cabinet steel",
+  "ids": [
+   36
+  ]
+ },
+ {
+  "q": "F:tool trolley cart",
+  "ids": [
+   36
+  ]
+ },
+ {
+  "q": "W:tool wall mounted organizer",
+  "ids": [
+   40
+  ]
+ },
+ {
+  "q": "F:perforated panel tools",
+  "ids": [
+   40
+  ]
+ },
+ {
+  "q": "F:pneumatic tool set",
+  "ids": [
+   35
+  ]
+ },
+ {
+  "q": "F:mechanic tool kit set",
+  "ids": [
+   34
+  ]
+ },
+ {
+  "q": "F:cutting machine ceramic",
+  "ids": [
+   14
+  ]
+ },
+ {
+  "q": "W:belt grinder machine",
+  "ids": [
+   21,
+   22
+  ]
+ },
+ {
+  "q": "W:sanding machine workshop",
+  "ids": [
+   20,
+   21,
+   22,
+   23
+  ]
+ },
+ {
+  "q": "F:jigsaw power tool photo",
+  "ids": [
+   10
+  ]
+ },
+ {
+  "q": "F:cordless jigsaw tool",
+  "ids": [
+   10
+  ]
+ },
+ {
+  "q": "F:bench grinder workshop",
+  "ids": [
+   23
+  ]
+ },
+ {
+  "q": "F:welding helmet photo",
+  "ids": [
+   49
+  ]
+ },
+ {
+  "q": "F:welding equipment workshop",
+  "ids": [
+   46
+  ]
+ },
+ {
+  "q": "F:mig welding machine photo",
+  "ids": [
+   47
+  ]
+ },
+ {
+  "q": "F:generador portatil",
+  "ids": [
+   71
+  ]
+ },
+ {
+  "q": "F:bench grinder tool",
+  "ids": [
+   8
+  ]
+ },
+ {
+  "q": "F:angle grinder tool photo",
+  "ids": [
+   16,
+   17,
+   19
+  ]
+ },
+ {
+  "q": "F:measure tape tool photo",
+  "ids": [
+   29,
+   43
+  ]
+ },
+ {
+  "q": "W:clothing work gloves",
+  "ids": [
+   61
+  ]
+ },
+ {
+  "q": "W:protective eyewear",
+  "ids": [
+   60
+  ]
+ },
+ {
+  "q": "W:ear protection muffs",
+  "ids": [
+   63
+  ]
+ },
+ {
+  "q": "F:leather tool belt",
+  "ids": [
+   62
+  ]
+ },
+ {
+  "q": "F:heat gun power tool",
+  "ids": [
+   55
+  ]
+ },
+ {
+  "q": "F:paint sprayer graco",
+  "ids": [
+   53,
+   54,
+   58
+  ]
+ },
+ {
+  "q": "F:spray painting equipment",
+  "ids": [
+   53
+  ]
+ },
+ {
+  "q": "W:roller painting wall",
+  "ids": [
+   56
+  ]
+ },
+ {
+  "q": "W:abrasive paper sheets",
+  "ids": [
+   57
+  ]
+ },
+ {
+  "q": "F:chainsaw tool photo",
+  "ids": [
+   69
+  ]
+ },
+ {
+  "q": "W:spade shovel garden",
+  "ids": [
+   70
+  ]
+ },
+ {
+  "q": "W:wood planer machine",
+  "ids": [
+   18,
+   64
+  ]
+ },
+ {
+  "q": "W:voltage regulator device",
+  "ids": [
+   72
+  ]
+ },
+ {
+  "q": "F:bosch angle grinder tool",
+  "ids": [
+   19
+  ]
+ },
+ {
+  "q": "F:makita angle grinder",
+  "ids": [
+   19
+  ]
+ },
+ {
+  "q": "W:laser distance measurer device",
+  "ids": [
+   41
+  ]
+ },
+ {
+  "q": "F:distancemeter laser",
+  "ids": [
+   41
+  ]
+ },
+ {
+  "q": "F:portable generator machine engine",
+  "ids": [
+   71
+  ]
+ },
+ {
+  "q": "W:generator set equipment",
+  "ids": [
+   71
+  ]
+ },
+ {
+  "q": "F:geared head drill machine",
+  "ids": [
+   8
+  ]
+ },
+ {
+  "q": "F:pillar drill machine tool",
+  "ids": [
+   8
+  ]
+ },
+ {
+  "q": "F:table saw machine tool",
+  "ids": [
+   12
+  ]
+ },
+ {
+  "q": "F:bench saw table",
+  "ids": [
+   12
+  ]
+ },
+ {
+  "q": "W:socket set tools metal case",
+  "ids": [
+   25
+  ]
+ },
+ {
+  "q": "W:measuring tape tool photo",
+  "ids": [
+   29,
+   43
+  ]
+ },
+ {
+  "q": "W:welding helmet mask photo",
+  "ids": [
+   49
+  ]
+ },
+ {
+  "q": "F:welding inverter machine tool",
+  "ids": [
+   46
+  ]
+ },
+ {
+  "q": "F:pneumatic impact wrench",
+  "ids": [
+   35
+  ]
+ },
+ {
+  "q": "W:air impact wrench tool",
+  "ids": [
+   35
+  ]
+ },
+ {
+  "q": "F:tile saw machine",
+  "ids": [
+   14
+  ]
+ },
+ {
+  "q": "W:ceramic tile cutting machine",
+  "ids": [
+   14
+  ]
+ },
+ {
+  "q": "W:tool storage cabinet chest",
+  "ids": [
+   36
+  ]
+ },
+ {
+  "q": "F:pegboard tool board",
+  "ids": [
+   40
+  ]
+ },
+ {
+  "q": "W:workshop tool wall board",
+  "ids": [
+   40
+  ]
+ },
+ {
+  "q": "F:wide belt sander",
+  "ids": [
+   22
+  ]
+ },
+ {
+  "q": "W:drum sanding machine",
+  "ids": [
+   22
+  ]
+ }
+]

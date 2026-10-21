@@ -284,7 +284,10 @@ var KONSTRUCT = (function () {
 
   /* imagem gerada a partir do próprio modelo 3D + nº de avaliações */
   P.forEach(function (p) {
-    p.img = IMG(p.id);
+    var foto = (window.KOTOS_FOTOS || {})[p.id];
+    p.img = foto ? foto.src : IMG(p.id);
+    p.fotoReal = !!foto;
+    p.credit = foto ? foto.creditos : null;
     p.rc = Math.max(3, Math.round(p.sold * 0.13));
     p.stock = 3 + (p.id * 7) % 14;
   });

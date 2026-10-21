@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>KONSTRUCT — tratamento das fotos de produto</title>
+<style>
+  body{margin:0;background:#0a0b0e;color:#e9ecf2;font-family:system-ui,sans-serif}
+  #c{display:block;margin:0 auto;border:1px solid #333}
+  #log{position:fixed;left:10px;top:10px;font:12px/1.5 monospace;color:#9aa;white-space:pre;z-index:9;background:#000a;padding:8px}
+</style>
+</head>
+<body>
+<canvas id="c" width="720" height="720"></canvas>
+<div id="log">iniciando…</div>
+<script>
+/* Recorta/adequa cada foto baixada em 720x720 com fundo de estúdio
+   e envia para o servidor local (konstruct/assets/f-<id>.jpg). */
+(function () {
+  var SIZE = 640;
+  var canvas = document.getElementById('c');
+  var ctx = canvas.getContext('2d');
+  var log = document.getElementById('log');
+
+  function fundo(c) {
+    var g = c.createRadialGradient(SIZE * .5, SIZE * .42, 20, SIZE * .5, SIZE * .5, SIZE * .68);
+    g.addColorStop(0, '#ffffff'); g.addColorStop(.55, '#f3f4f6'); g.addColorStop(1, '#e4e6ea');
+    c.fillStyle = g; c.fillRect(0, 0, SIZE, SIZE);
+    var rg = c.createRadialGradient(SIZE * .5, SIZE * .82, 10, SIZE * .5, SIZE * .82, SIZE * .42);
+    rg.addColorStop(0, 'rgba(245,179,1,.09)'); rg.addColorStop(1, 'rgba(0,0,0,0)');
+    c.fillStyle = rg; c.fillRect(0, 0, SIZE, SIZE);
+  }
+
+  function carregar(src) {
+    return new Promise(function (res, rej) {
+      var im = new Image();
+      im.onload = function () { res(im); };
+      im.onerror = function () { rej(new Error('falhou ' + src)); };
+      im.src = src;
+    });
+  }
+
+  window.__processar = async function () {
+    var manifest = await (await fetch('fotos-manifest.json?r=' + Date.now())).json();
+    var ids = Object.keys(manifest);
+    var ok = 0, erros = [];
+    log.textContent = 'processando ' + ids.length + ' fotos…';
+
+    for (var i = 0; i < ids.length; i++) {
+      var id = ids[i];
+      var m = manifest[id];
+      var nome = m.src.replace('assets/', '');
+      try {
+        var im = await carregar('tmp-fotos/' + nome + '?r=' + Date.now());
+        var margem = SIZE * 0.03;
+        var ar = im.width / im.height;
+        /* paisagem/quadrado: preenche cortando as laterais; retrato: encaixa inteiro */
+        var cobre = ar >= 0.85;
+        var esc = cobre
+          ? Math.max((SIZE - margem * 2) / im.width, (SIZE - margem * 2) / im.height)
+          : Math.min((SIZE - margem * 2) / im.width, (SIZE - margem * 2) / im.height);
+        var w = im.width * esc, h = im.height * esc;
+        fundo(ctx);
+        ctx.drawImage(im, (SIZE - w) / 2, (SIZE - h) / 2, w, h);
+
+        var dataUrl = canvas.toDataURL('image/jpeg', 0.8);
+        var bin = atob(dataUrl.split(',')[1]);
+        var arr = new Uint8Array(bin.length);
+        for (var j = 0; j < bin.length; j++) arr[j] = bin.charCodeAt(j);
+        var caminho = 'konstruct/assets/f-' + id + '.jpg';
+        var resp = await fetch('/__upload', {
+          method: 'POST', body: new Blob([caminho, new Uint8Array([10]), arr])
+        });
+        if (!resp.ok) throw new Error('upload ' + resp.status);
+        ok++;
+        log.textContent = 'ok ' + ok + '/' + ids.length + ' — ' + caminho;
+      } catch (e) {
+        erros.push(id + ': ' + e.message);
+        log.textContent = 'erro em ' + id + ' — ' + e.message;
+      }
+    }
+    log.textContent = 'CONCLUIDO: ' + ok + '/' + ids.length + ' fotos gravadas\n' + erros.join('\n');
+    window.__processado = { ok: ok, erros: erros };
+    return ok;
+  };
+
+  log.textContent = 'pronto — clique para processar';
+})();
+</script>
+</body>
+</html>

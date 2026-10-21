@@ -1,0 +1,673 @@
+/* Gerado automaticamente por dev/gerar-creditos.js — 67 fotos de produto com licença livre. */
+var KOTOS_FOTOS = {
+ "1": {
+  "src": "assets/f-1.jpg",
+  "creditos": {
+   "titulo": "Bosch GBH 36 V-LI Compact rotary hammer",
+   "autor": "Mark Hunter",
+   "licenca": "BY",
+   "fonte": "https://commons.wikimedia.org/w/index.php?curid=81372701",
+   "origem": "Wikimedia Commons"
+  }
+ },
+ "2": {
+  "src": "assets/f-2.jpg",
+  "creditos": {
+   "titulo": "Drills",
+   "autor": "toolstop",
+   "licenca": "BY",
+   "fonte": "https://www.flickr.com/photos/42408834@N06/4546644492",
+   "origem": "Flickr"
+  }
+ },
+ "3": {
+  "src": "assets/f-3.jpg",
+  "creditos": {
+   "titulo": "Makita BTD146 18v lithium-ion impact driver (6169173545)",
+   "autor": "Mark Hunter",
+   "licenca": "BY",
+   "fonte": "https://commons.wikimedia.org/w/index.php?curid=148868048",
+   "origem": "Wikimedia Commons"
+  }
+ },
+ "4": {
+  "src": "assets/f-4.jpg",
+  "creditos": {
+   "titulo": "DeWalt 20 Volt Max Cordless Drill",
+   "autor": "TaurusEmerald",
+   "licenca": "BY-SA",
+   "fonte": "https://commons.wikimedia.org/w/index.php?curid=162884944",
+   "origem": "Wikimedia Commons"
+  }
+ },
+ "6": {
+  "src": "assets/f-6.jpg",
+  "creditos": {
+   "titulo": "Makita 10.8V Impact Driver (4887708328)",
+   "autor": "Mark Hunter",
+   "licenca": "BY",
+   "fonte": "https://commons.wikimedia.org/w/index.php?curid=148867222",
+   "origem": "Wikimedia Commons"
+  }
+ },
+ "7": {
+  "src": "assets/f-7.jpg",
+  "creditos": {
+   "titulo": "DeWalt 20 Volt Max Cordless Drill",
+   "autor": "TaurusEmerald",
+   "licenca": "BY-SA",
+   "fonte": "https://commons.wikimedia.org/w/index.php?curid=162884944",
+   "origem": "Wikimedia Commons"
+  }
+ },
+ "8": {
+  "src": "assets/f-8.jpg",
+  "creditos": {
+   "titulo": "File:Machine, drilling, bench drilling machine.jpg",
+   "autor": "Hwkj8866",
+   "licenca": "BY-SA",
+   "fonte": "https://commons.wikimedia.org/w/index.php?curid=48611430",
+   "origem": "Wikimedia Commons"
+  }
+ },
+ "9": {
+  "src": "assets/f-9.jpg",
+  "creditos": {
+   "titulo": "DeWalt circular saw",
+   "autor": "Mark Hunter",
+   "licenca": "BY",
+   "fonte": "https://commons.wikimedia.org/w/index.php?curid=32929444",
+   "origem": "Wikimedia Commons"
+  }
+ },
+ "10": {
+  "src": "assets/f-10.jpg",
+  "creditos": {
+   "titulo": "Skil jigsaw",
+   "autor": "Zosma",
+   "licenca": "BY-SA",
+   "fonte": "https://commons.wikimedia.org/w/index.php?curid=7460721",
+   "origem": "Wikimedia Commons"
+  }
+ },
+ "11": {
+  "src": "assets/f-11.jpg",
+  "creditos": {
+   "titulo": "DeWalt Reciprocating Saw (5073128275)",
+   "autor": "Charles & Hudson",
+   "licenca": "BY-SA",
+   "fonte": "https://commons.wikimedia.org/w/index.php?curid=189037985",
+   "origem": "Wikimedia Commons"
+  }
+ },
+ "12": {
+  "src": "assets/f-12.jpg",
+  "creditos": {
+   "titulo": "Table saw blade guard",
+   "autor": "Patrick Fitzgerald",
+   "licenca": "BY",
+   "fonte": "https://commons.wikimedia.org/w/index.php?curid=95498854",
+   "origem": "Wikimedia Commons"
+  }
+ },
+ "13": {
+  "src": "assets/f-13.jpg",
+  "creditos": {
+   "titulo": "<div class='fn'> Woods and Forests band saw</div>",
+   "autor": "State Government Photographer",
+   "licenca": "CC0",
+   "fonte": "https://commons.wikimedia.org/w/index.php?curid=86451550",
+   "origem": "Wikimedia Commons"
+  }
+ },
+ "16": {
+  "src": "assets/f-16.jpg",
+  "creditos": {
+   "titulo": "-2019-08-13 Bosch angle grinder, Norfolk",
+   "autor": "Kolforn (Kolforn)I'd appreciate if you could mail me (Kolforn@gmail.com) if you want to use this picture out of the Wikimedia project scope. .mw-parser-output .responsive-license-cc{clear:both;text-align:center;box-sizing:border-box;width:100%;justify-content:space-around;align-items:center;margin:0.5em auto;background-color:#f9f9f9;border:2px solid #e0e0e0;border-spacing:8px;display:flex}.mw-parser-output .responsive-license-cc div{margin:4px}.mw-parser-output .rlicense-text div{margin:0.5em auto}@media screen and (max-width:640px){.mw-parser-output .responsive-license-cc{flex-flow:column}.mw-parser-output .rlicense-text{order:1}}This file is licensed under the Creative Commons Attribution-Share Alike 4.0 International license. You are free: to share – to copy, distribute and transmit the work to remix – to adapt the work Under the following conditions: attribution – You must give appropriate credit, provide a link to the license, and indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use. share alike – If you remix, transform, or build upon the material, you must distribute your contributions under the same or compatible license as the original.https://creativecommons.org/licenses/by-sa/4.0CC BY-SA 4.0 Creative Commons Attribution-Share Alike 4.0 truetrue",
+   "licenca": "BY-SA",
+   "fonte": "https://commons.wikimedia.org/w/index.php?curid=81294208",
+   "origem": "Wikimedia Commons"
+  }
+ },
+ "17": {
+  "src": "assets/f-17.jpg",
+  "creditos": {
+   "titulo": "Man cutting with angle grinder",
+   "autor": "AnonymousUnknown author",
+   "licenca": "CC0",
+   "fonte": "https://commons.wikimedia.org/w/index.php?curid=77146162",
+   "origem": "Wikimedia Commons"
+  }
+ },
+ "18": {
+  "src": "assets/f-18.jpg",
+  "creditos": {
+   "titulo": "Makita KP0800 Planer",
+   "autor": "toolstop",
+   "licenca": "BY",
+   "fonte": "https://www.flickr.com/photos/42408834@N06/3990377851",
+   "origem": "Flickr"
+  }
+ },
+ "19": {
+  "src": "assets/f-19.jpg",
+  "creditos": {
+   "titulo": "Linked mall indoor air pollution angle grinder 02",
+   "autor": "Waydwaid",
+   "licenca": "CC0",
+   "fonte": "https://commons.wikimedia.org/w/index.php?curid=175086882",
+   "origem": "Wikimedia Commons"
+  }
+ },
+ "20": {
+  "src": "assets/f-20.jpg",
+  "creditos": {
+   "titulo": "Bosch GEX1251AE Orbital Sander",
+   "autor": "toolstop",
+   "licenca": "BY",
+   "fonte": "https://www.flickr.com/photos/42408834@N06/4362260798",
+   "origem": "Flickr"
+  }
+ },
+ "21": {
+  "src": "assets/f-21.jpg",
+  "creditos": {
+   "titulo": "Belt sander bosch",
+   "autor": "Luigi Zanasi",
+   "licenca": "BY-SA",
+   "fonte": "https://commons.wikimedia.org/w/index.php?curid=379086",
+   "origem": "Wikimedia Commons"
+  }
+ },
+ "23": {
+  "src": "assets/f-23.jpg",
+  "creditos": {
+   "titulo": "Randow disc sander",
+   "autor": "Helse Sanning",
+   "licenca": "CC0",
+   "fonte": "https://commons.wikimedia.org/w/index.php?curid=131003011",
+   "origem": "Wikimedia Commons"
+  }
+ },
+ "24": {
+  "src": "assets/f-24.jpg",
+  "creditos": {
+   "titulo": "Spanner Tools Wrench Equipment Edited 2020",
+   "autor": "chimpwithcan",
+   "licenca": "BY",
+   "fonte": "https://www.flickr.com/photos/188454520@N02/49921031566",
+   "origem": "Flickr"
+  }
+ },
+ "25": {
+  "src": "assets/f-25.jpg",
+  "creditos": {
+   "titulo": "Socket set with two ratchets in box",
+   "autor": "Pittigrilli~commonswiki",
+   "licenca": "BY-SA",
+   "fonte": "https://commons.wikimedia.org/w/index.php?curid=95121631",
+   "origem": "Wikimedia Commons"
+  }
+ },
+ "26": {
+  "src": "assets/f-26.jpg",
+  "creditos": {
+   "titulo": "Set of allen keys (20951778700)",
+   "autor": "Nicolas Buffler from Guilherand Granges, France",
+   "licenca": "BY",
+   "fonte": "https://commons.wikimedia.org/w/index.php?curid=153471258",
+   "origem": "Wikimedia Commons"
+  }
+ },
+ "27": {
+  "src": "assets/f-27.jpg",
+  "creditos": {
+   "titulo": "File:Screw pliers-head.jpg",
+   "autor": "M338",
+   "licenca": "CC0",
+   "fonte": "https://commons.wikimedia.org/w/index.php?curid=16058849",
+   "origem": "Wikimedia Commons"
+  }
+ },
+ "28": {
+  "src": "assets/f-28.jpg",
+  "creditos": {
+   "titulo": "<div class='fn'> Post-medieval pipe tamper: Claw hammer tamper</div>",
+   "autor": "Oxfordshire County Council, Anni Byard, 2014-02-25 13:55:23",
+   "licenca": "BY-SA",
+   "fonte": "https://commons.wikimedia.org/w/index.php?curid=55351481",
+   "origem": "Wikimedia Commons"
+  }
+ },
+ "29": {
+  "src": "assets/f-29.jpg",
+  "creditos": {
+   "titulo": "Measuring Tape (3723712803)",
+   "autor": "Jamie from Birmingham, AL, USA",
+   "licenca": "BY",
+   "fonte": "https://commons.wikimedia.org/w/index.php?curid=176303062",
+   "origem": "Wikimedia Commons"
+  }
+ },
+ "30": {
+  "src": "assets/f-30.jpg",
+  "creditos": {
+   "titulo": "WP25 Toolbox - blue",
+   "autor": "Wikimedia Foundation staff and contractors",
+   "licenca": "BY",
+   "fonte": "https://commons.wikimedia.org/w/index.php?curid=179321429",
+   "origem": "Wikimedia Commons"
+  }
+ },
+ "31": {
+  "src": "assets/f-31.jpg",
+  "creditos": {
+   "titulo": "20060513 toolbox",
+   "autor": "Per Erik Strandberg sv:User:PER9000",
+   "licenca": "BY-SA",
+   "fonte": "https://commons.wikimedia.org/w/index.php?curid=830530",
+   "origem": "Wikimedia Commons"
+  }
+ },
+ "32": {
+  "src": "assets/f-32.jpg",
+  "creditos": {
+   "titulo": "Toolbox white transparent",
+   "autor": "SSethi (WMF)",
+   "licenca": "BY-SA",
+   "fonte": "https://commons.wikimedia.org/w/index.php?curid=185115776",
+   "origem": "Wikimedia Commons"
+  }
+ },
+ "33": {
+  "src": "assets/f-33.jpg",
+  "creditos": {
+   "titulo": "1920s multimeter 3738-6b",
+   "autor": "Tabby at English Wikipedia",
+   "licenca": "CC0",
+   "fonte": "https://commons.wikimedia.org/w/index.php?curid=15718038",
+   "origem": "Wikimedia Commons"
+  }
+ },
+ "34": {
+  "src": "assets/f-34.jpg",
+  "creditos": {
+   "titulo": "DEWALT Mechanics Tools Kit and Socket Set",
+   "autor": "shop8447",
+   "licenca": "CC0",
+   "fonte": "https://www.flickr.com/photos/185514373@N06/49060059686",
+   "origem": "Flickr"
+  }
+ },
+ "37": {
+  "src": "assets/f-37.jpg",
+  "creditos": {
+   "titulo": "Warehouse Spaces #warehouse #storage #racks #shelves #empty",
+   "autor": "brendan-c",
+   "licenca": "BY",
+   "fonte": "https://www.flickr.com/photos/56145589@N00/8638108530",
+   "origem": "Flickr"
+  }
+ },
+ "38": {
+  "src": "assets/f-38.jpg",
+  "creditos": {
+   "titulo": "Electronics workbench",
+   "autor": "James Bastow",
+   "licenca": "BY-SA",
+   "fonte": "https://commons.wikimedia.org/w/index.php?curid=16007442",
+   "origem": "Wikimedia Commons"
+  }
+ },
+ "39": {
+  "src": "assets/f-39.jpg",
+  "creditos": {
+   "titulo": "File:Skeptic's Toolbox 2012.JPG",
+   "autor": "Sgerbic",
+   "licenca": "BY-SA",
+   "fonte": "https://commons.wikimedia.org/w/index.php?curid=20595684",
+   "origem": "Wikimedia Commons"
+  }
+ },
+ "40": {
+  "src": "assets/f-40.jpg",
+  "creditos": {
+   "titulo": "Pegboard...Finally",
+   "autor": "Ryan Frost",
+   "licenca": "BY",
+   "fonte": "https://www.flickr.com/photos/10666258@N07/3017916632",
+   "origem": "Flickr"
+  }
+ },
+ "41": {
+  "src": "assets/f-41.jpg",
+  "creditos": {
+   "titulo": "Handheld laser distance meter",
+   "autor": "Krzysztof Maria Różański, (Upior polnocy)",
+   "licenca": "BY",
+   "fonte": "https://commons.wikimedia.org/w/index.php?curid=4552927",
+   "origem": "Wikimedia Commons"
+  }
+ },
+ "42": {
+  "src": "assets/f-42.jpg",
+  "creditos": {
+   "titulo": "HeNe Laser Levels",
+   "autor": "XuPanda",
+   "licenca": "BY-SA",
+   "fonte": "https://commons.wikimedia.org/w/index.php?curid=57756719",
+   "origem": "Wikimedia Commons"
+  }
+ },
+ "43": {
+  "src": "assets/f-43.jpg",
+  "creditos": {
+   "titulo": "Measuring Tape (5569230038)",
+   "autor": "Christine Cavalier from Philadelphia, PA, USA",
+   "licenca": "BY",
+   "fonte": "https://commons.wikimedia.org/w/index.php?curid=176302851",
+   "origem": "Wikimedia Commons"
+  }
+ },
+ "44": {
+  "src": "assets/f-44.jpg",
+  "creditos": {
+   "titulo": "Spirit Level",
+   "autor": "S nova",
+   "licenca": "BY",
+   "fonte": "https://commons.wikimedia.org/w/index.php?curid=17482570",
+   "origem": "Wikimedia Commons"
+  }
+ },
+ "45": {
+  "src": "assets/f-45.jpg",
+  "creditos": {
+   "titulo": "Digital Multimeter",
+   "autor": "oomlout",
+   "licenca": "BY-SA",
+   "fonte": "https://commons.wikimedia.org/w/index.php?curid=19866429",
+   "origem": "Wikimedia Commons"
+  }
+ },
+ "46": {
+  "src": "assets/f-46.jpg",
+  "creditos": {
+   "titulo": "0277Welders with welding machines and equipment at work in Bustos Bulacan 13",
+   "autor": "Judgefloro",
+   "licenca": "CC0",
+   "fonte": "https://commons.wikimedia.org/w/index.php?curid=100071498",
+   "origem": "Wikimedia Commons"
+  }
+ },
+ "47": {
+  "src": "assets/f-47.jpg",
+  "creditos": {
+   "titulo": "0277Welders with welding machines and equipment at work in Bustos Bulacan 15",
+   "autor": "Judgefloro",
+   "licenca": "CC0",
+   "fonte": "https://commons.wikimedia.org/w/index.php?curid=100071507",
+   "origem": "Wikimedia Commons"
+  }
+ },
+ "48": {
+  "src": "assets/f-48.jpg",
+  "creditos": {
+   "titulo": "Spot welder (Miller 12,000 amp model)",
+   "autor": "Triddle",
+   "licenca": "CC0",
+   "fonte": "https://commons.wikimedia.org/w/index.php?curid=143712173",
+   "origem": "Wikimedia Commons"
+  }
+ },
+ "49": {
+  "src": "assets/f-49.jpg",
+  "creditos": {
+   "titulo": "Soviet welding helmet, 1985",
+   "autor": "im_tau",
+   "licenca": "BY",
+   "fonte": "https://commons.wikimedia.org/w/index.php?curid=197415045",
+   "origem": "Wikimedia Commons"
+  }
+ },
+ "50": {
+  "src": "assets/f-50.jpg",
+  "creditos": {
+   "titulo": "Hiei HS5 air compressor 20180321",
+   "autor": "Hahifuheho",
+   "licenca": "CC0",
+   "fonte": "https://commons.wikimedia.org/w/index.php?curid=67549890",
+   "origem": "Wikimedia Commons"
+  }
+ },
+ "51": {
+  "src": "assets/f-51.jpg",
+  "creditos": {
+   "titulo": "Metabo cordless nail gun",
+   "autor": "Wikideas1",
+   "licenca": "CC0",
+   "fonte": "https://commons.wikimedia.org/w/index.php?curid=173838550",
+   "origem": "Wikimedia Commons"
+  }
+ },
+ "52": {
+  "src": "assets/f-52.jpg",
+  "creditos": {
+   "titulo": "Single Stage Portable Air Compressor",
+   "autor": "BSE9619",
+   "licenca": "BY-SA",
+   "fonte": "https://commons.wikimedia.org/w/index.php?curid=66555012",
+   "origem": "Wikimedia Commons"
+  }
+ },
+ "53": {
+  "src": "assets/f-53.jpg",
+  "creditos": {
+   "titulo": "Young man painting a wood board in his workshop using a spray gun",
+   "autor": "Shixart1985",
+   "licenca": "BY",
+   "fonte": "https://commons.wikimedia.org/w/index.php?curid=196431287",
+   "origem": "Wikimedia Commons"
+  }
+ },
+ "54": {
+  "src": "assets/f-54.jpg",
+  "creditos": {
+   "titulo": "A Ghanaian Auto Paint Sprayer",
+   "autor": "Gkbediako",
+   "licenca": "BY-SA",
+   "fonte": "https://commons.wikimedia.org/w/index.php?curid=63682489",
+   "origem": "Wikimedia Commons"
+  }
+ },
+ "55": {
+  "src": "assets/f-55.jpg",
+  "creditos": {
+   "titulo": "Heat Gun (2983453188)",
+   "autor": "Joe Loong from Reston, USA",
+   "licenca": "BY-SA",
+   "fonte": "https://commons.wikimedia.org/w/index.php?curid=175248020",
+   "origem": "Wikimedia Commons"
+  }
+ },
+ "56": {
+  "src": "assets/f-56.jpg",
+  "creditos": {
+   "titulo": "Paint roller 2",
+   "autor": "Maggie",
+   "licenca": "BY",
+   "fonte": "https://commons.wikimedia.org/w/index.php?curid=25192477",
+   "origem": "Wikimedia Commons"
+  }
+ },
+ "57": {
+  "src": "assets/f-57.jpg",
+  "creditos": {
+   "titulo": "Sandpaper letters",
+   "autor": "Lisa Maruna",
+   "licenca": "BY",
+   "fonte": "https://commons.wikimedia.org/w/index.php?curid=94401314",
+   "origem": "Wikimedia Commons"
+  }
+ },
+ "58": {
+  "src": "assets/f-58.jpg",
+  "creditos": {
+   "titulo": "Ryobi Cordless Paint Sprayer (5073760320)",
+   "autor": "Charles & Hudson",
+   "licenca": "BY-SA",
+   "fonte": "https://commons.wikimedia.org/w/index.php?curid=189038403",
+   "origem": "Wikimedia Commons"
+  }
+ },
+ "59": {
+  "src": "assets/f-59.jpg",
+  "creditos": {
+   "titulo": "White hard hats",
+   "autor": "Miya",
+   "licenca": "BY-SA",
+   "fonte": "https://commons.wikimedia.org/w/index.php?curid=77026563",
+   "origem": "Wikimedia Commons"
+  }
+ },
+ "60": {
+  "src": "assets/f-60.jpg",
+  "creditos": {
+   "titulo": "Safety Goggles at AERD",
+   "autor": "Wasiul Bahar",
+   "licenca": "BY-SA",
+   "fonte": "https://commons.wikimedia.org/w/index.php?curid=139339569",
+   "origem": "Wikimedia Commons"
+  }
+ },
+ "61": {
+  "src": "assets/f-61.jpg",
+  "creditos": {
+   "titulo": "Leather work gloves composite P1010224 copy",
+   "autor": "el cajon yacht club",
+   "licenca": "BY",
+   "fonte": "https://commons.wikimedia.org/w/index.php?curid=115130357",
+   "origem": "Wikimedia Commons"
+  }
+ },
+ "62": {
+  "src": "assets/f-62.jpg",
+  "creditos": {
+   "titulo": "Tool belt harness",
+   "autor": "YouTube – JoeSimple",
+   "licenca": "BY",
+   "fonte": "https://commons.wikimedia.org/w/index.php?curid=172632509",
+   "origem": "Wikimedia Commons"
+  }
+ },
+ "63": {
+  "src": "assets/f-63.jpg",
+  "creditos": {
+   "titulo": "Ear plugs mit Hörgerät 01",
+   "autor": "Burkhard Mücke",
+   "licenca": "BY",
+   "fonte": "https://commons.wikimedia.org/w/index.php?curid=141570996",
+   "origem": "Wikimedia Commons"
+  }
+ },
+ "64": {
+  "src": "assets/f-64.jpg",
+  "creditos": {
+   "titulo": "Thickness planer",
+   "autor": "Rizwanaslam09",
+   "licenca": "BY-SA",
+   "fonte": "https://commons.wikimedia.org/w/index.php?curid=53879266",
+   "origem": "Wikimedia Commons"
+  }
+ },
+ "65": {
+  "src": "assets/f-65.jpg",
+  "creditos": {
+   "titulo": "Working at Wood-turning lathe",
+   "autor": "LVL1 Hackerspace",
+   "licenca": "BY",
+   "fonte": "https://commons.wikimedia.org/w/index.php?curid=44843412",
+   "origem": "Wikimedia Commons"
+  }
+ },
+ "66": {
+  "src": "assets/f-66.jpg",
+  "creditos": {
+   "titulo": "Exterior (Powermatic Houdaille Model 30 disc sander)",
+   "autor": "simonov",
+   "licenca": "BY-SA",
+   "fonte": "https://commons.wikimedia.org/w/index.php?curid=135712899",
+   "origem": "Wikimedia Commons"
+  }
+ },
+ "67": {
+  "src": "assets/f-67.jpg",
+  "creditos": {
+   "titulo": "<div class='fn'> <i>Spokeshave </i></div>",
+   "autor": "Herman O. Stroh",
+   "licenca": "CC0",
+   "fonte": "https://commons.wikimedia.org/w/index.php?curid=82169440",
+   "origem": "Wikimedia Commons"
+  }
+ },
+ "68": {
+  "src": "assets/f-68.jpg",
+  "creditos": {
+   "titulo": "Brushcutter and line trimmer tools",
+   "autor": "Andrewa",
+   "licenca": "BY-SA",
+   "fonte": "https://commons.wikimedia.org/w/index.php?curid=53276294",
+   "origem": "Wikimedia Commons"
+  }
+ },
+ "69": {
+  "src": "assets/f-69.jpg",
+  "creditos": {
+   "titulo": "Chainsaw Chain at Oleo-Mac saw near Hostákov, Vladislav, Třebíč District",
+   "autor": "Frettie",
+   "licenca": "BY",
+   "fonte": "https://commons.wikimedia.org/w/index.php?curid=6871698",
+   "origem": "Wikimedia Commons"
+  }
+ },
+ "70": {
+  "src": "assets/f-70.jpg",
+  "creditos": {
+   "titulo": "Steel garden tools image",
+   "autor": "Desconhecido",
+   "licenca": "CC0",
+   "fonte": "https://www.rawpixel.com/image/5915629/image-public-domain-white-free",
+   "origem": "Openverse"
+  }
+ },
+ "71": {
+  "src": "assets/f-71.jpg",
+  "creditos": {
+   "titulo": "Scaffold, ladder, portable generator Fortepan 56120",
+   "autor": "FOTO:Fortepan — ID 56120: Adományozó/Donor: Rádió és Televízió Újság. archive copy at the Wayback Machine",
+   "licenca": "BY-SA",
+   "fonte": "https://commons.wikimedia.org/w/index.php?curid=50547709",
+   "origem": "Wikimedia Commons"
+  }
+ },
+ "72": {
+  "src": "assets/f-72.jpg",
+  "creditos": {
+   "titulo": "File:Faratel 6KW voltage stabilizer trans IO.jpg",
+   "autor": "IranianNationalist",
+   "licenca": "BY-SA",
+   "fonte": "https://commons.wikimedia.org/w/index.php?curid=67356057",
+   "origem": "Wikimedia Commons"
+  }
+ },
+ "73": {
+  "src": "assets/f-73.jpg",
+  "creditos": {
+   "titulo": "Abc fire extinguisher",
+   "autor": "ProjectManhattan",
+   "licenca": "CC0",
+   "fonte": "https://commons.wikimedia.org/w/index.php?curid=29681241",
+   "origem": "Wikimedia Commons"
+  }
+ }
+};

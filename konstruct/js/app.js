@@ -309,6 +309,7 @@
       var lo = PRICE_MIN + i * step, hi = lo + step;
       var active = state.maxP > lo && state.minP < hi;
       return '<button class="hbar' + (active ? ' on' : '') + '" data-lo="' + Math.round(lo) + '" data-hi="' + Math.round(hi) + '" ' +
+        'aria-label="Preço entre ' + moneyShort(lo) + ' e ' + moneyShort(hi) + ' (' + n + ' produtos)" ' +
         'title="' + money(lo) + ' – ' + money(hi) + ' (' + n + ')" style="height:' + Math.max(6, (n / max) * 100) + '%"></button>';
     }).join('');
     $('hist').innerHTML = html;
@@ -462,6 +463,10 @@
     $('vBrand').textContent = p.brand;
     $('vStars').innerHTML = stars(p.r) + '<i class="rc">(' + p.rc + ' avaliações)</i>';
     $('vDesc').textContent = p.desc;
+    $('vCredit').innerHTML = p.credit
+      ? '📷 Foto: <a href="' + esc(p.credit.fonte) + '" target="_blank" rel="noopener">' +
+        esc(p.credit.autor) + '</a> · ' + esc(p.credit.licenca) + ' · via ' + esc(p.credit.origem)
+      : '🖥️ Imagem gerada a partir do modelo 3D deste produto.';
     $('vSpecs').innerHTML = p.specs.map(function (s) { return '<li>' + esc(s) + '</li>'; }).join('');
     $('vBadge').textContent = p.sale ? 'Oferta' : (K.CAT_LABEL[p.c] || p.c);
     $('vPrice').innerHTML = (p.old ? '<s>' + money(p.old) + '</s>' : '') + money(p.p) +

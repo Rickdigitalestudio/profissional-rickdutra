@@ -13,8 +13,8 @@
 <canvas id="stage" width="720" height="720"></canvas>
 <div id="log">iniciando…</div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
-<script src="js/data.js?v=14"></script>
-<script src="js/models.js?v=14"></script>
+<script src="../js/data.js?v=15"></script>
+<script src="../js/models.js?v=15"></script>
 <script>
 /* Renderiza o modelo 3D de cada produto e baixa a imagem como JPEG.
    É esta imagem que aparece no card, no carrinho e na vitrine. */
@@ -73,12 +73,19 @@
   rim.position.set(1.2, 1.8, -3); scene.add(rim);
 
   /* fundo do card (radial escuro) */
+  var CLARO = location.search.indexOf('claro') !== -1;
   var bg = document.createElement('canvas');
   bg.width = bg.height = SIZE;
   var bctx = bg.getContext('2d');
-  var rg2 = bctx.createRadialGradient(SIZE * .5, SIZE * .40, 30, SIZE * .5, SIZE * .5, SIZE * .66);
-  rg2.addColorStop(0, '#2a313d'); rg2.addColorStop(.5, '#181d25'); rg2.addColorStop(1, '#0c0f14');
-  bctx.fillStyle = rg2; bctx.fillRect(0, 0, SIZE, SIZE);
+  if (CLARO) {
+    var rg2c = bctx.createRadialGradient(SIZE * .5, SIZE * .40, 30, SIZE * .5, SIZE * .5, SIZE * .66);
+    rg2c.addColorStop(0, '#ffffff'); rg2c.addColorStop(.55, '#f4f5f7'); rg2c.addColorStop(1, '#e6e8ec');
+    bctx.fillStyle = rg2c; bctx.fillRect(0, 0, SIZE, SIZE);
+  } else {
+    var rg2 = bctx.createRadialGradient(SIZE * .5, SIZE * .40, 30, SIZE * .5, SIZE * .5, SIZE * .66);
+    rg2.addColorStop(0, '#2a313d'); rg2.addColorStop(.5, '#181d25'); rg2.addColorStop(1, '#0c0f14');
+    bctx.fillStyle = rg2; bctx.fillRect(0, 0, SIZE, SIZE);
+  }
   /* brilho sutil no piso */
   var rg3 = bctx.createRadialGradient(SIZE * .5, SIZE * .78, 10, SIZE * .5, SIZE * .78, SIZE * .45);
   rg3.addColorStop(0, 'rgba(245,179,1,.10)'); rg3.addColorStop(1, 'rgba(0,0,0,0)');
@@ -124,12 +131,12 @@
     renderer.render(scene, camera);
 
     /* envia a imagem direto para o servidor local */
-    var dataUrl = canvas.toDataURL('image/jpeg', 0.9);
+    var dataUrl = canvas.toDataURL('image/jpeg', 0.86);
     var b64 = dataUrl.split(',')[1];
     var bin = atob(b64);
     var arr = new Uint8Array(bin.length);
     for (var i = 0; i < bin.length; i++) arr[i] = bin.charCodeAt(i);
-    var path = 'konstruct/assets/p-' + product.id + '.jpg';
+    var path = CLARO ? 'konstruct/assets/p-' + product.id + '.jpg' : 'konstruct/assets/p-' + product.id + '.jpg';
     var payload = new Blob([path, new Uint8Array([10]), arr]);
     fetch('/__upload', { method: 'POST', body: payload })
       .then(function (r) { return r.text(); })
@@ -141,12 +148,18 @@
   window.__shoot = shoot;
   window.__shootAll = function () {
     var out = [];
-    for (var i = 0; i < P.length; i++) {
-      try { var n = shoot(P[i]); out.push(P[i].id + ':' + n); }
-      catch (e) { out.push(P[i].id + ':ERRO ' + e.message); }
-      log.textContent = (i + 1) + '/' + P.length + ' — ' + P[i].n + '\n' + out.slice(-6).join('\n');
+    var lista = P;
+    /* modo claro: renderiza apenas os ids informados (?claro=5,14,22,35,36) */
+    if (CLARO) {
+      var ids = decodeURIComponent(location.search.replace(/.*claro=/, '')).split(',').map(Number);
+      lista = P.filter(function (p) { return ids.indexOf(p.id) !== -1; });
     }
-    log.textContent = 'CONCLUIDO ' + P.length + ' produtos\n' + out.join('\n');
+    for (var i = 0; i < lista.length; i++) {
+      try { var n = shoot(lista[i]); out.push(lista[i].id + ':' + n); }
+      catch (e) { out.push(lista[i].id + ':ERRO ' + e.message); }
+      log.textContent = (i + 1) + '/' + lista.length + ' — ' + lista[i].n + '\n' + out.slice(-6).join('\n');
+    }
+    log.textContent = 'CONCLUIDO ' + lista.length + ' produtos\n' + out.join('\n');
     window.__done = true;
     return out.length;
   };
