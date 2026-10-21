@@ -1,0 +1,61 @@
+{
+  "slug": "case-konstruct-store",
+  "cliente": "Konstruct Store",
+  "segmento": "Loja virtual de ferramentas · E-commerce",
+  "tipo": "Loja 3D completa",
+  "prazo": "Entregue em 20 dias úteis",
+  "url_site": "konstruct/index.html",
+  "url_codigo": "https://github.com/Rickdigitalestudio/konstruct-store",
+  "img": "img/konstruct.webp",
+  "img_fallback": "img/konstruct.jpg",
+  "img_w": 600,
+  "img_h": 356,
+  "title": "Case Konstruct Store — Loja 3D com 73 produtos e vitrine interativa | Estúdio Rick Digital",
+  "desc": "Loja virtual 3D de ferramentas com 73 produtos, 67 fotos reais, vitrine navegável em WebGL, filtro por categoria e carrinho de verdade.",
+  "h1": "Konstruct Store",
+  "lead": "Uma loja de ferramentas em que o estoque vira vitrine 3D: 73 produtos catalogados, 67 fotos reais e um carrinho que funciona de verdade.",
+  "meta": ["Loja virtual 3D", "73 produtos", "Carrinho funcional"],
+  "contexto": "A Konstruct Store vendia ferramentas pela internet, mas o catálogo era uma lista de texto com fotos cuadradas e o cliente não encontrava o produto. O checkout exigia várias etapas e a maior parte das visitas saía antes de finalizar. O desafio era fazer uma loja de 73 itens continuar parecendo simples de navegar.",
+  "problema": [
+    "Catálogo extenso sem busca: o cliente não encontrava a ferramenta entre 73 itens.",
+    "Fotos pequenas e sem contexto: não dava para entender o tamanho nem o finish do produto.",
+    "Checkout longo, com perda de carrinho no meio do caminho.",
+    "Nenhuma impressão de loja profissional — a marca passava amadora."
+  ],
+  "solucao": [
+    "Vitrine 3D navegável: o produto aparece em cena, com rotação e iluminação de estúdio.",
+    "Catálogo completo de 73 produtos com 67 fotos reais de produto, todas com crédito de licença registrado.",
+    "Filtro por categoria e busca que reduz o catálogo ao que o cliente procura.",
+    "Carrinho lateral com persistência no navegador e resumo de valor em reais.",
+    "Página de produto com galeria, especificações e chamada para o WhatsApp."
+  ],
+  "papel": [
+    "Modelagem 3D dos produtos e do palco (luz, palco, sombras e reflexos).",
+    "Estruturação do catálogo de 73 produtos em JSON com filtros e busca.",
+    "Tratamento das 67 fotos reais: recorte, compressão e otimização em WebP.",
+    "Carrinho, persistência e fluxo de pedido integrado ao WhatsApp.",
+    "Registro dos créditos de licença de cada imagem usada."
+  ],
+  "stack": ["Three.js", "WebGL", "JavaScript", "HTML", "CSS", "Carrinho real", "GitHub Pages"],
+  "resultados": [
+    { "valor": "73", "unidade": "", "rotulo": "produtos catalogados" },
+    { "valor": "67", "unidade": "fotos", "rotulo": "imagens reais de produto com licença registrada" },
+    { "valor": "20", "unidade": "dias", "rotulo": "do briefing à loja no ar" },
+    { "valor": "0", "unidade": "frameworks", "rotulo": "front-end leve, sem travamento no celular" }
+  ],
+  "depoimento": {
+    "estado": "modelo",
+    "texto": "Escreva aqui o que o dono da Konconstruct Store disse depois da publicação. O ideal é citar a melhora nas vendas, a facilidade de gerenciar o catálogo ou a experiência de compra.",
+    "nome": "Nome do cliente",
+    "cargo": "Proprietário",
+    "empresa": "Konstruct Store"
+  },
+  "destaques": [
+    "Vitrine 3D com iluminação de estúdio e navegação por produto",
+    "73 produtos com filtro por categoria e busca",
+    "67 fotos reais de produto, com créditos de licença",
+    "Carrinho lateral com persistência no navegador",
+    "Catálogo em JSON: atualizar preço e estoque é editar um arquivo"
+  ],
+  "eu_entrego": ["Loja no ar", "Vitrine 3D", "Carrinho funcional", "Catálogo documentado", "Créditos de licença"]
+}

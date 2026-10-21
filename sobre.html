@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>document.documentElement.classList.add("js");</script>
     <title>Sobre mim — Henrique Luiz Dutra | Web Designer & Front-End</title>
     <meta name="description" content="Conheça a trajetória de Henrique Luiz Dutra: formação em TI, Engenharia da Informação, certificações em IA, avatares inteligentes e web design.">
     <meta name="robots" content="index, follow">
@@ -11,9 +12,10 @@
     <link rel="alternate" type="application/rss+xml" title="Estúdio Rick Digital — RSS" href="https://rickdigitalestudio.github.io/profissional-rickdutra/feed.xml">
     <link rel="alternate" type="application/atom+xml" title="Estúdio Rick Digital — Feed" href="https://rickdigitalestudio.github.io/profissional-rickdutra/social-feed.xml">
 
-    <meta name="google-site-verification" content="COLE_SEU_CODIGO_SEARCH_CONSOLE_AQUI">
-    <meta name="msvalidate.01" content="COLE_SEU_CODIGO_BING_AQUI">
-
+    <!-- VERIFICACAO GOOGLE (cole o codigo do Search Console entre as aspas):
+    <meta name="google-site-verification" content="COLE_SEU_CODIGO_AQUI">
+    VERIFICACAO BING:
+    <meta name="msvalidate.01" content="COLE_SEU_CODIGO_AQUI"> -->
     <!-- GA4 (gratis): troque G-H6CS8VRB52 pelo ID real (guia em divulgacao/COMO-ATIVAR-GOOGLE.md) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-H6CS8VRB52"></script>
     <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-H6CS8VRB52');</script>
@@ -32,7 +34,28 @@
 <meta name="twitter:description" content="Conheça a trajetória de Henrique Luiz Dutra: formação em TI, Engenharia da Informação, certificações em IA, avatares inteligentes e web design.">
 <meta name="twitter:image" content="https://rickdigitalestudio.github.io/profissional-rickdutra/img/og-estudio-rick-digital.png">
 
-    <link rel="stylesheet" href="css/style.css?v=4d1">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Henrique Luiz Dutra",
+      "jobTitle": "Web Designer e Desenvolvedor Front-End",
+      "description": "Web designer e desenvolvedor front-end, estudante de Engenharia de Software na Escola DNC e formado em Tecnico em TI. Cria sites profissionais, landing pages e lojas 3D em Sao Paulo e para todo o Brasil.",
+      "url": "https://rickdigitalestudio.github.io/profissional-rickdutra/sobre.html",
+      "image": "https://rickdigitalestudio.github.io/profissional-rickdutra/img/foto-henrique.jpg",
+      "email": "mailto:estudiorickdigital@gmail.com",
+      "telephone": "+55-11-98942-6415",
+      "address": { "@type": "PostalAddress", "addressLocality": "Sao Paulo", "addressRegion": "SP", "addressCountry": "BR" },
+      "alumniOf": [
+        { "@type": "EducationalOrganization", "name": "Escola DNC" },
+        { "@type": "EducationalOrganization", "name": "Curso Tecnico em Tecnologia da Informacao" }
+      ],
+      "knowsAbout": ["HTML", "CSS", "JavaScript", "Three.js", "Web Design", "UX/UI", "SEO", "E-commerce", "Inteligencia Artificial"],
+      "knowsLanguage": ["pt-BR"],
+      "sameAs": ["https://github.com/Rickdigitalestudio", "https://linkedin.com/in/henrique-luiz-dutra-a10346146/"]
+    }
+    </script>
+    <link rel="stylesheet" href="css/style.css?v=5d1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -86,7 +109,7 @@
     <header class="header">
         <nav class="nav-container">
             <a class="logo" href="index.html"><img class="brand-logo" src="img/logo-rd.svg" alt="Estúdio Rick Digital" width="38" height="38"><span class="brand-name">ESTÚDIO <b>RICK DIGITAL</b></span></a>
-            <ul class="nav-menu"><li><a href="index.html#trabalhos">Trabalhos</a></li><li><a href="servicos-adicionais.html" style="color:#fff">Serviços</a></li><li><a href="tecnologias.html">Tecnologias</a></li><li><a href="orcamento.html">Orçamento</a></li><li><a href="sobre.html">Sobre</a></li><li><a href="termos.html">Termos</a></li><li><a href="index.html#contato">Contato</a></li></ul>
+            <ul class="nav-menu"><li><a href="index.html#trabalhos">Trabalhos</a></li><li><a href="cases.html">Cases</a></li><li><a href="servicos-adicionais.html" style="color:#fff">Serviços</a></li><li><a href="tecnologias.html">Tecnologias</a></li><li><a href="orcamento.html">Orçamento</a></li><li><a href="sobre.html">Sobre</a></li><li><a href="index.html#contato">Contato</a></li></ul>
             <div class="nav-right">
                 <a href="https://wa.me/5511989426415?text=Ol%C3%A1!%20Vi%20seu%20portf%C3%B3lio%20e%20quero%20um%20or%C3%A7amento." target="_blank" class="talk-btn">Vamos conversar <i class="fa-solid fa-arrow-right"></i></a>
                 <div class="menu-toggle"><i class="fas fa-bars"></i></div>
@@ -95,18 +118,34 @@
     </header>
 
     <main>
-        <section class="bio-hero">
-            <span class="eyebrow">Sobre mim</span>
-            <h1>Tecnologia com propósito, do código à inteligência.</h1>
-            <p>Uma trajetória movida por paixão e dedicação: Web Design, Engenharia de Software e Inteligência Artificial aplicada.</p>
+        <section class="bio-hero" style="display:grid;grid-template-columns:auto 1fr;gap:34px;align-items:center;text-align:left">
+            <div class="fund-foto">
+                <picture><source srcset="img/foto-henrique.webp" type="image/webp"><img src="img/foto-henrique.jpg" alt="Henrique Luiz Dutra, web designer e desenvolvedor front-end" width="460" height="460" loading="lazy" decoding="async"></picture>
+                <span class="fund-selo"><b>2+ anos</b><small>no código</small></span>
+            </div>
+            <div>
+                <span class="eyebrow">Sobre mim</span>
+                <h1>Tecnologia com propósito, do código à inteligência.</h1>
+                <p>Sou <strong style="color:#ece9e3">Henrique Luiz Dutra</strong>, web designer e desenvolvedor front-end. Faço sites para pequenos negócios em <strong style="color:#ece9e3">São Paulo</strong> e para clientes de todo o Brasil: do layout ao código, com prazo fechado por escrito e o site no ar antes do combinado.</p>
+            </div>
         </section>
 
         <section class="bio-grid">
             <div class="bio-card">
                 <i class="fa-solid fa-graduation-cap"></i>
                 <h2>Formação sólida em TI</h2>
-                <p>Formação e atuação sólidas na área de <strong>Tecnologia da Informação</strong>, com conclusão do <strong>curso Técnico em TI</strong> e fase final da graduação em <strong>Engenharia da Informação</strong>.</p>
-                <div class="bio-tags"><span>Técnico em TI</span><span>Engenharia da Informação</span></div>
+                <p>Formação e atuação sólidas na área de <strong>Tecnologia da Informação</strong>, com conclusão do <strong>curso Técnico em TI</strong> e <strong>Engenharia de Software na Escola DNC</strong> (cursando), onde sigo a trilha full stack construindo projetos práticos publicados no GitHub.</p>
+                <div class="bio-tags"><span>Técnico em TI</span><span>Engenharia de Software — DNC</span></div>
+            </div>
+            <div class="bio-card full">
+                <i class="fa-solid fa-chart-line"></i>
+                <h2>O que já está no ar</h2>
+                <p><strong>15+ projetos publicados</strong> entre barbearia, igreja, hotelaria, academia, imobiliária e e-commerce, <strong>26 repositórios públicos</strong> no GitHub e uma loja 3D com <strong>73 produtos catalogados</strong>. Todos os sites ficam no ar, indexáveis e com código próprio do cliente.</p>
+                <div class="bio-tags"><span>15+ projetos</span><span>73 produtos numa loja</span><span>26 repositórios</span><span>3 cases abertos</span></div>
+                <div style="margin-top:20px;display:flex;gap:12px;flex-wrap:wrap">
+                    <a href="cases.html" class="btn-light">Ver os cases completos <i class="fa-solid fa-arrow-right"></i></a>
+                    <a href="cv-henrique-dutra.pdf" target="_blank" rel="noopener" class="btn-line"><i class="fa-solid fa-file-arrow-down"></i> Baixar currículo (PDF)</a>
+                </div>
             </div>
             <div class="bio-card">
                 <i class="fa-solid fa-brain"></i>
@@ -145,8 +184,10 @@
 
         <div class="bio-cta">
             <a href="index.html#trabalhos" class="btn-light">Ver meu trabalho <i class="fa-solid fa-arrow-right"></i></a>
-            <a href="termos.html" class="btn-light"><i class="fa-solid fa-file-contract"></i> Termos de Serviço</a>
-            <a href="https://wa.me/5511989426415?text=Ol%C3%A1!%20Vi%20seu%20portf%C3%B3lio%20e%20quero%20um%20or%C3%A7amento." target="_blank" class="btn-line">Vamos conversar</a>
+            <a href="cases.html" class="btn-light"><i class="fa-solid fa-folder-open"></i> Cases e resultados</a>
+            <a href="termos.html" class="btn-line"><i class="fa-solid fa-file-contract"></i> Termos de Serviço</a>
+            <a href="privacidade.html" class="btn-line"><i class="fa-solid fa-shield-halved"></i> Privacidade</a>
+            <a href="https://wa.me/5511989426415?text=Ol%C3%A1!%20Vi%20seu%20portf%C3%B3lio%20e%20quero%20um%20or%C3%A7amento." target="_blank" rel="noopener" class="btn-line">Vamos conversar</a>
         </div>
     </main>
 
@@ -159,11 +200,12 @@
         </span>
     </footer>
 
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.158.0/three.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.158.0/three.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
         <a href="https://wa.me/5511989426415?text=Ol%C3%A1!%20Vi%20seu%20portf%C3%B3lio%20e%20quero%20um%20or%C3%A7amento." target="_blank" class="wa-float" aria-label="Falar no WhatsApp"><i class="fab fa-whatsapp"></i></a>
-    <script src="js/main.js?v=4d1"></script>
+    <script src="js/main.js?v=5d1" defer></script>
+    <script src="js/analytics.js?v=1" defer></script>
     <script>
     if ('serviceWorker' in navigator) {
       window.addEventListener('load', () => {

@@ -1,0 +1,14 @@
+{
+  "_leia_me": [
+    "URL base de TODO o site. Troque aqui e rode os geradores para propagar.",
+    "site_url precisa ter barra no fim? NAO - sem barra no fim.",
+    "dominio_proprio: o dominio que voce comprou (vazio = ainda no github.io)."
+  ],
+  "site_url": "https://rickdigitalestudio.github.io/profissional-rickdutra",
+  "dominio_proprio": "",
+  "email": "estudiorickdigital@gmail.com",
+  "whatsapp": "5511989426415",
+  "telefone": "+55-11-98942-6415",
+  "linkedin": "https://linkedin.com/in/henrique-luiz-dutra-a10346146/",
+  "github": "https://github.com/Rickdigitalestudio"
+}

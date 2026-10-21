@@ -6,6 +6,26 @@
 
 ---
 
+## ⚡ Atalho: a migração já está preparada no código
+
+O repositório já tem um script que troca o endereço em **todos** os arquivos
+(canonical, og:url, JSON-LD, sitemap, robots.txt, manifest, links internos e
+os geradores) e ainda cria o `CNAME` e a página de redirect 301:
+
+```powershell
+python automacao\migrar_dominio.py https://rickdigital.com.br
+```
+
+Depois de rodar, só falta o que é no painel (abaixo). Para voltar atrás:
+
+```powershell
+python automacao\migrar_dominio.py --reverter
+```
+
+A URL base fica em **um lugar só**: `automacao/site.json`.
+
+---
+
 ## 1. O que está disponível (consultado no registro.br / RDAP)
 
 | Domínio | Status | Observação |
@@ -152,7 +172,10 @@ percebe que é alguém "de verdade" ou amador.
 ## 8. Checklist
 
 - [ ] Comprar `rickdigital.com.br` no registro.br
-- [ ] Me avisar que comprou (eu configuro DNS, CNAME, redirects e código)
+- [ ] Apontar o DNS (A 185.199.108.153 / CNAME www → rickdigitalestudio.github.io)
+- [ ] Rodar `python automacao\migrar_dominio.py https://rickdigital.com.br`
+- [ ] Em **Settings → Pages**, informar `rickdigital.com.br` e marcar **Enforce HTTPS**
+- [ ] Copiar a página de redirect 301 para o repositório `rickdigitalestudio.github.io`
 - [ ] Verificar o domínio no Search Console (tipo Domínio)
 - [ ] Reenviar o sitemap com a nova URL
 - [ ] Atualizar a URL no Google Business Profile

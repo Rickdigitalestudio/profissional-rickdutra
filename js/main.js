@@ -124,6 +124,23 @@ document.addEventListener('DOMContentLoaded', () => {
         els.forEach(el => obs.observe(el));
     }
 
+    /* ---------- Rede de seguranca: nada pode ficar invisivel ----------
+       Se o GSAP/ScrollTrigger nao disparar (erro, script bloqueado, rolagem
+       muito rapida), todo o conteudo e revelado de uma vez. */
+    const revelarTudo = () => {
+        document.querySelectorAll('.animate-on-scroll, .reveal').forEach(el => {
+            if (!el.classList.contains('in') && !el.classList.contains('animate')) {
+                el.classList.add('in');
+                el.classList.add('animate');
+                el.style.opacity = '1';
+                el.style.transform = 'none';
+            }
+        });
+    };
+    setTimeout(revelarTudo, 3500);
+    window.addEventListener('load', () => setTimeout(revelarTudo, 1200));
+    window.addEventListener('error', () => setTimeout(revelarTudo, 300));
+
     /* ---------- Contadores animados ---------- */
     const stats = document.querySelector('[data-counters]');
     if (stats) {
@@ -202,6 +219,13 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     /* ---------- FUNDO 3D INTERATIVO (Three.js): geometrias + túnel em grade + parallax + repulsão ---------- */
+    /* Só sobe depois que a página já pintou (requestIdleCallback) e nunca em
+       conexao lenta ou aparelho fraco: o site nao pode pagar o custo do WebGL
+       antes de mostrar o conteudo. */
+    const conexaoLenta = (navigator.connection && navigator.connection.saveData) ||
+        /2g|slow-2g/.test(navigator.connection ? navigator.connection.effectiveType || '' : '');
+    const aparelhoFraco = (navigator.hardwareConcurrency || 8) <= 4;
+    const iniciarFundo3D = () => {
     try {
         const canvas = document.getElementById('bg3d');
         if (canvas && window.THREE && !reduceMotion) {
@@ -339,6 +363,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             (function animate() {
                 requestAnimationFrame(animate);
+                if (document.hidden) return; // nao gasta CPU com a aba em segundo plano
                 const dt = Math.min(clock.getDelta(), 0.05);
                 t += dt;
 
@@ -433,6 +458,20 @@ document.addEventListener('DOMContentLoaded', () => {
             })();
         } else if (canvas) { canvas.style.display = 'none'; }
     } catch (_) { const c = document.getElementById('bg3d'); if (c) c.style.display = 'none'; }
+    };
+
+    /* O fundo 3D é o primeiro item "nice to have": entra só depois que a
+       página já pintou e o navegador está ocioso. */
+    if (!conexaoLenta && !aparelhoFraco) {
+        if ('requestIdleCallback' in window) {
+            requestIdleCallback(iniciarFundo3D, { timeout: 2500 });
+        } else {
+            setTimeout(iniciarFundo3D, 1200);
+        }
+    } else {
+        const c = document.getElementById('bg3d');
+        if (c) c.style.display = 'none';
+    }
 
     /* ---------- Compartilhar (sem instalacao de app) ---------- */
     const shareBtn = document.getElementById('pwa-share');

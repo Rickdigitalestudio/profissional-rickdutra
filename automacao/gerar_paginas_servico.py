@@ -21,11 +21,12 @@ from string import Template
 
 BASE = Path(__file__).resolve().parent.parent
 CONT = BASE / "automacao" / "conteudo"
-SITE = "https://rickdigitalestudio.github.io/profissional-rickdutra"
-WA = "5511989426415"
-EMAIL = "estudiorickdigital@gmail.com"
-LINKEDIN = "https://linkedin.com/in/henrique-luiz-dutra-a10346146/"
-GITHUB = "https://github.com/Rickdigitalestudio"
+CONF = json.loads((BASE / "automacao" / "site.json").read_text(encoding="utf-8"))
+SITE = CONF["site_url"].rstrip("/")
+WA = CONF["whatsapp"]
+EMAIL = CONF["email"]
+LINKEDIN = CONF["linkedin"]
+GITHUB = CONF["github"]
 
 TEMPLATE = Template("""<!DOCTYPE html>
 <html lang="pt-BR">
@@ -37,8 +38,10 @@ TEMPLATE = Template("""<!DOCTYPE html>
     <meta name="robots" content="index, follow, max-image-preview:large">
     <meta name="theme-color" content="#0B0B10">
     <meta name="author" content="Henrique Luiz Dutra">
-    <meta name="google-site-verification" content="COLE_SEU_CODIGO_SEARCH_CONSOLE_AQUI">
-    <meta name="msvalidate.01" content="COLE_SEU_CODIGO_BING_AQUI">
+    <!-- VERIFICACAO GOOGLE (cole o codigo do Search Console entre as aspas):
+    <meta name="google-site-verification" content="COLE_SEU_CODIGO_AQUI">
+    VERIFICACAO BING:
+    <meta name="msvalidate.01" content="COLE_SEU_CODIGO_AQUI"> -->
     <link rel="canonical" href="$canonical">
     <meta property="og:type" content="website">
     <meta property="og:locale" content="pt_BR">
@@ -242,7 +245,7 @@ def render(d: dict) -> str:
             "name": "Estudio Rick Digital",
             "url": SITE + "/",
             "logo": f"{SITE}/img/logo-rd-512.png",
-            "telephone": "+55-11-98942-6415",
+            "telephone": CONF["telefone"],
             "email": EMAIL,
             "founder": {"@type": "Person", "name": "Henrique Luiz Dutra"},
             "areaServed": [
@@ -319,7 +322,8 @@ def render(d: dict) -> str:
 
 def main() -> int:
     check = "--check" in sys.argv
-    slugs = [p.stem for p in sorted(CONT.glob("*.json"))]
+    slugs = [p.stem for p in sorted(CONT.glob("*.json"))
+             if "slug" in json.loads(p.read_text(encoding="utf-8"))]
     if not slugs:
         print("Nenhum conteudo em automacao/conteudo/")
         return 1

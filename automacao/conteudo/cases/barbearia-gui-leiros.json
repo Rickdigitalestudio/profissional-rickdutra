@@ -1,0 +1,61 @@
+{
+  "slug": "case-barbearia-gui-leiros",
+  "cliente": "Barbearia Gui Leiros",
+  "segmento": "Barbearia · Vila Conde Siciliano, Rio Grande da Serra/SP",
+  "tipo": "Site institucional 3D",
+  "prazo": "Entregue em 10 dias úteis",
+  "url_site": "https://rickdigitalestudio.github.io/barbearia-gui-leiros/",
+  "url_codigo": "https://github.com/Rickdigitalestudio/barbearia-gui-leiros",
+  "img": "img/barbearia-gui-leiros.webp",
+  "img_fallback": "img/barbearia-gui-leiros.jpg",
+  "img_w": 480,
+  "img_h": 640,
+  "title": "Case Barbearia Gui Leiros — Site 3D que agenda pelo WhatsApp | Estúdio Rick Digital",
+  "desc": "Como transformei a presença digital da Barbearia Gui Leiros em um site 3D com 11 fotos reais do portfólio, tabela de serviços com filtro e agendamento direto no WhatsApp.",
+  "h1": "Barbearia Gui Leiros",
+  "lead": "Site oficial 3D de uma barbearia de bairro: o cliente vê o trabalho real, filtra o serviço e agenda pelo WhatsApp sem falar com ninguém.",
+  "meta": ["Site institucional 3D", "Fundo de partículas interativo", "Agendamento no WhatsApp"],
+  "contexto": "A Barbearia Gui Leiros trabalhava só por indicação e por WhatsApp. Não tinha site, não tinha como mostrar o portfólio de cortes antes do cliente chegar na cadeira e não aparecia em nenhuma busca local. O dono queria um site que passasse a confiança de um estúdio premium sem parecer uma landing page genérica de barbearia.",
+  "problema": [
+    "Zero presença digital: quem não conhecia a barbearia por indicação simplesmente não a encontrava.",
+    "Nenhum jeito de mostrar o trabalho: o portfólio de 11 cortes existia só no celular do barbeiro.",
+    "O atendimento dependia de uma conversa por mensagem, sem menu de serviços e sem preços visíveis.",
+    "A maior barreira era de confiança: o cliente não sabia se o resultado final ficaria bom."
+  ],
+  "solucao": [
+    "Fundo de partículas interativo em canvas 2D que dá profundidade ao hero sem pesar a página.",
+    "Tabela de serviços com filtro por categoria, cada linha abrindo o agendamento direto no WhatsApp.",
+    "Portfólio com as 11 fotos reais em cards 3D — o mesmo material que o barbeiro usava para mostrar no celular.",
+    "Mapa do endereço, depoimentos e informações práticas na mesma página, sem submenus.",
+    "Publicação automática no GitHub Pages: qualquer alteração nova vai ao ar em minutos."
+  ],
+  "papel": [
+    "Briefing e diagnóstico do negócio por WhatsApp.",
+    "Design da identidade visual dentro da linguagem dark premium do projeto.",
+    "Codificação de todo o front-end: HTML, CSS e JavaScript sem framework.",
+    "Otimização de imagens (compressão e WebP) e configuração do cache do navegador.",
+    "Publicação no GitHub Pages e pedido de indexação no Google Search Console."
+  ],
+  "stack": ["HTML", "CSS 3D", "JavaScript", "Canvas 2D", "GitHub Pages", "SEO on-page"],
+  "resultados": [
+    { "valor": "11", "unidade": "", "rotulo": "fotos reais do portfólio publicadas" },
+    { "valor": "10", "unidade": "dias", "rotulo": "do briefing ao site no ar" },
+    { "valor": "1", "unidade": "clique", "rotulo": "do serviço até o WhatsApp" },
+    { "valor": "100", "unidade": "%", "rotulo": "responsivo, testado em tela de 360 px" }
+  ],
+  "depoimento": {
+    "estado": "modelo",
+    "texto": "Escreva aqui o que o dono da barbearia disse depois que o site entrou no ar. O ideal é citar um detalhe concreto: quantos agendamentos começaram a chegar pelo site, o que os clientes elogiaram, o que mudou no atendimento.",
+    "nome": "Nome do dono",
+    "cargo": "Proprietário",
+    "empresa": "Barbearia Gui Leiros"
+  },
+  "destaques": [
+    "Fundo de partículas em canvas com interação de mouse",
+    "Tabela de serviços com filtro por categoria",
+    "Botão de agendamento que abre o WhatsApp com o serviço já selecionado",
+    "Portfólio em cards 3D com as fotos reais do salão",
+    "Mapa do endereço e depoimentos na mesma página"
+  ],
+  "eu_entrego": ["Site no ar", "WhatsApp integrado", "Indexação no Google", "2 revisões inclusas", "Código-fonte do cliente"]
+}

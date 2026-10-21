@@ -1,86 +1,95 @@
-# 🚀 Portfólio Profissional - Henrique Luiz Dutra
+# 🚀 Estúdio Rick Digital — Portfólio Profissional
 
-![Banner do Projeto](img/banner.png)
+Portfólio de **Henrique Luiz Dutra**, web designer e desenvolvedor front-end.
+Site estático (HTML + CSS + JavaScript puro), hospedado no GitHub Pages.
 
-## 📋 Sobre o Projeto
-
-Um portfólio profissional moderno e interativo, desenvolvido com HTML, CSS e JavaScript. Apresentando uma interface elegante com animações suaves, efeitos de gradiente e design responsivo, destacando meus projetos e experiências de forma profissional.
-
-### ✨ Características Principais
-
-- 🎨 Design moderno com efeitos de gradiente
-- 📱 Totalmente responsivo
-- 🌈 Animações suaves e interativas
-- 🔍 SEO otimizado
-- 🎯 Interface intuitiva
-- 💻 Código limpo e bem estruturado
-
-## 🛠️ Tecnologias Utilizadas
-
-- ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
-- ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
-- ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-- ![Font Awesome](https://img.shields.io/badge/Font_Awesome-339AF0?style=for-the-badge&logo=fontawesome&logoColor=white)
-
-## 🌟 Funcionalidades
-
-### 1. Navegação Intuitiva
-- Menu responsivo
-- Scroll suave
-- Navegação por seções
-
-### 2. Seções Principais
-- 🏠 **Home**: Apresentação profissional com animação de texto e fundo de código
-- 💼 **Serviços**: Showcase de habilidades e serviços oferecidos
-- 📂 **Portfólio**: Galeria de projetos com efeitos de hover
-- 📑 **Documentos**: Área para download de contrato e book de projetos
-- 📞 **Contato**: Cards interativos com links para redes sociais
-
-### 3. Projetos em Destaque
-- 💼 Portfólio Profissional com React
-- 🏠 Chá de Casa Nova: Lauane & Eduardo
-
-### 4. Elementos Interativos
-- Cards com bordas gradiente animadas
-- Botões com efeitos de hover
-- Ícones com cores personalizadas
-- Formulário de contato estilizado
-- Efeitos de elevação nos elementos
-
-## 📱 Responsividade
-
-O site é totalmente responsivo e se adapta perfeitamente a diferentes tamanhos de tela:
-- 💻 Desktop
-- 💻 Laptop
-- 📱 Tablet
-- 📱 Mobile
-
-## 🎨 Paleta de Cores
-
-- ![#8B0000](https://via.placeholder.com/15/8B0000/000000?text=+) `#8B0000` - Vinho Escuro
-- ![#4A0404](https://via.placeholder.com/15/4A0404/000000?text=+) `#4A0404` - Vinho mais Escuro
-- ![#DC143C](https://via.placeholder.com/15/DC143C/000000?text=+) `#DC143C` - Vermelho Crimson
-- ![#f5f5f5](https://via.placeholder.com/15/f5f5f5/000000?text=+) `#f5f5f5` - Cinza Claro
-
-## 📞 Contato
-
-<div align="center">
-
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/henrique-luiz-dutra-a10346146/)
-[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Rickdigitalestudio)
-[![WhatsApp](https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://wa.me/5511918266394)
-[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:estudiorickdigital@gmail.com)
-
-</div>
-
-## 📄 Licença
-
-Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
+🔗 **Site no ar:** <https://rickdigitalestudio.github.io/profissional-rickdutra/>
 
 ---
 
-<div align="center">
+## 📁 O que tem aqui
 
-Desenvolvido com ❤️ por Henrique Luiz Dutra
+| Pasta/arquivo | Para que serve |
+|---|---|
+| `index.html` | Home: hero, prova social, resultados, cases, FAQ e CTA |
+| `projetos.html` | Todos os 15 projetos, com filtro por tipo |
+| `cases.html` + `case-*.html` | Case studies (problema → solução → resultado) |
+| `sobre.html` | Perfil, formação e números |
+| `servicos-adicionais.html` | Serviços complementares |
+| `*-profissionais.html`, `fanpage-*.html`… | Páginas de serviço por palavra-chave (SEO) |
+| `orcamento.html` | Montador de orçamento em 30s |
+| `privacidade.html` | Política de Privacidade e Cookies (LGPD) |
+| `termos.html` | Termos de Serviço |
+| `midia.html` | Kit de mídia |
+| `404.html` | Página de erro personalizada |
+| `cv-henrique-dutra.pdf` | Currículo pronto para enviar a clientes |
+| `css/`, `js/`, `img/` | Estilos, scripts e imagens |
+| `automacao/` | Scripts Python que geram e checam o site |
 
-</div>
+---
+
+## ⚙️ Comandos úteis
+
+```powershell
+# servidor local (porta 8899)
+python automacao\servidor-local.py
+
+# QA: links quebrados, numeros que nao batem, placeholders, imagens
+python automacao\checar_site.py
+
+# gera as paginas de case (a partir de automacao/conteudo/cases/*.json)
+python automacao\gerar_cases.py
+
+# injeta os blocos de prova social na home (a partir de prova-social.json)
+python automacao\gerar_prova_social.py
+
+# gera as paginas de servico (a partir de automacao/conteudo/*.json)
+python automacao\gerar_paginas_servico.py
+
+# gera o sitemap.xml
+python automacao\gerar_sitemap.py
+
+# otimiza as imagens para WebP (-90% de peso)
+python automacao\otimizar_imagens.py
+
+# aplica <picture> + width/height + lazy nas <img> das paginas
+python automacao\otimizar_html.py
+
+# gera o PDF do curriculo (usa o Chrome headless)
+python automacao\gerar_cv_pdf.py
+
+# migra tudo para o dominio proprio
+python automacao\migrar_dominio.py https://rickdigital.com.br
+```
+
+> ⚠️ Depois de editar `automacao/conteudo/*.json`, rode o gerador
+> correspondente — as páginas `.html` são geradas a partir deles.
+
+---
+
+## 📊 Estado atual (medição real)
+
+| Métrica | Antes | Depois |
+|---|---|---|
+| Peso total da home | 1.114 KB | **372 KB** (−67%) |
+| Peso só de imagens | 923 KB | **88 KB** (−90%) |
+| First Contentful Paint | 1.944 ms | **932 ms** (−52%) |
+| Lighthouse Acessibilidade | — | **100** |
+| Lighthouse Best Practices | — | **100** |
+| Lighthouse SEO | — | **100** |
+
+---
+
+## 🔐 O que ainda depende de você
+
+1. **Depoimentos reais** — `automacao/conteudo/prova-social.json`
+   (guia: `divulgacao/COMO-PREENCHER-PROVA-SOCIAL.md`).
+2. **Códigos de verificação** — Google Search Console e Bing
+   (ver `divulgacao/COMO-ATIVAR-GOOGLE.md`).
+3. **ID do GA4** — trocar `G-H6CS8VRB52` pelo seu (ou confirmar que é seu).
+4. **Domínio próprio** — `rickdigital.com.br` (guia: `divulgacao/DOMINIO.md`).
+5. **Perfil do Google Business** — para gerar as avaliações.
+
+---
+
+© 2026 Estúdio Rick Digital — Henrique Luiz Dutra. Todos os direitos reservados.

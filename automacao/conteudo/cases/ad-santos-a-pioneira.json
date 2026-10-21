@@ -1,0 +1,61 @@
+{
+  "slug": "case-ad-santos-a-pioneira",
+  "cliente": "AD Santos — A Pioneira",
+  "segmento": "Institucional · Assembleia de Deus Ministério de Santos/SP",
+  "tipo": "Site institucional 3D interativo",
+  "prazo": "Entregue em 10 dias úteis",
+  "url_site": "https://rickdigitalestudio.github.io/ad-ministerio-santos-3d/",
+  "url_codigo": "https://github.com/Rickdigitalestudio/ad-ministerio-santos-3d",
+  "img": "img/ad-santos-3d.webp",
+  "img_fallback": "img/ad-santos-3d.jpg",
+  "img_w": 795,
+  "img_h": 838,
+  "title": "Case AD Santos A Pioneira — Site institucional 3D com Three.js e rádio ao vivo | Estúdio Rick Digital",
+  "desc": "Site 3D da Assembleia de Deus Ministério de Santos: maquete procedural do templo que a câmera atravessa no scroll, mapa ao vivo, programação de cultos e rádio Fly 99 FM no ar.",
+  "h1": "AD Santos — A Pioneira",
+  "lead": "Um templo desenhado em código: a câmera atravessa a maquete 3D conforme você rola a página, com mapa de igrejas ao vivo, programação de cultos e a rádio da igreja tocando no site.",
+  "meta": ["Site institucional 3D", "Maquete procedural em Three.js", "Rádio ao vivo"],
+  "contexto": "A Assembleia de Deus Ministério de Santos é uma igreja com longa história, muitas unidades espalhadas pela Baixada Santista e uma rádio própria. O site antigo era um bloco de texto sem fotos: não mostrava a dimensão do trabalho da igreja e não dava nenhum motivo para uma pessoa jovem procurar a igreja. O objetivo era transformar informação em experiência.",
+  "problema": [
+    "Site institucional estático que não passava nenhuma impressão de escala ou de tradição.",
+    "Igrejas da região invisíveis para quem não conhecia apopulação local.",
+    "Programação de cultos e eventos espalhada em grupos de WhatsApp e cartazes.",
+    "Rádio com audiência desperdiçada: tocava em um link de terceiro, fora do site."
+  ],
+  "solucao": [
+    "Maquete 3D procedural do templo em Three.js: a câmera atravessa a construção conforme o scroll da página avança.",
+    "Linha do tempo interativa da história da igreja com mapa ao vivo.",
+    "Mapa de igrejas clicável, com endereço de cada unidade e link direto para o Maps.",
+    "Programação de cultos e eventos em blocos visuais, fáceis de consultar pelo celular.",
+    "Rádio Fly 99 FM incorporada e tocando direto no site, sem sair da página."
+  ],
+  "papel": [
+    "Conversão do conteúdo institucional (história, unidades, cultos) em narrativa interativa.",
+    "Modelagem e animação da maquete 3D em Three.js com câmera guiada pelo scroll.",
+    "Integração da rádio ao vivo e dos mapas do Google.",
+    "Otimização para funcionar bem em celular — onde a maioria dos congregantes acessa.",
+    "Publicação no GitHub Pages e indexação no Google."
+  ],
+  "stack": ["Three.js", "WebGL", "JavaScript", "HTML", "CSS", "Mapa ao vivo", "Rádio online"],
+  "resultados": [
+    { "valor": "3D", "unidade": "", "rotulo": "maquete procedural com câmera guiada" },
+    { "valor": "10", "unidade": "dias", "rotulo": "do briefing ao site no ar" },
+    { "valor": "1", "unidade": "live", "rotulo": "rádio da igreja tocando dentro do site" },
+    { "valor": "0", "unidade": "plugin", "rotulo": "dependência: a página roda com HTML, CSS e JS" }
+  ],
+  "depoimento": {
+    "estado": "modelo",
+    "texto": "Escreva aqui o que a leadership da igreja disse sobre o site. O ideal é mencionar o que mudou na percepção do público ou no número de visitas ao site depois da publicação.",
+    "nome": "Nome do pastor ou responsável",
+    "cargo": "Liderança",
+    "empresa": "AD Ministério de Santos"
+  },
+  "destaques": [
+    "Maquete 3D procedural do templo, sem arquivo 3D externo",
+    "Câmera guiada pelo scroll com paralaxe",
+    "Linha do tempo interativa com mapa",
+    "Mapa de unidades clicável com rota no Maps",
+    "Rádio Fly 99 FM ao vivo dentro da página"
+  ],
+  "eu_entrego": ["Site no ar", "Rádio integrada", "Mapa interativo", "Indexação no Google", "Código-fonte do cliente"]
+}

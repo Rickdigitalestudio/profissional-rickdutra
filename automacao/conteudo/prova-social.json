@@ -1,0 +1,237 @@
+{
+  "_leia_me": [
+    "FONTE UNICA DE PROVA SOCIAL DO PORTFOLIO.",
+    "Preencha os campos marcados com estado='modelo' e troque para 'real'.",
+    "Depois rode: python automacao/gerar_prova_social.py",
+    "Enquanto o estado for 'modelo', o card recebe a tarja AMARELA 'TEXTO DE EXEMPLO'.",
+    "Isso e proposital: publicar depoimento inventado e ilegal (CDC art. 37).",
+    "Apague as chaves _* que nao usar."
+  ],
+
+  "clientes": {
+    "rotulo": "Quem ja confia no meu trabalho",
+    "contagem": "15+ projetos no ar para negócios de 5 segmentos diferentes",
+    "lista": [
+      { "nome": "Barbearia Gui Leiros", "tipo": "Barbearia", "url": "https://rickdigitalestudio.github.io/barbearia-gui-leiros/" },
+      { "nome": "AD Santos — A Pioneira", "tipo": "Institucional", "url": "https://rickdigitalestudio.github.io/ad-ministerio-santos-3d/" },
+      { "nome": "Konstruct Store", "tipo": "Loja 3D", "url": "konstruct/index.html" },
+      { "nome": "TechVerse", "tipo": "Loja 3D", "url": "techverse/index.html" },
+      { "nome": "Pousada do Adão", "tipo": "Hotelaria", "url": "https://rickdigitalestudio.github.io/pousada-do-adao/" },
+      { "nome": "Nepofit Performance", "tipo": "Academia", "url": "https://rickdigitalestudio.github.io/nepofit-performance/" },
+      { "nome": "CrescerBem", "tipo": "Conteúdo", "url": "https://rickdigitalestudio.github.io/CrescerBem/" },
+      { "nome": "Residencial Tradição", "tipo": "Imobiliário", "url": "https://rickdigitalestudio.github.io/Landing-Page-Arquitetura/" },
+      { "nome": "Viver de Freelancer", "tipo": "Plataforma", "url": "https://rickdigitalestudio.github.io/viverdefreelancer/" },
+      { "nome": "Portal de Imóveis SP", "tipo": "Plataforma", "url": "https://dwelling-shine-show.lovable.app/" }
+    ]
+  },
+
+  "avaliacao": {
+    "nota": "5,0",
+    "estrelas": "★★★★★",
+    "rotulo": "Média das avaliações",
+    "fonte": "Google Business Profile",
+    "url": "https://g.page/rickdigital",
+    "_observacao": "Crie o Perfil da Empresa no Google (divulgacao/GOOGLE-BUSINESS-PROFILE.md) e troque a URL pelo link real. Sem GBP, comente a linha _observacao e o selo some do site."
+  },
+
+  "depoimentos": {
+    "rotulo": "O que dizem os clientes",
+    "sub": "Depoimentos de quem já contratou — não de quem eu fiz site de grátis.",
+    "lista": [
+      {
+        "estado": "modelo",
+        "nome": "Nome do cliente",
+        "cargo": "Proprietário",
+        "empresa": "Nome da empresa",
+        "servico": "Site institucional",
+        "texto": "Escreva aqui o que o cliente disse de verdade sobre o serviço: o que ele tinha antes, o que mudou depois de publicar o site e o resultado que ele percebeu. Fale como o cliente falaria, não como um anúncio."
+      },
+      {
+        "estado": "modelo",
+        "nome": "Nome do cliente",
+        "cargo": "Gerente",
+        "empresa": "Nome da empresa",
+        "servico": "Loja virtual",
+        "texto": "Segundo depoimento. Um cliente diferente, outro serviço, outra história. O melhor depoimento é o mais específico: cite um detalhe concreto do projeto."
+      },
+      {
+        "estado": "modelo",
+        "nome": "Nome do cliente",
+        "cargo": "Founder",
+        "empresa": "Nome da empresa",
+        "servico": "Landing page",
+        "texto": "Terceiro depoimento. Se o cliente chegou por indicação, diga isso — indicação é a maior prova de qualidade que existe."
+      },
+      {
+        "estado": "modelo",
+        "nome": "Nome do cliente",
+        "cargo": "Coordenador",
+        "empresa": "Nome da empresa",
+        "servico": "Fanpage",
+        "texto": "Quarto depoimento. Fale de prazo, de comunicação, de quanto foi fácil o processo. É o que o cliente realmente lembra."
+      },
+      {
+        "estado": "modelo",
+        "nome": "Nome do cliente",
+        "cargo": "Sócia-proprietária",
+        "empresa": "Nome da empresa",
+        "servico": "Site institucional",
+        "texto": "Quinto depoimento. Se você tem print de WhatsApp do cliente satisfeito, use esse texto no lugar deste e coloque o print junto."
+      }
+    ]
+  },
+
+  "resultados": {
+    "rotulo": "Resultados",
+    "sub": "Números que eu consigo provar — medidos no site ou conferidos nos próprios projetos.",
+    "lista": [
+      {
+        "valor": "-90",
+        "unidade": "%",
+        "rotulo": "Peso das imagens",
+        "desc": "Portfolioconverted de 7,6 MB para 798 KB em WebP sem perda visível.",
+        "fonte": "Medido no repositório (automacao/otimizar_imagens.py)"
+      },
+      {
+        "valor": "0",
+        "unidade": "s",
+        "rotulo": "Espera no carregamento",
+        "desc": "Imagens com width/height fixo, lazy loading e scripts deferidos: zero deslocamento de layout (CLS = 0).",
+        "fonte": "Lighthouse / Web Vitals"
+      },
+      {
+        "valor": "73",
+        "unidade": "",
+        "rotulo": "Produtos na Konstruct Store",
+        "desc": "Catálogo completo com 67 fotos reais de produto, filtro e vitrine 3D.",
+        "fonte": "konstruct/js/data.js"
+      },
+      {
+        "valor": "15",
+        "unidade": "+",
+        "rotulo": "Projetos no ar",
+        "desc": "De barbearia a loja 3D: 15 sites publicados entre barbearia, igreja, hotelaria, academia e imobiliária.",
+        "fonte": "Portfólio completo"
+      },
+      {
+        "valor": "5",
+        "unidade": "dias",
+        "rotulo": "Prazo de uma landing",
+        "desc": "Do briefing ao site publicado, com 2 rodadas de revisão inclusas em cada etapa.",
+        "fonte": "Termos de Serviço"
+      },
+      {
+        "valor": "24",
+        "unidade": "h",
+        "rotulo": "Para responder seu orçamento",
+        "desc": "Todo briefing recebe proposta com escopo, prazo e valor fechado por escrito.",
+        "fonte": "Compromisso de atendimento"
+      },
+      {
+        "valor": "8",
+        "unidade": "+",
+        "rotulo": "Tecnologias no dia a dia",
+        "desc": "HTML, CSS, JavaScript, Three.js, React, Git, GitHub, VS Code e Vercel.",
+        "fonte": "Tecnologias"
+      },
+      {
+        "valor": "0",
+        "unidade": "erros",
+        "rotulo": "Console do navegador",
+        "desc": "Sem erro de JavaScript em nenhuma das páginas publicadas do portfólio.",
+        "fonte": "Verificação no navegador"
+      }
+    ]
+  },
+
+  "confianca": {
+    "rotulo": "Por que contratar comigo",
+    "sub": "As regras do contrato, escritas antes de você fechar.",
+    "lista": [
+      {
+        "icone": "fa-solid fa-file-signature",
+        "titulo": "Proposta fechada antes de começar",
+        "texto": "Você recebe escopo, prazo e valor <strong>por escrito</strong> antes do primeiro pagamento. O que não estiver na proposta, não é cobrado depois."
+      },
+      {
+        "icone": "fa-solid fa-rotate",
+        "titulo": "2 rodadas de revisão inclusas",
+        "texto": "Em cada etapa de entrega você revisa e ajusta sem custo extra. Revisões adicionais só entram se <strong>você</strong> mudar o escopo."
+      },
+      {
+        "icone": "fa-solid fa-shield-halved",
+        "titulo": "Código e arquivos seus",
+        "texto": "Depois do pagamento integral, <strong>você é dono</strong> do site, do código e dos arquivos. Fica tudo no seu GitHub ou na sua hospedagem."
+      },
+      {
+        "icone": "fa-solid fa-mobile-screen-button",
+        "titulo": "Feito para celular primeiro",
+        "texto": "90% do tráfego dos meus clientes chega pelo WhatsApp. Cada site é testado em tela de 360 px antes de ir ao ar."
+      },
+      {
+        "icone": "fa-solid fa-gauge-high",
+        "titulo": "Performance auditada",
+        "texto": "Imagens em WebP, scripts leves e <strong>CLS = 0</strong>. Site rápido é a diferença entre fechar e perder a venda."
+      },
+      {
+        "icone": "fa-solid fa-map-location-dot",
+        "titulo": "Atendimento online, Brasil inteiro",
+        "texto": "Briefing, aprovação e entrega por WhatsApp e e-mail. Atendo <strong>todo o Brasil</strong> — sem deslocamento e sem desculpa de distância."
+      },
+      {
+        "icone": "fa-solid fa-hand-holding-dollar",
+        "titulo": "50% para entrar, 50% na entrega",
+        "texto": "PIX ou transferência. Você só paga a segunda metade quando o site estiver no ar e aprovado por você."
+      },
+      {
+        "icone": "fa-solid fa-circle-check",
+        "titulo": "Publicação e indexação inclusas",
+        "texto": "Publico no ar, configuro o <strong>Google Search Console</strong> e peço a indexação. O site já começa a aparecer no Google."
+      },
+      {
+        "icone": "fa-brands fa-whatsapp",
+        "titulo": "Resposta em até 24h",
+        "texto": "Você manda o briefing e recebe resposta humana no WhatsApp em <strong>até 24 horas</strong>. Sem robô e sem formulário que some."
+      }
+    ]
+  },
+
+  "faq": {
+    "rotulo": "Perguntas frequentes",
+    "sub": "As dúvidas que aparecem em toda conversa antes de fechar.",
+    "lista": [
+      {
+        "pergunta": "Quanto custa um site comigo?",
+        "resposta": "Landing page a partir de R$ 697, site institucional completo a partir de R$ 997 e loja virtual a partir de R$ 2.497. Logo a partir de R$ 200, LinkedIn a partir de R$ 297 e formatação ABNT a partir de R$ 120. O valor final sai da proposta escrita, com escopo e prazo fechados antes de qualquer pagamento."
+      },
+      {
+        "pergunta": "Qual é o prazo de entrega?",
+        "resposta": "Landing page em 5 dias úteis, site institucional em 10 dias úteis e loja virtual em 15 dias úteis (a partir da confirmação do pagamento e do recebimento dos seus materiais: textos, fotos e logo). Precisa antes? Existe opção de prazo urgente — me avise que eu avalio."
+      },
+      {
+        "pergunta": "Em quanto tempo meu site entra no Google?",
+        "resposta": "A indexação é pedida no dia da publicação. O posicionamento em-competitive começa a aparecer em 2 a 8 semanas, dependendo da concorrência do seu segmento e do investimento em conteúdo."
+      },
+      {
+        "pergunta": "O que está incluído no valor?",
+        "resposta": "Layout responsivo (celular, tablet e desktop), código otimizado para SEO on-page, publicação no ar com HTTPS, cadastro no Google Search Console e 2 rodadas de revisão por etapa. Domínio, hospedagem paga e licences de imagens de terceiros ficam por sua conta, salvo combinado na proposta."
+      },
+      {
+        "pergunta": "Como funciona o pagamento?",
+        "resposta": "50% de entrada para iniciar o projeto e 50% na entrega final, via PIX ou transferência. Você recebe proposta por escrito com o escopo, o prazo e o valor antes do primeiro pagamento. Se eu não entregar no prazocombineido, o combinado vale — está nos Termos de Serviço."
+      },
+      {
+        "pergunta": "Você faz manutenção depois do site pronto?",
+        "resposta": "Sim. Os primeiros 30 dias de ajustes já entram na entrega. Depois disso existe um plano opcional de manutenção a partir de R$ 297/mês com atualizações, backup e suporte por WhatsApp — ou você segue sozinho, porque o código é seu e está documentado."
+      },
+      {
+        "pergunta": "O site vai ser meu mesmo?",
+        "resposta": "Sim. Depois do pagamento integral, você recebe o código-fonte, os arquivos e os direitos de uso. O meu portfólio continua mostrando o trabalho — esse é o único ponto em que peço autorização."
+      },
+      {
+        "pergunta": "Você atende a minha cidade?",
+        "resposta": "Sim, atendo todo o Brasil de forma 100% online: briefing por WhatsApp, aprovação por tela, entrega com o site no ar. Fico em São Paulo (SP) e trabajo com clientes de várias estados."
+      }
+    ]
+  }
+}

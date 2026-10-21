@@ -1,14 +1,28 @@
 /* Estúdio Rick Digital — Service Worker (funciona em qualquer domínio) */
-const CACHE = 'rick-digital-v11-rodape';
+const CACHE = 'rick-digital-v12-cases';
 const CORE = [
   './',
   './index.html',
   './sobre.html',
   './projetos.html',
+  './cases.html',
+  './case-barbearia-gui-leiros.html',
+  './case-ad-santos-a-pioneira.html',
+  './case-konstruct-store.html',
   './tecnologias.html',
   './termos.html',
+  './privacidade.html',
   './midia.html',
   './orcamento.html',
+  './servicos-adicionais.html',
+  './criacao-de-sites-profissionais.html',
+  './fanpage-que-vende.html',
+  './landing-page-que-converte.html',
+  './loja-virtual-completa.html',
+  './site-para-pequenas-empresas.html',
+  './criacao-de-logo-profissional.html',
+  './otimizacao-de-perfil-linkedin.html',
+  './trabalho-academico-abnt.html',
   './tecnologia-html.html',
   './tecnologia-css.html',
   './tecnologia-javascript.html',
@@ -17,9 +31,12 @@ const CORE = [
   './tecnologia-github.html',
   './tecnologia-vscode.html',
   './tecnologia-vercel.html',
+  './404.html',
   './css/style.css',
+  './css/cases.css',
   './css/viewer.css',
   './js/main.js',
+  './js/analytics.js',
   './js/site-viewer.js',
   './techverse/index.html',
   './konstruct/index.html',
@@ -27,7 +44,8 @@ const CORE = [
   './img/icon-192.png',
   './img/icon-512.png',
   './img/maskable-512.png',
-  './img/logo-rd.svg'
+  './img/logo-rd.svg',
+  './img/foto-henrique.jpg'
 ];
 
 self.addEventListener('install', (e) => {
@@ -54,17 +72,18 @@ self.addEventListener('fetch', (e) => {
     );
     return;
   }
-  // Assets: cache-first
+  // Assets: stale-while-revalidate — entrega do cache na hora e atualiza em
+  // segundo plano. (cache-first puro servia JS/CSS velhos para sempre)
   e.respondWith(
     caches.match(request).then((hit) => {
-      if (hit) return hit;
-      return fetch(request).then((res) => {
+      const rede = fetch(request).then((res) => {
         if (res.ok && new URL(request.url).origin === self.location.origin) {
           const copy = res.clone();
           caches.open(CACHE).then((c) => c.put(request, copy));
         }
         return res;
-      });
+      }).catch(() => hit);
+      return hit || rede;
     })
   );
 });
