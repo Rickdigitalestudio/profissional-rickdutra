@@ -57,6 +57,16 @@ pre.copy{background:#000;border:1px solid var(--line);border-radius:12px;padding
       #bg3d{position:fixed;inset:0;z-index:0;pointer-events:none;opacity:.9}
       body{position:relative}
       body > .header{z-index:60}body > main,body > footer.footer{position:relative;z-index:1}
+
+        .media-preview{display:flex;gap:22px;align-items:center;flex-wrap:wrap;margin-top:14px}
+        .media-preview img{width:300px;max-width:100%;border-radius:12px;border:1px solid rgba(255,255,255,.12);box-shadow:0 18px 44px rgba(0,0,0,.5)}
+        .media-preview .pp-info{flex:1;min-width:260px}
+        .media-preview .pp-info p{font-size:.88rem;color:#b9b6b0;margin:8px 0}
+        .media-preview .pp-info .pp-ok{color:#4ade80;font-size:.8rem;letter-spacing:.06em;text-transform:uppercase}
+        .pp-lista{list-style:none;display:grid;gap:7px;margin-top:10px}
+        .pp-lista li{display:flex;gap:10px;align-items:center;font-size:.82rem;color:#b9b6b0}
+        .pp-lista li a{color:#d8c3a5}
+        .pp-lista .tagm{font-size:.6rem;letter-spacing:.1em;text-transform:uppercase;background:rgba(216,195,165,.12);border:1px solid rgba(216,195,165,.3);border-radius:20px;padding:2px 9px;color:#d8c3a5;flex:0 0 auto}
     </style>
 </head>
 <body>
@@ -88,7 +98,24 @@ pre.copy{background:#000;border:1px solid var(--line);border-radius:12px;padding
 <pre class="copy" id="ct1">🔥 Precisa de site? O Estúdio Rick Digital entrega fanpage em 5 dias a partir de R$ 497. Portfólio: https://rickdigitalestudio.github.io/profissional-rickdutra/?utm_source=whatsapp&utm_medium=status&utm_campaign=kit_midia&utm_content=texto1 — responde EU QUERO!</pre>
 <pre class="copy">🏆 Site que vende 24h sozinho: https://rickdigitalestudio.github.io/profissional-rickdutra/?utm_source=tiktok&utm_medium=video&utm_campaign=kit_midia&utm_content=texto2 — link na bio 👆 #sitedevendas #webdesign</pre>
 <div class="dl"><button class="btn-light" style="border:none;cursor:pointer" onclick="navigator.clipboard.writeText(document.getElementById('ct1').textContent);alert('Copiado!')">Copiar texto 1</button><a class="btn-light" href="https://rickdigitalestudio.github.io/estudio-rick-digital/" target="_blank">Abrir fábrica de banners 🎨</a></div></div>
-<div class="msec"><h2><i class="fa-solid fa-list-check"></i>4 · Regras de ouro</h2>
+<div class="msec"><h2><i class="fa-solid fa-share-nodes"></i>5 · Imagem de prévia (Open Graph)</h2>
+<p style="color:var(--muted);font-size:.9rem">É a imagem que aparece quando alguém manda um link seu no WhatsApp, LinkedIn ou Instagram. <strong style="color:#fff">Já configurada nos 13 projetos:</strong> a prévia mostra o logo e o nome <strong style="color:#d8c3a5">ESTÚDIO RICK DIGITAL</strong> com o projeto ao lado — nunca a marca do cliente sozinha.</p>
+<div class="media-preview">
+  <img src="img/og-estudio-rick-digital.png" alt="Prévia de compartilhamento do Estúdio Rick Digital" width="1200" height="630" loading="lazy" decoding="async">
+  <div class="pp-info">
+    <p class="pp-ok"><i class="fa-solid fa-circle-check"></i> Ativa e verificada nos 13 sites</p>
+    <p>Esta é a prévia do próprio portfólio (1200×630). A de cada projeto fica dentro do repositório dele, no mesmo domínio do site — por isso ela sempre carrega.</p>
+    <ul class="pp-lista">
+      <li><span class="tagm">Prévia</span> <a href="https://rickdigitalestudio.github.io/profissional-rickdutra/" target="_blank" rel="noopener">Portfólio</a></li>
+      <li><span class="tagm">Prévia</span> <a href="https://rickdigitalestudio.github.io/barbearia-gui-leiros/" target="_blank" rel="noopener">Barbearia Gui Leiros</a></li>
+      <li><span class="tagm">Prévia</span> <a href="https://rickdigitalestudio.github.io/nepofit-performance/" target="_blank" rel="noopener">Nepofit Performance</a></li>
+      <li><span class="tagm">Prévia</span> <a href="https://rickdigitalestudio.github.io/pousada-do-adao/" target="_blank" rel="noopener">Pousada do Adão</a></li>
+      <li><span class="tagm">Prévia</span> <a href="https://rickdigitalestudio.github.io/ad-ministerio-santos-3d/" target="_blank" rel="noopener">AD Santos — A Pioneira</a></li>
+    </ul>
+    <p><a href="img/og-estudio-rick-digital.png" download style="color:#d8c3a5;text-decoration:underline">Baixar a imagem de prévia (PNG 1200×630)</a></p>
+  </div>
+</div></div>
+<div class="msec"><h2><i class="fa-solid fa-list-check"></i>6 · Regras de ouro</h2>
 <p style="color:var(--muted);font-size:.86rem">1) Link do portfólio ANTES do WhatsApp · 2) Nunca poste sem UTM (troque o utm_content por texto3, video2...) · 3) Use a logo sobre fundo escuro · 4) Horários: status 12h20/20h30 · TikTok Ter 20h30/Qui 12h30/Dom 20h.</p></div>
 </main>
 <footer class="footer"><span>© 2026 Estúdio Rick Digital · Henrique Luiz Dutra.</span></footer>
