@@ -1,176 +1,386 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>KONSTRUCT — Store 3D</title>
-<style>
-*{margin:0;padding:0;box-sizing:border-box}body{font-family:Oswald,Segoe UI,Roboto,Arial,sans-serif;background:#f4f4f4;color:#222;overflow-x:hidden}
-.wrap{max-width:1180px;margin:0 auto}
-.topnav{background:#fff;display:flex;align-items:center;gap:26px;padding:12px 28px;position:sticky;top:0;z-index:60;box-shadow:0 2px 10px rgba(0,0,0,.08)}
-.logo{font-size:26px;font-weight:700;letter-spacing:1px}.logo b{color:#f5b301}
-.menu{display:flex;gap:22px;font-size:12px;font-weight:600;margin-left:auto;align-items:center}.menu a{text-decoration:none;color:#333;cursor:pointer}.menu a.on{color:#f5b301}
-.wish{position:relative;cursor:pointer;font-size:18px}.wish i{position:absolute;top:-8px;right:-10px;background:#e33;color:#fff;font-size:10px;min-width:16px;height:16px;border-radius:10px;display:grid;place-items:center;font-style:normal;font-weight:700}
-.hero{background:linear-gradient(115deg,#d6d6d6,#a8a8a8 55%,#7c7c7c);color:#222;text-align:center;padding:60px 20px 74px;position:relative;overflow:hidden;perspective:1000px}
-.hero::before{content:'';position:absolute;top:-40%;left:-10%;width:60%;height:180%;background:linear-gradient(100deg,transparent,rgba(255,255,255,.35),transparent);transform:skewX(-18deg);animation:sheen 7s ease-in-out infinite}
-@keyframes sheen{0%,100%{left:-10%}50%{left:60%}}
-.hero h1{font-size:54px;letter-spacing:8px;font-weight:700;position:relative;transition:transform .2s;transform-style:preserve-3d}
-.crumb{display:inline-block;background:#f5b301;color:#222;font-size:12px;padding:8px 34px;margin-top:14px;clip-path:polygon(12% 0,88% 0,100% 100%,0 100%);position:relative;animation:floaty 5s ease-in-out infinite}
-@keyframes floaty{0%,100%{translate:0 0}50%{translate:0 -6px}}
-.main{display:flex;background:#fff}
-.side{width:270px;flex-shrink:0;padding:26px 22px;border-right:1px solid #eee}
-.sbox{display:flex;border:1px solid #ddd;margin-bottom:26px}.sbox input{flex:1;border:0;padding:9px;font-size:12px;outline:0;font-family:inherit}.sbox button{border:0;background:#f4f4f4;padding:0 12px;cursor:pointer}
-.side h3{font-size:15px;letter-spacing:1px;margin-bottom:4px}.bar{width:34px;height:3px;background:#222;margin:6px 0 16px}
-.price{font-size:12px;color:#666;margin:10px 0}.btn-y{background:#f5b301;border:0;padding:8px 22px;font-weight:700;font-size:12px;cursor:pointer;border-radius:2px;font-family:inherit;transition:.2s}.btn-y:hover{transform:translateY(-2px);box-shadow:0 8px 18px rgba(245,179,1,.45)}
-.cats{list-style:none;font-size:13px;margin-bottom:28px}.cats li{padding:9px 0;border-bottom:1px solid #eee;cursor:pointer;display:flex;justify-content:space-between}.cats li.on,.cats li:hover{color:#c8920a;font-weight:700}
-.feat{display:flex;gap:10px;align-items:center;margin-bottom:14px;cursor:pointer;transition:.2s}.feat:hover{transform:translateX(4px)}.feat img{width:44px;height:44px;object-fit:cover;border:1px solid #eee}.feat small{color:#999;font-size:11px}.feat b{color:#e33;font-size:12px}
-.content{flex:1;padding:26px}
-.toolbar{display:flex;justify-content:space-between;align-items:center;font-size:12px;color:#666;margin-bottom:16px}.toolbar select{padding:7px 10px;border:1px solid #ddd;font-size:12px;font-family:inherit}
-.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;perspective:1200px}
-.card{border:1px solid #eee;padding:14px;position:relative;background:#fff;transition:box-shadow .25s;transform-style:preserve-3d;will-change:transform}
-.card:hover{box-shadow:0 22px 44px rgba(0,0,0,.14)}
-.card::after{content:'';position:absolute;inset:0;background:linear-gradient(105deg,transparent 40%,rgba(255,255,255,.5) 50%,transparent 60%);transform:translateX(-120%);transition:transform .6s;pointer-events:none}
-.card:hover::after{transform:translateX(120%)}
-.badge{position:absolute;top:0;left:0;color:#fff;font-size:11px;font-weight:700;padding:14px 8px 8px;z-index:2}.badge.sale{background:#f5b301;clip-path:polygon(0 0,100% 0,100% 100%,50% 78%,0 100%)}.badge.new{background:#222;clip-path:polygon(0 0,100% 0,100% 100%,50% 78%,0 100%)}
-.card .im{overflow:hidden;background:#fafafa}.card img{width:100%;height:180px;object-fit:cover;display:block;transition:transform .5s}
-.card:hover .im img{transform:scale(1.12) rotate(1deg)}
-.card h4{font-size:13px;margin:12px 0 4px;font-weight:600}
-.pr{font-size:13px;color:#e33;font-weight:700}.pr s{color:#aaa;font-weight:400;margin-right:6px}
-.stars{color:#f5b301;font-size:12px;letter-spacing:2px}
-.like{position:absolute;top:10px;right:10px;background:#fff;border:1px solid #eee;border-radius:50%;width:30px;height:30px;cursor:pointer;z-index:2}.like.on{background:#e33;color:#fff;border-color:#e33}
-.quick{display:flex;gap:6px;margin-top:10px;opacity:0;translate:0 8px;transition:.25s}.card:hover .quick{opacity:1;translate:0 0}
-.quick button{flex:1;border:0;padding:8px;font-size:11px;font-weight:700;cursor:pointer;border-radius:3px;font-family:inherit}.q1{background:#222;color:#fff}.q2{background:#f5b301}
-.pag{display:flex;gap:8px;margin-top:22px}.pag button{min-width:32px;height:32px;border:1px solid #ddd;background:#fff;cursor:pointer;font-family:inherit}.pag button.on{background:#f5b301;border-color:#f5b301;font-weight:700}
-footer{background:#181818;color:#bbb;padding:44px 0 30px}.fgrid{max-width:1180px;margin:0 auto;display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:30px;padding:0 22px}
-footer h4{color:#fff;font-size:13px;letter-spacing:1px;margin-bottom:14px}
-flogo{font-size:26px;color:#f5b301;font-weight:700}
-.stats{display:flex;gap:26px;margin-top:18px}.stats b{display:block;color:#fff;font-size:22px}.stats small{font-size:11px}
-.finfo{font-size:12px;line-height:2}.finfo b{color:#fff}
-.fform input,.fform textarea{width:100%;background:#222;border:0;color:#ddd;padding:11px;margin-bottom:10px;font-size:12px;border-radius:2px;font-family:inherit}
-.fform button{background:#f5b301;border:0;padding:11px 22px;font-weight:700;cursor:pointer;border-radius:2px;font-family:inherit;transition:.2s}.fform button:hover{transform:translateY(-2px)}
-.drawer{position:fixed;top:0;right:-360px;width:340px;max-width:92vw;height:100vh;background:#fff;z-index:100;transition:.35s;padding:18px;display:flex;flex-direction:column;box-shadow:-20px 0 60px rgba(0,0,0,.25)}.drawer.open{right:0}
-.modal{position:fixed;inset:0;background:rgba(0,0,0,.6);display:none;place-items:center;z-index:120;padding:16px}.modal.open{display:grid}
-.mbox{background:#fff;max-width:620px;width:100%;display:flex;overflow:hidden;border-radius:10px}.mbox img{width:46%;object-fit:cover;min-height:280px}
-.toast{position:fixed;bottom:20px;left:50%;transform:translateX(-50%);background:#222;color:#fff;padding:12px 22px;border-radius:8px;font-size:13px;opacity:0;transition:.3s;z-index:200}.toast.show{opacity:1}
-.cart-fab{position:fixed;right:18px;bottom:18px;background:#f5b301;border:0;width:54px;height:54px;border-radius:50%;font-size:22px;cursor:pointer;box-shadow:0 10px 24px rgba(0,0,0,.25);z-index:90}
-.reveal{opacity:0;translate:0 24px;transition:.55s}.reveal.v{opacity:1;translate:0 0}
-.flash{background:#222;color:#fff;font-size:12px;padding:9px 16px;display:flex;gap:10px;align-items:center;justify-content:center;letter-spacing:.5px}
-.flash b{color:#f5b301;font-size:14px;font-variant-numeric:tabular-nums}
-.flash .code{background:#f5b301;color:#222;padding:2px 10px;border-radius:3px;font-weight:700;cursor:pointer}
-.brands{overflow:hidden;white-space:nowrap;background:#222;color:#f5b301;font-size:13px;letter-spacing:3px;padding:10px 0;font-weight:700}
-.brands span{display:inline-block;animation:brand 22s linear infinite}
-@keyframes brand{to{transform:translateX(-50%)}}
-.hfloat{position:absolute;width:86px;height:86px;border-radius:50%;object-fit:cover;border:4px solid #fff;box-shadow:0 14px 30px rgba(0,0,0,.3);animation:floaty 6s ease-in-out infinite;z-index:2}
-.stock{font-size:10px;margin-top:4px}.stock.low{color:#e33;font-weight:700}.stock.ok{color:#2a9d48}
-.soldbar{height:5px;background:#eee;border-radius:3px;margin-top:5px;overflow:hidden}.soldbar i{display:block;height:100%;background:linear-gradient(90deg,#f5b301,#e33)}
-.shipbar{height:8px;background:#eee;border-radius:5px;overflow:hidden;margin:8px 0}.shipbar i{display:block;height:100%;background:linear-gradient(90deg,#f5b301,#7ac70c);transition:width .4s}
-#topBtn{position:fixed;left:18px;bottom:18px;width:44px;height:44px;border-radius:50%;border:0;background:#222;color:#f5b301;font-size:18px;cursor:pointer;display:none;z-index:90;box-shadow:0 8px 20px rgba(0,0,0,.3)}
-@media(max-width:900px){.main{flex-direction:column}.side{width:100%}.grid{grid-template-columns:repeat(2,1fr)}.fgrid{grid-template-columns:1fr}.menu{display:none}.mbox{flex-direction:column}.mbox img{width:100%;min-height:0;height:220px}}
-</style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>KONSTRUCT — Loja 3D Interativa</title>
+<meta name="description" content="KONSTRUCT: vitrine 3D de ferramentas profissionais. Gire cada modelo em tempo real, amplie, veja o interior da peça e finalize o pedido pelo WhatsApp.">
+<meta name="theme-color" content="#0a0b0e">
+<meta property="og:type" content="website">
+<meta property="og:title" content="KONSTRUCT — Loja 3D Interativa">
+<meta property="og:description" content="Ferramentas profissionais em uma vitrine 3D. Gire, examine e compre.">
+<meta property="og:image" content="../img/konstruct.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/konstruct.css?v=3">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230a0b0e'/%3E%3Cpath d='M18 14h8v14l16-14h10L34 32l19 18H42L26 36v14h-8z' fill='%23f5b301'/%3E%3C/svg%3E">
 </head>
 <body>
-<div class="topnav wrap"><div class="logo">K<b>O</b>NSTRUCT</div><div class="menu"><a>HOME</a><a>FEATURES</a><a>ABOUT US</a><a>OUR SERVICES</a><a>PROJECTS</a><a>BLOG</a><a class="on">STORE</a><a>CONTACT</a><span class="wish" onclick="toast('♥ Wishlist: '+wish.length+' itens')">♡<i id="wc">0</i></span></div></div>
-<div class="hero" id="hero"><img class="hfloat" style="left:6%;top:22%" src="assets/tool-1.jpg" onerror="this.style.display='none'"><img class="hfloat" style="right:6%;bottom:20%;animation-delay:-3s" src="assets/tool-5.jpg" onerror="this.style.display='none'"><h1 id="heroH">STORE</h1><div><span class="crumb">You are here: &nbsp; Home &nbsp;/&nbsp; Products</span></div></div>
-<div class="flash">⚡ FLASH SALE ends in <b id="cd">00:00:00</b> — extra 5% OFF with <span class="code" onclick="document.getElementById('cupom').value='FLASH5';toggleCart(true);toast('🎟️ Coupon FLASH5 applied at checkout')">FLASH5</span></div>
-<div class="brands"><span>DEWALT • MAKITA • BOSCH • STANLEY • BLACK+DECKER • MILWAUKEE • RYOBI • HILTI •&nbsp;</span><span>DEWALT • MAKITA • BOSCH • STANLEY • BLACK+DECKER • MILWAUKEE • RYOBI • HILTI •&nbsp;</span></div>
-<div class="wrap main">
-<aside class="side">
-<div class="sbox"><input id="q" placeholder="Search Products..."><button onclick="page=1;render()">⌕</button></div>
-<h3>FILTER BY PRICE</h3><div class="bar"></div>
-<input type="range" id="maxP" min="12" max="100" value="100" style="width:100%;accent-color:#f5b301" oninput="document.getElementById('plabel').textContent='Price: £12 – £'+this.value">
-<div class="price" id="plabel">Price: £12 – £100</div><button class="btn-y" onclick="page=1;render()">Filter</button>
-<h3 style="margin-top:26px">CATEGORIES</h3><div class="bar"></div>
-<ul class="cats" id="cats"></ul>
-<h3>FEATURED PRODUCTS</h3><div class="bar"></div>
-<div id="feat"></div>
+
+<!-- ══════════ SPRITE DE ÍCONES (SVG) ══════════ -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <symbol id="i-heart" viewBox="0 0 24 24"><path d="M12 20s-7.5-4.7-9.3-9A5 5 0 0 1 12 6.3 5 5 0 0 1 21.3 11C19.5 15.3 12 20 12 20z"/></symbol>
+  <symbol id="i-cart" viewBox="0 0 24 24"><path d="M4 5h2l2.2 10.4A2 2 0 0 0 10.2 17h7.6a2 2 0 0 0 2-1.6L21.5 8H7"/><circle cx="11" cy="20" r="1.4"/><circle cx="18" cy="20" r="1.4"/></symbol>
+  <symbol id="i-close" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></symbol>
+  <symbol id="i-left" viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7"/></symbol>
+  <symbol id="i-right" viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></symbol>
+  <symbol id="i-minus" viewBox="0 0 24 24"><path d="M5 12h14"/></symbol>
+  <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+  <symbol id="i-up" viewBox="0 0 24 24"><path d="M12 19V5M5 12l7-7 7 7"/></symbol>
+  <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></symbol>
+  <symbol id="i-cube" viewBox="0 0 24 24"><path d="M12 2l9 5v10l-9 5-9-5V7z"/><path d="M12 12l9-5M12 12v10M12 12L3 7"/></symbol>
+</svg>
+
+<!-- ══════════ LOADER ══════════ -->
+<div class="loader" id="loader" aria-hidden="true">
+  <div class="loader-core">
+    <div class="loader-cube">
+      <span></span><span></span><span></span><span></span><span></span><span></span>
+    </div>
+    <div class="loader-logo">K<b>O</b>NSTRUCT</div>
+    <div class="loader-bar"><i id="loaderBar"></i></div>
+    <div class="loader-tip" id="loaderTip">Iniciando motor 3D…</div>
+  </div>
+</div>
+
+<!-- ══════════ AMBIENTE GLOBAL ══════════ -->
+<div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+<div class="scroll-progress" aria-hidden="true"><i id="scrollBar"></i></div>
+<div class="grain" aria-hidden="true"></div>
+
+<!-- ══════════ NAV ══════════ -->
+<header class="nav" id="nav">
+  <div class="nav-inner">
+    <a class="brand" href="#top">
+      <span class="brand-mark" aria-hidden="true">
+        <svg class="ic fill" viewBox="0 0 24 24"><use href="#i-cube"></use></svg>
+        <i></i>
+      </span>
+      <span class="brand-txt">K<b>O</b>NSTRUCT</span>
+    </a>
+    <nav class="nav-links" id="navLinks">
+      <a href="#top" class="on">Início</a>
+      <a href="#spotlight">Vitrine 3D</a>
+      <a href="#produtos">Produtos</a>
+      <a href="#categorias">Categorias</a>
+      <a href="#contato">Contato</a>
+    </nav>
+    <div class="nav-actions">
+      <button class="icon-btn" id="wishBtn" title="Lista de desejos" aria-label="Lista de desejos, 0 itens">
+        <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-heart"></use></svg>
+        <i id="wc">0</i>
+      </button>
+      <button class="icon-btn" id="cartBtn" title="Carrinho" aria-label="Carrinho, 0 itens">
+        <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-cart"></use></svg>
+        <i id="cc">0</i>
+      </button>
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false"><i></i><i></i><i></i></button>
+    </div>
+  </div>
+</header>
+
+<!-- ══════════ HERO 3D ══════════ -->
+<section class="hero" id="top" aria-label="Destaque — vitrine 3D interativa">
+  <canvas id="heroCanvas" aria-hidden="true"></canvas>
+  <div class="hero-fallback" aria-hidden="true"></div>
+  <div class="hero-glow" aria-hidden="true"></div>
+  <div class="hero-vignette" aria-hidden="true"></div>
+
+  <div class="hero-inner">
+    <div class="hero-copy">
+      <span class="eyebrow reveal"><i></i>Vitrine 3D interativa</span>
+      <h1 class="hero-title" id="heroTitle" data-text="KONSTRUCT">KONSTRUCT</h1>
+      <p class="hero-lead reveal" style="--d:.15s">
+        Ferramentas profissionais em uma vitrine tridimensional. Gire cada modelo,
+        examine cada detalhe e leve direto para a obra.
+      </p>
+      <div class="hero-cta reveal" style="--d:.28s">
+        <a href="#produtos" class="btn btn-gold magnetic">Explorar catálogo</a>
+        <button class="btn btn-ghost magnetic" id="heroSpinBtn">
+          <span class="btn-ico">◍</span> Ver em 3D
+        </button>
+      </div>
+      <div class="hero-metrics reveal" style="--d:.4s">
+        <div><b data-count="27">0</b><small>Produtos em 3D</small></div>
+        <div><b data-count="12">0</b><small>Marcas parceiras</small></div>
+        <div><b data-count="366119">0</b><small>Clientes atendidos</small></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-hint" id="heroHint" aria-hidden="true">
+    <span class="hint-ring"><i></i></span>
+    <span>Arraste a cena · clique numa ferramenta</span>
+  </div>
+  <div class="hero-model-tag" id="heroTag" aria-hidden="true"></div>
+</section>
+
+<!-- ══════════ FLASH SALE ══════════ -->
+<aside class="flashbar" aria-label="Oferta relâmpago">
+  <span class="flash-tag">⚡ Flash Sale</span>
+  <span class="flash-txt">termina em</span>
+  <span class="clock" id="clock">
+    <b class="clk" data-u="h">00</b><i>:</i><b class="clk" data-u="m">00</b><i>:</i><b class="clk" data-u="s">00</b>
+  </span>
+  <span class="flash-txt flash-sep">—</span>
+  <button class="coupon-chip" data-coupon="FLASH5"><b>FLASH5</b> +5% OFF</button>
+  <button class="coupon-chip" data-coupon="KONSTRUCT10"><b>KONSTRUCT10</b> −10%</button>
 </aside>
-<div class="content">
-<div class="toolbar"><span id="count"></span><select id="sort" onchange="page=1;render()"><option value="def">Default sorting</option><option value="asc">Price: low to high</option><option value="desc">Price: high to low</option><option value="name">Name A–Z</option><option value="rate">Top rated</option></select></div>
-<div class="grid" id="grid"></div>
-<div class="pag" id="pag"></div>
+
+<!-- ══════════ MARQUEE ══════════ -->
+<div class="marquee-wrap" aria-hidden="true">
+  <div class="marquee">
+    <span>DEWALT • MAKITA • BOSCH • STANLEY • BLACK+DECKER • MILWAUKEE • RYOBI • HILTI • METABO •</span>
+    <span>DEWALT • MAKITA • BOSCH • STANLEY • BLACK+DECKER • MILWAUKEE • RYOBI • HILTI • METABO •</span>
+  </div>
 </div>
+
+<!-- ══════════ VITRINE 3D (SPOTLIGHT) ══════════ -->
+<section class="spotlight" id="spotlight" aria-label="Vitrine 3D — veja o produto por dentro">
+  <div class="spot-glow" aria-hidden="true"></div>
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow"><i></i>Showroom em tempo real</span>
+      <h2>Explore o produto <em>por dentro</em></h2>
+      <p>Cada peça foi reconstruída em 3D. Gire, exploda as partes, mude a luz e veja o que a foto não mostra.</p>
+    </div>
+
+    <div class="spot-grid">
+      <div class="spot-info">
+        <div class="spot-top">
+          <span class="spot-brand" id="spBrand">DEWALT</span>
+          <span class="spot-tag" id="spTag">Destaque</span>
+        </div>
+        <h3 id="spName">Rotary Hammer Pro</h3>
+        <div class="stars" id="spStars"></div>
+        <p id="spDesc"></p>
+        <div class="spot-price" id="spPrice"></div>
+        <ul class="specs" id="spSpecs"></ul>
+        <div class="spot-actions">
+          <button class="btn btn-gold" id="spAdd">Adicionar ao carrinho</button>
+          <button class="btn btn-ghost" id="spOpen">Abrir visor 3D</button>
+        </div>
+        <div class="spot-nav">
+          <button class="rnd" id="spPrev" aria-label="Produto anterior" title="Anterior">
+            <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-left"></use></svg>
+          </button>
+          <div class="spot-dots" id="spDots"></div>
+          <button class="rnd" id="spNext" aria-label="Próximo produto" title="Próximo">
+            <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-right"></use></svg>
+          </button>
+        </div>
+      </div>
+
+      <div class="spot-stage">
+        <canvas id="spotCanvas"></canvas>
+        <div class="stage-ring" aria-hidden="true"></div>
+        <div class="hud">
+          <button class="hud-btn on" id="spSpin" title="Rotação automática">⟳ <span>Auto</span></button>
+          <button class="hud-btn" id="spExplode" title="Vista explodida">⤢ <span>Explodir</span></button>
+          <button class="hud-btn" id="spWire" title="Wireframe">◌ <span>Wire</span></button>
+          <button class="hud-btn" id="spLight" title="Trocar iluminação">☀ <span>Luz</span></button>
+        </div>
+        <div class="stage-tip">Arraste para girar · scroll para zoom</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ CATÁLOGO ══════════ -->
+<main class="shell wrap" id="produtos" aria-label="Catálogo de produtos">
+  <aside class="side">
+    <div class="side-card">
+      <div class="sbox">
+        <input id="q" type="search" placeholder="Buscar produto..." autocomplete="off">
+        <button id="searchBtn" aria-label="Buscar" title="Buscar">
+          <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-search"></use></svg>
+        </button>
+      </div>
+    </div>
+
+    <div class="side-card">
+      <h3>Filtrar por preço</h3><span class="bar"></span>
+      <input type="range" id="maxP" min="12" max="100" value="100" aria-label="Preço máximo">
+      <div class="price" id="plabel">£12 – £100</div>
+      <button class="btn btn-gold btn-sm btn-full" id="filterBtn">Aplicar filtro</button>
+    </div>
+
+    <div class="side-card" id="categorias">
+      <h3>Categorias</h3><span class="bar"></span>
+      <ul class="cats" id="cats"></ul>
+    </div>
+
+    <div class="side-card">
+      <h3>Mais desejados</h3><span class="bar"></span>
+      <div id="feat"></div>
+    </div>
+
+    <div class="side-card promo">
+      <b>Frete grátis</b>
+      <span>Em pedidos acima de £50</span>
+      <div class="promo-bar"><i id="promoFill"></i></div>
+      <small id="promoTxt">Adicione produtos ao carrinho</small>
+    </div>
+  </aside>
+
+  <section class="content">
+    <div class="toolbar">
+      <span id="count">—</span>
+      <div class="tool-right">
+        <select id="sort" aria-label="Ordenar">
+          <option value="def">Ordenação padrão</option>
+          <option value="asc">Menor preço primeiro</option>
+          <option value="desc">Maior preço primeiro</option>
+          <option value="name">Nome A–Z</option>
+          <option value="rate">Melhor avaliados</option>
+          <option value="new">Novidades</option>
+        </select>
+        <div class="view-toggle" role="group" aria-label="Visualização">
+          <button class="on" data-view="grid" title="Grade">▦</button>
+          <button data-view="list" title="Lista">☰</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="grid" id="grid"></div>
+    <div class="pag" id="pag"></div>
+  </section>
+</main>
+
+<!-- ══════════ RODAPÉ ══════════ -->
+<footer id="contato">
+  <div class="foot-glow" aria-hidden="true"></div>
+  <div class="wrap fgrid">
+    <div class="fcol fcol-brand">
+      <div class="flogo">KONSTRUCT</div>
+      <p>Construtora e loja de ferramentas desde 1991. Novos edifícios, reformas, expansões e fundação industrial com garantia de 12 meses.</p>
+      <div class="stats">
+        <div><b><span class="cnt" data-n="366119">0</span></b><small>Clientes felizes</small></div>
+        <div><b><span class="cnt" data-n="181920">0</span></b><small>Projetos entregues</small></div>
+      </div>
+    </div>
+    <div class="fcol">
+      <h4>Onde estamos</h4>
+      <div class="finfo">
+        <b>Sede:</b><br>66 Nicholson Street<br>Buffalo, New York — US 14214<br><br>
+        ☎ 001-123-456-7890<br>✉ support@linethemes.com<br><br>
+        ☎ 001-123-456-7890<br>✉ manager@linethemes.com<br><br>
+        ◷ Seg – Sáb: 8:00 às 18:00<br>Domingo: fechado
+      </div>
+    </div>
+    <div class="fcol">
+      <h4>Envie uma mensagem</h4>
+      <form class="fform" id="contactForm" novalidate>
+        <input id="fn" placeholder="Nome" autocomplete="name">
+        <input id="fm" type="email" placeholder="E-mail" autocomplete="email">
+        <textarea id="fmsg" rows="4" placeholder="Mensagem"></textarea>
+        <button class="btn btn-gold btn-full" type="submit">Enviar mensagem</button>
+      </form>
+    </div>
+  </div>
+  <div class="foot-bottom wrap">
+    <span>© <span id="year">2026</span> KONSTRUCT — Loja 3D Interativa</span>
+    <span>Feito com Three.js · <a href="../index.html">Voltar ao portfólio</a></span>
+  </div>
+</footer>
+
+<!-- ══════════ CARRINHO ══════════ -->
+<div class="scrim" id="scrim"></div>
+<aside class="drawer" id="drawer" aria-label="Carrinho de compras">
+  <div class="drawer-head">
+    <h3><span class="dh-ico">🛒</span> Meu carrinho <i id="drawerCount">0</i></h3>
+    <button class="x" id="drawerClose" aria-label="Fechar carrinho" title="Fechar">
+          <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-close"></use></svg>
+        </button>
+  </div>
+  <div class="ship">
+    <div class="shipbar"><i id="shipFill"></i></div>
+    <small id="shipMsg">Adicione produtos para calcular o frete</small>
+  </div>
+  <div class="drawer-body" id="items"></div>
+  <div class="drawer-foot">
+    <input id="cupom" placeholder="Cupom: KONSTRUCT10 ou FLASH5" autocomplete="off">
+    <div class="totals">
+      <span>Subtotal</span><b id="subTotal">£0.00</b>
+      <span>Frete</span><b id="shipCost">£0.00</b>
+      <span class="tot">Total</span><b class="tot" id="total">£0.00</b>
+    </div>
+    <button class="btn btn-gold btn-full" id="checkoutBtn">Finalizar pelo WhatsApp</button>
+  </div>
+</aside>
+
+<!-- ══════════ VISOR 3D ══════════ -->
+<div class="modal" id="viewer" role="dialog" aria-modal="true" aria-label="Visor 3D do produto">
+  <div class="viewer">
+    <div class="viewer-stage">
+      <canvas id="viewerCanvas"></canvas>
+      <div class="v-fallback" id="vFallback" hidden>Não foi possível iniciar o WebGL neste navegador.</div>
+      <div class="hud hud-modal">
+        <button class="hud-btn on" id="vSpin">⟳ <span>Auto</span></button>
+        <button class="hud-btn" id="vExplode">⤢ <span>Explodir</span></button>
+        <button class="hud-btn" id="vWire">◌ <span>Wire</span></button>
+        <button class="hud-btn" id="vLight">☀ <span>Luz</span></button>
+        <button class="hud-btn" id="vShot">⤓ <span>PNG</span></button>
+        <button class="hud-btn" id="vReset">⟲ <span>Reset</span></button>
+      </div>
+      <div class="stage-tip">Arraste para girar · scroll ou pinça para zoom</div>
+    </div>
+    <aside class="viewer-info">
+      <div class="vi-top">
+        <span class="spot-brand" id="vBrand">—</span>
+        <span class="spot-tag" id="vBadge">—</span>
+      </div>
+      <h3 id="vName">—</h3>
+      <div class="stars" id="vStars"></div>
+      <div class="vi-price" id="vPrice">—</div>
+      <p id="vDesc"></p>
+      <ul class="specs" id="vSpecs"></ul>
+      <div class="qty">
+        <button id="vMinus" aria-label="Diminuir quantidade" title="Diminuir">
+          <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-minus"></use></svg>
+        </button>
+        <b id="vQty">1</b>
+        <button id="vPlus" aria-label="Aumentar quantidade" title="Aumentar">
+          <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-plus"></use></svg>
+        </button>
+      </div>
+      <button class="btn btn-gold btn-full" id="vAdd">Adicionar ao carrinho</button>
+      <button class="btn btn-ghost btn-full" id="vWish">Adicionar aos desejos</button>
+    </aside>
+  </div>
+  <button class="modal-close" id="vClose" aria-label="Fechar visor 3D" title="Fechar">
+    <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-close"></use></svg>
+  </button>
 </div>
-<footer><div class="fgrid">
-<div><flogo>KONSTRUCT</flogo><p style="font-size:12px;margin-top:10px;line-height:1.7">Konstruct is a construction company, proudly serving since 1991. We specialize in New Building Construction, Tenant Improvements, Interior & Exterior Renovations, Building Expansions.</p><div class="stats"><div><b><span class="cnt" data-n="366119">0</span></b><small>Happy Clients</small></div><div><b><span class="cnt" data-n="181920">0</span></b><small>Projects Launch</small></div></div></div>
-<div><h4>FIND US AT</h4><div class="finfo"><b>Headquarters:</b><br>66 Nicholson Street Buffalo New York US 14214<br><br>☎ 001-123-456-7890<br>✉ support@linethemes.com<br><br>☎ 001-123-456-7890<br>✉ manager@linethemes.com<br><br>◷ Monday - Saturday: 8:00 Am - 18:00 Pm<br>Sunday: Closed</div></div>
-<div><h4>SENT MESSAGE</h4><div class="fform"><input id="fn" placeholder="Name"><input id="fm" placeholder="Mail"><textarea id="fmsg" rows="4" placeholder="Message"></textarea><button onclick="sendMsg()">Sent Message</button></div></div>
-</div></footer>
-<button class="cart-fab" onclick="toggleCart(true)">🛒<span id="cc" style="font-size:11px">0</span></button>
-<button id="topBtn" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
-<div class="drawer" id="drawer"><h3>🛒 Cart <button style="float:right" onclick="toggleCart(false)">✕</button></h3><div class="shipbar"><i id="shipfill" style="width:0%"></i></div><small id="shipmsg" style="font-size:11px;color:#666"></small><div id="items" style="flex:1;overflow:auto;margin:12px 0"></div><input id="cupom" placeholder="Coupon: KONSTRUCT10 or FLASH5" style="border:1px solid #ddd;padding:8px;font-family:inherit"><b id="total" style="margin-top:8px"></b><button class="btn-y" style="margin-top:10px;width:100%" onclick="checkout()">Checkout via WhatsApp</button></div>
-<div class="modal" id="modal" onclick="if(event.target==this)this.classList.remove('open')"><div class="mbox"><img id="mimg"><div style="padding:22px;flex:1"><h2 id="mt"></h2><div class="stars" id="ms"></div><p id="mp" style="color:#e33;font-weight:700;font-size:22px;margin:10px 0"></p><p style="font-size:12px;color:#666">Free shipping over £50 • 30-day returns • 12-month warranty. In stock.</p><div style="display:flex;gap:8px;margin-top:14px;align-items:center"><button onclick="mQ(-1)">-</button><b id="mq">1</b><button onclick="mQ(1)">+</button><button class="btn-y" id="madd">Add to Cart</button></div><div style="margin-top:10px"><button class="btn-y" style="background:#eee" onclick="document.getElementById('modal').classList.remove('open')">Close</button></div></div></div></div>
-<div class="toast" id="toast"></div>
+
+<!-- ══════════ UI ══════════ -->
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<button class="cart-fab" id="cartFab" aria-label="Abrir carrinho, 0 itens">
+  <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-cart"></use></svg>
+  <i id="ccFab">0</i>
+</button>
+<button id="topBtn" aria-label="Voltar ao topo" title="Voltar ao topo">
+  <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-up"></use></svg>
+</button>
+<nav aria-label="Retorno ao portfólio">
+  <a class="ks-back" href="../index.html" title="Voltar ao portfólio do Estúdio Rick Digital">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg> Voltar ao portfólio
+  </a>
+</nav>
+
+<!-- ══════════ SCRIPTS ══════════ -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
 <script>
-const L=n=>`assets/${n}`;
-const P=[
-{n:"Rotary Hammer Pro",p:12,old:15,sale:1,c:"Drills",r:5,img:L("tool-1.jpg")},
-{n:"Happy Ninja Drill",p:18,old:0,sale:0,c:"Drills",r:5,img:L("tool-2.jpg")},
-{n:"Combo Kit 5pc",p:35,old:0,sale:0,c:"Kits",r:4,img:L("tool-3.jpg")},
-{n:"Drill Set + Case",p:22,old:0,sale:0,c:"Kits",r:0,img:L("tool-4.jpg")},
-{n:"Circular Saw 1400W",p:35,old:0,sale:0,c:"Saws",r:4,img:L("tool-5.jpg")},
-{n:"Impact Driver 20V",p:35,old:0,sale:0,c:"Drills",r:5,img:L("tool-6.jpg")},
-{n:"Premium Wrench Set",p:20,old:0,sale:0,c:"Hand Tools",r:5,img:L("tool-7.jpg")},
-{n:"Jig Saw Pro",p:12,old:15,sale:1,c:"Saws",r:3,img:L("tool-8.jpg")},
-{n:"Ship Your Idea Kit",p:20,old:0,sale:0,c:"Kits",r:5,img:L("tool-9.jpg")},
-{n:"Angle Grinder 125mm",p:28,old:0,sale:0,c:"Grinders",r:4,img:L("tool-10.jpg")},
-{n:"Orbital Sander 300W",p:24,old:0,sale:0,c:"Sanders",r:4,img:L("tool-13.jpg")},
-{n:"Cordless Drill 12V",p:29,old:34,sale:1,c:"Drills",r:5,img:L("tool-14.jpg")},
-{n:"Tool Cabinet 5-Drawer",p:45,old:0,sale:0,c:"Storage",r:5,img:L("tool-15.jpg"),isNew:1},
-{n:"Reciprocating Saw",p:38,old:0,sale:0,c:"Saws",r:4,img:L("tool-16.jpg"),isNew:1},
-{n:"Laser Measure 40m",p:32,old:0,sale:0,c:"Measuring",r:5,img:L("tool-17.jpg"),isNew:1},
-{n:"Belt Sander Pro",p:27,old:31,sale:1,c:"Sanders",r:4,img:L("tool-18.jpg")},
-{n:"Welding Inverter 160A",p:89,old:0,sale:0,c:"Welding",r:5,img:L("tool-19.jpg")},
-{n:"Air Compressor 24L",p:95,old:0,sale:0,c:"Air Tools",r:4,img:L("tool-20.jpg")},
-{n:"Demolition Hammer 1500W",p:59,old:72,sale:1,c:"Drills",r:5,img:L("tool-21.jpg")},
-{n:"Socket Set 108pc",p:42,old:0,sale:0,c:"Hand Tools",r:5,img:L("tool-22.jpg")},
-{n:"Warehouse Shelf Rack",p:75,old:0,sale:0,c:"Storage",r:4,img:L("tool-23.jpg"),isNew:1},
-{n:"Voltage Tester Kit",p:19,old:0,sale:0,c:"Measuring",r:4,img:L("tool-24.jpg")},
-{n:"Tile Cutter 600mm",p:49,old:59,sale:1,c:"Saws",r:4,img:L("tool-25.jpg")},
-{n:"Nail Gun Cordless",p:69,old:0,sale:0,c:"Air Tools",r:5,img:L("tool-26.jpg"),isNew:1},
-{n:"Workbench Foldable",p:55,old:0,sale:0,c:"Storage",r:4,img:L("tool-27.jpg"),isNew:1},
-{n:"Heat Gun 2000W",p:25,old:0,sale:0,c:"Painting",r:4,img:L("tool-28.jpg")},
-{n:"Paint Sprayer HVLP",p:79,old:99,sale:1,c:"Painting",r:5,img:L("tool-29.jpg")}];
-const CATS=["All",...new Set(P.map(p=>p.c))];
-let cat="All",page=1;const PER=9;let cart=[],wish=[],mIdx=0,mQty=1;
-try{cart=JSON.parse(localStorage.getItem("ks_cart")||"[]");wish=JSON.parse(localStorage.getItem("ks_wish")||"[]")}catch(e){}
-const $=id=>document.getElementById(id);
-const stars=r=>r?"★".repeat(r)+"☆".repeat(5-r):"";
-function filtered(){const q=($("q").value||"").toLowerCase(),mp=+$("maxP").value;let l=P.filter(p=>(cat==="All"||p.c===cat)&&p.p<=mp&&p.n.toLowerCase().includes(q));const s=$("sort").value;if(s==="asc")l=[...l].sort((a,b)=>a.p-b.p);if(s==="desc")l=[...l].sort((a,b)=>b.p-a.p);if(s==="name")l=[...l].sort((a,b)=>a.n.localeCompare(b.n));if(s==="rate")l=[...l].sort((a,b)=>b.r-a.r);return l}
-function render(){const l=filtered(),tp=Math.max(1,Math.ceil(l.length/PER));page=Math.min(page,tp);
-const items=l.slice((page-1)*PER,page*PER);
-$("count").textContent=`Showing ${(page-1)*PER+1}–${(page-1)*PER+items.length} of ${l.length} results`;
-$("grid").innerHTML=items.map((p,k)=>{const i=P.indexOf(p);const stock=(i*7)%12+3;const off=p.old?Math.round((1-p.p/p.old)*100):0;return `<div class="card reveal v" style="transition-delay:${k*45}ms"><div class="badge ${p.sale?"sale":""} ${p.isNew&&!p.sale?"new":""}" ${!p.sale&&!p.isNew?'style="display:none"':""}>${p.sale?(off?`-${off}%`:"Sale!"):"NEW"}</div><button class="like ${wish.includes(p.n)?"on":""}" onclick="like(${i},this)">♥</button><div class="im"><img loading="lazy" src="${p.img}" onerror="this.src='https://picsum.photos/seed/konstruct${i}/500/400'"></div><h4>${p.n}</h4><div class="pr">${p.old?`<s>£${p.old}.00</s>`:""}£${p.p}.00</div><div class="stars">${stars(p.r)}</div><div class="stock ${stock<=5?"low":"ok"}">${stock<=5?`🔥 Only ${stock} left!`:"✅ In stock"}</div>${p.sale?`<div class="soldbar"><i style="width:${Math.min(92,40+i*3)}%"></i></div>`:""}<div class="quick"><button class="q1" onclick="addCart(${i},1)">Add to Cart</button><button class="q2" onclick="quick(${i})">👁 Quick</button></div></div>`}).join("")||"<p>No products found.</p>";
-$("pag").innerHTML=Array.from({length:tp},(_,k)=>`<button class="${k+1===page?"on":""}" onclick="page=${k+1};render();window.scrollTo({top:300,behavior:'smooth'})">${k+1}</button>`).join("")+`<button onclick="page=Math.min(${tp},page+1);render()">→</button>`;
-$("cats").innerHTML=CATS.map(c=>{const n=c==="All"?P.length:P.filter(p=>p.c===c).length;return `<li class="${c===cat?"on":""}" onclick="cat='${c}';page=1;render()"><span>${c==="All"?"All Products":c}</span><span>(${n})</span></li>`}).join("");
-$("feat").innerHTML=[0,5,12].map(i=>`<div class="feat" onclick="quick(${i})"><div style="flex:1"><div style="font-size:12px">${P[i].n}</div><small>★★★★★</small> <b>£${P[i].p}.00</b></div><img src="${P[i].img}" onerror="this.src='https://picsum.photos/seed/konstruct${i}/100/100'"></div>`).join("");
-bindTilt();renderCart();$("wc").textContent=wish.length}
-function bindTilt(){document.querySelectorAll(".card").forEach(el=>{el.addEventListener("mousemove",e=>{const r=el.getBoundingClientRect(),x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;el.style.transform=`perspective(900px) rotateY(${x*12}deg) rotateX(${-y*12}deg) translateY(-5px)`});el.addEventListener("mouseleave",()=>el.style.transform="")})}
-function like(i,btn){const n=P[i].n;if(wish.includes(n)){wish=wish.filter(x=>x!==n);btn.classList.remove("on")}else{wish.push(n);btn.classList.add("on");toast("♥ "+n+" na wishlist")}$("wc").textContent=wish.length;localStorage.setItem("ks_wish",JSON.stringify(wish))}
-function addCart(i,q){const f=cart.find(x=>x.n===P[i].n);if(f)f.q+=q;else cart.push({n:P[i].n,p:P[i].p,img:P[i].img,q});localStorage.setItem("ks_cart",JSON.stringify(cart));renderCart();toast("🛒 "+P[i].n)}
-function renderCart(){$("cc").textContent=cart.reduce((s,p)=>s+p.q,0);$("items").innerHTML=cart.map((p,i)=>`<div style="display:flex;gap:8px;margin-bottom:10px;align-items:center;font-size:12px"><img src="${p.img}" style="width:46px;height:46px;object-fit:cover" onerror="this.src='https://picsum.photos/seed/ksc${i}/100/100'"><div style="flex:1"><b>${p.n}</b><br>£${p.p} x ${p.q}</div><button onclick="cart[${i}].q++;save()">+</button><button onclick="cart[${i}].q--;if(cart[${i}].q<1)cart.splice(${i},1);save()">-</button><button onclick="cart.splice(${i},1);save()">✕</button></div>`).join("")||"Empty";const cup=($("cupom").value||"").trim().toUpperCase();let sub=cart.reduce((s,p)=>s+p.p*p.q,0);if(cup==="KONSTRUCT10")sub*=.9;else if(cup==="FLASH5")sub*=.95;const fr=cart.length?(sub>50?0:6.9):0;const pct=cart.length?Math.min(100,sub/50*100):0;$("shipfill").style.width=pct+"%";$("shipmsg").textContent=sub>=50?"🎉 FREE shipping unlocked!":`Add £${(50-sub).toFixed(2)} for FREE shipping`;$("total").textContent=`Sub £${sub.toFixed(2)} + Ship £${fr.toFixed(2)} = £${(sub+fr).toFixed(2)}`}
-function save(){localStorage.setItem("ks_cart",JSON.stringify(cart));renderCart()}
-function toggleCart(o){$("drawer").classList.toggle("open",o)}
-function checkout(){if(!cart.length)return toast("Cart empty");const cup=($("cupom").value||"").trim().toUpperCase();let sub=cart.reduce((s,p)=>s+p.p*p.q,0);if(cup==="KONSTRUCT10")sub*=.9;else if(cup==="FLASH5")sub*=.95;const fr=sub>50?0:6.9,num="KS-"+Date.now().toString().slice(-6);const m=encodeURIComponent(`Order ${num} KONSTRUCT:%0A`+cart.map(p=>`- ${p.n} x${p.q} £${p.p}`).join("%0A")+`%0ATotal £${(sub+fr).toFixed(2)}`);window.open("https://wa.me/5511989426415?text="+m,"_blank");cart=[];save();toggleCart(false);toast("✅ Order "+num+" sent!")}
-function quick(i){mIdx=i;mQty=1;$("mq").textContent=1;$("mimg").src=P[i].img;$("mt").textContent=P[i].n;$("ms").textContent=("★".repeat(P[i].r||0));$("mp").textContent="£"+P[i].p+".00";$("madd").onclick=()=>{addCart(i,mQty);$("modal").classList.remove("open")};$("modal").classList.add("open")}
-function mQ(d){mQty=Math.max(1,mQty+d);$("mq").textContent=mQty}
-function sendMsg(){if(!$("fn").value||!$("fm").value.includes("@"))return toast("⚠️ Name + valid email");toast("✅ Message sent!");$("fn").value=$("fm").value=$("fmsg").value=""}
-function toast(t){const e=$("toast");e.textContent=t;e.classList.add("show");clearTimeout(e._t);e._t=setTimeout(()=>e.classList.remove("show"),2200)}
-$("q").addEventListener("input",()=>{page=1;render()});$("cupom").addEventListener("input",renderCart);
-const hero=$("hero"),heroH=$("heroH");
-hero.addEventListener("mousemove",e=>{const r=hero.getBoundingClientRect(),x=(e.clientX-r.left)/r.width-.5;heroH.style.transform=`rotateY(${x*10}deg)`});
-hero.addEventListener("mouseleave",()=>heroH.style.transform="");
-const io2=new IntersectionObserver(es=>es.forEach(x=>x.isIntersecting&&x.target.classList.add("v")),{threshold:.08});
-document.querySelectorAll(".reveal").forEach(el=>io2.observe(el));
-const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){const el=e.target,n=+el.dataset.n,t0=performance.now();(function s(t){const p=Math.min(1,(t-t0)/1500);el.textContent=Math.floor(n*(1-Math.pow(1-p,3))).toLocaleString();if(p<1)requestAnimationFrame(s)})(t0);io.unobserve(el)}}),{threshold:.4});
-document.querySelectorAll(".cnt").forEach(el=>io.observe(el));
-setInterval(()=>{const n=new Date();n.setHours(24,0,0,0);let d=Math.max(0,n-new Date());const h=String(Math.floor(d/36e5)).padStart(2,"0"),m=String(Math.floor(d%36e5/6e4)).padStart(2,"0"),s=String(Math.floor(d%6e4/1e3)).padStart(2,"0");$("cd").textContent=`${h}:${m}:${s}`},1000);
-window.addEventListener("scroll",()=>{$("topBtn").style.display=window.scrollY>600?"block":"none"},{passive:true});
-render();
+/* espelho alternativo caso o CDN principal falhe */
+if(!window.THREE){
+  document.write('<script src="https://unpkg.com/three@0.128.0/build/three.min.js"><\/script>');
+}
 </script>
-<a class="ks-back" href="../index.html" title="Voltar ao portfólio do Estúdio Rick Digital">&#8592; Voltar ao portfólio</a>
-<style>
-.ks-back{position:fixed;left:14px;bottom:14px;z-index:9999;display:inline-flex;align-items:center;gap:8px;padding:11px 16px;border-radius:4px;background:#222;color:#f5b301;font-family:Oswald,Segoe UI,Roboto,Arial,sans-serif;font-size:14px;font-weight:600;letter-spacing:.5px;text-decoration:none;box-shadow:0 10px 26px rgba(0,0,0,.3);transition:.2s}
-.ks-back:hover{background:#f5b301;color:#222;transform:translateY(-2px)}
-.ks-back:focus-visible{outline:2px solid #f5b301;outline-offset:2px}
-@media(max-width:480px){.ks-back{font-size:13px;padding:9px 13px;left:10px;bottom:10px}}
-</style>
-</body></html>
+<script src="js/data.js?v=3"></script>
+<script src="js/models.js?v=3"></script>
+<script src="js/viewer.js?v=3"></script>
+<script src="js/hero.js?v=3"></script>
+<script src="js/app.js?v=3"></script>
+</body>
+</html>
