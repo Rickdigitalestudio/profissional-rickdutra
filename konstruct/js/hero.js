@@ -8,13 +8,13 @@ var KHero = (function () {
   if (!window.THREE) return null;
   var T = window.THREE;
 
-  /* peças exibidas no palco */
+  /* peças exibidas no palco (ids do catálogo) */
   var PICKS = [
-    { id: 0, size: 1.62 },
-    { id: 4, size: 1.66 },
-    { id: 9, size: 1.5 },
-    { id: 16, size: 1.58 },
-    { id: 24, size: 1.85 }
+    { id: 1, size: 1.62 },
+    { id: 9, size: 1.66 },
+    { id: 16, size: 1.5 },
+    { id: 31, size: 1.58 },
+    { id: 46, size: 1.75 }
   ];
 
   /* altura do topo da plataforma */
