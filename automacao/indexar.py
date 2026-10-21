@@ -136,8 +136,14 @@ def main() -> int:
             "e salve como <chave>.txt na raiz do repo.")
         return 1
 
-    key_location = f"{SITE}/{key}.txt"
+    key_location = os.environ.get(
+        "INDEXNOW_KEY_LOCATION",
+        # O IndexNow exige o arquivo de chave na RAIZ do host.
+        # Como o site vive em github.io/<repo>/, a raiz e um repo separado.
+        f"https://{HOST}/{key}.txt",
+    )
     log(f"Indexando {len(urls)} URLs em {SITE}")
+    log(f"Chave validada em: {key_location}")
     resultado = index_now(urls, key, key_location)
     ping_sitemap()
 
