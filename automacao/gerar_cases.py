@@ -339,7 +339,7 @@ $destaques
 
     head = HEAD.substitute(
         title=e(d["title"]), desc=e(d["desc"]), canonical=url,
-        og_title=e(f"{d['cliente']} — {d['tipo']} | Estúdio Rick Digital"),
+        og_title=e(f"Estúdio Rick Digital — {d['cliente']}"),
         og_desc=e(d["desc"]),
         og_image=f"{SITE}/{d['img_fallback']}",
         jsonld_article=jsonld,
