@@ -104,21 +104,21 @@ var KModel = (function () {
   function drill(p) {
     var g = new T.Group(), m = palette(p), v = p.variant || 'cordless';
 
-    var len = v === 'demolition' ? .82 : (v === 'rotary' ? .72 : .58);
-    var rad = v === 'demolition' ? .19 : (v === 'rotary' ? .17 : .155);
+    var len = v === 'demolition' ? .62 : (v === 'rotary' ? .56 : .48);
+    var rad = v === 'demolition' ? .21 : (v === 'rotary' ? .19 : .165);
 
     /* motor */
     var motor = at(cyl(rad, rad, len, 26, m.body), .02, 0, 0);
     rot(motor, 0, 0, Math.PI / 2); g.add(motor);
 
     /* aletas de ventilação */
-    for (var i = 0; i < 4; i++) {
-      var fin = at(tor(rad + .006, .014, m.dark, 8, 24), -len * .28 + i * .07, 0, 0);
+    for (var i = 0; i < 3; i++) {
+      var fin = at(tor(rad + .003, .007, m.alt, 8, 24), -len * .2 + i * .05, 0, 0);
       rot(fin, 0, Math.PI / 2, 0); g.add(fin);
     }
 
     /* tampa traseira */
-    var cap = at(cyl(rad * .82, rad, .12, 26, m.alt), -len / 2 - .05, 0, 0);
+    var cap = at(cyl(rad * .9, rad * 1.02, .14, 26, m.alt), -len / 2 - .06, 0, 0);
     rot(cap, 0, 0, Math.PI / 2); g.add(cap);
 
     /* bucha / mandril */
@@ -134,11 +134,11 @@ var KModel = (function () {
     rot(collar, 0, 0, Math.PI / 2); g.add(collar);
 
     /* empunhadura */
-    var grip = at(rbox(.15, .48, .17, .055, m.rubber), -.03, -.34, 0);
+    var grip = at(rbox(.18, .46, .2, .06, m.rubber), -.03, -.34, 0);
     rot(grip, 0, 0, .16); g.add(grip);
 
     /* gatilho */
-    var trig = at(rbox(.08, .14, .14, .025, m.dark), .07, -.15, 0);
+    var trig = at(rbox(.09, .15, .16, .025, m.dark), .08, -.15, 0);
     rot(trig, 0, 0, .16); g.add(trig);
 
     /* seletor de torque */
@@ -304,19 +304,19 @@ var KModel = (function () {
     var g = new T.Group(), m = palette(p);
 
     /* disco */
-    var disc = at(cyl(.235, .235, .028, 44, m.darkSteel), .12, 0, 0);
+    var disc = at(cyl(.185, .185, .026, 40, m.darkSteel), .1, 0, 0);
     rot(disc, 0, 0, Math.PI / 2); g.add(disc);
-    var discFace = at(cyl(.2, .2, .03, 44, m.steel), .12, 0, 0);
+    var discFace = at(cyl(.16, .16, .028, 40, m.steel), .1, 0, 0);
     rot(discFace, 0, 0, Math.PI / 2); g.add(discFace);
-    var nut = at(cyl(.055, .055, .05, 18, m.gold), .17, 0, 0);
+    var nut = at(cyl(.05, .05, .05, 18, m.gold), .14, 0, 0);
     rot(nut, 0, 0, Math.PI / 2); g.add(nut);
 
     /* proteção */
-    var guard = new T.Mesh(new T.CylinderGeometry(.27, .27, .1, 32, 1, true, Math.PI * .1, Math.PI * 1.2), m.alt);
-    guard.material = m.alt; at(guard, .11, 0, 0); rot(guard, 0, 0, Math.PI / 2); g.add(guard);
+    var guard = new T.Mesh(new T.CylinderGeometry(.215, .215, .095, 30, 1, true, Math.PI * .05, Math.PI * 1.25), m.alt);
+    at(guard, .1, 0, 0); rot(guard, 0, 0, Math.PI / 2); g.add(guard);
 
     /* corpo */
-    var body = at(cyl(.105, .105, .46, 24, m.body), -.2, 0, 0);
+    var body = at(cyl(.105, .105, .5, 24, m.body), -.22, 0, 0);
     rot(body, 0, 0, Math.PI / 2); g.add(body);
 
     /* caixa de engrenagens */
@@ -330,11 +330,11 @@ var KModel = (function () {
     rot(side, Math.PI / 2, 0, 0); g.add(side);
 
     /* punho traseiro */
-    var rear = at(rbox(.16, .1, .12, .03, m.rubber), -.44, 0, 0);
+    var rear = at(rbox(.16, .1, .12, .03, m.rubber), -.46, 0, 0);
     g.add(rear);
 
     /* interruptor */
-    var sw = at(rbox(.1, .05, .07, .015, m.gold), -.3, .1, 0);
+    var sw = at(rbox(.1, .05, .07, .015, m.gold), -.32, .1, 0);
     g.add(sw);
 
     return g;
@@ -730,12 +730,14 @@ var KModel = (function () {
     var clip = at(tor(.07, .018, m.alt, 8, 18, Math.PI), 0, -.24, .0);
     rot(clip, Math.PI / 2, 0, 0); g.add(clip);
 
-    /* feixe de laser (volume) */
-    var beam = new T.Mesh(new T.ConeGeometry(.1, .9, 18, 1, true), M(0xff3b3b, {
-      rough: 1, metal: 0, emissive: 0xff2d2d, ei: 1.2, opacity: .16
+    /* feixe de laser (volume discreto) */
+    var beam = new T.Mesh(new T.ConeGeometry(.05, .42, 14, 1, true), M(0xff2d2d, {
+      rough: 1, metal: 0, emissive: 0xff2020, ei: 2.2, opacity: .1
     }));
     beam.material.transparent = true;
-    beam.position.set(0, .42, .06);
+    beam.material.blending = T.AdditiveBlending;
+    beam.material.depthWrite = false;
+    beam.position.set(0, .28, .06);
     beam.rotation.x = Math.PI;
     g.add(beam);
 
@@ -957,7 +959,337 @@ var KModel = (function () {
     return g;
   }
 
-  /* ── registro ─────────────────────────────────────────── */
+  /* ═══════════════════════════════════════════════════════
+     CONSTRUTORES — equipamentos de segurança, marcenaria,
+     jardim, energia e medição
+     ═══════════════════════════════════════════════════════ */
+
+  /* capacete de segurança */
+  function cap(p) {
+    var g = new T.Group(), m = palette(p);
+    /* casco (perfil torneado) */
+    var pts = [
+      new T.Vector2(.001, -.14), new T.Vector2(.29, -.14), new T.Vector2(.335, -.11),
+      new T.Vector2(.34, -.05), new T.Vector2(.305, .03), new T.Vector2(.27, .12),
+      new T.Vector2(.205, .21), new T.Vector2(.115, .265), new T.Vector2(.001, .285)
+    ];
+    var shell = new T.Mesh(new T.LatheGeometry(pts, 44), m.body);
+    g.add(shell);
+    /* aba frontal */
+    var peak = at(rbox(.30, .032, .28, .015, m.body), 0, -.125, .25);
+    rot(peak, -.2, 0, 0); g.add(peak);
+    /* aba traseira */
+    var back = at(rbox(.30, .028, .16, .014, m.body), 0, -.12, -.24);
+    rot(back, .22, 0, 0); g.add(back);
+    /* nervuras */
+    for (var i = 0; i < 2; i++) {
+      var rib = at(rbox(.03, .04, .42, .012, m.alt), -.115 + i * .23, .175, -.02);
+      rot(rib, 0, 0, 0); g.add(rib);
+    }
+    /* borda inferior escura */
+    var edge = at(tor(.335, .018, m.dark, 8, 36), 0, -.13, 0);
+    edge.scale.set(1, 1, 1); rot(edge, Math.PI / 2, 0, 0); g.add(edge);
+    /* ajuste de nuca */
+    var knob = at(cyl(.05, .05, .04, 14, m.gold), 0, -.02, -.3);
+    rot(knob, Math.PI / 2, 0, 0); g.add(knob);
+    var cradle = at(tor(.16, .015, m.dark, 8, 22, Math.PI), 0, -.1, -.25);
+    g.add(cradle);
+    /* marca */
+    var logo = at(rbox(.09, .04, .02, .008, m.gold), 0, -.05, .28);
+    g.add(logo);
+    return g;
+  }
+
+  /* óculos de proteção */
+  function glasses(p) {
+    var g = new T.Group(), m = palette(p);
+    var lensMat = M(0xbfd8e8, { rough: .06, metal: .1, opacity: .38 });
+    lensMat.transparent = true;
+    for (var i = 0; i < 2; i++) {
+      var lens = at(cyl(.11, .11, .02, 24, lensMat), -.12 + i * .24, 0, 0);
+      rot(lens, Math.PI / 2, 0, 0); g.add(lens);
+      var ring = at(tor(.11, .014, m.dark, 8, 26), -.12 + i * .24, 0, 0);
+      g.add(ring);
+    }
+    var bridge = at(rbox(.05, .02, .02, .008, m.dark), 0, .02, 0);
+    g.add(bridge);
+    var arm1 = at(rbox(.02, .02, .26, .008, m.dark), -.23, .02, -.12);
+    rot(arm1, .2, 0, 0); g.add(arm1);
+    var arm2 = at(rbox(.02, .02, .26, .008, m.dark), .23, .02, -.12);
+    rot(arm2, .2, 0, 0); g.add(arm2);
+    return g;
+  }
+
+  /* luva de raspa */
+  function glove(p) {
+    var g = new T.Group(), m = palette(p);
+    var leather = M(p.color, { rough: .88, metal: .02 });
+    var palm = at(rbox(.26, .3, .07, .06, leather), 0, 0, 0);
+    g.add(palm);
+    var cuff = at(rbox(.27, .1, .08, .03, M(0x2a2e36, { rough: .9 })), 0, -.2, 0);
+    g.add(cuff);
+    for (var i = 0; i < 4; i++) {
+      var f = at(cyl(.028, .03, .17 - i * .012, 10, leather), -.085 + i * .057, .22, 0);
+      g.add(f);
+      var tip = at(sph(.03, leather, 10), -.085 + i * .057, .3 - i * .006, 0);
+      g.add(tip);
+    }
+    var thumb = at(cyl(.032, .034, .14, 10, leather), -.15, .04, .02);
+    rot(thumb, 0, 0, .9); g.add(thumb);
+    var stitch = at(rbox(.24, .012, .075, .005, M(0xd8c9a8, { rough: .9 })), 0, .13, .001);
+    g.add(stitch);
+    return g;
+  }
+
+  /* cinto de ferramentas */
+  function belt(p) {
+    var g = new T.Group(), m = palette(p);
+    var strap = at(tor(.3, .035, M(0x3a2a18, { rough: .9 })), 0, .1, 0);
+    rot(strap, Math.PI / 2, 0, 0); g.add(strap);
+    var buckle = at(rbox(.1, .08, .04, .012, m.steel), 0, .1, .3);
+    g.add(buckle);
+    var pouches = [[-.18, -.12], [.1, -.16], [-.05, .12]];
+    pouches.forEach(function (c, i) {
+      var po = at(rbox(.15, .2, .1, .03, m.body), c[0], c[1], .24);
+      rot(po, 0, 0, i * .12); g.add(po);
+      var lip = at(rbox(.16, .035, .11, .012, m.alt), c[0], c[1] + .1, .245);
+      g.add(lip);
+    });
+    var hammerH = at(cyl(.024, .026, .34, 12, m.steel), .26, -.02, .26);
+    rot(hammerH, 0, 0, .12); g.add(hammerH);
+    var hammerHead = at(rbox(.1, .07, .07, .02, m.darkSteel), .26, .17, .26);
+    g.add(hammerHead);
+    return g;
+  }
+
+  /* plaina elétrica */
+  function planer(p) {
+    var g = new T.Group(), m = palette(p);
+    var body = at(rbox(.44, .18, .17, .035, m.body), 0, .02, 0);
+    g.add(body);
+    var sole = at(rbox(.46, .04, .18, .012, m.steel), 0, -.1, 0);
+    g.add(sole);
+    var knob = at(cyl(.05, .05, .1, 16, m.dark), 0, .18, 0);
+    g.add(knob);
+    var knobTop = at(cyl(.07, .07, .03, 16, m.gold), 0, .24, 0);
+    g.add(knobTop);
+    var handle = at(tor(.13, .032, m.rubber, 8, 20, Math.PI), -.02, .12, 0);
+    g.add(handle);
+    var trigger = at(rbox(.05, .1, .09, .015, m.gold), .06, .04, 0);
+    g.add(trigger);
+    var chip = at(rbox(.06, .05, .09, .015, m.darkSteel), .17, -.03, .0);
+    g.add(chip);
+    var cord = tube([[-.22, .05, .06], [-.36, -.05, .12], [-.44, -.28, .2]], .018, M(0x2a2e36, { rough: .9 }), 16);
+    g.add(cord);
+    return g;
+  }
+
+  /* roçadeira */
+  function brushCutter(p) {
+    var g = new T.Group(), m = palette(p);
+    /* motor */
+    var engine = at(rbox(.28, .26, .24, .04, m.body), 0, .3, 0);
+    g.add(engine);
+    var tank = at(rbox(.2, .16, .18, .03, m.alt), 0, .48, 0);
+    g.add(tank);
+    var cap = at(cyl(.04, .04, .03, 12, m.gold), 0, .57, 0);
+    g.add(cap);
+    var muffler = at(cyl(.06, .06, .16, 12, m.darkSteel), -.16, .3, 0);
+    rot(muffler, 0, 0, Math.PI / 2); g.add(muffler);
+    /* eixo */
+    var shaft = at(cyl(.035, .035, .78, 14, m.steel), 0, -.1, 0);
+    g.add(shaft);
+    /* guidão */
+    var bar = at(cyl(.028, .028, .56, 12, m.dark), 0, .12, 0);
+    rot(bar, 0, 0, Math.PI / 2); g.add(bar);
+    var grip1 = at(cyl(.032, .032, .16, 12, m.rubber), -.26, .12, 0);
+    rot(grip1, 0, 0, Math.PI / 2); g.add(grip1);
+    var grip2 = at(cyl(.032, .032, .16, 12, m.rubber), .26, .12, 0);
+    rot(grip2, 0, 0, Math.PI / 2); g.add(grip2);
+    /* disco de corte */
+    var disc = at(cyl(.2, .2, .015, 30, m.darkSteel), 0, -.5, 0);
+    g.add(disc);
+    var head = at(cyl(.05, .07, .12, 14, m.alt), 0, -.42, 0);
+    g.add(head);
+    /* proteção */
+    var guard = at(new T.Mesh(new T.CylinderGeometry(.24, .24, .14, 24, 1, true, Math.PI, Math.PI), m.alt), 0, -.36, 0);
+    g.add(guard);
+    /* alça de segurança */
+    var hoop = at(tor(.16, .018, m.steel, 8, 22, Math.PI), 0, .5, -.18);
+    rot(hoop, .5, 0, 0); g.add(hoop);
+    return g;
+  }
+
+  /* nível a laser 360° */
+  function laserLevel(p) {
+    var g = new T.Group(), m = palette(p);
+    var base = at(rbox(.16, .06, .16, .02, m.alt), 0, -.26, 0);
+    g.add(base);
+    var col = at(cyl(.035, .035, .1, 14, m.steel), 0, -.19, 0);
+    g.add(col);
+    var body = at(rbox(.18, .18, .16, .03, m.body), 0, -.02, 0);
+    g.add(body);
+    var head = at(cyl(.07, .07, .16, 18, m.alt), 0, .1, 0);
+    g.add(head);
+    var win = at(cyl(.045, .045, .02, 16, M(0x220808, { rough: .1, metal: .2, emissive: 0xff2b2b, ei: 2.6 })), 0, .1, .085);
+    rot(win, Math.PI / 2, 0, 0); g.add(win);
+    var pend = at(rbox(.1, .12, .02, .01, M(0x3a4048, { rough: .5, metal: .4 })), 0, -.04, .085);
+    g.add(pend);
+    var knob = at(cyl(.035, .035, .03, 12, m.gold), .07, .1, .085);
+    rot(knob, Math.PI / 2, 0, 0); g.add(knob);
+    /* feixe de laser */
+    var beam = new T.Mesh(new T.ConeGeometry(.09, 1.1, 16, 1, true), M(0xff3b3b, { rough: 1, metal: 0, emissive: 0xff2020, ei: 2, opacity: .1 }));
+    beam.material.transparent = true;
+    beam.material.blending = T.AdditiveBlending;
+    beam.material.depthWrite = false;
+    beam.position.set(0, .6, .08);
+    beam.rotation.x = Math.PI;
+    g.add(beam);
+    return g;
+  }
+
+  /* trena */
+  function tape(p) {
+    var g = new T.Group(), m = palette(p);
+    var body = at(rbox(.22, .22, .075, .035, M(p.color, { rough: .5, metal: .08 })), 0, 0, 0);
+    g.add(body);
+    var beltClip = at(rbox(.06, .05, .03, .012, m.steel), 0, .11, .04);
+    g.add(beltClip);
+    var blade = at(rbox(.5, .05, .008, .003, M(0xf2c200, { rough: .4, metal: .3 })), .28, -.04, .04);
+    g.add(blade);
+    var hook = at(rbox(.03, .06, .02, .005, m.steel), .53, -.04, .04);
+    g.add(hook);
+    var grip = at(rbox(.16, .05, .085, .02, m.rubber), -.02, .04, 0);
+    g.add(grip);
+    return g;
+  }
+
+  /* serra de bancada */
+  function benchSaw(p) {
+    var g = new T.Group(), m = palette(p);
+    /* mesa */
+    var table = at(rbox(.9, .05, .62, .015, m.steel), 0, .28, 0);
+    g.add(table);
+    var slot = at(rbox(.6, .012, .05, .004, m.dark), 0, .3, .0);
+    g.add(slot);
+    /* disco */
+    var blade = at(cyl(.26, .26, .012, 40, M(0x8d95a3, { rough: .34, metal: .95 })), 0, .12, 0);
+    g.add(blade);
+    var teeth = at(tor(.256, .016, M(0x5d6470, { rough: .3, metal: .9 }), 8, 44), 0, .12, 0);
+    rot(teeth, Math.PI / 2, 0, 0); g.add(teeth);
+    /* motor sob a mesa */
+    var motor = at(cyl(.13, .13, .3, 20, m.body), 0, -.06, -.12);
+    rot(motor, 0, 0, Math.PI / 2); g.add(motor);
+    var mount = at(rbox(.34, .12, .12, .02, m.alt), 0, .04, -.12);
+    g.add(mount);
+    /* guia paralela */
+    var fence = at(rbox(.08, .16, .5, .012, m.alt), .3, .38, 0);
+    g.add(fence);
+    var fenceKnob = at(cyl(.04, .04, .06, 12, m.gold), .3, .44, .18);
+    rot(fenceKnob, Math.PI / 2, 0, 0); g.add(fenceKnob);
+    /* guiador de esquadria */
+    var gauge = at(rbox(.06, .1, .3, .012, m.gold), -.2, .34, .1);
+    g.add(gauge);
+    /* pernas */
+    [[-.36, -.22], [.36, -.22], [-.36, .22], [.36, .22]].forEach(function (c) {
+      var leg = at(rbox(.055, .72, .055, .012, m.body), c[0], -.14, c[1]);
+      g.add(leg);
+    });
+    var brace = at(rbox(.76, .045, .045, .01, m.body), 0, -.44, -.22);
+    g.add(brace);
+    return g;
+  }
+
+  /* gerador */
+  function generator(p) {
+    var g = new T.Group(), m = palette(p);
+    /* quadro */
+    [[-.3, -.18], [.3, -.18], [-.3, .18], [.3, .18]].forEach(function (c) {
+      var t = at(rbox(.05, .62, .05, .012, m.body), c[0], 0, c[1]);
+      g.add(t);
+    });
+    var topBar = at(rbox(.66, .05, .42, .012, m.body), 0, .3, 0);
+    g.add(topBar);
+    /* motor */
+    var block = at(rbox(.4, .32, .32, .04, m.dark), 0, .02, 0);
+    g.add(block);
+    var tank = at(rbox(.42, .2, .34, .04, m.alt), 0, .24, 0);
+    g.add(tank);
+    var cap = at(cyl(.05, .05, .04, 12, m.gold), 0, .36, 0);
+    g.add(cap);
+    var muffler = at(cyl(.06, .06, .18, 12, m.darkSteel), -.26, .12, 0);
+    rot(muffler, 0, 0, Math.PI / 2); g.add(muffler);
+    /* painel */
+    var panel = at(rbox(.2, .16, .04, .012, m.alt), 0, .1, .19);
+    g.add(panel);
+    var disp = at(rbox(.1, .06, .02, .005, M(0x0a1a12, { rough: .3, emissive: 0x22ff88, ei: 1.2 })), -.03, .12, .21);
+    g.add(disp);
+    for (var i = 0; i < 2; i++) {
+      var sock = at(cyl(.032, .032, .03, 12, m.gold), .04 + i * .0, .04 + i * .08, .21);
+      rot(sock, Math.PI / 2, 0, 0); g.add(sock);
+    }
+    /* alça */
+    var handle = at(tor(.26, .026, m.rubber, 8, 22, Math.PI), 0, .3, 0);
+    rot(handle, 0, 0, 0); g.add(handle);
+    /* rodas */
+    var w1 = at(cyl(.11, .11, .06, 18, m.rubber), -.26, -.32, .16);
+    rot(w1, 0, 0, Math.PI / 2); g.add(w1);
+    var w2 = at(cyl(.11, .11, .06, 18, m.rubber), -.26, -.32, -.16);
+    rot(w2, 0, 0, Math.PI / 2); g.add(w2);
+    var foot = at(rbox(.1, .14, .12, .02, m.dark), .28, -.28, 0);
+    g.add(foot);
+    return g;
+  }
+
+  /* extintor de incêndio */
+  function extinguisher(p) {
+    var g = new T.Group(), m = palette(p);
+    var body = at(cyl(.14, .15, .58, 26, M(p.color, { rough: .38, metal: .25 })), 0, .0, 0);
+    g.add(body);
+    var dome = at(sph(.14, M(p.color, { rough: .38, metal: .25 }), 22), 0, .29, 0);
+    dome.scale.set(1, .55, 1); g.add(dome);
+    var base = at(cyl(.15, .15, .04, 26, m.dark), 0, -.3, 0);
+    g.add(base);
+    var neck = at(cyl(.05, .06, .1, 14, m.steel), 0, .35, 0);
+    g.add(neck);
+    var valve = at(rbox(.12, .09, .09, .02, m.steel), 0, .42, 0);
+    g.add(valve);
+    var lever = at(rbox(.16, .03, .05, .01, m.accent), .04, .48, 0);
+    rot(lever, 0, 0, .1); g.add(lever);
+    var handle = at(rbox(.15, .03, .05, .01, m.accent), .04, .44, 0);
+    g.add(handle);
+    var gauge = at(cyl(.05, .05, .03, 16, m.steel), .1, .42, .06);
+    rot(gauge, Math.PI / 2, 0, 0); g.add(gauge);
+    var gf = at(cyl(.038, .038, .012, 14, M(0xf5f5f0, { rough: .6 })), .1, .42, .08);
+    rot(gf, Math.PI / 2, 0, 0); g.add(gf);
+    var hose = tube([[.04, .4, .08], [.2, .26, .14], [.24, -.04, .12]], .022, M(0x22262d, { rough: .9 }), 18);
+    g.add(hose);
+    var label = at(cyl(.152, .152, .2, 26, M(0xf2f2ee, { rough: .7 }), true), 0, .02, 0);
+    g.add(label);
+    return g;
+  }
+
+  /* rolo de pintura profissional */
+  function paintRoller(p) {
+    var g = new T.Group(), m = palette(p);
+    var roller = at(cyl(.075, .075, .3, 22, M(0xe8e2d4, { rough: .95 })), 0, .1, 0);
+    rot(roller, 0, 0, Math.PI / 2); g.add(roller);
+    var core = at(cyl(.028, .028, .32, 12, m.steel), 0, .1, 0);
+    rot(core, 0, 0, Math.PI / 2); g.add(core);
+    var frame = at(rbox(.02, .26, .02, .008, m.steel), 0, -.04, .0);
+    g.add(frame);
+    var bend = at(rbox(.02, .02, .08, .008, m.steel), 0, -.16, .03);
+    g.add(bend);
+    var handle = at(cyl(.022, .026, .16, 12, m.rubber), 0, -.24, .06);
+    rot(handle, .5, 0, 0); g.add(handle);
+    var tray = at(rbox(.28, .04, .34, .02, m.body), 0, -.38, 0);
+    g.add(tray);
+    var paint = at(rbox(.24, .02, .3, .014, M(p.alt || 0xf5b301, { rough: .6 })), 0, -.355, 0);
+    g.add(paint);
+    return g;
+  }
+
+  /* registro ─────────────────────────────────────────── */
   var BUILDERS = {
     drill: drill,
     circularSaw: circularSaw,
@@ -979,7 +1311,19 @@ var KModel = (function () {
     nailGun: nailGun,
     workbench: workbench,
     voltTester: voltTester,
-    tileCutter: tileCutter
+    tileCutter: tileCutter,
+    cap: cap,
+    glasses: glasses,
+    glove: glove,
+    belt: belt,
+    planer: planer,
+    brushCutter: brushCutter,
+    laserLevel: laserLevel,
+    tape: tape,
+    benchSaw: benchSaw,
+    generator: generator,
+    extinguisher: extinguisher,
+    paintRoller: paintRoller
   };
 
   /* material isolado por instância (wireframe seguro) */
@@ -1021,6 +1365,7 @@ var KModel = (function () {
     /* altura útil: metade da altura do modelo já escalado (apoio em Y) */
     wrap.userData.halfHeight = (s.y * k) / 2;
     wrap.userData.size = size;
+    wrap.userData.radius = (Math.max(s.x, s.y, s.z) * k) / 2;
     return wrap;
   }
 

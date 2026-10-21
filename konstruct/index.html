@@ -13,7 +13,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/konstruct.css?v=3">
+<link rel="stylesheet" href="css/konstruct.css?v=13">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230a0b0e'/%3E%3Cpath d='M18 14h8v14l16-14h10L34 32l19 18H42L26 36v14h-8z' fill='%23f5b301'/%3E%3C/svg%3E">
 </head>
 <body>
@@ -30,6 +30,8 @@
   <symbol id="i-up" viewBox="0 0 24 24"><path d="M12 19V5M5 12l7-7 7 7"/></symbol>
   <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></symbol>
   <symbol id="i-cube" viewBox="0 0 24 24"><path d="M12 2l9 5v10l-9 5-9-5V7z"/><path d="M12 12l9-5M12 12v10M12 12L3 7"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="M4 12.5l5 5L20 6.5"/></symbol>
+  <symbol id="i-filter" viewBox="0 0 24 24"><path d="M3 5h18M6 12h12M10 19h4"/></symbol>
 </svg>
 
 <!-- ══════════ LOADER ══════════ -->
@@ -102,8 +104,8 @@
         </button>
       </div>
       <div class="hero-metrics reveal" style="--d:.4s">
-        <div><b data-count="27">0</b><small>Produtos em 3D</small></div>
-        <div><b data-count="12">0</b><small>Marcas parceiras</small></div>
+        <div><b data-count="73">0</b><small>Produtos em 3D</small></div>
+        <div><b data-count="11">0</b><small>Marcas parceiras</small></div>
         <div><b data-count="366119">0</b><small>Clientes atendidos</small></div>
       </div>
     </div>
@@ -189,10 +191,18 @@
 
 <!-- ══════════ CATÁLOGO ══════════ -->
 <main class="shell wrap" id="produtos" aria-label="Catálogo de produtos">
-  <aside class="side">
+  <aside class="side" id="sideFilters" aria-label="Filtros e navegação">
+    <div class="side-head">
+      <h3><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-filter"></use></svg> Filtros</h3>
+      <button id="clearFilters" class="clear-btn">Limpar tudo</button>
+      <button id="filterClose" class="filter-close" aria-label="Fechar filtros">
+        <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-close"></use></svg>
+      </button>
+    </div>
+
     <div class="side-card">
       <div class="sbox">
-        <input id="q" type="search" placeholder="Buscar produto..." autocomplete="off">
+        <input id="q" type="search" placeholder="Buscar produto, marca ou uso..." autocomplete="off">
         <button id="searchBtn" aria-label="Buscar" title="Buscar">
           <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-search"></use></svg>
         </button>
@@ -200,15 +210,34 @@
     </div>
 
     <div class="side-card">
-      <h3>Filtrar por preço</h3><span class="bar"></span>
-      <input type="range" id="maxP" min="12" max="100" value="100" aria-label="Preço máximo">
-      <div class="price" id="plabel">£12 – £100</div>
-      <button class="btn btn-gold btn-sm btn-full" id="filterBtn">Aplicar filtro</button>
+      <h3>Faixa de preço</h3><span class="bar"></span>
+      <div class="hist" id="hist" aria-hidden="true"></div>
+      <div class="dual">
+        <div class="dual-track"><i id="dualFill"></i></div>
+        <input type="range" id="minP" min="0" max="3000" step="10" value="0" aria-label="Preço mínimo">
+        <input type="range" id="maxP" min="0" max="3000" step="10" value="3000" aria-label="Preço máximo">
+      </div>
+      <div class="dual-labels"><span id="minLbl">R$ 0</span><span id="maxLbl">R$ 3.000</span></div>
     </div>
 
     <div class="side-card" id="categorias">
-      <h3>Categorias</h3><span class="bar"></span>
-      <ul class="cats" id="cats"></ul>
+      <h3>Categoria</h3><span class="bar"></span>
+      <ul class="checks" id="cats"></ul>
+    </div>
+
+    <div class="side-card">
+      <h3>Marca</h3><span class="bar"></span>
+      <ul class="checks" id="brands"></ul>
+    </div>
+
+    <div class="side-card">
+      <h3>Avaliação dos clientes</h3><span class="bar"></span>
+      <ul class="checks" id="rates"></ul>
+    </div>
+
+    <div class="side-card">
+      <h3>Ofertas e entrega</h3><span class="bar"></span>
+      <ul class="checks" id="flags"></ul>
     </div>
 
     <div class="side-card">
@@ -218,7 +247,7 @@
 
     <div class="side-card promo">
       <b>Frete grátis</b>
-      <span>Em pedidos acima de £50</span>
+      <span>Em pedidos acima de R$ 300</span>
       <div class="promo-bar"><i id="promoFill"></i></div>
       <small id="promoTxt">Adicione produtos ao carrinho</small>
     </div>
@@ -228,19 +257,32 @@
     <div class="toolbar">
       <span id="count">—</span>
       <div class="tool-right">
-        <select id="sort" aria-label="Ordenar">
-          <option value="def">Ordenação padrão</option>
+        <select id="sort" aria-label="Ordenar produtos">
+          <option value="pop">Mais vendidos</option>
+          <option value="rate">Melhor avaliados</option>
+          <option value="news">Ofertas e novidades</option>
           <option value="asc">Menor preço primeiro</option>
           <option value="desc">Maior preço primeiro</option>
           <option value="name">Nome A–Z</option>
-          <option value="rate">Melhor avaliados</option>
-          <option value="new">Novidades</option>
         </select>
         <div class="view-toggle" role="group" aria-label="Visualização">
           <button class="on" data-view="grid" title="Grade">▦</button>
           <button data-view="list" title="Lista">☰</button>
         </div>
       </div>
+    </div>
+
+    <div class="filter-bar">
+      <button class="filter-toggle" id="filterToggle" aria-controls="sideFilters">
+        <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-filter"></use></svg>
+        Filtros <i id="filterCount">0</i>
+      </button>
+      <div class="active-chips" id="activeChips"></div>
+    </div>
+
+    <div class="popular">
+      <span>Mais buscados:</span>
+      <div id="popularTags"></div>
     </div>
 
     <div class="grid" id="grid"></div>
@@ -377,10 +419,10 @@ if(!window.THREE){
   document.write('<script src="https://unpkg.com/three@0.128.0/build/three.min.js"><\/script>');
 }
 </script>
-<script src="js/data.js?v=3"></script>
-<script src="js/models.js?v=3"></script>
-<script src="js/viewer.js?v=3"></script>
-<script src="js/hero.js?v=3"></script>
-<script src="js/app.js?v=3"></script>
+<script src="js/data.js?v=13"></script>
+<script src="js/models.js?v=13"></script>
+<script src="js/viewer.js?v=13"></script>
+<script src="js/hero.js?v=13"></script>
+<script src="js/app.js?v=13"></script>
 </body>
 </html>
