@@ -304,33 +304,36 @@ def bloco_tags(p: dict) -> str:
     <meta name="twitter:image" content="{img_url}">"""
 
 
+BLOCO_RE = re.compile(
+    r"[ \t]*<!-- OG-ESTUDIO-RICK-DIGITAL -->.*?<!-- OG-ESTUDIO-RICK-DIGITAL-END -->",
+    re.S)
+
+
 def aplica_tags(p: dict) -> bool:
+    """Reescreve o bloco de Open Graph de forma determinística e idempotente:
+    remove TODAS as tags og:/twitter: e os marcadores do gerador, e reinsere
+    o bloco novo logo depois do </title>."""
     index = RAIZ / p["repo"] / "index.html"
     if not index.exists():
         print(f"  [aviso] {p['repo']}/index.html nao encontrado")
         return False
     s = index.read_text(encoding="utf-8")
-    bloco = bloco_tags(p)
 
-    # remove bloco anterior do gerador (idempotente)
-    s = re.sub(r"[ \t]*<!-- OG-ESTUDIO-RICK-DIGITAL -->\s*<!-- OG-ESTUDIO-RICK-DIGINAL-END -->",
-               "", s)
+    # 1) limpa marcadores do gerador (inclusive sobras de execucoes antigas)
+    s = re.sub(r"[ \t]*<!-- OG-ESTUDIO-RICK-DIGITAL-END -->\n?", "", s)
+    s = re.sub(r"[ \t]*<!-- OG-ESTUDIO-RICK-DIGITAL -->\n?", "", s)
+    # 2) limpa todas as tags og:/twitter: (inclusive as duplicadas)
+    s = re.sub(r'[ \t]*<meta property="og:[^"]+"[^>]*>\n?', "", s)
+    s = re.sub(r'[ \t]*<meta name="twitter:[^"]+"[^>]*>\n?', "", s)
 
-    if "<!-- OG-ESTUDIO-RICK-DIGITAL -->" in s:
-        s = re.sub(r"[ \t]*<!-- OG-ESTUDIO-RICK-DIGITAL -->.*?<!-- OG-ESTUDIO-RICK-DIGITAL-END -->",
-                   bloco + "\n    <!-- OG-ESTUDIO-RICK-DIGITAL-END -->", s, flags=re.S)
-    else:
-        # remove as og/twitter antigas para nao duplicar
-        s = re.sub(r'[ \t]*<meta property="og:(?!site_name)[^"]+"[^>]*>\n?', "", s)
-        s = re.sub(r'[ \t]*<meta name="twitter:[^"]+"[^>]*>\n?', "", s)
-        m = re.search(r"</title>", s)
-        if not m:
-            print(f"  [aviso] {p['repo']}/index.html sem <title>")
-            return False
-        insere = ("\n    <!-- OG-ESTUDIO-RICK-DIGITAL -->\n" + bloco +
-                  "\n    <!-- OG-ESTUDIO-RICK-DIGITAL-END -->")
-        s = s[:m.end()] + insere + s[m.end():]
+    m = re.search(r"</title>", s)
+    if not m:
+        print(f"  [aviso] {p['repo']}/index.html sem <title>")
+        return False
 
+    bloco = ("    <!-- OG-ESTUDIO-RICK-DIGITAL -->\n" + bloco_tags(p) +
+             "\n    <!-- OG-ESTUDIO-RICK-DIGITAL-END -->")
+    s = s[:m.end()] + "\n" + bloco + s[m.end():]
     index.write_text(s, encoding="utf-8")
     return True
 
