@@ -62,6 +62,12 @@ def main() -> int:
             f"  <url><loc>{url}</loc><changefreq>{freq}</changefreq>"
             f"<priority>{prio}</priority></url>")
 
+    # feeds (syndication e integracao com redes)
+    for feed in ("feed.xml", "social-feed.xml"):
+        linhas.append(
+            f"  <url><loc>{SITE}/{feed}</loc><changefreq>weekly</changefreq>"
+            f"<priority>0.5</priority></url>")
+
     # subpaginas de demonstracao (repos publicos do usuario)
     for sub, prio in (("techverse/", "0.9"), ("konstruct/", "0.9")):
         linhas.append(
@@ -72,7 +78,7 @@ def main() -> int:
 
     saida = "\n".join(linhas) + "\n"
     (BASE / "sitemap.xml").write_text(saida, encoding="utf-8")
-    print(f"sitemap.xml gerado com {len(htmls) + 2} URLs.")
+    print(f"sitemap.xml gerado com {len(htmls) + 4} URLs.")
     return 0
 
 

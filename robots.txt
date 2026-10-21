@@ -2,3 +2,7 @@ User-agent: *
 Allow: /
 
 Sitemap: https://rickdigitalestudio.github.io/profissional-rickdutra/sitemap.xml
+
+# Feeds para syndicated e integracao com redes sociais
+Allow: /feed.xml
+Allow: /social-feed.xml

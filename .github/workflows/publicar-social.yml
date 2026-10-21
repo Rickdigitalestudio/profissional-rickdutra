@@ -1,0 +1,65 @@
+name: Publicar nas redes
+
+# Publica o post do dia/hora no WhatsApp Status, na Fanpage do Facebook e no
+# Instagram, sem ninguem precisar clicar em nada.
+#
+# Segredos necessarios no GitHub (Settings > Secrets and variables > Actions):
+#   EVOLUTION_APIKEY  (chave da Evolution API, para o Status do WhatsApp)
+#   EVOLUTION_URL     (opcional, padrao http://localhost:8080)
+#   EVOLUTION_INSTANCE(opcional, padrao 'atendente')
+#   FB_ACCESS_TOKEN   (token do Graph API, para Facebook + Instagram)
+#   FB_PAGE_ID        (id da Fanpage)
+#   IG_USER_ID        (id da conta do Instagram Business)
+#
+# Para testar sem agendar: Actions > Publicar nas redes > Run workflow.
+on:
+  schedule:
+    - cron: '0 11,22 * * *'   # 08h e 19h (BRT = UTC-3)
+  workflow_dispatch:
+    inputs:
+      slot:
+        description: 'Slot no formato "terca|19:30" (vazio = horario atual)'
+        required: false
+      forcar:
+        description: 'Publicar mesmo se ja publicado ou atrasado'
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+jobs:
+  publicar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Publicar
+        env:
+          EVOLUTION_APIKEY: ${{ secrets.EVOLUTION_APIKEY }}
+          EVOLUTION_URL: ${{ secrets.EVOLUTION_URL }}
+          EVOLUTION_INSTANCE: ${{ secrets.EVOLUTION_INSTANCE }}
+          FB_ACCESS_TOKEN: ${{ secrets.FB_ACCESS_TOKEN }}
+          FB_PAGE_ID: ${{ secrets.FB_PAGE_ID }}
+          IG_USER_ID: ${{ secrets.IG_USER_ID }}
+          SLOT: ${{ inputs.slot }}
+          FORCAR: ${{ inputs.forcar }}
+        run: |
+          ARGS=""
+          [ -n "$SLOT" ] && ARGS="--slot $SLOT"
+          [ "$FORCAR" = "true" ] && ARGS="$ARGS --forcar"
+          python automacao/publicar_social.py $ARGS
+
+      - name: Commitar o estado
+        run: |
+          git config user.name "rickdigitalestudio-bot"
+          git config user.email "rickdigitalestudio@users.noreply.github.com"
+          git add automacao/conteudo/social/estado.json 2>/dev/null || true
+          git diff --staged --quiet || git commit -m "chore: estado de publicacao [auto]" || true
+          git push || true

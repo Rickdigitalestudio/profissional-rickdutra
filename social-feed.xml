@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="pt-BR">
+  <title>Estúdio Rick Digital</title>
+  <subtitle>sites profissionais, fanpages que vendem, logos e lojas virtuais</subtitle>
+  <link href="https://rickdigitalestudio.github.io/profissional-rickdutra/social-feed.xml" rel="self"/>
+  <link href="https://rickdigitalestudio.github.io/profissional-rickdutra/"/>
+  <id>https://rickdigitalestudio.github.io/profissional-rickdutra/</id>
+  <author><name>Estúdio Rick Digital</name><email>estudiorickdigital@gmail.com</email></author>
+  <entry>
+    <title>Criação de Sites Profissionais que Vendem</title>
+    <link href="https://rickdigitalestudio.github.io/profissional-rickdutra/criacao-de-sites-profissionais.html"/>
+    <id>https://rickdigitalestudio.github.io/profissional-rickdutra/criacao-de-sites-profissionais.html</id>
+    <summary type="html">Site institucional completo, responsivo, com SEO on-page e entrega em até 10 dias. A partir de R$ 997.</summary>
+    <category term="Estúdio Rick Digital"/>
+  </entry>
+  <entry>
+    <title>Fanpage que Vende: Página de Vendas que Converte</title>
+    <link href="https://rickdigitalestudio.github.io/profissional-rickdutra/fanpage-que-vende.html"/>
+    <id>https://rickdigitalestudio.github.io/profissional-rickdutra/fanpage-que-vende.html</id>
+    <summary type="html">Oferta clara, copy de venda, prova social e botão de WhatsApp com mensagem pronta. A partir de R$ 497.</summary>
+    <category term="Estúdio Rick Digital"/>
+  </entry>
+  <entry>
+    <title>Criação de Logo Profissional</title>
+    <link href="https://rickdigitalestudio.github.io/profissional-rickdutra/criacao-de-logo-profissional.html"/>
+    <id>https://rickdigitalestudio.github.io/profissional-rickdutra/criacao-de-logo-profissional.html</id>
+    <summary type="html">Conceito próprio, arquivo vetorial, versões para fundo claro e escuro e manual de uso. A partir de R$ 200.</summary>
+    <category term="Estúdio Rick Digital"/>
+  </entry>
+  <entry>
+    <title>Site para Pequenas Empresas que Traz Cliente Novo</title>
+    <link href="https://rickdigitalestudio.github.io/profissional-rickdutra/site-para-pequenas-empresas.html"/>
+    <id>https://rickdigitalestudio.github.io/profissional-rickdutra/site-para-pequenas-empresas.html</id>
+    <summary type="html">Com SEO local e ficha no Google Maps. Você aparece quando alguém pesquisa por serviço na sua cidade.</summary>
+    <category term="Estúdio Rick Digital"/>
+  </entry>
+  <entry>
+    <title>Landing Page Profissional que Converte</title>
+    <link href="https://rickdigitalestudio.github.io/profissional-rickdutra/landing-page-que-converte.html"/>
+    <id>https://rickdigitalestudio.github.io/profissional-rickdutra/landing-page-que-converte.html</id>
+    <summary type="html">Uma página, um objetivo: gerar pedido de orçamento. Entrega em 5 dias a partir de R$ 697.</summary>
+    <category term="Estúdio Rick Digital"/>
+  </entry>
+  <entry>
+    <title>Criar Loja Virtual que Vende Enquanto Você Dorme</title>
+    <link href="https://rickdigitalestudio.github.io/profissional-rickdutra/loja-virtual-completa.html"/>
+    <id>https://rickdigitalestudio.github.io/profissional-rickdutra/loja-virtual-completa.html</id>
+    <summary type="html">Catálogo, carrinho, pagamento online, frete, cupom e integração com o WhatsApp. A partir de R$ 2.497.</summary>
+    <category term="Estúdio Rick Digital"/>
+  </entry>
+  <entry>
+    <title>Otimização de Perfil no LinkedIn</title>
+    <link href="https://rickdigitalestudio.github.io/profissional-rickdutra/otimizacao-de-perfil-linkedin.html"/>
+    <id>https://rickdigitalestudio.github.io/profissional-rickdutra/otimizacao-de-perfil-linkedin.html</id>
+    <summary type="html">Título, resumo, palavras-chave e experiência reescritos para atrair recrutadores e clientes.</summary>
+    <category term="Estúdio Rick Digital"/>
+  </entry>
+  <entry>
+    <title>Formatação de Trabalho Acadêmico ABNT</title>
+    <link href="https://rickdigitalestudio.github.io/profissional-rickdutra/trabalho-academico-abnt.html"/>
+    <id>https://rickdigitalestudio.github.io/profissional-rickdutra/trabalho-academico-abnt.html</id>
+    <summary type="html">Capa, sumário, referências e margens conforme a NBR 14724. A partir de R$ 120.</summary>
+    <category term="Estúdio Rick Digital"/>
+  </entry>
+  <entry>
+    <title>Projetos: Sites, Lojas, Fanpages e Landing Pages</title>
+    <link href="https://rickdigitalestudio.github.io/profissional-rickdutra/projetos.html"/>
+    <id>https://rickdigitalestudio.github.io/profissional-rickdutra/projetos.html</id>
+    <summary type="html">Portfolio de projetos entregues: landing pages 3D, sites institucionais, lojas virtuais e fanpages de venda.</summary>
+    <category term="Estúdio Rick Digital"/>
+  </entry>
+  <entry>
+    <title>Orçamento em 30 Segundos</title>
+    <link href="https://rickdigitalestudio.github.io/profissional-rickdutra/orcamento.html"/>
+    <id>https://rickdigitalestudio.github.io/profissional-rickdutra/orcamento.html</id>
+    <summary type="html">Responda 3 perguntas e receba o valor e o prazo direto no WhatsApp. Resposta em até 24 horas.</summary>
+    <category term="Estúdio Rick Digital"/>
+  </entry>
+</feed>

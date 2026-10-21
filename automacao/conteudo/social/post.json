@@ -1,0 +1,121 @@
+{
+  "meta": {
+    "site": "https://rickdigitalestudio.github.io/profissional-rickdutra",
+    "wa": "https://wa.me/5511989426415",
+    "observacao": "Cada slot publica no WhatsApp Status e, se as credenciais da Meta estiverem no GitHub, tambem na Fanpage do Facebook e no Instagram. midia aponta para um arquivo em automacao/conteudo/social/midia/."
+  },
+  "post": {
+    "segunda|08:00": {
+      "plataformas": ["whatsapp", "facebook", "instagram"],
+      "tipo": "prova",
+      "midia": "",
+      "texto": "Novo site no ar ✅\n\nResponsivo, otimizado para o Google e com WhatsApp integrado.\n\nA partir de R$ 997.",
+      "hashtags": "#sites #webdesign #criacaodesites #empreendedorismo",
+      "link": "https://rickdigitalestudio.github.io/profissional-rickdutra/criacao-de-sites-profissionais.html"
+    },
+    "segunda|19:30": {
+      "plataformas": ["whatsapp", "facebook", "instagram", "linkedin"],
+      "tipo": "educa",
+      "midia": "",
+      "texto": "Você perde venda por causa disso 👇\n\nSeu site até é bonito. Mas o botão de WhatsApp abre o app sem mensagem pronta. A pessoa vai lá, escreve 'oi', você pergunta 'o que você precisa?', ela abandona.\n\nCorrigir isso leva 5 minutos e muda a conversão.",
+      "hashtags": "#webdesign #marketingdigital #conversão",
+      "link": "https://rickdigitalestudio.github.io/profissional-rickdutra/criacao-de-sites-profissionais.html"
+    },
+    "terca|08:00": {
+      "plataformas": ["whatsapp", "facebook", "instagram"],
+      "tipo": "oferta",
+      "midia": "",
+      "texto": "Fanpage que vende a partir de R$ 497 ✅\n\nOferta clara, copy de venda, prova social e botão de WhatsApp com a mensagem já preenchida.\n\nEntrega em 3 dias.",
+      "hashtags": "#fanpage #paginadevendas #facebookads",
+      "link": "https://rickdigitalestudio.github.io/profissional-rickdutra/fanpage-que-vende.html"
+    },
+    "terca|19:30": {
+      "plataformas": ["whatsapp", "facebook", "instagram", "tiktok"],
+      "tipo": "prova",
+      "midia": "",
+      "texto": "Antes e depois 🔄\n\nO site estava bonito, mas não gerava contato.\n\nO que mudou:\n✅ layout pensado para celular\n✅ botão de WhatsApp com mensagem pronta\n✅ SEO on-page + sitemap no Google\n✅ carregamento em menos de 3 segundos\n\nResultado: pedidos de orçamento em poucos dias.",
+      "hashtags": "#antesedepois #site #design",
+      "link": "https://rickdigitalestudio.github.io/profissional-rickdutra/projetos.html"
+    },
+    "quarta|08:00": {
+      "plataformas": ["whatsapp", "facebook", "instagram"],
+      "tipo": "pessoal",
+      "midia": "",
+      "texto": "Montando o site de um cliente. Do zero. Sem template.\n\nCada tela, cada texto e cada botão pensado para aquele negócio específico. É o que diferencia um site que existe de um site que vende.",
+      "hashtags": "#dev #webdesign #bastidores",
+      "link": "https://rickdigitalestudio.github.io/profissional-rickdutra/projetos.html"
+    },
+    "quarta|19:30": {
+      "plataformas": ["whatsapp", "facebook", "instagram"],
+      "tipo": "educa",
+      "midia": "",
+      "texto": "3 erros que fazem seu site não vender:\n\n1. Botão de WhatsApp sem mensagem pronta\n2. Texto em cinza claro que ninguém lê no celular\n3. Site que demora 5 segundos para abrir no 4G\n\nQuer que eu olhe o seu e te diga o que está travando a venda? É grátis.",
+      "hashtags": "#marketingdigital #webdesign #dicas",
+      "link": "https://rickdigitalestudio.github.io/profissional-rickdutra/criacao-de-sites-profissionais.html"
+    },
+    "quinta|08:00": {
+      "plataformas": ["whatsapp", "facebook", "instagram"],
+      "tipo": "oferta",
+      "midia": "",
+      "texto": "Logo profissional a partir de R$ 200 🎨\n\nConceito próprio, arquivo vetorial (escala sem perder nitidez), versões para fundo claro e escuro e manual de uso.",
+      "hashtags": "#logo #design #identidadevisual",
+      "link": "https://rickdigitalestudio.github.io/profissional-rickdutra/criacao-de-logo-profissional.html"
+    },
+    "quinta|19:30": {
+      "plataformas": ["whatsapp", "facebook", "instagram", "linkedin"],
+      "tipo": "prova",
+      "midia": "",
+      "texto": "Site para pequenas empresas a partir de R$ 997 🏢\n\nCom SEO local e ficha no Google Maps. Você aparece quando alguém pesquisa por serviço na sua cidade — que é quando a pessoa já está pronta para contratar.",
+      "hashtags": "#pequenasempresas #seolocal #googlemaps",
+      "link": "https://rickdigitalestudio.github.io/profissional-rickdutra/site-para-pequenas-empresas.html"
+    },
+    "sexta|08:00": {
+      "plataformas": ["whatsapp", "facebook", "instagram"],
+      "tipo": "cta",
+      "midia": "",
+      "texto": "Quer seu site no ar em 10 dias? ⚡\n\nResponda 3 perguntas no meu site e receba o valor + prazo direto no WhatsApp. Respondo em até 24h, sem compromisso.",
+      "hashtags": "#orçamento #sites",
+      "link": "https://rickdigitalestudio.github.io/profissional-rickdutra/orcamento.html"
+    },
+    "sexta|19:30": {
+      "plataformas": ["whatsapp", "facebook", "instagram", "tiktok"],
+      "tipo": "educa",
+      "midia": "",
+      "texto": "Site ou Instagram? Pergunta errada.\n\nInstagram mostra o dia a dia. Site aparece quando alguém PROCURA.\n\nBusca é intenção de compra. Feed é rolagem.\n\nPrecisa dos dois? Eu monto o site e a fanpage.",
+      "hashtags": "#instagram #site #marketing",
+      "link": "https://rickdigitalestudio.github.io/profissional-rickdutra/servicos-adicionais.html"
+    },
+    "sabado|09:00": {
+      "plataformas": ["whatsapp", "facebook", "instagram"],
+      "tipo": "prova",
+      "midia": "",
+      "texto": "9 projetos publicados e contando 🏆\n\nLanding page, site institucional, fanpage de venda, loja virtual, landing 3D, site de academia e muito mais.\n\nDá uma olhada no meu portfólio.",
+      "hashtags": "#portfólio #projetos #webdesign",
+      "link": "https://rickdigitalestudio.github.io/profissional-rickdutra/projetos.html"
+    },
+    "sabado|19:30": {
+      "plataformas": ["whatsapp", "facebook", "instagram"],
+      "tipo": "oferta",
+      "midia": "",
+      "texto": "Loja virtual completa a partir de R$ 2.497 🛒\n\nCatálogo, carrinho, pagamento online (Pix, cartão, boleto), frete por CEP, cupom e pedido no WhatsApp.\n\nSua loja vendendo 24h por dia.",
+      "hashtags": "#lojavirtual #ecommerce #lojavirtual",
+      "link": "https://rickdigitalestudio.github.io/profissional-rickdutra/loja-virtual-completa.html"
+    },
+    "domingo|09:00": {
+      "plataformas": ["whatsapp", "facebook", "instagram"],
+      "tipo": "pessoal",
+      "midia": "",
+      "texto": "Aprendi a programar construindo site de verdade.\n\nHoje isso é o meu trabalho: transformar presença digital em orçamento no WhatsApp.\n\nObrigado a quem confiou no meu trabalho. 🙏",
+      "hashtags": "#dev #carreira #empreendedorismo",
+      "link": "https://rickdigitalestudio.github.io/profissional-rickdutra/sobre.html"
+    },
+    "domingo|19:30": {
+      "plataformas": ["whatsapp", "facebook", "instagram", "linkedin"],
+      "tipo": "educa",
+      "midia": "",
+      "texto": "5 erros no LinkedIn que travam o seu currículo:\n\n1. Título genérico ('Desenvolvedor Full Stack')\n2. Foto recortada de rede social\n3. Resumo em 2 linhas\n4. Sem palavras-chave que o recrutador busca\n5. Banner padrão\n\nQuer que eu reescreva o seu? A partir de R$ 297.",
+      "hashtags": "#linkedin #carreira #empreendedorismo",
+      "link": "https://rickdigitalestudio.github.io/profissional-rickdutra/otimizacao-de-perfil-linkedin.html"
+    }
+  }
+}

@@ -29,12 +29,15 @@ dinheiro fora.
 | `CALENDARIO-30-DIAS.md` | 30 posts prontos, 6 legendas prontas, 4 roteiros de vídeo e como gerar as artes |
 | `GOOGLE-ADS-ESTRUTURA.md` | 4 campanhas, 25 palavras-chave, negativas, 51 títulos de anúncio, 16 descrições, extensões e plano de orçamento |
 | `DOMINIO.md` | Resultado da busca de disponibilidade + passo a passo de configuração |
+| `PUBLICACAO-AUTOMATICA-E-INDEXACAO.md` | IndexNow, publicação automática no WhatsApp/Facebook/Instagram, feeds RSS e o que não dá para fazer de graça |
 
 ## Os números do seu site agora
 
 ```
 22 páginas no ar          (6 delas são páginas de serviço por palavra-chave)
-23 URLs no sitemap.xml    gerado por automacao/gerar_sitemap.py
+27 URLs no sitemap.xml    gerado por automacao/gerar_sitemap.py
+IndexNow ativo            .github/workflows/indexar.yml
+Publicação social   .github/workflows/publicar-social.yml
 6 páginas com JSON-LD     Service + FAQPage + BreadcrumbList
 Lighthouse                SEO 100 · Acessibilidade 100 · Best Practices 100
 Imagem social 1200x630    img/og-estudio-rick-digital.png

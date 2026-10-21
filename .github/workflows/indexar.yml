@@ -1,0 +1,46 @@
+name: Indexar no Google e buscadores
+
+# IndexNow (Bing, Yandex, Naver, Seznam, Qwant) + sitemap ping.
+# Roda a cada push e 2x por dia, para avisar os buscadores assim que
+# qualquer pagina nova ou alterada entra no ar. E 100% gratis.
+on:
+  push:
+    branches: [main]
+    paths-ignore:
+      - '**.md'
+  schedule:
+    - cron: '0 8,20 * * *'   # 05h e 17h (BRT = UTC-3)
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+jobs:
+  indexar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: Instalar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Avisar IndexNow + enviar sitemap
+        env:
+          INDEXNOW_KEY: ${{ vars.INDEXNOW_KEY }}
+          SITE_URL: https://rickdigitalestudio.github.io/profissional-rickdutra
+        run: |
+          python automacao/indexar.py
+
+      - name: Commitar o estado da indexacao
+        run: |
+          git config user.name "rickdigitalestudio-bot"
+          git config user.email "rickdigitalestudio@users.noreply.github.com"
+          git add automacao/conteudo/social/estado-indexacao.json 2>/dev/null || true
+          git diff --staged --quiet || git commit -m "chore: estado de indexacao [auto]" || true
+          git push || true
