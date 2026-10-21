@@ -613,11 +613,13 @@ main h1:not(.title-3d){background:linear-gradient(180deg,#fff 30%,#d8c3a5 85%);-
 }
 .texto-copyright a {
   color: var(--text);
-  text-decoration: none;
-  border-bottom: 1px solid rgba(236, 233, 227, .45);
-  transition: color .25s, border-color .25s;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-thickness: 1px;
+  text-decoration-color: rgba(236, 233, 227, .45);
+  transition: color .25s, text-decoration-color .25s;
 }
-.texto-copyright a:hover { color: var(--champagne); border-bottom-color: var(--champagne); }
+.texto-copyright a:hover { color: var(--champagne); text-decoration-color: var(--champagne); }
 .texto-copyright span { font-size: .72rem; color: var(--muted); }
 .texto-copyright span i { color: #ef476f; }
 
@@ -654,11 +656,15 @@ main h1:not(.title-3d){background:linear-gradient(180deg,#fff 30%,#d8c3a5 85%);-
   display: inline-flex; align-items: center; gap: 12px;
   background: linear-gradient(120deg, rgba(216,195,165,.14), rgba(216,195,165,.04));
   border: 1px solid rgba(216,195,165,.38); border-radius: 999px; padding: 10px 20px;
+  color: var(--muted); text-decoration: none;
 }
+.selo-avaliacao:hover { border-color: rgba(216,195,165,.7); color: var(--muted); }
 .selo-avaliacao .nota { font-family: var(--display); font-size: 1.45rem; color: #fff; line-height: 1; }
 .selo-avaliacao .nota small { font-size: .8rem; color: var(--champagne); }
-.selo-avaliacao .stars { color: #f5b301; font-size: .82rem; letter-spacing: .12em; }
-.selo-avaliacao .txt { font-size: .7rem; letter-spacing: .14em; text-transform: uppercase; color: var(--muted); }
+.selo-avaliacao .stars { color: #f5b301; font-size: .82rem; letter-spacing: .12em; display: block; }
+.selo-avaliacao .txt { font-size: .7rem; letter-spacing: .14em; text-transform: uppercase; color: var(--muted); display: block; }
+.selo-avaliacao .selo-info { display: block; }
+.selo-avaliacao .txt.fonte { font-size: .62rem; opacity: .75; margin-top: 3px; }
 
 /* ---- tira de clientes ---- */
 .clientes { max-width: var(--max); margin: 0 auto; padding: 34px 28px 0; }

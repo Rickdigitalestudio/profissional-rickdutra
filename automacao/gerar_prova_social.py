@@ -51,15 +51,18 @@ def bloco_avaliacao(d: dict) -> str:
     a = d.get("avaliacao") or {}
     if not a:
         return ""
-    link = (f'<a href="{e(a["url"])}" target="_blank" rel="noopener" '
-            f'style="text-decoration:none"><span class="txt">{e(a["fonte"])}</span></a>'
-            if a.get("url") else f'<span class="txt">{e(a["fonte"])}</span>')
-    return (f'<a class="selo-avaliacao" href="{e(a.get("url", ""))}" target="_blank" rel="noopener" '
-            f'style="text-decoration:none">'
+    url = a.get("url") or ""
+    # UM link so: <a> dentro de <a> e HTML invalido e quebra o contraste.
+    atributos = f'href="{e(url)}" target="_blank" rel="noopener"' if url else 'role="group"'
+    rotulo = e(a["fonte"]) if url else e(a["fonte"])
+    return (f'<a class="selo-avaliacao" {atributos}>'
             f'<span class="nota">{e(a["nota"])}<small>/5</small></span>'
-            f'<span><span class="stars">{e(a["estrelas"])}</span>'
-            f'<span class="txt" style="display:block;margin-top:4px">{e(a["rotulo"])}</span></span>'
-            f'{link}</a>')
+            f'<span class="selo-info">'
+            f'<span class="stars">{e(a["estrelas"])}</span>'
+            f'<span class="txt">{e(a["rotulo"])}</span>'
+            f'<span class="txt fonte">{rotulo}</span>'
+            f'</span>'
+            f'</a>')
 
 
 def bloco_depoimentos(d: dict) -> str:
