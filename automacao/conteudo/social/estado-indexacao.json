@@ -1,21 +1,19 @@
 {
-  "ultima_indexacao": "2026-10-21T01:19:40",
+  "ultima_indexacao": "2026-10-21T01:27:44",
   "urls": 27,
   "resultado": {
     "https://api.indexnow.org/indexnow": {
-      "ok": false,
-      "status": 403,
-      "erro": "{\"errorCode\":\"UserForbiddedToAccessSite\",\"message\":\"User is unauthorized to access the site. Please verify the site using the key and try again\",\"deta"
+      "ok": true,
+      "status": 200
     },
     "https://yandex.com/indexnow": {
-      "ok": false,
-      "status": 403,
-      "erro": "{\n  \"success\":false,\n  \"message\":\"Invalid key\"\n}"
+      "ok": true,
+      "status": 200
     },
     "https://api.bing.com/indexnow": {
       "ok": false,
       "status": 400,
-      "erro": "<h2>Our services aren't available right now</h2><p>We're working to restore all services as soon as possible. Please check back soon.</p>0LBPYagAAAAAx"
+      "erro": "<h2>Our services aren't available right now</h2><p>We're working to restore all services as soon as possible. Please check back soon.</p>0EBXYagAAAABc"
     }
   }
 }
