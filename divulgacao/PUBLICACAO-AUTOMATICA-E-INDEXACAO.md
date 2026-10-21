@@ -9,8 +9,8 @@
 
 | O quê | Como | Quando |
 |---|---|---|
-| **IndexNow** — Bing, Yandex, Naver, Qwant indexam em minutos | `automacao/indexar.py` via GitHub Actions | a cada push + 2x/dia (05h e 17h) |
-| **Publicação social** — WhatsApp Status + Facebook + Instagram | `automacao/publicar_social.py` via GitHub Actions | 08h e 19h, todo dia |
+| **IndexNow** — Bing, Yandex, Naver, Qwant indexam em minutos | `automacao/indexar.py` via GitHub Actions | a cada push + 2x/dia (05h e 17h BRT) |
+| **Publicação social** — WhatsApp Status + Facebook + Instagram | `automacao/publicar_social.py` via GitHub Actions | 08h00 e 19h30 (BRT), todo dia |
 | **Fila de conteúdo** — 14 slots semanais prontos | `automacao/conteudo/social/post.json` | você edita o JSON |
 | **Feeds RSS/Atom** — para newsletters e automações | `feed.xml` e `social-feed.xml` | a cada mudança |
 | **Sitemap** — sempre atualizado | `automacao/gerar_sitemap.py` | a cada mudança |

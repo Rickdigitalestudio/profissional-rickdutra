@@ -42,10 +42,22 @@ WA_NUMERO = "5511989426415"
 DIAS = ["segunda", "terca", "quarta", "quinta", "sexta", "sabado", "domingo"]
 GRAPH = "https://graph.facebook.com/v21.0"
 
+# Os slots sao em horario de Brasilia (UTC-3). O runner do GitHub Actions roda
+# em UTC, entao sem isto o script escolheria o slot errado.
+try:
+    from zoneinfo import ZoneInfo
+    FUSO = ZoneInfo("America/Sao_Paulo")
+except Exception:
+    FUSO = dt.timezone(dt.timedelta(hours=-3))
+
+
+def agora_brt() -> dt.datetime:
+    return dt.datetime.now(FUSO)
+
 
 # ------------------------------------------------------------------ utils ---
 def log(msg: str) -> None:
-    print(f"[{dt.datetime.now():%d/%m/%Y %H:%M:%S}] {msg}", flush=True)
+    print(f"[{agora_brt():%d/%m/%Y %H:%M:%S}] {msg}", flush=True)
 
 
 def carregar() -> dict:
@@ -65,7 +77,7 @@ def chave_slot(dia: str, hora: str) -> str:
 
 
 def slot_de_agora() -> str:
-    agora = dt.datetime.now()
+    agora = agora_brt()
     return chave_slot(DIAS[agora.weekday()], f"{agora:%H:%M}")
 
 
@@ -86,7 +98,7 @@ def ja_publicado(estado: dict, slot: str) -> bool:
 
 def marcar(estado: dict, slot: str, onde: list[str]) -> None:
     estado.setdefault("publicados", {})[slot] = {
-        "quando": dt.datetime.now().isoformat(timespec="seconds"),
+        "quando": agora_brt().isoformat(timespec="seconds"),
         "onde": onde,
     }
     salvar_estado(estado)
@@ -234,8 +246,8 @@ def main() -> int:
             try:
                 dia, hora = slot.split("|")
                 hh, mm = (int(x) for x in hora.split(":"))
-                alvo = dt.datetime.now().replace(hour=hh, minute=mm, second=0, microsecond=0)
-                if dt.datetime.now() > alvo + dt.timedelta(minutes=25):
+                alvo = agora_brt().replace(hour=hh, minute=mm, second=0, microsecond=0)
+                if agora_brt() > alvo + dt.timedelta(minutes=25):
                     log(f"AVISO: slot {slot} atrasado — NAO publicado. Use --forcar.")
                     return 0
             except Exception:
