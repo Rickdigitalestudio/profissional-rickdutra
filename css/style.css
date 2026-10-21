@@ -448,4 +448,188 @@ main h1:not(.title-3d){background:linear-gradient(180deg,#fff 30%,#d8c3a5 85%);-
   margin-top: 5px;
 }
 @media (max-width: 900px) { .svc-index { grid-template-columns: repeat(2, 1fr); } }
-@media (max-width: 600px) { .svc-index { grid-template-columns: 1fr; } }
+@media (max-width: 600px) { .svc-index { grid-template-columns: 1fr; } } }
+
+/* ============================================================
+   RODAPÉ PROFISSIONAL — 4 colunas (home)
+   ============================================================ */
+.rodape-profissional {
+  position: relative;
+  z-index: 1;
+  margin-top: 70px;
+  padding: 62px 28px 0;
+  background: #0e0e14;
+  border-top: 1px solid var(--line);
+  font-family: var(--body);
+}
+.rodape-profissional::before {
+  content: "";
+  position: absolute;
+  top: -1px; left: 50%; transform: translateX(-50%);
+  width: min(220px, 40%); height: 2px;
+  background: linear-gradient(90deg, transparent, var(--champagne), transparent);
+  opacity: .55;
+}
+.conteudo-rodape {
+  max-width: var(--max);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr .8fr 1.2fr;
+  gap: 44px;
+}
+.logo-rodape {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 14px;
+  font-family: var(--display);
+  font-weight: 600;
+  font-size: 1.02rem;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: var(--champagne);
+  text-decoration: none;
+  transition: opacity .25s;
+}
+.logo-rodape:hover { opacity: .8; }
+.logo-rodape img { width: 34px; height: 34px; }
+.slogan-rodape {
+  color: var(--muted);
+  font-size: .88rem;
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+.destaque-rodape {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 9px;
+}
+.destaque-rodape li {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  font-size: .78rem;
+  color: var(--text);
+}
+.destaque-rodape i { color: var(--champagne); font-size: .74rem; }
+.titulo-coluna {
+  font-family: var(--display);
+  font-weight: 500;
+  font-size: .8rem;
+  letter-spacing: .2em;
+  text-transform: uppercase;
+  color: #fff;
+  margin: 4px 0 18px;
+}
+.titulo-coluna::after {
+  content: "";
+  display: block;
+  width: 26px;
+  height: 2px;
+  margin-top: 10px;
+  background: var(--champagne);
+  opacity: .7;
+}
+.lista-links,
+.lista-contato {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.lista-links li { margin-bottom: 11px; }
+.lista-links a {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  color: var(--muted);
+  font-size: .84rem;
+  text-decoration: none;
+  transition: color .25s, transform .25s;
+}
+.lista-links a i { width: 15px; color: var(--champagne); font-size: .78rem; }
+.lista-links a:hover { color: #fff; transform: translateX(3px); }
+.lista-contato li {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-bottom: 12px;
+  color: var(--muted);
+  font-size: .84rem;
+}
+.lista-contato i { width: 15px; margin-top: 4px; color: var(--champagne); font-size: .8rem; }
+.lista-contato a {
+  color: var(--muted);
+  text-decoration: none;
+  overflow-wrap: anywhere;
+  transition: color .25s;
+}
+.lista-contato a:hover { color: var(--champagne); }
+.redes-sociais {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 20px;
+}
+.botao-rede {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 8px 13px;
+  border-radius: 10px;
+  background: rgba(216, 195, 165, .08);
+  border: 1px solid var(--line);
+  color: var(--champagne);
+  font-size: .76rem;
+  font-weight: 600;
+  letter-spacing: .04em;
+  text-decoration: none;
+  transition: background .25s, color .25s, transform .25s, border-color .25s;
+}
+.botao-rede:hover {
+  background: var(--champagne);
+  border-color: var(--champagne);
+  color: #141414;
+  transform: translateY(-2px);
+}
+.barra-inferior {
+  max-width: var(--max);
+  margin: 52px auto 0;
+  padding: 22px 0 26px;
+  border-top: 1px solid var(--line);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+.texto-copyright {
+  margin: 0;
+  font-size: .76rem;
+  color: var(--muted);
+}
+.texto-copyright a {
+  color: var(--text);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: color .25s, border-color .25s;
+}
+.texto-copyright a:hover { color: var(--champagne); border-bottom-color: var(--champagne); }
+.texto-copyright span { font-size: .72rem; color: var(--muted); }
+.texto-copyright span i { color: #ef476f; }
+
+/* rodapé — responsivo */
+@media (max-width: 1020px) {
+  .conteudo-rodape { grid-template-columns: 1fr 1fr; gap: 34px; }
+}
+@media (max-width: 620px) {
+  .rodape-profissional { padding: 48px 18px 0; margin-top: 50px; }
+  .conteudo-rodape { grid-template-columns: 1fr; gap: 30px; text-align: center; }
+  .logo-rodape { justify-content: center; }
+  .titulo-coluna::after { margin-left: auto; margin-right: auto; }
+  .destaque-rodape li,
+  .lista-contato li { justify-content: center; }
+  .redes-sociais { justify-content: center; }
+  .barra-inferior { justify-content: center; text-align: center; margin-top: 38px; }
+}

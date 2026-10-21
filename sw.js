@@ -1,5 +1,5 @@
 /* Estúdio Rick Digital — Service Worker (funciona em qualquer domínio) */
-const CACHE = 'rick-digital-v10-backbtn';
+const CACHE = 'rick-digital-v11-rodape';
 const CORE = [
   './',
   './index.html',
