@@ -1,15 +1,15 @@
-# CTA do dia — 2026-10-20
+# CTA do dia — 2026-10-21
 
-**Manutenção e reforma**
+**Velocidade vende**
 
-## Site antigo derruba suas vendas todo dia. Modernize.
+## Cada segundo de lentidão custa clientes. Site rápido converte mais.
 
-Atualizo sites ultrapassados e cuido da manutenção para você focar em vender.
+Código limpo e otimizado: carregamento veloz e nota alta no PageSpeed.
 
-**Botão:** Modernizar meu site
+**Botão:** Quero um site veloz
 
 Poste no Status/Stories/TikTok:
 
-> Site antigo derruba suas vendas todo dia. Modernize.
-> Atualizo sites ultrapassados e cuido da manutenção para você focar em vender.
+> Cada segundo de lentidão custa clientes. Site rápido converte mais.
+> Código limpo e otimizado: carregamento veloz e nota alta no PageSpeed.
 > Chame no WhatsApp: https://wa.me/5511989426415
