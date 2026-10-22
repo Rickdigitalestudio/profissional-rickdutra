@@ -39,6 +39,7 @@ ALVOS = [
     "seu-projeto-destaque.png",
     "1_Construindo-um-Portfolio-Profissional-com-React.png",
     "Cha-de-Casa-Nova-Lauane-and-Eduardo-Estao-Prontos.png",
+    "foto-henrique.jpg",
 ]
 
 # largura maxima do webp (cobre 3 colunas em 1240px + retina ate 2x)

@@ -1,5 +1,5 @@
 /* Estúdio Rick Digital — Service Worker (funciona em qualquer domínio) */
-const CACHE = 'rick-digital-v12-cases';
+const CACHE = 'rick-digital-v13-cases';
 const CORE = [
   './',
   './index.html',

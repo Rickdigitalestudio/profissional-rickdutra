@@ -799,7 +799,7 @@ main h1:not(.title-3d){background:linear-gradient(180deg,#fff 30%,#d8c3a5 85%);-
 .fund-grid { display: grid; grid-template-columns: .8fr 1.2fr; gap: 34px; align-items: center; }
 .fund-foto { position: relative; }
 .fund-foto img {
-  width: 100%; max-width: 420px; aspect-ratio: 1; object-fit: cover; border-radius: 22px;
+  width: 100%; max-width: 420px; height: auto; aspect-ratio: 1; object-fit: cover; border-radius: 22px;
   border: 1px solid rgba(216,195,165,.32); box-shadow: 0 26px 70px rgba(0,0,0,.55);
 }
 .fund-foto::after {
