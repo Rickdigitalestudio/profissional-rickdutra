@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-BR" data-theme="light">
 <head>
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>TechVerse — 3D Interativo</title>
+<title>TechVerse — Loja de Tecnologia Interativa em 3D</title>
+<meta name="description" content="TechVerse: loja de tecnologia com hero 3D arrastável, 18 produtos com fotos originais, filtros dinâmicos, favoritos, comparação, carrinho real e pedido pelo WhatsApp.">
     <!-- OG-ESTUDIO-RICK-DIGITAL -->
     <meta property="og:type" content="website">
     <meta property="og:locale" content="pt_BR">
@@ -18,136 +19,254 @@
     <meta name="twitter:description" content="TechVerse: loja de tecnologia em 3D com 18 produtos por categoria, hero 3D, carrinho real e pedido pelo WhatsApp. Criado pelo Estúdio Rick Digital.">
     <meta name="twitter:image" content="https://rickdigitalestudio.github.io/profissional-rickdutra/techverse/og-estudio-rick-digital.png">
     <!-- OG-ESTUDIO-RICK-DIGITAL-END -->
-<style>
-*{margin:0;padding:0;box-sizing:border-box}body{font-family:Inter,Segoe UI,Roboto,Arial,sans-serif;background:#f5f5f6;color:#131316;overflow-x:hidden}
-.wrap{max-width:1020px;margin:0 auto;padding:10px 14px 30px}
-.top{position:sticky;top:0;z-index:50;background:rgba(246,246,247,.9);backdrop-filter:blur(12px);display:flex;align-items:center;gap:14px;padding:10px 4px}
-.logo{display:flex;gap:8px;align-items:center;font-weight:900;font-size:19px}.mark{width:30px;height:30px;border-radius:50%;background:conic-gradient(#111 0 25%,#e5202d 0 50%,#111 0 75%,#e5202d 0);display:grid;place-items:center;color:#fff}
-.logo small{display:block;font-size:9px;font-weight:500;color:#666}
-.search{flex:1;display:flex;align-items:center;background:#e9e9eb;border-radius:20px;padding:6px 6px 6px 14px}.search input{flex:1;border:0;background:transparent;outline:0;font-size:13px}.search button{background:#111;color:#fff;border:0;width:28px;height:28px;border-radius:50%;cursor:pointer}
-.nav{display:flex;gap:14px;font-size:13px;cursor:pointer}.nav .a{color:#e5202d;font-weight:800;border-bottom:2px solid #e5202d}
-.cart-btn{position:relative;cursor:pointer;font-size:20px}.cart-count{position:absolute;top:-6px;right:-8px;background:#e5202d;color:#fff;font-size:10px;min-width:16px;height:16px;border-radius:10px;display:grid;place-items:center;font-weight:800}
-.sub{display:flex;gap:16px;font-size:12.5px;padding:8px 4px;align-items:center;flex-wrap:wrap}.sub span{cursor:pointer;padding:4px 8px;border-radius:14px}.sub span.on,.sub span:hover{background:#111;color:#fff}
-.hero{display:flex;background:#efeff1;border-radius:20px;overflow:hidden;min-height:340px;margin-top:6px;perspective:1200px}
-.hl{width:42%;padding:32px 28px;display:flex;flex-direction:column;justify-content:center}
-.ey{color:#e5202d;font-size:12px;font-weight:700}.hl h1{font-size:48px;line-height:.92;letter-spacing:-2px}.hl h1.r{color:#c41824}
-.hl p{font-size:13px;color:#555;margin:10px 0 16px;max-width:240px}
-.row{display:flex;gap:10px}.bR{background:#d61f2c;color:#fff;border:0;border-radius:9px;padding:11px 18px;font-weight:800;cursor:pointer;transition:.2s;box-shadow:0 8px 20px rgba(214,31,44,.35)}.bR:hover{transform:translateY(-2px) scale(1.03)}.bW{background:#fff;border:1px solid #ddd;border-radius:9px;padding:11px 14px;cursor:pointer;transition:.2s}.bW:hover{transform:translateY(-2px)}
-.hr{width:58%;background:radial-gradient(600px 360px at 65% 35%,#ff3542,#c40f1e 70%);position:relative;display:flex;align-items:center;justify-content:center;overflow:hidden;transform-style:preserve-3d}
-.float{position:absolute; border-radius:18px;overflow:hidden;box-shadow:0 24px 50px rgba(0,0,0,.4);transform-style:preserve-3d;transition:transform .15s}
-.float img{width:100%;height:100%;object-fit:cover;display:block}
-.f1{width:210px;height:250px;left:12%;z-index:3;transform:rotate(-6deg)}.f2{width:170px;height:220px;right:22%;z-index:2;transform:rotate(5deg)}.f3{width:150px;height:150px;right:8%;bottom:18px;border-radius:50%!important;z-index:4;border:6px solid #fff}
-.badge{position:absolute;top:16px;right:16px;background:#fff;width:76px;height:76px;border-radius:50%;display:grid;place-items:center;text-align:center;font-size:11px;font-weight:900;z-index:5;animation:spin 8s linear infinite}
-@keyframes spin{to{filter:hue-rotate(10deg)}}@keyframes floaty{0%,100%{translate:0 0}50%{translate:0 -12px}}.float{animation:floaty 5s ease-in-out infinite}.f2{animation-delay:-2s}.f3{animation-delay:-3.5s}
-.dots{position:absolute;bottom:12px;left:50%;display:flex;gap:6px;z-index:6}.dots i{width:18px;height:6px;border-radius:4px;background:rgba(255,255,255,.5);cursor:pointer}.dots i.on{background:#fff}
-.cats{display:grid;grid-template-columns:repeat(5,1fr);gap:10px;margin:14px 0}.cat{background:#fff;border-radius:14px;padding:8px;display:flex;gap:8px;align-items:center;cursor:pointer;transition:.25s;transform-style:preserve-3d;border:2px solid transparent}.cat:hover{transform:perspective(600px) rotateX(8deg) rotateY(-8deg) translateY(-3px);border-color:#e5202d}.cat img{width:48px;height:48px;border-radius:10px;object-fit:cover}
-.sec{display:flex;justify-content:space-between;align-items:center;margin:16px 2px 10px;font-weight:900}
-.trend{display:grid;grid-template-columns:repeat(6,1fr);gap:10px}
-.pc{background:#fff;border-radius:16px;padding:10px;transition:.25s;transform-style:preserve-3d;position:relative}
-.pc:hover{transform:perspective(800px) rotateY(6deg) rotateX(4deg) translateY(-6px);box-shadow:0 20px 40px rgba(0,0,0,.12)}
-.pi{height:110px;border-radius:12px;overflow:hidden;background:#eee;position:relative}.pi img{width:100%;height:100%;object-fit:cover;transition:.5s}.pc:hover .pi img{transform:scale(1.12)}
-.pi .quick{position:absolute;bottom:8px;left:8px;right:8px;display:flex;gap:6px;opacity:0;translate:0 10px;transition:.25s}.pc:hover .quick{opacity:1;translate:0 0}
-.quick button{flex:1;border:0;border-radius:8px;padding:8px;font-size:11px;font-weight:800;cursor:pointer}.q1{background:#111;color:#fff}.q2{background:#fff}
-.like{position:absolute;top:8px;right:8px;background:#fff;border:0;border-radius:50%;width:30px;height:30px;cursor:pointer}
-.trust{display:flex;background:#fff;border-radius:14px;margin:14px 0;padding:14px;gap:10px}
-.ideas{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}.idea{height:165px;border-radius:14px;overflow:hidden;position:relative;cursor:pointer;transition:.3s}.idea img{width:100%;height:100%;object-fit:cover}.idea:hover{transform:scale(1.04) rotate(-1deg)}.idea div{position:absolute;inset:auto 0 0 0;padding:10px;background:linear-gradient(transparent,rgba(0,0,0,.8));color:#fff;font-size:11px}
-.bottom{display:grid;grid-template-columns:1fr 1.6fr;gap:10px;margin-top:14px}.deal{background:linear-gradient(135deg,#d61f2c,#8f0f18);color:#fff;border-radius:14px;padding:20px}.news{background:#fff;border-radius:14px;padding:20px;display:flex;gap:12px;align-items:center}
-.footer{display:flex;gap:10px;background:#fff;border-radius:14px;margin-top:12px;padding:14px;font-size:11px}
-.drawer{position:fixed;top:0;right:-360px;width:340px;height:100vh;background:#fff;z-index:100;transition:.35s cubic-bezier(.2,.9,.3,1);padding:18px;display:flex;flex-direction:column;box-shadow:-20px 0 60px rgba(0,0,0,.2)}.drawer.open{right:0}
-.modal{position:fixed;inset:0;background:rgba(0,0,0,.6);display:none;place-items:center;z-index:120}.modal.open{display:grid}.mbox{background:#fff;border-radius:18px;max-width:640px;width:92%;display:flex;overflow:hidden}.mbox img{width:50%;object-fit:cover}
-.toast{position:fixed;bottom:20px;left:50%;translate:-50% 0;background:#111;color:#fff;padding:12px 20px;border-radius:12px;font-size:13px;z-index:200;opacity:0;transition:.3s}.toast.show{opacity:1}
-.reveal{opacity:0;translate:0 26px;transition:.6s}.reveal.v{opacity:1;translate:0 0}
-@media(max-width:820px){.hero{flex-direction:column}.hl,.hr{width:100%}.hr{min-height:300px}.trend{grid-template-columns:repeat(3,1fr)}.cats,.ideas{grid-template-columns:repeat(2,1fr)}.bottom{grid-template-columns:1fr}.top{flex-wrap:wrap}}
-</style>
+<link rel="stylesheet" href="css/techverse.css">
 </head>
 <body>
+<div class="progress" id="progress"></div>
+
+<!-- ================= TOPO ================= -->
+<header class="top" id="top">
+  <div class="top-in">
+    <a class="logo" href="#"><span class="mark">✦</span><span>TechVerse<small>Discover. Shop. Upgrade.</small></span></a>
+    <div class="search">
+      <input id="q" placeholder="Buscar fones, smartwatch, drone…" autocomplete="off" aria-label="Buscar produtos">
+      <button id="searchBtn" aria-label="Buscar">⌕</button>
+      <div class="sug" id="sug"></div>
+    </div>
+    <nav class="nav">
+      <span class="a" data-go="hero">Home</span>
+      <span data-go="catalog">Shop</span>
+      <span data-go="ideas">Ideas</span>
+      <span data-go="deals">Deals</span>
+    </nav>
+    <div class="acts">
+      <button class="icon-btn" id="themeBtn" title="Alternar tema">◐</button>
+      <button class="icon-btn" id="wishBtn" title="Favoritos">♡<i class="badge hide" id="wc">0</i></button>
+      <button class="icon-btn" id="cartBtn" title="Carrinho">🛒<i class="badge hide" id="cc">0</i></button>
+    </div>
+  </div>
+</header>
+
 <div class="wrap">
-<div class="top"><div class="logo"><div class="mark">✦</div><div>TechVerse<small>Discover. Shop. Upgrade.</small></div></div>
-<div class="search"><input id="q" placeholder="Search for tech gadgets, ideas and more"><button onclick="filtrar()">⌕</button></div>
-<div class="nav"><span class="a">Home</span><span>Today</span><span>Following</span><span>Shop</span></div>
-<div class="cart-btn" onclick="toggleCart(true)">🛒<div class="cart-count" id="cc">0</div></div></div>
-<div class="sub" id="cats"></div>
-<div class="hero reveal v">
-<div class="hl"><div class="ey">Discover. Shop. Upgrade.</div><h1 id="ht">Latest Tech</h1><h1 class="r" id="hs">Gadgets</h1><p>Explore cutting-edge gadgets that upgrade your lifestyle.</p>
-<div class="row"><button class="bR" onclick="document.getElementById('trend').scrollIntoView({behavior:'smooth'})">Shop Now →</button><button class="bW">Browse Collection</button></div>
-<div style="display:flex;gap:10px;margin-top:16px;font-size:11px;font-weight:800"><span>🇺🇸 US</span><span>🇬🇧 UK</span><span>🇦🇪 UAE</span><span>🚚 Fast Shipping</span></div></div>
-<div class="hr" id="hr">
-<div class="badge">New<br>Arrivals<br>—</div>
-<div class="float f1"><img src="assets/hero-headphone.jpg" alt="headphone"></div>
-<div class="float f2"><img src="assets/hero-iphone.jpg" alt="iphone"></div>
-<div class="float f3"><img src="assets/hero-watch.jpg" alt="watch"></div>
-<div class="dots"><i class="on"></i><i></i><i></i></div>
-</div></div>
-<div class="cats" id="catGrid"></div>
-<div class="sec">Trending Products <a href="#" style="color:#d61f2c;font-size:12px">View all</a></div>
-<div class="trend" id="trend"></div>
-<div class="trust reveal"><div>🚚 <b>Worldwide Shipping</b><br><small>Fast delivery to US, UK & UAE</small></div><div>🛡️ <b>Secure Payments</b><br><small>100% safe checkout</small></div><div>↩️ <b>30-Day Returns</b><br><small>Hassle-free returns</small></div><div>🎧 <b>Premium Support</b><br><small>24/7 customer support</small></div></div>
-<div class="sec">Ideas for Your Next Upgrade <a href="#" style="color:#d61f2c;font-size:12px">See more ideas</a></div>
-<div class="ideas" id="ideas"></div>
-<div class="bottom"><div class="deal reveal"><h3>Exclusive Deals for You!</h3><p style="font-size:12px;margin:6px 0 12px">Save more on top-rated gadgets handpicked just for you.</p><button class="bW" onclick="toast('🔥 Cupom TECH10 aplicado: 10% OFF')">Shop Deals →</button></div>
-<div class="news reveal"><div style="flex:1"><b>Get the Latest Tech & Deals</b><p style="font-size:11px;color:#666">Join our newsletter and never miss an update.</p><div style="display:flex;gap:8px;margin-top:8px"><input id="mail" placeholder="Enter your email" style="flex:1;border:1px solid #ddd;border-radius:8px;padding:10px"><button class="bR" onclick="subscribe()">Subscribe</button></div></div><div style="font-size:60px">✉️</div></div></div>
-<div class="footer"><div>✅ <b>100% Authentic</b><br>Genuine only</div><div>❤️ <b>Trusted by Thousands</b><br>Loved worldwide</div><div>⭐ <b>Top Rated Store</b><br>High-quality gadgets</div><div>🛡️ <b>Price Match</b><br>Best prices</div><div>Follow us<br>ⓕ ⓘ 𝕏 ▶ ♪</div></div>
+  <div class="sub" id="cats"></div>
+
+  <!-- ================= HERO 3D ================= -->
+  <section class="hero reveal" id="hero">
+    <div class="hl">
+      <div class="ey">Discover. Shop. Upgrade.</div>
+      <h1>Latest Tech</h1>
+      <h1 class="r" id="rot">Gadgets</h1>
+      <p>Explore corting-edge gadgets em um carrossel 3D real: arraste, gire, clique na foto e peça direto pelo WhatsApp.</p>
+      <div class="row">
+        <button class="bR" id="shopNow">Shop Now →</button>
+        <button class="bW" id="browseBtn">Browse Collection</button>
+      </div>
+      <div class="stats">
+        <div class="stat"><b data-st="1" data-to="18">0</b><small>produtos 3D</small></div>
+        <div class="stat"><b data-st="1" data-to="4.8">0</b><small>avaliação média</small></div>
+        <div class="stat"><b data-st="1" data-to="12" data-suf="mil+">0</b><small>clientes felizes</small></div>
+        <div class="stat"><b data-st="1" data-to="24" data-suf="h">0</b><small>envio expresso</small></div>
+      </div>
+    </div>
+
+    <div class="hr">
+      <canvas id="hero3d"></canvas>
+
+      <!-- fallback se WebGL não estiver disponível -->
+      <div class="hero-fallback">
+        <div class="float f1"><img src="assets/hero-headphone.jpg" alt="headphone"></div>
+        <div class="float f2"><img src="assets/hero-iphone.jpg" alt="smartphone"></div>
+        <div class="float f3"><img src="assets/hero-watch.jpg" alt="smartwatch"></div>
+      </div>
+
+      <div class="hero-ring"><span>New<br>Arrivals<br>★</span></div>
+      <div class="hero-tip">↔ arraste para girar • clique para abrir</div>
+      <div class="hero-label" id="heroLabel"></div>
+
+      <div class="hero-cap">
+        <img id="capImg" src="assets/prod-watch.jpg" alt="">
+        <div class="t"><b id="capName">Smart Watch Series 9</b><small id="capCat">Wearables • 1/18</small></div>
+        <span class="p" id="capPrice">$299.99</span>
+        <span class="hnav"><button id="capPrev" title="Anterior">‹</button><button id="capNext" title="Próximo">›</button></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CATEGORIAS ================= -->
+  <section class="cats" id="catGrid"></section>
+
+  <!-- ================= CATÁLOGO ================= -->
+  <section id="catalog">
+    <div class="sec">
+      <div><h2>Trending Products</h2><span class="count" id="count"></span></div>
+      <a id="viewAll">Ver todos os produtos →</a>
+    </div>
+
+    <div class="toolbar">
+      <label for="sort">Ordenar</label>
+      <select id="sort">
+        <option value="featured">Destaques</option>
+        <option value="asc">Menor preço</option>
+        <option value="desc">Maior preço</option>
+        <option value="rate">Melhor avaliação</option>
+        <option value="likes">Mais curtidos</option>
+        <option value="off">Maior desconto</option>
+      </select>
+
+      <div class="rangewrap">
+        <label for="range">Preço</label>
+        <input type="range" id="range" min="20" max="600" step="10" value="600">
+        <span class="rval" id="rval">Até $600</span>
+      </div>
+
+      <div class="views">
+        <button class="vbtn on" data-view="grid" title="Ver grade">▦</button>
+        <button class="vbtn" data-view="list" title="Ver lista">☰</button>
+      </div>
+      <button class="vbtn" id="clearF" style="width:auto;padding:0 13px">Limpar filtros</button>
+    </div>
+
+    <div class="trend" id="trend"></div>
+    <button class="more" id="more">Carregar mais</button>
+  </section>
+
+  <!-- ================= CONFIANÇA ================= -->
+  <div class="trust reveal">
+    <div>🚚 <b>Worldwide Shipping</b><br><small>Fast delivery to US, UK &amp; UAE</small></div>
+    <div>🛡️ <b>Secure Payments</b><br><small>100% safe checkout</small></div>
+    <div>↩️ <b>30-Day Returns</b><br><small>Hassle-free returns</small></div>
+    <div>🎧 <b>Premium Support</b><br><small>24/7 customer support</small></div>
+  </div>
+
+  <!-- ================= IDEIAS ================= -->
+  <section id="ideas">
+    <div class="sec"><div><h2>Ideas for Your Next Upgrade</h2><span class="count">clique em uma ideia e o catálogo se reorganiza</span></div></div>
+    <div class="ideas" id="ideasGrid"></div>
+  </section>
+
+  <!-- ================= DEALS + NEWSLETTER ================= -->
+  <section id="deals">
+    <div class="bottom">
+      <div class="deal reveal">
+        <h3>Exclusive Deals for You!</h3>
+        <p>Save more on top-rated gadgets handpicked just for you. Oferta termina em:</p>
+        <div class="cd">
+          <div><b id="cd1">00</b><small>HORAS</small></div>
+          <div><b id="cd2">00</b><small>MIN</small></div>
+          <div><b id="cd3">00</b><small>SEG</small></div>
+          <div><b id="cd4">07</b><small>OFERTAS</small></div>
+        </div>
+        <button class="bW" id="copyCup">🎟️ Copiar cupom TECH10 (10% OFF)</button>
+      </div>
+
+      <div class="news reveal">
+        <div class="in">
+          <b>Get the Latest Tech &amp; Deals</b>
+          <p>Join our newsletter and never miss an update.</p>
+          <form id="newsForm"><input id="mail" type="email" placeholder="Enter your email"><button class="bR" type="submit">Subscribe</button></form>
+        </div>
+        <div class="emoji">✉️</div>
+      </div>
+    </div>
+
+    <div class="ticker" aria-hidden="true">
+      <div class="tk-track">
+        <span>Frete grátis acima de $200 <i>✦</i> Garantia de 12 meses <i>✦</i> Fotos originais reais <i>✦</i> Pedido pelo WhatsApp <i>✦</i> Troca em 30 dias <i>✦</i> 18 produtos em 3D <i>✦</i></span>
+        <span>Frete grátis acima de $200 <i>✦</i> Garantia de 12 meses <i>✦</i> Fotos originais reais <i>✦</i> Pedido pelo WhatsApp <i>✦</i> Troca em 30 dias <i>✦</i> 18 produtos em 3D <i>✦</i></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= RODAPÉ ================= -->
+  <div class="footer reveal">
+    <div>✅ <b>100% Authentic</b><br>Genuine only</div>
+    <div>❤️ <b>Trusted by Thousands</b><br>Loved worldwide</div>
+    <div>⭐ <b>Top Rated Store</b><br>High-quality gadgets</div>
+    <div>🛡️ <b>Price Match</b><br>Best prices</div>
+    <div><b>Follow us</b><div class="social" style="margin-top:7px"><a href="#" title="Facebook">ⓕ</a><a href="#" title="Instagram">ⓘ</a><a href="#" title="X">𝕏</a><a href="#" title="YouTube">▶</a><a href="#" title="TikTok">♪</a></div></div>
+  </div>
 </div>
-<div class="drawer" id="drawer"><h3>🛒 Seu Carrinho <button style="float:right" onclick="toggleCart(false)">✕</button></h3><div id="items" style="flex:1;overflow:auto;margin:12px 0"></div><b id="total">Total: $0.00</b><input id="cupom" placeholder="Cupom (TECH10 = 10% OFF)" style="margin-top:8px;border:1px solid #ddd;border-radius:8px;padding:8px"><button class="bR" style="margin-top:10px" onclick="checkout()">Checkout via WhatsApp</button></div>
-<div class="modal" id="modal" onclick="if(event.target==this)this.classList.remove('open')"><div class="mbox"><img id="mimg"><div style="padding:20px"><h2 id="mt"></h2><p id="mp" style="color:#e5202d;font-weight:900;font-size:20px;margin:8px 0"></p><p style="font-size:13px;color:#555">Frete grátis US/UK/UAE • 30 dias para devolução • Garantia 12 meses. Estoque 3D em tempo real.</p><div class="row" style="margin-top:14px"><button class="bR" id="madd">Add to Cart</button><button class="bW" onclick="document.getElementById('modal').classList.remove('open')">Fechar</button></div></div></div></div>
+
+<!-- ================= GAVETA: CARRINHO ================= -->
+<aside class="drawer" id="drawer">
+  <h3>🛒 Seu Carrinho <button id="closeCart" title="Fechar">✕</button></h3>
+  <div class="d-list" id="items"></div>
+  <div class="d-foot">
+    <div class="free" id="free" style="display:none"></div>
+    <div class="line"><span>Subtotal</span><b id="fsub">$0.00</b></div>
+    <div class="line"><span>Cupom TECH10</span><b id="foff">—</b></div>
+    <div class="line"><span>Frete</span><b id="fship">—</b></div>
+    <div class="line tot"><span>Total</span><b id="ftot">$0.00</b></div>
+    <input class="cupom" id="cupom" placeholder="Cupom (TECH10 = 10% OFF)">
+    <button class="bR" style="width:100%;margin-top:10px" id="checkout">Checkout via WhatsApp</button>
+    <button class="bW" style="width:100%;margin-top:8px" id="clearCart">Esvaziar carrinho</button>
+  </div>
+</aside>
+
+<!-- ================= GAVETA: FAVORITOS ================= -->
+<aside class="drawer" id="wdrawer">
+  <h3>♡ Favoritos <button id="closeWish" title="Fechar">✕</button></h3>
+  <div class="d-list" id="witems"></div>
+  <div class="d-foot">
+    <div class="line"><span>Itens salvos</span><b id="wcount">0</b></div>
+    <button class="bW" style="width:100%;margin-top:8px" onclick="toast(' ♥ Seus favoritos ficam salvos neste navegador')">Como funciona?</button>
+  </div>
+</aside>
+
+<!-- ================= BARRA DE COMPARAÇÃO ================= -->
+<div class="cmp-bar" id="cmpBar">
+  <b style="font-size:12.5px">⇄ Comparar</b>
+  <div id="cmpItems" style="display:flex;gap:8px;flex-wrap:wrap"></div>
+  <button class="bR" id="cmpOpen" style="padding:9px 14px;font-size:12px">Comparar</button>
+  <button class="bW" id="cmpClear" style="padding:9px 12px;font-size:12px">Limpar</button>
+</div>
+
+<!-- ================= MODAL: PRODUTO EM 3D ================= -->
+<div class="modal" id="modal">
+  <div class="mbox">
+    <button class="mclose" id="mclose" title="Fechar">✕</button>
+    <div class="mview" id="mview">
+      <div class="grid"></div>
+      <div class="mcard" id="mcard"><img id="mimg" src="assets/prod-watch.jpg" alt="produto"></div>
+      <div class="mhint">↔ arraste a foto para girar em 3D</div>
+    </div>
+    <div class="minfo">
+      <div class="cat-l" id="mcat">Wearables</div>
+      <h2 id="mt">Smart Watch Series 9</h2>
+      <div class="p"><b id="mp">$299.99</b><s id="mold"></s></div>
+      <p class="desc" id="mdesc"></p>
+      <div class="specs" id="mspecs"></div>
+      <div class="colors" id="colors">Cores: <i class="on" style="background:#141418"></i><i style="background:#e5202d"></i><i style="background:#c9ccd4"></i><i style="background:#2b6cff"></i></div>
+      <div class="qty" style="margin-bottom:16px"><button id="mqm">−</button><span id="mqty">1</span><button id="mqp">+</button></div>
+      <div class="mactions">
+        <button class="bR" id="madd">Adicionar ao carrinho</button>
+        <button class="bW" id="mwish">♡ Favoritar</button>
+        <button class="bW" id="mcmp">⇄ Comparar</button>
+      </div>
+      <p style="font-size:11.5px;color:var(--muted);margin-top:14px;line-height:1.6">Frete grátis US/UK/UAE • 30 dias para devolução • Garantia de 12 meses • Estoque atualizado em tempo real.</p>
+    </div>
+  </div>
+</div>
+
+<!-- ================= MODAL: COMPARAR ================= -->
+<div class="modal" id="cmpModal">
+  <div class="mbox">
+    <button class="mclose" id="cmpClose" title="Fechar">✕</button>
+    <div class="ctable" id="cmpTable"></div>
+  </div>
+</div>
+
 <div class="toast" id="toast"></div>
-<script>
-const L=n=>`assets/${n}`;
-const products=[
-{n:'Smart Watch Series 9',p:299.99,l:'2.1k',c:'Wearables',img:L('prod-watch.jpg')},
-{n:'Wireless Earbuds Pro',p:129.99,l:'1.6k',c:'Audio',img:L('prod-earbuds.jpg')},
-{n:'Portable Bluetooth Speaker',p:59.99,l:'1.2k',c:'Audio',img:L('prod-speaker.jpg')},
-{n:'3-in-1 Wireless Charger',p:49.99,l:'980',c:'Accessories',img:L('prod-charger.jpg')},
-{n:'4K Camera Drone',p:499.99,l:'1.6k',c:'Gadgets',img:L('prod-drone.jpg')},
-{n:'Smartphone Gimbal Pro',p:89.99,l:'760',c:'Accessories',img:L('prod-gimbal.jpg')},
-{n:'Headphone Pro Max',p:349.99,l:'3.2k',c:'Audio',img:L('prod-headphone-pro.jpg')},
-{n:'Soundbar Dolby 5.1',p:199.99,l:'890',c:'Audio',img:L('prod-soundbar.jpg')},
-{n:'Studio Mic USB',p:119.99,l:'640',c:'Audio',img:L('prod-mic.jpg')},
-{n:'Fit Band Active 2',p:79.99,l:'1.1k',c:'Wearables',img:L('prod-fitband.jpg')},
-{n:'Watch Ultra Titanium',p:399.99,l:'2.8k',c:'Wearables',img:L('prod-watch-ultra.jpg')},
-{n:'VR Headset Vision',p:549.99,l:'1.9k',c:'Wearables',img:L('prod-vr.jpg')},
-{n:'Action Cam 4K',p:249.99,l:'1.3k',c:'Gadgets',img:L('prod-actioncam.jpg')},
-{n:'Power Bank 20K mAh',p:39.99,l:'2.4k',c:'Gadgets',img:L('prod-powerbank.jpg')},
-{n:'Mechanical Keyboard RGB',p:99.99,l:'1.5k',c:'Accessories',img:L('prod-keyboard.jpg')},
-{n:'Wireless Mouse Ergo',p:49.99,l:'1.0k',c:'Accessories',img:L('prod-mouse.jpg')},
-{n:'Smart Speaker Echo',p:89.99,l:'2.2k',c:'Smart Devices',img:L('prod-echo.jpg')},
-{n:'Smart Lamp LED',p:59.99,l:'870',c:'Smart Devices',img:L('prod-lamp.jpg')}];
-const cats=[{n:'Audio',s:'Premium Sound',img:L('cat-audio.jpg')},{n:'Smart Devices',s:'Smarter Living',img:L('cat-smart.jpg')},{n:'Wearables',s:'Track. Achieve.',img:L('cat-wear.jpg')},{n:'Accessories',s:'Designed for You',img:L('cat-acc.jpg')},{n:'Deals',s:'Top Deals Today',img:L('cat-deals.jpg')}];
-const ideas=[['Tech Setup Ideas','128',L('idea-setup.jpg')],['Travel Tech Essentials','96',L('idea-travel.jpg')],['Smart Home Inspiration','74',L('idea-home.jpg')],['Gaming Gear','155',L('idea-gaming.jpg')],['Minimal Desk Setup','87',L('idea-desk.jpg')],['Audio Room','64',L('idea-audio.jpg')],['Home Office','92',L('idea-office.jpg')],['Gaming Pro','143',L('idea-gaming2.jpg')]];
-let cart=[],filter='All';
-try{cart=JSON.parse(localStorage.getItem('tv_cart')||'[]')}catch(e){cart=[]}
-function renderCats(){$('cats').innerHTML=['All','Gadgets','Audio','Wearables','Accessories','Smart Devices'].map(c=>`<span class="${filter==c?'on':''}" onclick="filter='${c}';renderCats();renderProd()">${c}</span>`).join('');
-$('catGrid').innerHTML=cats.map(c=>`<div class="cat" onclick="filter='${c.n=='Smart Devices'?'Gadgets':c.n}';renderCats();renderProd();toast('Filtro: ${c.n}')"><img src="${c.img}"><div><b>${c.n}</b><small>${c.s}</small></div></div>`).join('');}
-function $(id){return document.getElementById(id)}
-function renderProd(){const q=($('q').value||'').toLowerCase();
-const list=products.filter(p=>(filter=='All'||p.c==filter||filter=='Deals')&&(p.n.toLowerCase().includes(q)));
-$('trend').innerHTML=list.map((p,i)=>`<div class="pc"><div class="pi"><img loading="lazy" src="${p.img}"><button class="like" onclick="toast('♥ Adicionado aos favoritos')">♥</button><div class="quick"><button class="q1" onclick="addCart(${products.indexOf(p)})">Add +</button><button class="q2" onclick="quick(${products.indexOf(p)})">👁</button></div></div><h4 style="font-size:12px;margin:8px 0 4px">${p.n}</h4><div style="display:flex;justify-content:space-between;font-weight:900"><span>$${p.p}</span><span style="color:#d61f2c;font-size:11px">♥ ${p.l}</span></div></div>`).join('')||'<p>Nenhum produto encontrado.</p>';
-document.querySelectorAll('.pc').forEach(el=>{el.addEventListener('mousemove',e=>{const r=el.getBoundingClientRect();const x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;el.style.transform=`perspective(800px) rotateY(${x*14}deg) rotateX(${-y*14}deg) translateY(-6px)`});el.addEventListener('mouseleave',()=>el.style.transform='')});}
-function renderIdeas(){$('ideas').innerHTML=ideas.map(a=>`<div class="idea reveal v"><img loading="lazy" src="${a[2]}"><div><b>${a[0]}</b><br>${a[1]} ideas</div></div>`).join('')}
-function addCart(i){const f=cart.find(x=>x.n===products[i].n);if(f)f.q++;else cart.push({...products[i],q:1});saveCart();renderCart();toast('🛒 '+products[i].n+' no carrinho')}
-function saveCart(){localStorage.setItem('tv_cart',JSON.stringify(cart))}
-function renderCart(){$('cc').textContent=cart.reduce((s,p)=>s+(p.q||1),0);$('items').innerHTML=cart.map((p,i)=>`<div style="display:flex;gap:8px;margin-bottom:10px;align-items:center"><img src="${p.img}" style="width:50px;height:50px;border-radius:8px;object-fit:cover"><div style="flex:1;font-size:12px"><b>${p.n}</b><br>$${p.p} x ${p.q||1}</div><button onclick="chQ(${i},1)">+</button><button onclick="chQ(${i},-1)">-</button><button onclick="cart.splice(${i},1);saveCart();renderCart()">✕</button></div>`).join('')||'Carrinho vazio';const sub=cart.reduce((s,p)=>s+p.p*(p.q||1),0);const frete=cart.length?(sub>200?0:19.9):0;$('total').textContent=`Sub: $${sub.toFixed(2)} + Frete $${frete.toFixed(2)} = Total $${(sub+frete).toFixed(2)}`}
-function chQ(i,d){cart[i].q=(cart[i].q||1)+d;if(cart[i].q<1)cart.splice(i,1);saveCart();renderCart()}
-function toggleCart(o){$('drawer').classList.toggle('open',o)}
-function quick(i){$('mimg').src=products[i].img;$('mt').textContent=products[i].n;$('mp').textContent='$'+products[i].p;$('madd').onclick=()=>{addCart(i);$('modal').classList.remove('open')};$('modal').classList.add('open')}
-function filtrar(){renderProd()}
-function subscribe(){const v=$('mail').value;if(!v.includes('@'))return toast('⚠️ Digite um e-mail válido');toast('✅ Inscrito: '+v);$('mail').value=''}
-function toast(t){const e=$('toast');e.textContent=t;e.classList.add('show');clearTimeout(e._t);e._t=setTimeout(()=>e.classList.remove('show'),2200)}
-function checkout(){if(!cart.length)return toast('Carrinho vazio');let sub=cart.reduce((s,p)=>s+p.p*(p.q||1),0);if(($('cupom').value||'').trim().toUpperCase()==='TECH10')sub*=0.9;const frete=sub>200?0:19.9;const tot=(sub+frete).toFixed(2);const num='TV-'+Date.now().toString().slice(-6);const msg=encodeURIComponent(`Pedido ${num} TechVerse:%0A`+cart.map(p=>`- ${p.n} x${p.q||1} $${p.p}`).join('%0A')+`%0ATotal $${tot}`);localStorage.setItem('tv_last',num);toast('✅ Pedido '+num+' gerado! Total $'+tot);window.open('https://wa.me/5511989426415?text='+msg,'_blank');cart=[];saveCart();renderCart();toggleCart(false)}
-$('q').addEventListener('input',renderProd);
-// hero 3D parallax
-const hr=$('hr');hr.addEventListener('mousemove',e=>{const r=hr.getBoundingClientRect();const x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;document.querySelectorAll('.float').forEach((f,i)=>{const d=(i+1)*14;f.style.translate=`${x*d}px ${y*d}px`})});
-const io=new IntersectionObserver(es=>es.forEach(x=>x.isIntersecting&&x.target.classList.add('v')),{threshold:.1});document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
-renderCats();renderProd();renderIdeas();renderCart();
-</script>
+<button class="to-top" id="toTop" title="Voltar ao topo">↑</button>
+
+<script src="js/three.min.js"></script>
+<script src="js/data.js"></script>
+<script src="js/hero3d.js"></script>
+<script src="js/app.js"></script>
+
 <a class="tv-back" href="../index.html" title="Voltar ao portfólio do Estúdio Rick Digital">&#8592; Voltar ao portfólio</a>
-<style>
-.tv-back{position:fixed;left:14px;bottom:14px;z-index:9999;display:inline-flex;align-items:center;gap:8px;padding:11px 16px;border-radius:24px;background:#111;color:#fff;font-family:inherit;font-size:13px;font-weight:700;text-decoration:none;box-shadow:0 10px 26px rgba(0,0,0,.35);transition:.2s}
-.tv-back:hover{background:#d61f2c;color:#fff;transform:translateY(-2px)}
-.tv-back:focus-visible{outline:2px solid #d61f2c;outline-offset:2px}
-@media(max-width:480px){.tv-back{font-size:12px;padding:9px 13px;left:10px;bottom:10px}}
-</style>
-<p class="credito-estudio" style="text-align:center;font-size:.7rem;letter-spacing:.06em;opacity:.6;padding:16px;margin:0;line-height:1.6">
-      Site criado por <a href="https://rickdigitalestudio.github.io/profissional-rickdutra/" target="_blank" rel="noopener" style="color:inherit;text-decoration:underline">Estúdio Rick Digital</a>
-    </p>
-</body></html>
+<p class="credito-estudio">
+  Site criado por <a href="https://rickdigitalestudio.github.io/profissional-rickdutra/" target="_blank" rel="noopener">Estúdio Rick Digital</a> — fotos originais dos produtos • experiências 3D com Three.js
+</p>
+</body>
+</html>
