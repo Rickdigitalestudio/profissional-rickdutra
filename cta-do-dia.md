@@ -1,15 +1,15 @@
-# CTA do dia — 2026-10-21
+# CTA do dia — 2026-10-22
 
-**Velocidade vende**
+**Do layout ao ar**
 
-## Cada segundo de lentidão custa clientes. Site rápido converte mais.
+## Uma pessoa só do design à entrega: sem ruído, sem atraso.
 
-Código limpo e otimizado: carregamento veloz e nota alta no PageSpeed.
+Processo em 5 etapas — descoberta, escopo, design, código e entrega publicada.
 
-**Botão:** Quero um site veloz
+**Botão:** Começar meu projeto
 
 Poste no Status/Stories/TikTok:
 
-> Cada segundo de lentidão custa clientes. Site rápido converte mais.
-> Código limpo e otimizado: carregamento veloz e nota alta no PageSpeed.
+> Uma pessoa só do design à entrega: sem ruído, sem atraso.
+> Processo em 5 etapas — descoberta, escopo, design, código e entrega publicada.
 > Chame no WhatsApp: https://wa.me/5511989426415
