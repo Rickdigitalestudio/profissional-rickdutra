@@ -1,15 +1,15 @@
-# CTA do dia — 2026-10-22
+# CTA do dia — 2026-10-23
 
-**Do layout ao ar**
+**Prova real**
 
-## Uma pessoa só do design à entrega: sem ruído, sem atraso.
+## Não acredite em promessa: veja 15 projetos publicados e funcionando.
 
-Processo em 5 etapas — descoberta, escopo, design, código e entrega publicada.
+Cada projeto do portfólio está no ar, clicável e com o código no GitHub.
 
-**Botão:** Começar meu projeto
+**Botão:** Ver os projetos
 
 Poste no Status/Stories/TikTok:
 
-> Uma pessoa só do design à entrega: sem ruído, sem atraso.
-> Processo em 5 etapas — descoberta, escopo, design, código e entrega publicada.
+> Não acredite em promessa: veja 15 projetos publicados e funcionando.
+> Cada projeto do portfólio está no ar, clicável e com o código no GitHub.
 > Chame no WhatsApp: https://wa.me/5511989426415
