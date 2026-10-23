@@ -88,9 +88,9 @@ PROJETOS = [
         "repo": "viverdefreelancer",
         "host": "https://rickdigitalestudio.github.io/viverdefreelancer/",
         "titulo": "VIVER DE FREELANCER",
-        "subtitulo": "Plataforma de conteúdo · marca pessoal",
-        "servico": "Migração do Gamma para código 3D próprio",
-        "descricao": "Viver de Freelancer: plataforma migrada do Gamma para código 3D próprio, com hero, serviços, portfólio, clientes, preços, processo e depoimentos.",
+        "subtitulo": "Marca pessoal · cena WebGL 3D",
+        "servico": "Migração do Gamma para Three.js + WebGL",
+        "descricao": "Viver de Freelancer: plataforma migrada do Gamma para código com cena WebGL em Three.js — painel 3D da foto no hero, fotos orbitando, partículas, bloom, cards viráveis e carrossel de anel arrastável.",
         "print": "viverdefreelancer.jpg",
     },
     {
