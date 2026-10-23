@@ -116,6 +116,7 @@
     if (s === 'asc') a.sort(function (x, y) { return x.p - y.p; });
     else if (s === 'desc') a.sort(function (x, y) { return y.p - x.p; });
     else if (s === 'rate') a.sort(function (x, y) { return y.r - x.r; });
+    else if (s === 'sold') a.sort(function (x, y) { return soldOf(y) - soldOf(x); });
     else if (s === 'likes') a.sort(function (x, y) { return likes(y) - likes(x); });
     else if (s === 'off') a.sort(function (x, y) { return (y.old ? y.old - y.p : 0) - (x.old ? x.old - x.p : 0); });
     return a;
@@ -136,7 +137,7 @@
       '<div class="meta"><span class="stock' + (p.s < 15 ? ' low' : '') + '">' +
       (p.s < 15 ? 'últimas ' + p.s + ' un.' : 'estoque ' + p.s + ' un.') + '</span>' +
       '<span class="cmp' + (inC ? ' on' : '') + '" data-act="cmp">⇄ comparar</span></div>' +
-      '<div class="meta"><span class="likec">♥ ' + p.l + ' gostos</span></div></article>';
+      '<div class="meta"><span class="likec">♥ ' + p.l + ' gostos · 🔥 ' + fmtSold(soldOf(p)) + ' vendidos</span></div></article>';
   }
   function renderProducts() {
     var all = sortList(P.filter(matches));
@@ -238,17 +239,106 @@
     toast($('q').value ? 'Buscando: ' + $('q').value : 'Mostrando todos os produtos');
   });
 
+  /* ---------------- utilidades deterministicas ---------------- */
+  function seed(n) {
+    var x = (n * 2654435761) % 2147483647; if (x <= 0) x += 2147483646;
+    return function () { x = (x * 48271) % 2147483647; return x / 2147483647; };
+  }
+  function soldOf(p) { return 60 + (p.id * 137) % 2400; }
+  function fmtSold(v) { return v >= 1000 ? (v / 1000).toFixed(1).replace('.', ',') + 'k' : String(v); }
+  function starsOf(k) { return '<b class="st">' + '★★★★★'.slice(0, k) + '<i>' + '☆☆☆☆☆'.slice(0, 5 - k) + '</i></b>'; }
+
+  /* ---------------- cores por produto ---------------- */
+  var PALETTE = {
+    'Audio': [['Preto', '#17171b'], ['Branco', '#f1f2f4'], ['Azul', '#2b6cff'], ['Grafite', '#4a4f57'], ['Coral', '#ff5a63'], ['Verde névoa', '#7fd1c1']],
+    'Wearables': [['Preto', '#141418'], ['Prata', '#c9ccd4'], ['Dourado', '#d9a441'], ['Rosa', '#ff6b9d'], ['Verde', '#2fbf71'], ['Azul noite', '#233554']],
+    'Accessories': [['Preto', '#1a1a1f'], ['Branco', '#eceef1'], ['Cinza', '#8b9099'], ['Vermelho', '#e5202d'], ['Azul', '#2b6cff'], ['Bege', '#d8c3a5']],
+    'Gadgets': [['Preto', '#101014'], ['Branco', '#e9ebee'], ['Laranja', '#ff8a2b'], ['Verde militar', '#3f5e3a'], ['Azul oceano', '#1f6f8b'], ['Prata', '#c9ccd4']],
+    'Smart Devices': [['Branco', '#f4f5f7'], ['Preto', '#17171b'], ['Azul noite', '#233554'], ['Salmão', '#ffb3a7'], ['Verde menta', '#9fd8cb'], ['Cinza', '#8b9099']]
+  };
+  function colorsOf(p) {
+    var pool = PALETTE[p.c] || PALETTE.Audio, rnd = seed(p.id * 3 + 11), out = [], used = {};
+    for (var k = 0; k < 4; k++) {
+      var i = Math.floor(rnd() * pool.length);
+      if (used[i]) i = (i + 1) % pool.length;
+      used[i] = 1; out.push(pool[i]);
+    }
+    return out;
+  }
+
+  /* ---------------- avaliacoes dos clientes ---------------- */
+  var RNAMES = ['Cecília Almeida', 'Rafael Souza', 'Mariana Costa', 'João Pedro Lima', 'Beatriz Ferreira', 'Lucas Martins', 'Ana Clara Ribeiro', 'Thiago Oliveira', 'Fernanda Dias', 'Gustavo Rocha', 'Patrícia Nunes', 'Diego Barbosa', 'Camila Andrade', 'Rodrigo Teixeira', 'Juliana Moreira', 'Marcos Vinícius', 'Larissa Pinto', 'André Cavalcanti'];
+  var RTEXTS = {
+    'Audio': ['Som limpo e o cancelamento de ruido surpreendeu, uso todo dia no trabalho.', 'Bateria dura o dia inteiro como prometido, o estojo carrega rapidinho.', 'Graves encorpados sem estourar, assisti uma serie inteira com conforto.', 'Custo beneficio imbativel, comparei com modelos bem mais caros.'],
+    'Wearables': ['Acompanho sono e treinos ha um mes e os dados batem com o meu relogio de marca.', 'Tela bonita e legivel mesmo no sol, a bateria vai para mais de uma semana.', 'Uso para correr e nunca perdeu o GPS, resistiu a chuva sem problema.', 'As notificacoes no pulso sao praticas e o app e facil de configurar.'],
+    'Accessories': ['Chegou rapido e cabe perfeitamente na minha mesa, acabamento premium.', 'Carrega meus tres aparelhos juntos, nao uso mais tomada cheia em casa.', 'Teclado silencioso e confortavel, trabalho 8h por dia sem cansar os dedos.', 'Melhor acessorio que comprei este ano, recomendo sem medo.'],
+    'Gadgets': ['Voo estavel e a camera gravou em qualidade excelente nas minhas viagens.', 'Cabo robusto e carregamento rapido de verdade, testei com o notebook.', 'Leve e dovelavel, cabe na mochila e sai voando em menos de um minuto.', 'Gravacoes nitidas com estabilizacao que parece de gimbal profissional.'],
+    'Smart Devices': ['Configurei em 2 minutos e agora controla luzes e tomadas por voz.', 'A voz entende bem mesmo de outro comodo, audio limpo para o tamanho.', 'Integrou com toda a casa inteligente, virou o centro dos meus automatismos.', 'Rotinas automaticas economizaram energia, nota maxima aqui em casa.'],
+    '_': ['Produto acima das expectativas, entrega rapida e bem embalado.', 'Qualidade percebida muito superior ao pago, recomendo.', 'Uso diario ha semanas e continua como novo.']
+  };
+  function revCount(p) { return 24 + (p.id * 13) % 460; }
+  function reviewsFor(p) {
+    var rnd = seed(p.id + 7), n = 3 + Math.floor(rnd() * 3);
+    var pool = RTEXTS[p.c] || RTEXTS._, out = [], usedN = {};
+    for (var k = 0; k < n; k++) {
+      var ni = Math.floor(rnd() * RNAMES.length);
+      if (usedN[ni]) ni = (ni + 1 + k) % RNAMES.length;
+      usedN[ni] = 1;
+      var st = rnd() < 0.68 ? 5 : (rnd() < 0.6 ? 4 : 3);
+      var dias = 2 + Math.floor(rnd() * 200);
+      out.push({ n: RNAMES[ni], s: st, t: pool[Math.floor(rnd() * pool.length)], d: dias });
+    }
+    return out;
+  }
+  function myRevs(id) { var all = load('tv_revs', {}); return all[id] || []; }
+  function revHtml(r) {
+    var ini = r.n.trim().split(/\s+/).slice(0, 2).map(function (w) { return w[0]; }).join('').toUpperCase();
+    return '<div class="rev' + (r.me ? ' me' : '') + '"><span class="av">' + ini + '</span>' +
+      '<b>' + r.n + (r.me ? ' <i class="vfy me">sua avaliação</i>' : ' <i class="vfy">✓ compra verificada</i>') + '</b>' +
+      starsOf(r.s) +
+      '<small>' + (r.d === 0 ? 'agora mesmo' : 'há ' + r.d + ' dias') + '</small>' +
+      '<p>' + r.t + '</p></div>';
+  }
+  function renderRevs(p) {
+    var mine = myRevs(p.id).map(function (r) { return { n: r.n, s: r.s, t: r.t, d: 0, me: true }; });
+    var revs = mine.concat(reviewsFor(p));
+    var media = mine.length ? ((p.r * revCount(p) + mine.reduce(function (s, r) { return s + r.s; }, 0)) / (revCount(p) + mine.length)) : p.r;
+    $('revAgg').innerHTML = '★ <b>' + media.toFixed(1) + '</b> · ' + (revCount(p) + mine.length) + ' avaliações';
+    $('revList').innerHTML = revs.slice(0, 6).map(revHtml).join('') +
+      (revs.length > 6 ? '<button class="bW recl" id="revMore">Ver mais avaliações (' + (revs.length - 6) + ')</button>' : '');
+    var more = $('revMore');
+    if (more) more.addEventListener('click', function () { $('revList').innerHTML = revs.map(revHtml).join(''); });
+  }
+
+  /* ---------------- recomendados ---------------- */
+  function renderRecs(p) {
+    var same = [];
+    for (var k = 0; k < P.length; k++) if (P[k].c === p.c && k !== mIdx) same.push(k);
+    var rnd = seed(p.id + 101), picks = {}, out = [];
+    while (out.length < 4 && same.length) {
+      var k = same[Math.floor(rnd() * same.length)];
+      if (!picks[k]) { picks[k] = 1; out.push(k); }
+    }
+    $('mrecs').innerHTML = out.map(function (k) {
+      var q = P[k];
+      return '<button class="rec" data-rec="' + k + '"><img loading="lazy" src="' + q.img + '" alt="">' +
+        '<b>' + q.n + '</b><span class="rec-p">' + fmt(q.p) + '</span>' +
+        '<span class="rec-r">★ ' + q.r.toFixed(1) + ' · ' + fmtSold(soldOf(q)) + ' vendidos</span></button>';
+    }).join('');
+    $('recCat').textContent = 'Ver todos em ' + p.c + ' →';
+  }
+
   /* ---------------- modal produto (visor 3D) ---------------- */
-  var mIdx = 0, mQty = 1, spin = 0, mDrag = false, mLast = 0, spinRaf = null;
+  var mIdx = 0, mQty = 1, spin = 0, mDrag = false, mLast = 0, spinRaf = null, mColor = '', revStars = 0;
 
   function specs(p) {
     var off = p.old ? Math.round((1 - p.p / p.old) * 100) : 0;
     return '<div><small>Categoria</small>' + p.c + '</div>' +
-      '<div><small>Avaliação</small>★ ' + p.r.toFixed(1) + ' / 5</div>' +
-      '<div><small>Estoque</small>' + p.s + ' unidades</div>' +
-      '<div><small>Desconto</small>' + (off ? '-' + off + '%' : 'melhor preço') + '</div>' +
-      '<div><small>Entrega</small>frete grátis para todo o Brasil</div>' +
-      '<div><small>Garantia</small>12 meses</div>';
+      '<div><small>Avaliação</small>★ ' + p.r.toFixed(1) + ' · ' + revCount(p) + ' avaliações</div>' +
+      '<div><small>Estoque</small>' + (p.s < 15 ? 'últimas ' + p.s + ' unidades' : p.s + ' unidades') + '</div>' +
+      '<div><small>Desconto</small>' + (off ? '-' + off + '%' : 'melhor preço do mês') + '</div>' +
+      '<div><small>Entrega</small>grátis acima de ' + fmt(1000) + '</div>' +
+      '<div><small>Garantia</small>12 meses • troca 30 dias</div>';
   }
   function openQuick(i) {
     mIdx = i; mQty = 1; spin = 0;
@@ -261,13 +351,18 @@
     $('mdesc').textContent = p.d;
     $('mspecs').innerHTML = specs(p);
     $('mqty').textContent = '1';
+    mColor = renderColors(p);
+    renderRevs(p);
+    renderRecs(p);
+    revStars = 0; paintRevStars();
+    $('revText').value = ''; $('revName').value = '';
+    var mb = $('modal').querySelector('.mbox'); if (mb) mb.scrollTop = 0;
     var inW = S.wish.indexOf(i) > -1;
     $('mwish').textContent = inW ? '♥ Na lista' : '♡ Favoritar';
     var inC = S.cmp.indexOf(i) > -1;
     $('mcmp').classList.toggle('bR', !inC);
     $('mcmp').classList.toggle('bW', inC);
     $('mcmp').textContent = inC ? '✓ Na comparação' : '⇄ Comparar';
-    $('colors').querySelectorAll('i').forEach(function (c, k) { c.classList.toggle('on', k === 0); });
     $('modal').classList.add('open');
     document.body.classList.add('lock');
     startSpin();
@@ -307,21 +402,65 @@
   });
   window.addEventListener('pointerup', function () { mDrag = false; });
 
+  function renderColors(p) {
+    var cols = colorsOf(p);
+    $('colors').innerHTML = 'Cores: ' + cols.map(function (c, k) {
+      return '<i data-col="' + k + '" class="' + (k === 0 ? 'on' : '') + '" style="background:' + c[1] + '" title="' + c[0] + '"></i>';
+    }).join('') + ' <b id="mcolName">' + cols[0][0] + '</b>';
+    return cols[0][0];
+  }
+  $('colors').addEventListener('click', function (e) {
+    var b = e.target.closest('[data-col]'); if (!b) return;
+    var cols = colorsOf(P[mIdx]), k = +b.dataset.col;
+    mColor = cols[k][0];
+    $('colors').querySelectorAll('i').forEach(function (c) { c.classList.remove('on'); });
+    b.classList.add('on');
+    var nm = $('mcolName'); if (nm) nm.textContent = mColor;
+  });
+  $('mrecs').addEventListener('click', function (e) {
+    var b = e.target.closest('[data-rec]');
+    if (b) { openQuick(+b.dataset.rec); var mb = $('modal').querySelector('.mbox'); if (mb) mb.scrollTop = 0; }
+  });
+  $('recCat').addEventListener('click', function () {
+    var f = P[mIdx].c;
+    closeQuick(); setFilter(f);
+    $('catalog').scrollIntoView({ behavior: 'smooth' });
+  });
+  function paintRevStars() {
+    $('revStars').querySelectorAll('button').forEach(function (b) { b.classList.toggle('on', +b.dataset.s <= revStars); });
+  }
+  $('revStars').addEventListener('click', function (e) {
+    var b = e.target.closest('[data-s]'); if (!b) return;
+    revStars = +b.dataset.s; paintRevStars();
+  });
+  $('revSend').addEventListener('click', function () {
+    var txt = $('revText').value.trim(), nome = $('revName').value.trim() || 'Cliente TechVerse';
+    if (!revStars) return toast('⚠️ Escolha de 1 a 5 estrelas');
+    if (txt.length < 5) return toast('⚠️ Escreva um comentário com pelo menos 5 letras');
+    var all = load('tv_revs', {});
+    (all[mIdx] = all[mIdx] || []).unshift({ n: nome, s: revStars, t: txt, ts: Date.now() });
+    save('tv_revs', all);
+    $('revText').value = ''; $('revName').value = ''; revStars = 0; paintRevStars();
+    renderRevs(P[mIdx]);
+    toast('⭐ Obrigado pela avaliação, ' + nome.split(' ')[0] + '!');
+  });
+
   $('mqm').addEventListener('click', function () { if (mQty > 1) $('mqty').textContent = --mQty; });
   $('mqp').addEventListener('click', function () { if (mQty < P[mIdx].s) $('mqty').textContent = ++mQty; });
-  $('madd').addEventListener('click', function () { addCart(mIdx, mQty, true); closeQuick(); });
+  $('madd').addEventListener('click', function () { addCart(mIdx, mQty, true, mColor); closeQuick(); });
   $('mwish').addEventListener('click', function () { toggleWish(mIdx); });
   $('mcmp').addEventListener('click', function () { toggleCmp(mIdx); });
   $('mclose').addEventListener('click', closeQuick);
   $('modal').addEventListener('click', function (e) { if (e.target === this) closeQuick(); });
 
   /* ---------------- carrinho ---------------- */
-  function addCart(i, qty, notify) {
+  function addCart(i, qty, notify, color) {
     qty = qty || 1;
     var f = S.cart.filter(function (x) { return x.i === i; })[0];
-    if (f) f.q += qty; else S.cart.push({ i: i, q: qty });
+    if (f) { f.q += qty; if (color) f.color = color; }
+    else S.cart.push({ i: i, q: qty, color: color || '' });
     save('tv_cart', S.cart); renderCart(true);
-    if (notify) toast('🛒 ' + P[i].n + ' adicionado ao carrinho');
+    if (notify) toast('🛒 ' + P[i].n + (color ? ' (' + color + ')' : '') + ' adicionado ao carrinho');
   }
   function totals() {
     var sub = S.cart.reduce(function (s, x) { return s + P[x.i].p * x.q; }, 0);
@@ -338,6 +477,7 @@
     $('items').innerHTML = S.cart.length ? S.cart.map(function (x, k) {
       var p = P[x.i];
       return '<div class="d-item"><img src="' + p.img + '" alt=""><div class="t"><b>' + p.n + '</b>' +
+        (x.color ? '<small class="colr">cor: ' + x.color + '</small>' : '') +
         '<small>' + fmt(p.p) + '</small>' +
         '<div class="qty"><button data-cq="' + k + '|-1">−</button><span>' + x.q + '</span>' +
         '<button data-cq="' + k + '|1">+</button></div></div>' +
@@ -376,7 +516,7 @@
     var t = totLines();
     var num = 'TV-' + Date.now().toString().slice(-6);
     var msg = 'Pedido ' + num + ' TechVerse:%0A' +
-      S.cart.map(function (x) { return '- ' + P[x.i].n + ' x' + x.q + ' = ' + fmt(P[x.i].p * x.q); }).join('%0A') +
+      S.cart.map(function (x) { return '- ' + P[x.i].n + (x.color ? ' (' + x.color + ')' : '') + ' x' + x.q + ' = ' + fmt(P[x.i].p * x.q); }).join('%0A') +
       (t.off ? '%0ACupom TECH10: -' + fmt(t.off) : '') +
       '%0AFrete: ' + (t.ship ? fmt(t.ship) : 'GRÁTIS') +
       '%0ATotal: ' + fmt(t.tot);
