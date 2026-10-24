@@ -1,15 +1,15 @@
-# CTA do dia — 2026-10-23
+# CTA do dia — 2026-10-24
 
-**Prova real**
+**Vaga de freelance aberta**
 
-## Não acredite em promessa: veja 15 projetos publicados e funcionando.
+## Agenda aberta para novos projetos este mês. Garanta a sua.
 
-Cada projeto do portfólio está no ar, clicável e com o código no GitHub.
+Poucas vagas por mês para manter a qualidade. Chame agora e receba proposta fechada.
 
-**Botão:** Ver os projetos
+**Botão:** Garantir minha vaga
 
 Poste no Status/Stories/TikTok:
 
-> Não acredite em promessa: veja 15 projetos publicados e funcionando.
-> Cada projeto do portfólio está no ar, clicável e com o código no GitHub.
+> Agenda aberta para novos projetos este mês. Garanta a sua.
+> Poucas vagas por mês para manter a qualidade. Chame agora e receba proposta fechada.
 > Chame no WhatsApp: https://wa.me/5511989426415
