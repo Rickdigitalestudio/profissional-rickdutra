@@ -1,15 +1,15 @@
-# CTA do dia — 2026-10-24
+# CTA do dia — 2026-10-25
 
-**Vaga de freelance aberta**
+**Oferta da semana**
 
-## Agenda aberta para novos projetos este mês. Garanta a sua.
+## Seu negócio com cara de empresa grande — por preço de freelance.
 
-Poucas vagas por mês para manter a qualidade. Chame agora e receba proposta fechada.
+Fanpage ou site completo no ar em dias, não meses. Orçamento grátis em 30 segundos.
 
-**Botão:** Garantir minha vaga
+**Botão:** Quero meu orçamento grátis
 
 Poste no Status/Stories/TikTok:
 
-> Agenda aberta para novos projetos este mês. Garanta a sua.
-> Poucas vagas por mês para manter a qualidade. Chame agora e receba proposta fechada.
+> Seu negócio com cara de empresa grande — por preço de freelance.
+> Fanpage ou site completo no ar em dias, não meses. Orçamento grátis em 30 segundos.
 > Chame no WhatsApp: https://wa.me/5511989426415
