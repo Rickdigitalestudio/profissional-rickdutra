@@ -1,15 +1,15 @@
-# CTA do dia — 2026-10-25
+# CTA do dia — 2026-10-26
 
-**Oferta da semana**
+**Para quem vende no WhatsApp**
 
-## Seu negócio com cara de empresa grande — por preço de freelance.
+## Cliente clicou, cliente chamou: fanpage que vira conversa.
 
-Fanpage ou site completo no ar em dias, não meses. Orçamento grátis em 30 segundos.
+Página direta e persuasiva para campanha, lançamento ou tráfego pago. Peça a sua hoje.
 
-**Botão:** Quero meu orçamento grátis
+**Botão:** Quero uma fanpage que converte
 
 Poste no Status/Stories/TikTok:
 
-> Seu negócio com cara de empresa grande — por preço de freelance.
-> Fanpage ou site completo no ar em dias, não meses. Orçamento grátis em 30 segundos.
+> Cliente clicou, cliente chamou: fanpage que vira conversa.
+> Página direta e persuasiva para campanha, lançamento ou tráfego pago. Peça a sua hoje.
 > Chame no WhatsApp: https://wa.me/5511989426415
