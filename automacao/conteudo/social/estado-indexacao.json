@@ -1,5 +1,5 @@
 {
-  "ultima_indexacao": "2026-10-29T23:51:16",
+  "ultima_indexacao": "2026-10-30T14:55:17",
   "urls": 31,
   "resultado": {
     "https://api.indexnow.org/indexnow": {
@@ -13,7 +13,7 @@
     "https://api.bing.com/indexnow": {
       "ok": false,
       "status": 400,
-      "erro": "<h2>Our services aren't available right now</h2><p>We're working to restore all services as soon as possible. Please check back soon.</p>09NvjagAAAACk"
+      "erro": "<h2>Our services aren't available right now</h2><p>We're working to restore all services as soon as possible. Please check back soon.</p>01a/kagAAAADo"
     }
   }
 }
