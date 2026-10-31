@@ -1,15 +1,15 @@
-# CTA do dia — 2026-10-30
+# CTA do dia — 2026-10-31
 
-**Orçamento em 30 segundos**
+**Lançamento e eventos**
 
-## Sem reunião chata, sem enrolação: monte seu orçamento sozinho.
+## Festa, curso ou promoção? Landing 3D que vende o evento sozinha.
 
-Página de orçamento interativa com preço fechado, prazo e escopo claro.
+Páginas de evento imersivas com confirmação e compartilhamento em 1 clique.
 
-**Botão:** Montar meu orçamento
+**Botão:** Quero uma landing de evento
 
 Poste no Status/Stories/TikTok:
 
-> Sem reunião chata, sem enrolação: monte seu orçamento sozinho.
-> Página de orçamento interativa com preço fechado, prazo e escopo claro.
+> Festa, curso ou promoção? Landing 3D que vende o evento sozinha.
+> Páginas de evento imersivas com confirmação e compartilhamento em 1 clique.
 > Chame no WhatsApp: https://wa.me/5511989426415
