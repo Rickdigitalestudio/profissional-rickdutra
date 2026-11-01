@@ -1,15 +1,15 @@
-# CTA do dia — 2026-10-23
+# CTA do dia — 2026-11-01
 
-**Prova real**
+**Negócio local**
 
-## Não acredite em promessa: veja 15 projetos publicados e funcionando.
+## Quem busca "perto de mim" precisa te achar — e se encantar.
 
-Cada projeto do portfólio está no ar, clicável e com o código no GitHub.
+Sites locais com Maps, WhatsApp e avaliações integrados para gerar visitas.
 
-**Botão:** Ver os projetos
+**Botão:** Atrair clientes da região
 
 Poste no Status/Stories/TikTok:
 
-> Não acredite em promessa: veja 15 projetos publicados e funcionando.
-> Cada projeto do portfólio está no ar, clicável e com o código no GitHub.
+> Quem busca "perto de mim" precisa te achar — e se encantar.
+> Sites locais com Maps, WhatsApp e avaliações integrados para gerar visitas.
 > Chame no WhatsApp: https://wa.me/5511989426415
