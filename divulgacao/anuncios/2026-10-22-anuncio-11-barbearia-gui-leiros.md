@@ -1,4 +1,4 @@
-# Anúncio 01 — Case Barbearia Gui Leiros
+# Anúncio 11 — Case Barbearia Gui Leiros
 
 **Data de publicação:** 22/10/2026 (quinta-feira)
 **Tipo:** PROVA (resultado real)

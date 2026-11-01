@@ -1,4 +1,4 @@
-# Anúncio 20 — CTA de Meio de Outubro: Revisão Grátis do Site
+# Anúncio 10 — CTA de Meio de Outubro: Revisão Grátis do Site
 
 **Data de publicação:** 20/10/2026 (terça-feira)
 **Tipo:** CTA (chamada para orçamento)

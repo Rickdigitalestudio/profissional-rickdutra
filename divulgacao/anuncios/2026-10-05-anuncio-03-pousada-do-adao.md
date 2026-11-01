@@ -1,4 +1,4 @@
-# Anúncio 13 — Case Pousada do Adão
+# Anúncio 03 — Case Pousada do Adão
 
 **Data de publicação:** 05/10/2026 (segunda-feira)
 **Tipo:** PROVA (resultado real)

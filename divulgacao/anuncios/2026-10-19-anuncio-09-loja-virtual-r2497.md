@@ -1,4 +1,4 @@
-# Anúncio 19 — Loja Virtual Completa por R$ 2.497
+# Anúncio 09 — Loja Virtual Completa por R$ 2.497
 
 **Data de publicação:** 19/10/2026 (segunda-feira)
 **Tipo:** OFERTA (venda direta)

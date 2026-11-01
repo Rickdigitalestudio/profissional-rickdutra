@@ -1,4 +1,4 @@
-# Anúncio 18 — Case Residencial Tradição (3D imobiliário)
+# Anúncio 08 — Case Residencial Tradição (3D imobiliário)
 
 **Data de publicação:** 16/10/2026 (sexta-feira)
 **Tipo:** PROVA (resultado real)

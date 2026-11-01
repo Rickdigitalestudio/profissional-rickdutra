@@ -1,4 +1,4 @@
-# Anúncio 10 — Chamada Final: Novembro Começa Hoje
+# Anúncio 20 — Chamada Final: Novembro Começa Hoje
 
 **Data de publicação:** 01/11/2026 (domingo)
 **Tipo:** CTA (chamada para orçamento)

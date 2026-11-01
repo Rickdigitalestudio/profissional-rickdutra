@@ -1,4 +1,4 @@
-# Anúncio 09 — Bastidor: Números do Portfólio
+# Anúncio 19 — Bastidor: Números do Portfólio
 
 **Data de publicação:** 31/10/2026 (sábado)
 **Tipo:** PESSOAL (bastidor + autoridade)

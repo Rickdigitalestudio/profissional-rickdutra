@@ -1,4 +1,4 @@
-# Anúncio 16 — Case TechVerse (298 produtos)
+# Anúncio 06 — Case TechVerse (298 produtos)
 
 **Data de publicação:** 12/10/2026 (segunda-feira)
 **Tipo:** PROVA (resultado real)

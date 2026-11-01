@@ -1,4 +1,4 @@
-# Anúncio 08 — Tabela de Preços (Semana de Ofertas)
+# Anúncio 18 — Tabela de Preços (Semana de Ofertas)
 
 **Data de publicação:** 30/10/2026 (sexta-feira)
 **Tipo:** OFERTA (venda direta)

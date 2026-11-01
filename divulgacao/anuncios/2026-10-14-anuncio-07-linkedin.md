@@ -1,4 +1,4 @@
-# Anúncio 17 — 5 erros no LinkedIn que travam seu currículo
+# Anúncio 07 — 5 erros no LinkedIn que travam seu currículo
 
 **Data de publicação:** 14/10/2026 (quarta-feira)
 **Tipo:** EDUCA (dica que gera alcance)

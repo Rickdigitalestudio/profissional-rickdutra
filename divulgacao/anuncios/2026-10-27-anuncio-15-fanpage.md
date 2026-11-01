@@ -1,4 +1,4 @@
-# Anúncio 05 — Fanpage que Vende por R$ 497
+# Anúncio 15 — Fanpage que Vende por R$ 497
 
 **Data de publicação:** 27/10/2026 (terça-feira)
 **Tipo:** OFERTA (venda direta)

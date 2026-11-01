@@ -1,4 +1,4 @@
-# Anúncio 07 — Case Konstruct Store
+# Anúncio 17 — Case Konstruct Store
 
 **Data de publicação:** 29/10/2026 (quinta-feira)
 **Tipo:** PROVA (resultado real)

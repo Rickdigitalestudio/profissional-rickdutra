@@ -1,4 +1,4 @@
-# Anúncio 14 — Por que eu não uso template pronto
+# Anúncio 04 — Por que eu não uso template pronto
 
 **Data de publicação:** 07/10/2026 (quarta-feira)
 **Tipo:** EDUCA (dica que gera alcance)

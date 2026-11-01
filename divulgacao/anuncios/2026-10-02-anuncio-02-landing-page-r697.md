@@ -1,4 +1,4 @@
-# Anúncio 12 — Landing Page por R$ 697
+# Anúncio 02 — Landing Page por R$ 697
 
 **Data de publicação:** 02/10/2026 (sexta-feira)
 **Tipo:** OFERTA (venda direta)

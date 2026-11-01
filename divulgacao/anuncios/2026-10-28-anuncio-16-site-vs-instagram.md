@@ -1,4 +1,4 @@
-# Anúncio 06 — Site ou Instagram? Aparecer no Google
+# Anúncio 16 — Site ou Instagram? Aparecer no Google
 
 **Data de publicação:** 28/10/2026 (quarta-feira)
 **Tipo:** EDUCA (dica que gera alcance)

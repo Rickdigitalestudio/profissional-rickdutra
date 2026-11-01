@@ -1,4 +1,4 @@
-# Anúncio 04 — Case AD Santos: A Pioneira
+# Anúncio 14 — Case AD Santos: A Pioneira
 
 **Data de publicação:** 26/10/2026 (segunda-feira)
 **Tipo:** PROVA (resultado real)

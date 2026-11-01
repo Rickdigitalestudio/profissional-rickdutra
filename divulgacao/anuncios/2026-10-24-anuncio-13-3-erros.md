@@ -1,4 +1,4 @@
-# Anúncio 03 — 3 erros que fazem seu site não vender
+# Anúncio 13 — 3 erros que fazem seu site não vender
 
 **Data de publicação:** 24/10/2026 (sábado)
 **Tipo:** EDUCA (dica que gera alcance)
