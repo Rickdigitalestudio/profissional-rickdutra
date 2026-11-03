@@ -21,6 +21,7 @@ Site estático (HTML + CSS + JavaScript puro), hospedado no GitHub Pages.
 | `privacidade.html` | Política de Privacidade e Cookies (LGPD) |
 | `termos.html` | Termos de Serviço |
 | `midia.html` | Kit de mídia |
+| `divulgacoes.html` | Central de divulgações: 20 anúncios prontos (legenda, Stories e hashtags) |
 | `404.html` | Página de erro personalizada |
 | `cv-henrique-dutra.pdf` | Currículo pronto para enviar a clientes |
 | `css/`, `js/`, `img/` | Estilos, scripts e imagens |
@@ -48,6 +49,9 @@ python automacao\gerar_paginas_servico.py
 
 # gera o sitemap.xml
 python automacao\gerar_sitemap.py
+
+# regenera a pagina divulgacoes.html (a partir de divulgacao/anuncios/*.md)
+node divulgacao\gerar-divulgacoes.js
 
 # otimiza as imagens para WebP (-90% de peso)
 python automacao\otimizar_imagens.py

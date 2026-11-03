@@ -4,6 +4,10 @@
 > publicados no repositório `profissional-rickdutra` e no ar no GitHub Pages:
 > <https://rickdigitalestudio.github.io/profissional-rickdutra/>
 >
+> **📋 Central de divulgações (os 20 no ar, com botão de copiar):**
+> <https://rickdigitalestudio.github.io/profissional-rickdutra/divulgacoes.html>
+> (gerada por `node divulgacao/gerar-divulgacoes.js` — edite os `.md` e rode de novo)
+>
 > Cada arquivo já vem com: data de publicação, tipo de post, onde postar,
 > legenda pronta para copiar e colar, versão curta (Stories/Status) e hashtags.
 
