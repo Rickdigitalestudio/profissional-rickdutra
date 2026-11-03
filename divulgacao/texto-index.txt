@@ -1,0 +1,399 @@
+7: Criação de Sites em São Paulo | Web Designer — Estúdio Rick Digital
+15: <!-- VERIFICACAO GOOGLE (cole aqui o codigo do Search Console):
+17: VERIFICACAO BING:
+18: -->
+50: <!-- Google AdSense (gratis): apos aprovacao, descomente a linha abaixo e troque ca-pub-SEU-ID pelo seu ID
+52: -->
+62: Pular para o conteúdo
+66: ESTÚDIO RICK DIGITAL
+68: 0%
+78: ESTÚDIO RICK DIGITAL
+79: Trabalhos Cases Serviços Tecnologias Orçamento Sobre Contato
+81: Vamos conversar
+92: Estúdio Rick Digital · Sites para pequenos negócios em São Paulo
+93: SITES QUE VENDEM
+94: Criação de sites profissionais · São Paulo e todo o Brasil
+95: Crio fanpages que convertem, landing pages de alta conversão e lojas 3D — do layout ao código, com HTML, CSS e JavaScript. Do briefing ao site no ar, com prazo fechado por escrito.
+97: Ver meu trabalho
+98: Pedir orçamento
+99: Ver currículo
+102: Resposta em até 24h
+103: 2 revisões inclusas
+104: 15+ projetos no ar
+107: ● Disponível para freelance
+108: Arraste · Passe o mouse · Explore
+114: meu-codigo.html
+115: <section class = "site-dos-sonhos" >
+116: <h1> Seu negócio no ar </h1>
+117: <button> Quero o meu </button>
+118: </section>
+122: github.com/Rickdigitalestudio
+127: HTML
+128: CSS
+129: JavaScript
+131: 26 repositórios públicos · foco total em front-end
+133: Disponível para freelance Projetos ↑
+140: 15+ Projetos publicados
+141: 73 Produtos numa loja 3D
+142: 26 Repositórios no GitHub
+143: 100% Layouts responsivos
+149: Portfólio que fecha negócio
+150: Mostre seu trabalho como ele merece — em 3D interativo.
+151: Portfólios e vitrines que impressionam recrutadores e clientes na primeira tela.
+152: Quero um portfólio assim
+159: PORTFÓLIO 3D • INTERATIVO • PROFISSIONAL • WEB DESIGN • FRONT-END • SEO • PERFORMANCE • PORTFÓLIO 3D • INTERATIVO • PROFISSIONAL • WEB DESIGN • FRONT-END • SEO • PERFORMANCE •
+161: Trabalhos em destaque
+163: Explorar todos os projetos
+164: ‹
+165: ›
+172: Barbearia Gui Leiros ⭐ NOVO Site Oficial 3D · 11 fotos · GitHub Pages
+177: AD Santos — A Pioneira ⭐ NOVO Site institucional 3D · Three.js · Rádio ao vivo
+182: Konstruct Store ⭐ DESTAQUE Loja Ferramentas 3D · 73 produtos
+187: TechVerse ⭐ DESTAQUE Loja Tech 3D · 298 produtos · Preços em Real
+192: Viver de Freelancer Three.js · WebGL · cena 3D
+197: Festa das Crianças 2.0 Landing 3D + WebGL · Barbearia Gui Leiros
+202: React Universe ⭐ NOVO Guia Interativo 3D · Three.js · Hooks
+214: Quem contratou
+215: O dono do negócio, ao lado do negócio
+217: ● Proprietários reais · 5 segmentos
+220: 100 /100 Lighthouse Acessibilidade Best Practices SEO Medido no site publicado — qualquer um pode reproduzir
+225: GL
+227: Guilherme Leiros
+228: Barbearia Gui Leiros
+229: Site oficial 3D · 11 fotos reais · agendamento no WhatsApp
+230: Barbearia · Vila Conde Siciliano, RGS/SP
+234: A
+236: Adão
+237: Pousada e Restaurante do Adão
+238: Site completo · cardápio, suítes e reservas no WhatsApp
+239: Hotelaria e restaurante · Rio Grande da Serra/SP
+243: MD
+245: Ministério de Santos
+246: AD Santos — A Pioneira
+247: Site institucional 3D · maquete do templo, mapa e rádio ao vivo
+248: Igreja · Ministério de Santos/SP
+252: NP
+254: Nepofit Performance
+255: Nepofit Performance
+256: Landing page de conversão · planos e agendamento no WhatsApp
+257: Academia · R. Ribeirão Pires, RGS/SP
+261: EC
+263: Equipe CrescerBem
+264: CrescerBem
+265: Plataforma com guias por idade, consultas e área de depoimentos
+266: Plataforma de conteúdo · desenvolvimento infantil
+270: PA
+272: Projeto autoral
+273: Viver de Freelancer
+274: Migração do Gamma para código 3D próprio
+275: Plataforma de conteúdo · marca pessoal
+279: PD
+281: Projeto demo demo
+282: Konstruct Store
+283: Vitrine 3D, catálogo, filtro e carrinho — vitrine de portfólio
+284: Loja 3D · 73 produtos catalogados
+288: PD
+290: Projeto demo demo
+291: TechVerse
+292: Loja de tecnologia com carrinho real — vitrine de portfólio
+293: Loja 3D · 298 produtos em Real
+296: Nota: Os dois últimos são lojas demo que eu desenvolvi como vitrine de portfólio — não são clientes.
+304: Prova social
+305: O que dizem os clientes
+306: Falas reais, publicadas nos sites que eu construí. Cada card tem o link para o site original — dá para conferir no ar.
+308: Ver os cases completos
+314: Site oficial 3D
+315: Fiz o degradê e o pezinho, ficou afiado demais. Ambiente clean e conversa boa. Recomendo.
+317: RM
+318: Rafael M. Cliente · Barbearia Gui Leiros
+320: ver no site · seção Depoimentos
+324: Site oficial 3D
+325: Levei meu filho pro primeiro corte. O Gui teve uma paciência absurda e ele saiu rindo.
+327: JP
+328: Juliana P. Mãe · Barbearia Gui Leiros
+330: ver no site · seção Depoimentos
+334: Site oficial 3D
+335: Box braid impecável, durou semanas sem soltar. Sabem o que fazem.
+337: DS
+338: Diego S. Cliente · Barbearia Gui Leiros
+340: ver no site · seção Depoimentos
+344: Landing page de conversão
+345: Tinha vergonha de academia grande. Aqui me senti em casa desde o dia 1.
+347: CS
+348: Cris S. Aluna há 1 ano · Nepofit Performance
+350: ver no site · seção Depoimentos
+354: Landing page de conversão
+355: Aparelhos cuidados, dá pra treinar pesado de verdade. Recomendo.
+357: DF
+358: Diego F. Aluno há 3 anos · Nepofit Performance
+360: ver no site · seção Depoimentos
+364: Site e reservas
+365: A vista é de tirar o fôlego e a comida é ainda melhor. Nosso refúgio favorito!
+367: SL
+368: Sophia L. Hóspede · Pousada do Adão
+370: ver no site · seção O que dizem os hóspedes
+374: Site e reservas
+375: Cada detalhe é perfeito — do coquetel ao atendimento. Um achado escondido.
+377: MT
+378: Michael T. Hóspede · Pousada do Adão
+380: ver no site · seção O que dizem os hóspedes
+384: Site institucional 3D
+385: Servir nesta casa é herança de família. Minha avó já vinha aqui, e a fé só cresceu.
+387: OD
+388: Obreira da sede Serva na igreja há anos · AD Santos — A Pioneira
+390: ver no site · seção Testemunhos
+394: Site institucional 3D
+395: Sentimos a mesma identidade da sede, só que aqui em São Vicente. Somos uma só família.
+397: CC
+398: Congregação Campos Sales Igreja do litoral · AD Santos — A Pioneira
+400: ver no site · seção Testemunhos
+404: Plataforma de conteúdo
+405: O acompanhamento do desenvolvimento do nosso filho com a equipe do CrescerBem foi fundamental. As orientações sobre estimulação precoce fizeram toda a diferença!
+407: FO
+408: Família Oliveira Pais · CrescerBem
+410: ver no site · página Depoimentos
+412: Sobre estes depoimentos: Estes depoimentos são de clientes finais dos sites que construí (alunos, hóspedes, membros da comunidade). Quando cada cliente mandar o próprio depoimento sobre o trabalho, é só trocar o texto aqui.
+418: Resultados
+419: Números que eu consigo provar
+420: Cada item abaixo foi medido no código ou conferido nos próprios projetos — nada de “+500 clientes” sem fonte.
+424: -90 %
+425: Peso das imagens
+426: Portfólio convertido de 7,6 MB para 798 KB em WebP sem perda visível.
+427: Medido no repositório (automacao/otimizar_imagens.py)
+430: 0 s
+431: Espera no carregamento
+432: Imagens com width/height fixo, lazy loading e scripts deferidos: zero deslocamento de layout (CLS = 0).
+433: Lighthouse / Web Vitals
+436: 73
+437: Produtos na Konstruct Store
+438: Catálogo completo com 67 fotos reais de produto, filtro e vitrine 3D.
+439: konstruct/js/data.js
+442: 15 +
+443: Projetos no ar
+444: De barbearia a loja 3D: 15 sites publicados entre barbearia, igreja, hotelaria, academia e imobiliária.
+445: Portfólio completo
+448: 5 dias
+449: Prazo de uma landing
+450: Do briefing ao site publicado, com 2 rodadas de revisão inclusas em cada etapa.
+451: Termos de Serviço
+454: 24 h
+455: Para responder seu orçamento
+456: Todo briefing recebe proposta com escopo, prazo e valor fechado por escrito.
+457: Compromisso de atendimento
+460: 8 +
+461: Tecnologias no dia a dia
+462: HTML, CSS, JavaScript, Three.js, React, Git, GitHub, VS Code e Vercel.
+463: Tecnologias
+466: 0 erros
+467: Console do navegador
+468: Sem erro de JavaScript em nenhuma das páginas publicadas do portfólio.
+469: Verificação no navegador
+477: Cases de projeto
+478: Problema, solução e resultado
+479: Três projetos abertos por completo: o contexto, o que estava travando, o que eu fiz e o número que ficou no fim.
+483: Site institucional 3D
+487: Barbearia · Rio Grande da Serra/SP
+488: Barbearia Gui Leiros
+489: De indicação e WhatsApp para site 3D com 11 fotos reais, filtro de serviços e agendamento direto.
+490: 11 fotos reais 10 dias 1 clique → WhatsApp
+491: Ver o case completo
+496: Site institucional 3D
+500: Institucional · Santos/SP
+501: AD Santos — A Pioneira
+502: Maquete 3D do templo atravessada pela câmera no scroll, mapa de igrejas ao vivo e a rádio da igreja no site.
+503: Maquete 3D Rádio ao vivo Mapa interativo
+504: Ver o case completo
+509: Loja virtual 3D
+513: E-commerce · Ferramentas
+514: Konstruct Store
+515: 73 produtos em vitrine 3D navegável, 67 fotos reais com licença registrada, filtro e carrinho de verdade.
+516: 73 produtos 67 fotos 20 dias
+517: Ver o case completo
+528: 2+ anos no código
+531: Sobre mim
+532: Quem vai cuidar do seu site
+533: Sou Henrique Luiz Dutra , web designer e desenvolvedor front-end, estudante de Engenharia de Software na Escola DNC e formado em Técnico em TI . Construo sites para pequenos negócios em São Paulo e para clientes de todo o Brasil — do layout ao código, com HTML, CSS e JavaScript .
+534: Meu jeito de trabalhar é simples: entendo o seu negócio primeiro , defino escopo, prazo e valor por escrito, desenho, codifico, publico e entrego o site no ar. Você fala comigo o tempo todo — sem intermediário, sem enrolação.
+535: Cada projeto do meu GitHub é um degrau: hoje são 26 repositórios públicos e 15+ sites publicados entre barbearia, igreja, hotelaria, academia e e-commerce.
+537: Web Design Front-End UX/UI SEO on-page Performance Three.js
+540: Minha história completa
+541: Baixar currículo (PDF)
+549: Serviços e preços
+550: Escolha o que você precisa.
+551: Preço e prazo abaixo são os mesmos de todas as páginas de serviço e valem para todo o Brasil. Você recebe a proposta fechada por escrito antes de qualquer pagamento.
+553: Landing page que converte a partir de R$ 697 · entrega em 5 dias úteis
+554: Criação de sites profissionais a partir de R$ 997 · entrega em 10 dias úteis
+555: Loja virtual completa a partir de R$ 2.497 · entrega em 15 dias úteis
+556: Fanpage que vende a partir de R$ 497 · entrega em 5 dias úteis
+557: Site para pequenas empresas a partir de R$ 997 · com SEO local e Google Maps
+558: Criação de logo profissional a partir de R$ 200 · entrega em 3 dias úteis
+561: Serviços complementares
+562: LinkedIn otimizado a partir de R$ 297 · Formatação ABNT a partir de R$ 120
+568: Capacidades principais
+570: Fanpages que convertem Páginas diretas e persuasivas para campanhas e lançamentos.
+571: Sites institucionais Sites completos que passam credibilidade e geram contato.
+572: UX/UI Design Layouts bonitos e fáceis de usar em qualquer tela.
+573: Responsivo total Perfeito no celular, tablet e computador.
+574: SEO & performance Código otimizado para o Google achar e carregar rápido.
+575: Atualização de sites Modernizo sites antigos e dou manutenção.
+579: Ferramentas & tecnologias — clique e explore
+581: HTML
+582: CSS
+583: JavaScript
+584: React estudando
+585: Git
+586: GitHub
+587: VS Code
+588: Vercel
+590: Ver o que aprendi em cada uma
+591: Formação
+593: Engenharia de Software Escola DNC · cursando
+594: Técnico em TI Formação técnica concluída
+601: Por que contratar comigo
+602: As regras do contrato, escritas antes de você fechar.
+607: Proposta fechada antes de começar
+608: Você recebe escopo, prazo e valor por escrito antes do primeiro pagamento. O que não estiver na proposta, não é cobrado depois.
+612: 2 rodadas de revisão inclusas
+613: Em cada etapa de entrega você revisa e ajusta sem custo extra. Revisões adicionais só entram se você mudar o escopo.
+617: Código e arquivos seus
+618: Depois do pagamento integral, você é dono do site, do código e dos arquivos. Fica tudo no seu GitHub ou na sua hospedagem.
+622: Feito para celular primeiro
+623: 90% do tráfego dos meus clientes chega pelo WhatsApp. Cada site é testado em tela de 360 px antes de ir ao ar.
+627: Performance auditada
+628: Imagens em WebP, scripts leves e CLS = 0 . Site rápido é a diferença entre fechar e perder a venda.
+632: Atendimento online, Brasil inteiro
+633: Briefing, aprovação e entrega por WhatsApp e e-mail. Atendo todo o Brasil — sem deslocamento e sem desculpa de distância.
+637: 50% para entrar, 50% na entrega
+638: PIX ou transferência. Você só paga a segunda metade quando o site estiver no ar e aprovado por você.
+642: Publicação e indexação inclusas
+643: Publico no ar, configuro o Google Search Console e peço a indexação. O site já começa a aparecer no Google.
+647: Resposta em até 24h
+648: Você manda o briefing e recebe resposta humana no WhatsApp em até 24 horas . Sem robô e sem formulário que some.
+656: Meu processo
+658: 01 Descoberta Entendo seu negócio e seu cliente.
+659: 02 Escopo Defino páginas, prazo e valor fechado.
+660: 03 Design Crio o layout com a sua cara.
+661: 04 Código Transformo o design em site de verdade.
+662: 05 Entrega Publico, testo e te entrego no ar.
+669: Portfólio completo
+670: Todos os projetos
+671: ● 15 projetos no ar
+674: Todos 15
+675: Lojas 2
+676: Sites 9
+677: Landings e eventos 4
+681: ⭐ Novo Site 3D
+682: Visitar site
+683: Barbearia Gui Leiros Site oficial 3D · 11 fotos · WhatsApp Ver case completo Quero um assim
+686: ⭐ Novo Site 3D
+687: Visitar site
+688: AD Santos — A Pioneira Three.js · maquete 3D + rádio ao vivo Ver case completo Quero um assim
+691: ⭐ Novo Loja 3D
+692: Visitar site
+693: Konstruct Store Loja 3D · 73 produtos · 67 fotos Ver case completo Quero um assim
+696: ⭐ Destaque Loja 3D
+697: Visitar site
+698: TechVerse Loja 3D · 298 produtos · preços em Real Quero um assim
+701: Site
+702: Visitar site
+703: Viver de Freelancer Three.js · WebGL interativo Quero um assim
+706: Landing page
+707: Visitar site
+708: Festa das Crianças 2.0 HTML · CSS 3D · Three.js Quero um assim
+711: Site
+712: Visitar site
+713: CrescerBem HTML · CSS · JS Quero um assim
+716: Site
+717: Visitar site
+718: Pousada do Adão Site · Reservas no WhatsApp Quero um assim
+721: Landing page
+722: Visitar site
+723: Nepofit Performance Landing · Academia Quero um assim
+726: Landing page
+727: Visitar site
+728: Residencial Tradição Three.js · maquete 3D + giro 360° Quero um assim
+731: Site
+732: Visitar site
+733: consumo-de-API HTML · CSS · JS Quero um assim
+736: ⭐ Novo Site 3D
+737: Visitar site
+738: React Universe Three.js · guia interativo 3D Quero um assim
+741: ⭐ Novo Evento 3D
+742: Visitar site
+743: Chá de Casa Nova 3D Three.js · casa 3D + 2 formulários Quero um assim
+746: Site
+747: Visitar site
+748: portfolio-master HTML · CSS · JS Quero um assim
+751: Plataforma
+752: Visitar site
+753: Portal de Imóveis SP React · TypeScript · 14 imóveis Quero um assim
+756: Gostou de algum estilo? Clique em “Quero um assim” no card e receba um orçamento parecido no WhatsApp — ou veja o case completo dos destaques.
+757: <!-- Bloco de anuncio AdSense (descomente apos aprovacao e troque os IDs pelos seus)
+760: -->
+765: Perguntas frequentes
+766: Antes de falar comigo
+770: Quanto custa um site comigo?
+771: Landing page a partir de R$ 697, site institucional completo a partir de R$ 997 e loja virtual a partir de R$ 2.497. Logo a partir de R$ 200, LinkedIn a partir de R$ 297 e formatação ABNT a partir de R$ 120. O valor final sai da proposta escrita, com escopo e prazo fechados antes de qualquer pagamento.
+774: Qual é o prazo de entrega?
+775: Landing page em 5 dias úteis, site institucional em 10 dias úteis e loja virtual em 15 dias úteis (a partir da confirmação do pagamento e do recebimento dos seus materiais: textos, fotos e logo). Precisa antes? Existe opção de prazo urgente — me avise que eu avalio.
+778: Os depoimentos do site são reais?
+779: Sim. Cada depoimento deste site está publicado no site do cliente que eu construí, e o link no card leva até lá para você conferir. São falas de clientes finais dos sites (alunos da academia, hóspedes da pousada, clientes da barbearia). Quando os donos dos negócios mandarem o próprio depoimento sobre o trabalho, ele entra aqui também.
+782: Em quanto tempo meu site entra no Google?
+783: A indexação é pedida no dia da publicação. O posicionamento emcompetitive começa a aparecer em 2 a 8 semanas, dependendo da concorrência do seu segmento e do investimento em conteúdo.
+786: O que está incluído no valor?
+787: Layout responsivo (celular, tablet e desktop), código otimizado para SEO on-page, publicação no ar com HTTPS, cadastro no Google Search Console e 2 rodadas de revisão por etapa. Domínio, hospedagem paga e licenças de imagens de terceiros ficam por sua conta, salvo combinado na proposta.
+790: Como funciona o pagamento?
+791: 50% de entrada para iniciar o projeto e 50% na entrega final, via PIX ou transferência. Você recebe proposta por escrito com o escopo, o prazo e o valor antes do primeiro pagamento. Se eu não entregar no prazo combinado, o combinado vale — está nos Termos de Serviço.
+794: Você faz manutenção depois do site pronto?
+795: Sim. Os primeiros 30 dias de ajustes já entram na entrega. Depois disso existe um plano opcional de manutenção a partir de R$ 297/mês com atualizações, backup e suporte por WhatsApp — ou você segue sozinho, porque o código é seu e está documentado.
+798: O site vai ser meu mesmo?
+799: Sim. Depois do pagamento integral, você recebe o código-fonte, os arquivos e os direitos de uso. O meu portfólio continua mostrando o trabalho — esse é o único ponto em que peço autorização.
+802: Você atende a minha cidade?
+803: Sim, atendo todo o Brasil de forma 100% online: briefing por WhatsApp, aprovação por tela e entrega com o site no ar. Fico em São Paulo (SP) e trabalho com clientes de vários estados.
+812: VAMOS CRIAR ALGO EXTRAORDINÁRIO
+815: Estou disponível para freelas e colaborações. Conte o que você precisa e recebe escopo, prazo e valor por escrito em até 24 horas.
+816: Vamos trabalhar juntos
+817: ou monte seu orçamento em 30s
+819: Compartilhar
+822: Prefere que eu te chame?
+826: Autorizo o contato do Estúdio Rick Digital pelos dados informados, conforme a Política de Privacidade .
+827: Me chame no WhatsApp
+828: Resposta em até 24h. Sem spam.
+829: Recebido! Vou te chamar em até 24h — ou fale comigo agora .
+833: estudiorickdigital@gmail.com
+834: (11) 98942-6415
+835: LinkedIn
+836: github.com/Rickdigitalestudio
+846: ESTÚDIO RICK DIGITAL
+847: Experiências digitais que inspiram. Do layout ao código, resultados reais.
+849: 15+ Projetos no ar
+850: 100% Responsivo
+851: SEO Otimizado
+852: Código do cliente
+857: Serviços
+859: Web Design
+860: Fanpages que Convertem
+861: Sites Institucionais
+862: Lojas Virtuais
+863: Landing Pages
+864: Logos Profissionais
+869: Navegação
+871: Início
+872: Sobre Mim
+873: Portfólio
+874: Cases e Resultados
+875: Depoimentos
+876: Serviços
+877: Contato
+882: Fale Comigo
+886: estudiorickdigital@gmail.com
+890: (11) 98942-6415
+894: São Paulo — SP · atendimento em todo o Brasil
+898: GitHub
+899: LinkedIn
+900: WhatsApp
+908: © 2026 Estúdio Rick Digital — Todos os direitos reservados. ·
+909: Termos de Serviço ·
+910: Privacidade ·
+911: Kit de Mídia
+913: Criado com e código próprio.
