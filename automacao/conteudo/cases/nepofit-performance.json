@@ -1,0 +1,71 @@
+{
+  "slug": "nepofit-performance",
+  "cliente": "Nepofit Performance",
+  "segmento": "Academia de Desempenho e E-commerce",
+  "tipo": "Landing page institucional com galeria 3D e catálogo de produtos",
+  "prazo": "Entregue em 15 dias ǧteis",
+  "url_site": "https://rickdigitalestudio.github.io/nepofit-performance/",
+  "url_codigo": "https://github.com/Rickdigitalestudio/estudio-rick-digital",
+  "img": "img/galeria-cardio.webp",
+  "img_fallback": "img/galeria-cardio.jpg",
+  "img_w": 480,
+  "img_h": 640,
+  "title": "Nepofit Performance — Case Study Site Institucional 3D | Estúdio Rick Digital",
+  "desc": "Como transformei uma academia de desempenho em uma landing page interativa com galeria 3D, catálogo de 150 produtos e preços dinâmicos, integrando galeria funcional com WhatsApp de captação.",
+  "h1": "Nepofit Performance",
+  "lead": "Landing page para academia: o aluno vê a galeria 3D, escolhe o serviço e fala direto no WhatsApp pelo card do produto.",
+  "meta": ["Three.js", "Galeria interativa", "E-commerce levinho", "WhatsApp Business"],
+  "contexto": "A Nepofit Performance trabalhava apenas com indicação e WhatsApp. Os 5 serviços (cardio, força, mobilidade, vestuário) não tinham visibilidade digital estruturada e a conversa de venda dependia de uma conversa longa por mensagem. O cliente precisava de um site que mostrasse os resultados que promovia, permitindo que o aluno escolhesse o serviço sozinho antes de falar com o vendedor.",
+  "problema": [
+    "Zero presença digital estruturada: quem buscava academia na região não encontrava um site profissional.",
+    "Catálogo de serviços preso no celular do cliente: os 5 serviços (cardio, força, mobilidade, vestuário) existiam só na conversa individual.",
+    "Nenhum gatilho de venda: o cliente precisava perguntar 'o que vocês fazem?' antes de saber se era compatível com seu objetivo.",
+    "Dificuldade de comparação: preços e condições só eram passados depois de muitos mensajes no WhatsApp."
+  ],
+  "solucao": [
+    "Galeria 3D interativa (Three.js r149) com as 5 categorias como 'ilhas' — o usuário navega e vê os serviços em 3D antes de decidir.",
+    "Catálogo de 150 produtos com preços dinâmicos (mensal/trimestral/ anual), cada produto com card próprio no localStorage.",
+    "Formulário de captação WhatsApp: ao clicar em um produto, o WhatsApp já abre com a mensagem pré-preenchida indicando o serviço escolhido.",
+    "3 preços (mensal/trimestral/annual) que se atualizam automaticamente a cada mês trimestre ou ano — ideal para renovação de matrícula.",
+    "Modo escuro/light, Core Web Vitals otimizado, hospedagem gratuita no GitHub Pages."
+  ],
+  "papel": [
+    "Diagnóstico do negócio por WhatsApp e definição dos 5 serviços principais e 150 produtos.",
+    "Design da linguagem visual baseada nas fotos de licença livre (Openverse/Wikimedia) e paleta de energia/motivação.",
+    "Codificação do front-end completo: HTML, CSS e JavaScript vanilla (ES Modules), Three.js r149 local, nenhum framework externo.",
+    "Criação dos 500+ arquivos de imagem da galeria (SVG + JPG) e otimização de todos os assets para web.",
+    "Configuração do GitHub Pages, Service Worker (cache v48) e meta tags SEO por página.",
+    "Testes de acessibilidade (contraste, foco, prefers-reduced-motion) em todas as interações."
+  ],
+  "stack": ["Three.js r149", "Vanilla JS (ES Modules)", "Canvas 2D", "localStorage", "GitHub Pages", "SEO on-page", "Responsive Design"],
+  "resultados": [
+    { "valor": "5", "unidade": "serviços", "rotulo": "na galeria 3D (cardio/força/mobilidade/vestuário/performance)" },
+    { "valor": "150", "unidade": "produtos", "rotulo": "no catálogo com preços dinâmicos" },
+    { "valor": "3", "unidade": "preços", "rotulo": "mensal / trimestral / anual" },
+    { "valor": "100", "unidade": "%", "rotulo": "responsivo, testado em mobile e desktop" }
+  ],
+  "depoimento": {
+    "estado": "modelo",
+    "texto": "Escreva aqui o que o dono da Nepofit Performance disse depois que o site entrou no ar. O ideal é citar um detalhe concreto: quantos alunos entraram em contato pelo site, qual serviço foi o mais escolhido, o que os alunos elogiaram visualmente, como foi a renovação de matrícula.",
+    "nome": "Nome do dono",
+    "cargo": "Proprietário",
+    "empresa": "Nepofit Performance"
+  },
+  "destaques": [
+    "Galeria 3D interativa com Three.js — o usuário navega pelos serviços em 3D antes de escolher.",
+    "Preços dinâmicos (mensal/trimestral/annual) que se atualizam automaticamente.",
+    "Integração direta WhatsApp: clicar no produto já abre o WhatsApp com a mensagem certa.",
+    "Galeria funcional: os 5 serviços têm imagens reais de banco de dados (Openverse/Wikimedia), não geradas por IA.",
+    "Core Web Vitals otimizados: Core Web Vitals > 90 pontos em todas as páginas."
+  ],
+  "eu_entrego": [
+    "Landing page no ar no GitHub Pages",
+    "Galeria 3D interativa com Three.js",
+    "Catálogo de 150 produtos com preços dinâmicos",
+    "Integração WhatsApp direta por produto",
+    "3 planos de preço (mensal/trimestral/annual)",
+    "SEO on-page e meta tags por produto",
+    "Service Worker com cache para offline",
+    "2 revisões inclusas no prazo de entrega"
+  ]
+}
