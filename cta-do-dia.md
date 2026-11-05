@@ -1,15 +1,15 @@
-# CTA do dia — 2026-11-02
+# CTA do dia — 2026-11-05
 
-**Portfólio que fecha negócio**
+**Do layout ao ar**
 
-## Mostre seu trabalho como ele merece — em 3D interativo.
+## Uma pessoa só do design à entrega: sem ruído, sem atraso.
 
-Portfólios e vitrines que impressionam recrutadores e clientes na primeira tela.
+Processo em 5 etapas — descoberta, escopo, design, código e entrega publicada.
 
-**Botão:** Quero um portfólio assim
+**Botão:** Começar meu projeto
 
 Poste no Status/Stories/TikTok:
 
-> Mostre seu trabalho como ele merece — em 3D interativo.
-> Portfólios e vitrines que impressionam recrutadores e clientes na primeira tela.
+> Uma pessoa só do design à entrega: sem ruído, sem atraso.
+> Processo em 5 etapas — descoberta, escopo, design, código e entrega publicada.
 > Chame no WhatsApp: https://wa.me/5511989426415
