@@ -1,4 +1,4 @@
-# CTA do dia — 2026-11-05
+# CTA do dia — 2026-11-19
 
 **Do layout ao ar**
 
