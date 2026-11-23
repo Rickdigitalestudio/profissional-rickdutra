@@ -362,11 +362,11 @@ const P = [
 
   // ---------- TODOS OS PROJETOS ----------
   [`Todos os projetos`, `All projects`],
-  [`>● <b id="todosCount">16 projetos no ar</b><`, `>● <b id="todosCount">16 projects live</b><`],
-  [`Todos <b>16</b>`, `All <b>16</b>`],
+  [`>● <b id="todosCount">29 projetos no ar</b><`, `>● <b id="todosCount">29 projects live</b><`],
+  [`Todos <b>29</b>`, `All <b>29</b>`],
   [`Lojas <b>2</b>`, `Stores <b>2</b>`],
-  [`Sites <b>9</b>`, `Websites <b>9</b>`],
-  [`Landings e eventos <b>4</b>`, `Landings & events <b>4</b>`],
+  [`Sites <b>20</b>`, `Websites <b>20</b>`],
+  [`Landings e eventos <b>7</b>`, `Landings & events <b>7</b>`],
   [`>⭐ Novo<`, `>⭐ New<`],
   [`>⭐ Destaque<`, `>⭐ Featured<`],
   [`<span class="proj-cat">Site 3D</span>`, `<span class="proj-cat">3D Website</span>`],
