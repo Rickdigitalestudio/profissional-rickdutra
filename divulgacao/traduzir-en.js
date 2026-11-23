@@ -362,8 +362,8 @@ const P = [
 
   // ---------- TODOS OS PROJETOS ----------
   [`Todos os projetos`, `All projects`],
-  [`>● <b id="todosCount">15 projetos no ar</b><`, `>● <b id="todosCount">15 projects live</b><`],
-  [`Todos <b>15</b>`, `All <b>15</b>`],
+  [`>● <b id="todosCount">16 projetos no ar</b><`, `>● <b id="todosCount">16 projects live</b><`],
+  [`Todos <b>16</b>`, `All <b>16</b>`],
   [`Lojas <b>2</b>`, `Stores <b>2</b>`],
   [`Sites <b>9</b>`, `Websites <b>9</b>`],
   [`Landings e eventos <b>4</b>`, `Landings & events <b>4</b>`],
